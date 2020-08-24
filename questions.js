@@ -50,7 +50,7 @@ questions = [
     {
         "question": "A welfare state only pacifies the workers, which ends the labour movement.",
         "effect": {
-            "radi": 10,
+            "radi": -10,
             "coop": 0,
             "ownr": 0,
             "glob": 0,
