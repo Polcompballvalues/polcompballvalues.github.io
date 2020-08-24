@@ -1,7 +1,7 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
-<title>8values Results</title>
+<title>LiberationValues Results</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
@@ -14,38 +14,59 @@
 </script>
 
 <body>
-<h1>8values</h1>
+<h1>LiberationValues</h1>
 <hr>
 
 <h1>Results</h1>
 
-<h2>Economic Axis: <span class="weight-300" id="economic-label"></span></h2>
+<h2>Radicality Axis: <span class="weight-300" id="radicality-label"></span></h2>
 <div class="axis">
-    <img id="img-equality" src="value_images/equality.svg" height="128pt"/>
-    <div class="bar equality" id="bar-equality"><div class="text-wrapper" id="equality"></div></div>
-    <div class="bar wealth" id="bar-wealth"><div class="text-wrapper" id="wealth"></div></div>
-    <img id="img-wealth" src="value_images/wealth.svg" height="128pt"/>
+    <img id="img-moderate" src="value_images/moderate.png" height="128pt"/>
+    <div class="bar moderate" id="bar-moderate"><div class="text-wrapper" id="moderate"></div></div>
+    <div class="bar radical" id="bar-radical"><div class="text-wrapper" id="radical"></div></div>
+    <img id="img-radical" src="value_images/radical.png" height="128pt"/>
 </div>
-<h2>Diplomatic Axis: <span class="weight-300" id="diplomatic-label"></span></h2>
+<h2>Co-operation Axis: <span class="weight-300" id="co-operation-label"></span></h2>
 <div class="axis">
-    <img id="img-might" src="value_images/might.svg" height="128pt"/>
-    <div class="bar might" id="bar-might"><div class="text-wrapper" id="might"></div></div>
-    <div class="bar peace" id="bar-peace"><div class="text-wrapper" id="peace"></div></div>
-    <img id="img-peace" src="value_images/peace.svg" height="128pt"/>
+    <img id="img-leftunity" src="value_images/leftunity.png" height="128pt"/>
+    <div class="bar leftunity" id="bar-leftunity"><div class="text-wrapper" id="leftunity"></div></div>
+    <div class="bar libunity" id="bar-libunity"><div class="text-wrapper" id="libunity"></div></div>
+    <img id="img-libunity" src="value_images/libunity.png" height="128pt"/>
 </div>
-<h2>Civil Axis: <span class="weight-300" id="state-label"></span></h2>
+<h2>Ownership Axis: <span class="weight-300" id="ownership-label"></span></h2>
 <div class="axis">
-    <img id="img-liberty" src="value_images/liberty.svg" height="128pt"/>
-    <div class="bar liberty" id="bar-liberty"><div class="text-wrapper" id="liberty"></div></div>
-    <div class="bar authority" id="bar-authority"><div class="text-wrapper" id="authority"></div></div>
-    <img id="img-authority" src="value_images/authority.svg" height="128pt"/>
+    <img id="img-centralized" src="value_images/centralized.png" height="128pt"/>
+    <div class="bar centralized" id="bar-centralized"><div class="text-wrapper" id="centralized"></div></div>
+    <div class="bar decentralized" id="bar-decentralized"><div class="text-wrapper" id="decentralized"></div></div>
+    <img id="img-decentralized" src="value_images/decentralized.png" height="128pt"/>
 </div>
-<h2>Societal Axis: <span class="weight-300" id="society-label"></span></h2>
+<h2>World Axis: <span class="weight-300" id="world-label"></span></h2>
 <div class="axis">
-    <img id="img-tradition" src="value_images/tradition.svg" height="128pt"/>
-    <div class="bar tradition" id="bar-tradition"><div class="text-wrapper" id="tradition"></div></div>
-    <div class="bar progress" id="bar-progress"><div class="text-wrapper" id="progress"></div></div>
-    <img id="img-progress" src="value_images/progress.svg" height="128pt"/>
+    <img id="img-localist" src="value_images/localist.png" height="128pt"/>
+    <div class="bar localist" id="bar-localist"><div class="text-wrapper" id="localist"></div></div>
+    <div class="bar globalist" id="bar-globalist"><div class="text-wrapper" id="globalist"></div></div>
+    <img id="img-globalist" src="value_images/globalist.png" height="128pt"/>
+</div>
+<h2>Culture Axis: <span class="weight-300" id="culture-label"></span></h2>
+<div class="axis">
+    <img id="img-traditionalist" src="value_images/traditionalist.png" height="128pt"/>
+    <div class="bar traditionalist" id="bar-traditionalist"><div class="text-wrapper" id="traditionalist"></div></div>
+    <div class="bar progressive" id="bar-progressive"><div class="text-wrapper" id="progressive"></div></div>
+    <img id="img-progressive" src="value_images/progressive.png" height="128pt"/>
+</div>
+<h2>Rebelliousness Axis: <span class="weight-300" id="rebelliousness-label"></span></h2>
+<div class="axis">
+    <img id="img-reform" src="value_images/reform.png" height="128pt"/>
+    <div class="bar reform" id="bar-reform"><div class="text-wrapper" id="reform"></div></div>
+    <div class="bar revolution" id="bar-revolution"><div class="text-wrapper" id="revolution"></div></div>
+    <img id="img-revolution" src="value_images/revolution.png" height="128pt"/>
+</div>
+<h2>Markets Axis: <span class="weight-300" id="markets-label"></span></h2>
+<div class="axis">
+    <img id="img-markets" src="value_images/markets.png" height="128pt"/>
+    <div class="bar markets" id="bar-markets"><div class="text-wrapper" id="markets"></div></div>
+    <div class="bar planning" id="bar-planning"><div class="text-wrapper" id="planning"></div></div>
+    <img id="img-planning" src="value_images/planning.png" height="128pt"/>
 </div>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
@@ -53,22 +74,7 @@
 <hr/>
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
-<!-- Website visit statistics - no personal information is collected! -->
-<script type="text/javascript">
-var sc_project=11325211;
-var sc_invisible=1;
-var sc_security="fd9f0659";
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="web stats"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
-stats"></a></div></noscript>
+
 <script>
     function getQueryVariable(variable)
     {
@@ -91,10 +97,13 @@ stats"></a></div></noscript>
         }
     }
 
-    econArray = ["Communist","Socialist","Social","Centrist","Market","Capitalist","Laissez-Faire"]
-    diplArray = ["Cosmopolitan","Internationalist","Peaceful","Balanced","Patriotic","Nationalist","Chauvinist"]
-    govtArray = ["Anarchist","Libertarian","Liberal","Moderate","Statist","Authoritarian","Totalitarian"]
-    sctyArray = ["Revolutionary","Very Progressive","Progressive","Neutral","Traditional","Very Traditional","Reactionary"]
+    radiArray = ["Social Liberal","Social Democrat","Labourism","Liberal Socialism","Democratic Socialism","Libertarian Socialism","Anarchism"]
+    coopArray = ["Left Synthesis","Left Unity","Left Co-Operation","Generalist","Libertarian Co-operation","Libertarian Unity","Libertarian Synthesis"]
+    ownrArray = ["Extremely Centralized","Centralized","More Central","Balanced","More Decentral","Decentralized","Extremely Decentralized"]
+    globArray = ["Isolationist","Nationalist","Internalist","Balanced","Internationalist","Interventionalist","Globalist"]
+	progArray = ["Traditionalist","Very Conservative","Conservative","Balanced","Progressive","Very Progressive","Liberationist"]
+    reblArray = ["Extreme Revolutionary","Revolutionary","Striker","Centrist","Pacifist","Reformism","Constitutionalism"]
+	markArray = ["Very Free Market","Free Marketism","Slightly Unregualted","Regulatory","Nationalized","Planning","Full Planning"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -108,37 +117,55 @@ stats"></a></div></noscript>
         	{return ""}
     }
 
-    equality  = getQueryVariable("e")
-    peace     = getQueryVariable("d")
-    liberty   = getQueryVariable("g")
-    progress  = getQueryVariable("s")
-    wealth    = (100 - equality).toFixed(1)
-    might     = (100 - peace   ).toFixed(1)
-    authority = (100 - liberty ).toFixed(1)
-    tradition = (100 - progress).toFixed(1)
+    moderate       = getQueryVariable("r")
+    leftunity      = getQueryVariable("c")
+    centralized    = getQueryVariable("o")
+    localist       = getQueryVariable("g")
+    traditionalist = getQueryVariable("p")
+    reform         = getQueryVariable("l")
+    markets        = getQueryVariable("m")
+    radical        = (100 - moderate       ).toFixed(1)
+    libunity       = (100 - leftunity      ).toFixed(1)
+    decentralized  = (100 - centralized    ).toFixed(1)
+    globalist      = (100 - localist       ).toFixed(1)
+	progressive    = (100 - traditionalist ).toFixed(1)
+    revolution     = (100 - reform         ).toFixed(1)
+    planning       = (100 - markets        ).toFixed(1)
 
-    setBarValue("equality", equality)
-    setBarValue("wealth", wealth)
-    setBarValue("peace", peace)
-    setBarValue("might", might)
-    setBarValue("liberty", liberty)
-    setBarValue("authority", authority)
-    setBarValue("progress", progress)
-    setBarValue("tradition", tradition)
+    setBarValue("moderate", moderate)
+    setBarValue("radical", radical)
+    setBarValue("leftunity", leftunity)
+    setBarValue("libunity", libunity)
+    setBarValue("centralized", centralized)
+    setBarValue("decentralized", decentralized)
+    setBarValue("localist", localist)
+    setBarValue("globalist", globalist)
+	setBarValue("traditionalist", traditionalist)
+    setBarValue("progressive", progressive)
+    setBarValue("reform", reform)
+    setBarValue("revolution", revolution)
+    setBarValue("markets", markets)
+    setBarValue("planning", planning)
 
-    document.getElementById("economic-label").innerHTML = setLabel(equality, econArray)
-    document.getElementById("diplomatic-label").innerHTML = setLabel(peace, diplArray)
-    document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray)
-    document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray)
+    document.getElementById("radicality-label").innerHTML = setLabel(moderate, radiArray)
+    document.getElementById("co-operation-label").innerHTML = setLabel(leftunity, coopArray)
+    document.getElementById("ownership-label").innerHTML = setLabel(centralized, ownrArray)
+    document.getElementById("world-label").innerHTML = setLabel(localist, globArray)
+    document.getElementById("culture-label").innerHTML = setLabel(traditionalist, progArray)
+    document.getElementById("rebelliousness-label").innerHTML = setLabel(revolution, reblArray)
+    document.getElementById("markets-label").innerHTML = setLabel(markets, markArray)
 
     ideology = ""
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.econ - equality), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.radi - moderate), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.coop - leftunity), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.ownr - centralized), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.glob - localist), 2)
+		dist += Math.pow(Math.abs(ideologies[i].stats.prog - traditionalist), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.rebl - reform), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.mark - markets), 2)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -157,75 +184,109 @@ stats"></a></div></noscript>
     window.onload = function() {
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
-        c.width = 800;
-        c.height = 650;
         ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0,0,800,650);
+        ctx.fillRect(0,0,700,1060);
 
-        img = document.getElementById("img-equality")
+        img = document.getElementById("img-moderate")
         ctx.drawImage(img, 20, 170, 100, 100);
-        img = document.getElementById("img-wealth")
+        img = document.getElementById("img-radical")
         ctx.drawImage(img, 680, 170, 100, 100)
-        img = document.getElementById("img-might")
+        img = document.getElementById("img-leftunity")
         ctx.drawImage(img, 20, 290, 100, 100)
-        img = document.getElementById("img-peace")
+        img = document.getElementById("img-libunity")
         ctx.drawImage(img, 680, 290, 100, 100)
-        img = document.getElementById("img-liberty")
+        img = document.getElementById("img-centralized")
         ctx.drawImage(img, 20, 410, 100, 100)
-        img = document.getElementById("img-authority")
+        img = document.getElementById("img-decentralized")
         ctx.drawImage(img, 680, 410, 100, 100)
-        img = document.getElementById("img-tradition")
+        img = document.getElementById("img-localist")
         ctx.drawImage(img, 20, 530, 100, 100)
-        img = document.getElementById("img-progress")
+        img = document.getElementById("img-globalist")
         ctx.drawImage(img, 680, 530, 100, 100)
+        img = document.getElementById("img-traditionalist")
+        ctx.drawImage(img, 20, 650, 100, 100)
+        img = document.getElementById("img-progressive")
+        ctx.drawImage(img, 680, 650, 100, 100)
+        img = document.getElementById("img-reform")
+        ctx.drawImage(img, 20, 770, 100, 100)
+        img = document.getElementById("img-revolution")
+        ctx.drawImage(img, 680, 770, 100, 100)
+        img = document.getElementById("img-markets")
+        ctx.drawImage(img, 20, 890, 100, 100)
+        img = document.getElementById("img-planning")
+        ctx.drawImage(img, 680, 890, 100, 100)
 
         ctx.fillStyle="#222222"
         ctx.fillRect(120, 180, 560, 80)
         ctx.fillRect(120, 300, 560, 80)
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
+        ctx.fillRect(120, 660, 560, 80)
+        ctx.fillRect(120, 780, 560, 80)
+        ctx.fillRect(120, 900, 560, 80)
         ctx.fillStyle="#f44336"
-        ctx.fillRect(120, 184, 5.6*equality-2, 72)
+        ctx.fillRect(120, 184, 5.6*moderate-2, 72)
         ctx.fillStyle="#00897b"
-        ctx.fillRect(682-5.6*wealth, 184, 5.6*wealth-2, 72)
+        ctx.fillRect(682-5.6*radical, 184, 5.6*radical-2, 72)
         ctx.fillStyle="#ff9800"
-        ctx.fillRect(120, 304, 5.6*might-2, 72)
+        ctx.fillRect(120, 304, 5.6*leftunity-2, 72)
         ctx.fillStyle="#03a9f4"
-        ctx.fillRect(682-5.6*peace, 304, 5.6*peace-2, 72)
+        ctx.fillRect(682-5.6*libunity, 304, 5.6*libunity-2, 72)
         ctx.fillStyle="#ffeb3b"
-        ctx.fillRect(120, 424, 5.6*liberty-2, 72)
+        ctx.fillRect(120, 424, 5.6*centralized-2, 72)
         ctx.fillStyle="#3f51b5"
-        ctx.fillRect(682-5.6*authority, 424, 5.6*authority-2, 72)
+        ctx.fillRect(682-5.6*decentralized, 424, 5.6*decentralized-2, 72)
         ctx.fillStyle="#8bc34a"
-        ctx.fillRect(120, 544, 5.6*tradition-2, 72)
+        ctx.fillRect(120, 544, 5.6*localist-2, 72)
         ctx.fillStyle="#9c27b0"
-        ctx.fillRect(682-5.6*progress, 544, 5.6*progress-2, 72)
+        ctx.fillRect(682-5.6*globalist, 544, 5.6*globalist-2, 72)
+        ctx.fillStyle="#222222"
+        ctx.fillRect(120, 644, 5.6*traditionalist-2, 72)
+        ctx.fillStyle="#03a9f4"
+        ctx.fillRect(682-5.6*progressive, 644, 5.6*progressive-2, 72)
+        ctx.fillStyle="#ffeb3b"
+        ctx.fillRect(120, 764, 5.6*reform-2, 72)
+        ctx.fillStyle="#3f51b5"
+        ctx.fillRect(682-5.6*revolution, 764, 5.6*revolution-2, 72)
+        ctx.fillStyle="#8bc34a"
+        ctx.fillRect(120, 884, 5.6*markets-2, 72)
+        ctx.fillStyle="#9c27b0"
+        ctx.fillRect(682-5.6*planning, 884, 5.6*planning-2, 72)
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
-        ctx.fillText("8values", 20, 90)
+        ctx.fillText("Placeholder", 20, 90)
         ctx.font="50px Montserrat"
         ctx.fillText(ideology, 20, 140)
 
         ctx.textAlign="left"
-        if (equality  > 30) {ctx.fillText(equality + "%", 130, 237.5)}
-        if (might     > 30) {ctx.fillText(might + "%", 130, 357.5)}
-        if (liberty   > 30) {ctx.fillText(liberty + "%", 130, 477.5)}
-        if (tradition > 30) {ctx.fillText(tradition + "%", 130, 597.5)}
+        if (moderate       > 30) {ctx.fillText(moderate + "%", 130, 237.5)}
+        if (leftunity      > 30) {ctx.fillText(leftunity + "%", 130, 357.5)}
+        if (centralized    > 30) {ctx.fillText(centralized + "%", 130, 477.5)}
+        if (localist       > 30) {ctx.fillText(localist + "%", 130, 597.5)}
+        if (traditionalist > 30) {ctx.fillText(traditionalist + "%", 130, 717.5)}
+        if (reform         > 30) {ctx.fillText(reform + "%", 130, 837.5)}
+        if (markets        > 30) {ctx.fillText(markets + "%", 130, 957.5)}
         ctx.textAlign="right"
-        if (wealth    > 30) {ctx.fillText(wealth + "%", 670, 237.5)}
-        if (peace     > 30) {ctx.fillText(peace + "%", 670, 357.5)}
-        if (authority > 30) {ctx.fillText(authority + "%", 670, 477.5)}
-        if (progress  > 30) {ctx.fillText(progress + "%", 670, 597.5)}
+        if (radical        > 30) {ctx.fillText(radical + "%", 670, 237.5)}
+        if (libunity       > 30) {ctx.fillText(libunity + "%", 670, 357.5)}
+        if (decentralized  > 30) {ctx.fillText(decentralized + "%", 670, 477.5)}
+        if (globalist      > 30) {ctx.fillText(globalist + "%", 670, 597.5)}
+        if (progressive    > 30) {ctx.fillText(progressive + "%", 670, 717.5)}
+        if (revolution     > 30) {ctx.fillText(revolution + "%", 670, 837.5)}
+        if (planning       > 30) {ctx.fillText(planning + "%", 670, 957.5)}
 
         ctx.font="300 30px Montserrat"
-        ctx.fillText("8values.github.io", 780, 60)
+        ctx.fillText("placeholder.github.io", 780, 60)
 		ctx.fillText(version, 780, 90)
         ctx.textAlign="center"
-        ctx.fillText("Economic Axis: " + document.getElementById("economic-label").innerHTML, 400, 175)
-        ctx.fillText("Diplomatic Axis: " + document.getElementById("diplomatic-label").innerHTML, 400, 295)
-        ctx.fillText("Civil Axis: " + document.getElementById("state-label").innerHTML, 400, 415)
-        ctx.fillText("Societal Axis: " + document.getElementById("society-label").innerHTML, 400, 535)
+        ctx.fillText("Radicality Axis: " + document.getElementById("radicality-label").innerHTML, 400, 175)
+        ctx.fillText("Co-operation Axis: " + document.getElementById("co-operation-label").innerHTML, 400, 295)
+        ctx.fillText("Ownership Axis: " + document.getElementById("ownership-label").innerHTML, 400, 415)
+        ctx.fillText("World Axis: " + document.getElementById("world-label").innerHTML, 400, 535)
+        ctx.fillText("Culture Axis: " + document.getElementById("culture-label").innerHTML, 400, 295)
+        ctx.fillText("Rebelliousness Axis: " + document.getElementById("rebelliousness-label").innerHTML, 400, 415)
+        ctx.fillText("Markets Axis: " + document.getElementById("markets-label").innerHTML, 400, 535)
 
         document.getElementById("banner").src = c.toDataURL();
     }

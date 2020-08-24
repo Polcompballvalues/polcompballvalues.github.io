@@ -139,44 +139,74 @@ div.text-wrapper {
     color: #222222;
     display: inline-block;
 }
-div.equality {
-    background-color: #f44336;
+div.moderate {
+    background-color: #006aa7;
     text-align: left;
     border-right-style: solid;
 }
-div.wealth {
-    background-color: #00897b;
+div.radical {
+    background-color: #ff0000;
     text-align: right;
     border-left-style: solid;
 }
-div.liberty {
-    background-color: #ffeb3b;
+div.leftunity {
+    background-color: #cd0000;
     text-align: left;
     border-right-style: solid;
 }
-div.authority {
-    background-color: #3f51b5;
+div.libunity {
+    background-color: #ff6600;
+    text-align: right;
+    border-right-style: solid;
+}
+div.centralized {
+    background-color: #ffe000;
+    text-align: left;
+    border-left-style: solid;
+}
+div.decentralized {
+    background-color: #ffffff;
     text-align: right;
     border-left-style: solid;
 }
-div.peace {
-    background-color: #03a9f4;
-    text-align: right;
-    border-left-style: solid;
-}
-div.might {
+div.localist {
     background-color: #ff9800;
     text-align: left;
     border-right-style: solid;
 }
-div.progress {
-    background-color: #9c27b0;
+div.globalist {
+    background-color: #03a9f4;
     text-align: right;
     border-left-style: solid;
 }
-div.tradition {
-    background-color: #8bc34a;
+div.traditionalist {
+    background-color: #6c9569;
     text-align: left;
+    border-right-style: solid;
+}
+div.progressive {
+    background-color: #ff42ff;
+    text-align: right;
+    border-right-style: solid;
+}
+div.reform {
+    background-color: #ffafe4;
+    text-align: left;
+    border-right-style: solid;
+}
+div.revolution {
+    background-color: #890000;
+    text-align: right;
+    border-right-style: solid;
+}
+div.markets {
+    background-color: #21b8e7;
+    text-align: left;
+    border-right-style: solid;
+}
+div.planning {
+    background-color: #ff4900;
+    text-align: right;
     border-right-style: solid;
 }
 span.weight-300 {
