@@ -6,9 +6,9 @@ questions = [
             "coop": 0,
             "ownr": -10,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -18,9 +18,9 @@ questions = [
             "coop": 10,
             "ownr": -10,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -30,9 +30,9 @@ questions = [
             "coop": -10,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -42,9 +42,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 10
+            "prog": 0,
+            "rebl": 0,
+            "mark": 10
         }
     },
     {
@@ -54,9 +54,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -66,9 +66,9 @@ questions = [
             "coop": -10,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -78,9 +78,9 @@ questions = [
             "coop": 0,
             "ownr": -10,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -90,9 +90,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 10,
-			"mark": 0
+            "prog": 0,
+            "rebl": 10,
+            "mark": 0
         }
     },
     {
@@ -102,9 +102,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": -10,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -114,9 +114,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": -10,
-			"mark": 0
+            "prog": 0,
+            "rebl": -10,
+            "mark": 0
         }
     },
     {
@@ -126,9 +126,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": -10,
-			"mark": 0
+            "prog": 0,
+            "rebl": -10,
+            "mark": 0
         }
     },
     {
@@ -138,9 +138,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": -10,
-			"rebl": 0,
-			"mark": 0
+            "prog": -10,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -150,9 +150,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 10,
-			"rebl": 0,
-			"mark": 0
+            "prog": 10,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -162,9 +162,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -174,9 +174,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": -10,
-			"rebl": 0,
-			"mark": 0
+            "prog": -10,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -186,9 +186,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 10,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -198,9 +198,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 10
+            "prog": 0,
+            "rebl": 0,
+            "mark": 10
         }
     },
     {
@@ -210,9 +210,9 @@ questions = [
             "coop": 0,
             "ownr": -10,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -222,9 +222,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 10,
-			"mark": 0
+            "prog": 0,
+            "rebl": 10,
+            "mark": 0
         }
     },
     {
@@ -234,9 +234,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -246,9 +246,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -258,9 +258,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -270,9 +270,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 10
+            "prog": 0,
+            "rebl": 0,
+            "mark": 10
         }
     },
     {
@@ -282,9 +282,9 @@ questions = [
             "coop": 0,
             "ownr": -10,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 0
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -294,9 +294,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 10,
-			"prog": 10,
-			"rebl": 0,
-			"mark": 0
+            "prog": 10,
+            "rebl": 0,
+            "mark": 0
         }
     },
     {
@@ -306,9 +306,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 10
+            "prog": 0,
+            "rebl": 0,
+            "mark": 10
         }
     },
     {
@@ -318,9 +318,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 0,
-			"mark": 10
+            "prog": 0,
+            "rebl": 0,
+            "mark": 10
         }
     },
     {
@@ -330,9 +330,9 @@ questions = [
             "coop": 0,
             "ownr": 0,
             "glob": 0,
-			"prog": 0,
-			"rebl": 10,
-			"mark": 0
+            "prog": 0,
+            "rebl": 10,
+            "mark": 0
         }
     }
 ];
