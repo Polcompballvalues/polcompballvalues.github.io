@@ -185,7 +185,7 @@
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
         ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0,0,700,1060);
+        ctx.fillRect(0,0,800,1200);
 
         img = document.getElementById("img-moderate")
         ctx.drawImage(img, 20, 170, 100, 100);
@@ -224,38 +224,38 @@
         ctx.fillRect(120, 660, 560, 80)
         ctx.fillRect(120, 780, 560, 80)
         ctx.fillRect(120, 900, 560, 80)
-        ctx.fillStyle="#f44336"
+        ctx.fillStyle="#006aa7"
         ctx.fillRect(120, 184, 5.6*moderate-2, 72)
-        ctx.fillStyle="#00897b"
+        ctx.fillStyle="#ff0000"
         ctx.fillRect(682-5.6*radical, 184, 5.6*radical-2, 72)
-        ctx.fillStyle="#ff9800"
+        ctx.fillStyle="#cd0000"
         ctx.fillRect(120, 304, 5.6*leftunity-2, 72)
-        ctx.fillStyle="#03a9f4"
+        ctx.fillStyle="#ff6600"
         ctx.fillRect(682-5.6*libunity, 304, 5.6*libunity-2, 72)
-        ctx.fillStyle="#ffeb3b"
+        ctx.fillStyle="#ffe000"
         ctx.fillRect(120, 424, 5.6*centralized-2, 72)
-        ctx.fillStyle="#3f51b5"
+        ctx.fillStyle="#ffffff"
         ctx.fillRect(682-5.6*decentralized, 424, 5.6*decentralized-2, 72)
-        ctx.fillStyle="#8bc34a"
+        ctx.fillStyle="#ff9800"
         ctx.fillRect(120, 544, 5.6*localist-2, 72)
-        ctx.fillStyle="#9c27b0"
-        ctx.fillRect(682-5.6*globalist, 544, 5.6*globalist-2, 72)
-        ctx.fillStyle="#222222"
-        ctx.fillRect(120, 644, 5.6*traditionalist-2, 72)
         ctx.fillStyle="#03a9f4"
+        ctx.fillRect(682-5.6*globalist, 544, 5.6*globalist-2, 72)
+        ctx.fillStyle="#6c9569"
+        ctx.fillRect(120, 644, 5.6*traditionalist-2, 72)
+        ctx.fillStyle="#ff42ff"
         ctx.fillRect(682-5.6*progressive, 644, 5.6*progressive-2, 72)
-        ctx.fillStyle="#ffeb3b"
+        ctx.fillStyle="#ffafe4"
         ctx.fillRect(120, 764, 5.6*reform-2, 72)
-        ctx.fillStyle="#3f51b5"
+        ctx.fillStyle="#890000"
         ctx.fillRect(682-5.6*revolution, 764, 5.6*revolution-2, 72)
-        ctx.fillStyle="#8bc34a"
+        ctx.fillStyle="#21b8e7"
         ctx.fillRect(120, 884, 5.6*markets-2, 72)
-        ctx.fillStyle="#9c27b0"
+        ctx.fillStyle="#ff4900"
         ctx.fillRect(682-5.6*planning, 884, 5.6*planning-2, 72)
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
-        ctx.fillText("Placeholder", 20, 90)
+        ctx.fillText("liberationvalues", 20, 90)
         ctx.font="50px Montserrat"
         ctx.fillText(ideology, 20, 140)
 
@@ -277,7 +277,7 @@
         if (planning       > 30) {ctx.fillText(planning + "%", 670, 957.5)}
 
         ctx.font="300 30px Montserrat"
-        ctx.fillText("placeholder.github.io", 780, 60)
+        ctx.fillText("liberationvalues.github.io", 780, 60)
 		ctx.fillText(version, 780, 90)
         ctx.textAlign="center"
         ctx.fillText("Radicality Axis: " + document.getElementById("radicality-label").innerHTML, 400, 175)
