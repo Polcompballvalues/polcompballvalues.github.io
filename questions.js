@@ -379,7 +379,7 @@ questions = [
             "ownr": 0,
             "glob": 0,
             "prog": 0,
-            "rebl": 10,
+            "rebl": -10,
             "mark": 0
         }
     },
