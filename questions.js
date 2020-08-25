@@ -461,7 +461,7 @@ questions = [
             "radi": 0,
             "coop": 0,
             "ownr": 0,
-            "glob": 10,
+            "glob": -10,
             "prog": 0,
             "rebl": 0,
             "mark": 0
@@ -523,18 +523,6 @@ questions = [
             "ownr": 0,
             "glob": 10,
             "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
-    },
-    {
-        "question": "A socialist government has no right to disrupt any religious or cultural tradition in any situation",
-        "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 10,
             "rebl": 0,
             "mark": 0
         }
