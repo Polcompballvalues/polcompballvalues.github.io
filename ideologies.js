@@ -46,5 +46,29 @@ ideologies = [
 			"rebl": 85,
 			"mark": 50
         }
+    },
+    {
+        "name": "Social Democracy",
+        "stats": {
+            "radi": 75,
+            "coop": 50,
+            "ownr": 75,
+            "glob": 25,
+			"prog": 25,
+			"rebl": 100,
+			"mark": 60
+        }
+    },
+    {
+        "name": "Democatic Confederalism",
+        "stats": {
+            "radi": 10,
+            "coop": 0,
+            "ownr": 10,
+            "glob": 75,
+			"prog": 0,
+			"rebl": 85,
+			"mark": 50
+        }
     }
 ];
