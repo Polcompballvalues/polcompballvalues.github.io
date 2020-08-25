@@ -435,8 +435,8 @@ questions = [
         "question": "An economy is generally designed better when it is organized bottom-up rather than top-down",
         "effect": {
             "radi": 0,
-            "coop": -10,
-            "ownr": 0,
+            "coop": 0,
+            "ownr": -10,
             "glob": 0,
             "prog": 0,
             "rebl": 0,
