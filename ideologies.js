@@ -77,10 +77,22 @@ ideologies = [
             "radi": 0,
             "coop": 75,
             "ownr": 0,
-            "glob": 40,
+            "glob": 75,
             "prog": 0,
             "rebl": 0,
             "mark": 25
+        }
+    },
+    {
+        "name": "National Anarchism",
+        "stats": {
+            "radi": 0,
+            "coop": 50,
+            "ownr": 0,
+            "glob": 100,
+            "prog": 100,
+            "rebl": 0,
+            "mark": 100
         }
     },
     {
