@@ -67,7 +67,7 @@ ideologies = [
             "ownr": 10,
             "glob": 75,
 			"prog": 0,
-			"rebl": 85,
+			"rebl": 10,
 			"mark": 50
         }
     }
