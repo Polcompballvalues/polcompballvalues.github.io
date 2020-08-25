@@ -334,5 +334,245 @@ questions = [
             "rebl": 10,
             "mark": 0
         }
+    },
+    {
+        "question": "Reforming capitalist society to achieve basic rights for workers is a desirable and realistic goal.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 10,
+            "mark": 0
+        }
+    },
+    {
+        "question": "Negative consequences of a revolution, such as devastation of land and death tolls, generally outweigh whatever positives.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 10,
+            "mark": 0
+        }
+    },
+    {
+        "question": "Any Violence against undesirable people is acceptable aslong as it helps revolutionary motion.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": -10,
+            "mark": 0
+        }
+    },
+    {
+        "question": "Revolution is the most succesfull and ideal way of achieving a Progressive society.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 10,
+            "mark": 0
+        }
+    },
+    {
+        "question": "Marx's concept of 'to each according to their ability, to each according to their need' is a good principle we should abide to.",
+        "effect": {
+            "radi": -10,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "Liberal Democracy is a viable way to achieve a Socialist society",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 10,
+            "mark": 0
+        }
+    },
+    {
+        "question": "A society should rather gradually progress into a Socialist society.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 10,
+            "mark": 0
+        }
+    },
+    {
+        "question": "A planned economy based around computers, like Cybersyn, is a concept worth investigating.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 0,
+            "mark": -10
+        }
+    },
+    {
+        "question": "An economy is generally designed better when it is organized bottom-up rather than top-down",
+        "effect": {
+            "radi": 0,
+            "coop": -10,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "A world socialist republic is a realistic and desirable goal.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": -10,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "Nationalism and patriotism are Reactionary impulses that are unacceptable in a socialist society.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 10,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "Foreign officials, especially Socialist or Progressive officials have no right to dictate policy in another country.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 10,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "The global socialist movement is too wide and diverse to be led by a single party or organization.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": -10,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "Trade unions and/or workers councils should form the basis of a socialist society.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": -10,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "Minority populations have the right to receive special legal protections and rights.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": -10,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "People of similar cultures, like the Kurds, have the right to unite into Autonomous Federations or Confederations.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 10,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "A socialist government has no right to disrupt any religious or cultural tradition in any situation",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 10,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "Minority populations have the right to self-defence and to bear arms, doesn't matter the situation.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": -10,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "The Right to bear Arms is essential to the Socialist movement, and any restrictment of it should be fought against, even by violent means if necessary.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": -10,
+            "mark": 0
+        }
+    },
+    {
+        "question": "I'd be happier if Modern day America preserved its original ideals of Individual Liberty and Freedom.",
+        "effect": {
+            "radi": 0,
+            "coop": -10,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
     }
 ];
