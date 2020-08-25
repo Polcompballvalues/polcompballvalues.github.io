@@ -82,5 +82,17 @@ ideologies = [
             "rebl": 0,
             "mark": 25
         }
+    },
+    {
+        "name": "Council Communism",
+        "stats": {
+            "radi": 35,
+            "coop": 90,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 60,
+            "rebl": 0,
+            "mark": 0
+        }
     }
 ];
