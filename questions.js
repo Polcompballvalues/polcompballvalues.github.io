@@ -562,5 +562,17 @@ questions = [
             "rebl": 0,
             "mark": 0
         }
+    },
+    {
+        "question": "If i lived in an anarcho capitalist society i'd rather contribute to increase cooperative power",
+        "effect": {
+            "radi": 0,
+            "coop": -10,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 10,
+            "mark": 0
+        }
     }
 ];
