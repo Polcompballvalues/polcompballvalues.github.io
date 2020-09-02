@@ -1,2 +1,2 @@
-# 8values.github.io
-The 8values Political Quiz measures individuals' political values, including Equality, Might, Liberty, Tradition, Wealth, Peace, Authority, and Progress.
+# liberationvalues.github.io
+LiberationValues is a political quiz aimed at anti-authoritarian lefitsts that attempts to assign percentages for fourteen different political values. 
