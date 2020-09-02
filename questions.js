@@ -574,5 +574,65 @@ questions = [
             "rebl": 10,
             "mark": 0
         }
+    },
+    {
+        "question": "The free market distributes resources between different parties (workers, management) in an unfair manner, favoring capitalist corporations.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 0,
+            "mark": -10
+        }
+    },
+    {
+        "question": "Any Market system will inevitably allow harmful monopolies for the consumers to form and take over.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 0,
+            "mark": -10
+        }
+    },
+    {
+        "question": "Since Libertarian rightists are, essentially, followers of bourgeois capitalism, there is no logical reason i should ally with such pigs.",
+        "effect": {
+            "radi": 0,
+            "coop": 10,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "An AnCap society is either taken over by cooperative systems, or will reform into a corporatocratic state. Both ends are essentially not ideal.",
+        "effect": {
+            "radi": 0,
+            "coop": 10,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": -10,
+            "mark": 0
+        }
+    },
+    {
+        "question": "Even if an AnCap area would form into a corporate dictatorship, we can still bear arms and fight, since the dictator has a weak fist.",
+        "effect": {
+            "radi": 0,
+            "coop": -10,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
     }
 ];
