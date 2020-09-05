@@ -384,7 +384,7 @@ questions = [
         }
     },
     {
-        "question": "Marx's concept of 'to each according to their ability, to each according to their need' is a good principle we should abide to.",
+        "question": "Marx's concept of 'from each according to their ability, to each according to their need' is a good principle we should abide to.",
         "effect": {
             "radi": -10,
             "coop": 0,
