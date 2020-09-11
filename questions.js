@@ -681,6 +681,42 @@ questions = [
             "prog": 0,
             "rebl": 0,
             "mark": 0
+		}
+    },
+    {
+        "question": "A centrally planned economy is needed to develop third world countries",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 10,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "A highly centralized economy is not State Socialism, but rather Corporatism, as the workers don't even indirectly own the Means of Production.",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": -10,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
+    },
+    {
+        "question": "A Mutual Aid-based society is significantly better than a Transitional Socialist state.",
+        "effect": {
+            "radi": 0,
+            "coop": -10,
+            "ownr": -10,
+            "glob": 0,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
         }
     }
 ];
