@@ -633,7 +633,8 @@ questions = [
             "prog": 0,
             "rebl": 0,
             "mark": 0
-        },
+        }
+    },
     {
         "question": "Socialism is a Gradual process, not a Rapid one.",
         "effect": {
@@ -644,7 +645,8 @@ questions = [
             "prog": 0,
             "rebl": 10,
             "mark": 0
-        },
+        }
+    },
     {
         "question": "A minarchist society is preferable over complete anarchy",
         "effect": {
@@ -655,7 +657,8 @@ questions = [
             "prog": 0,
             "rebl": 10,
             "mark": 0
-        },
+        }
+    },
     {
         "question": "The State will eventually wither away, leading the people into forming a Communist society.",
         "effect": {
@@ -666,7 +669,8 @@ questions = [
             "prog": 0,
             "rebl": 0,
             "mark": 0
-        },
+        }
+    },
     {
         "question": "Communism is too Utopian and unrealistic, it's better to stop at Socialism.",
         "effect": {
