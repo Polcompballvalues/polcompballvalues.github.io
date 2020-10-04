@@ -160,11 +160,11 @@
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.radi - moderate), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.coop - leftunity), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.ownr - centralized), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.glob - localist), 2)
-		dist += Math.pow(Math.abs(ideologies[i].stats.prog - traditionalist), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.rebl - reform), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.coop - leftunity), 1.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.ownr - centralized), 1.75)
+        dist += Math.pow(Math.abs(ideologies[i].stats.glob - localist), 1.5)
+		dist += Math.pow(Math.abs(ideologies[i].stats.prog - traditionalist), 1.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.rebl - reform), 1.5)
         dist += Math.pow(Math.abs(ideologies[i].stats.mark - markets), 2)
         if (dist < ideodist) {
             ideology = ideologies[i].name
