@@ -74,6 +74,30 @@ li {
 a {
     font-family: inherit;
 }
+.small_button, .small_button_off {
+    background-color: #333;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 8pt;
+    color: white;
+    padding: 8pt;
+    width: 10%;
+    min-width: 100pt;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 18pt;
+    margin: -2px auto;
+    cursor: pointer;
+}
+
+.small_button_off {
+    background-color: #ddd;
+    color: #888;
+    border: 2px solid #888;
+    cursor: not-allowed;
+    margin: -4px auto;
+}
 /*General CSS*/
 li {
     font-size: 16pt;
@@ -106,31 +130,6 @@ img.center {
     font-size: 24pt;
     margin: -2px auto;
     cursor: pointer;
-}
-
-.small_button, .small_button_off {
-    background-color: #333;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 10%;
-    min-width: 100pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 18pt;
-    margin: -2px auto;
-    cursor: pointer;
-}
-
-.small_button_off {
-    background-color: #ddd;
-    color: #888;
-    border: 2px solid #888;
-    cursor: not-allowed;
-    margin: -4px auto;
 }
 
 div.axis {
@@ -332,6 +331,30 @@ li {
 a {
     font-family: inherit;
 }
+.small_button, .small_button_off {
+    background-color: #333;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 8pt;
+    color: white;
+    padding: 8pt;
+    width: 10%;
+    min-width: 100pt;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 18pt;
+    margin: -2px auto;
+    cursor: pointer;
+}
+
+.small_button_off {
+    background-color: #ddd;
+    color: #888;
+    border: 2px solid #888;
+    cursor: not-allowed;
+    margin: -4px auto;
+}
 }
 /*Dark Mode*/
 @media(prefers-color-scheme: dark){
@@ -395,5 +418,29 @@ h2 {
     line-height: 36pt;
     margin-top: 12pt;
     margin-bottom: 0pt;
+}
+.small_button, .small_button_off {
+    background-color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 8pt;
+    color: white;
+    padding: 8pt;
+    width: 10%;
+    min-width: 100pt;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 18pt;
+    margin: -2px auto;
+    cursor: pointer;
+}
+
+.small_button_off {
+    background-color: #333;
+    color: #888;
+    border: 2px solid #888;
+    cursor: not-allowed;
+    margin: -4px auto;
 }
 }
