@@ -1,12 +1,24 @@
+<html lang="en-US">
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
-<title>LiberationValues Results</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
+<title>LiberationValues</title>
+<meta property="og:ttl" content="600">
+<meta property="og:site_name" content="LiberationValues">
+<meta property="og:title" content="LiberationValues">
+<meta property="og:type" content="website">
+<meta property="og:description" content="LibertationValues is a political quiz">
+<meta property="og:url" content="https://liberationvalues.github.io/">
+<meta property="og:image" content="https://liberationvalues.github.io/icon.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta content="#000000" data-react-helmet="true" name="theme-color">
 <meta charset="utf-8">
+</head>
 <script>
-  version = "Test Edition #1" //Remember to update this before making changes to the test itself!
+  version = "Test Edition #2" //Remember to update this before making changes to the test itself!
 </script>
 </head>
 <script type="application/javascript"
@@ -21,52 +33,52 @@
 
 <h2>Radicality Axis: <span class="weight-300" id="radicality-label"></span></h2>
 <div class="axis">
-    <img id="img-moderate" src="value_images/moderate.png" height="128pt"/>
+    <img id="img-moderate" src="value_images/moderate.svg" height="128pt"/>
     <div class="bar moderate" id="bar-moderate"><div class="text-wrapper" id="moderate"></div></div>
     <div class="bar radical" id="bar-radical"><div class="text-wrapper" id="radical"></div></div>
-    <img id="img-radical" src="value_images/radical.png" height="128pt"/>
+    <img id="img-radical" src="value_images/radical.svg" height="128pt"/>
 </div>
 <h2>Co-operation Axis: <span class="weight-300" id="co-operation-label"></span></h2>
 <div class="axis">
-    <img id="img-leftunity" src="value_images/leftunity.png" height="128pt"/>
+    <img id="img-leftunity" src="value_images/leftunity.svg" height="128pt"/>
     <div class="bar leftunity" id="bar-leftunity"><div class="text-wrapper" id="leftunity"></div></div>
     <div class="bar libunity" id="bar-libunity"><div class="text-wrapper" id="libunity"></div></div>
-    <img id="img-libunity" src="value_images/libunity.png" height="128pt"/>
+    <img id="img-libunity" src="value_images/libunity.svg" height="128pt"/>
 </div>
 <h2>Ownership Axis: <span class="weight-300" id="ownership-label"></span></h2>
 <div class="axis">
-    <img id="img-centralized" src="value_images/centralized.png" height="128pt"/>
+    <img id="img-centralized" src="value_images/centralized.svg" height="128pt"/>
     <div class="bar centralized" id="bar-centralized"><div class="text-wrapper" id="centralized"></div></div>
     <div class="bar decentralized" id="bar-decentralized"><div class="text-wrapper" id="decentralized"></div></div>
-    <img id="img-decentralized" src="value_images/decentralized.png" height="128pt"/>
+    <img id="img-decentralized" src="value_images/decentralized.svg" height="128pt"/>
 </div>
 <h2>World Axis: <span class="weight-300" id="world-label"></span></h2>
 <div class="axis">
-    <img id="img-localist" src="value_images/localist.png" height="128pt"/>
+    <img id="img-localist" src="value_images/localist.svg" height="128pt"/>
     <div class="bar localist" id="bar-localist"><div class="text-wrapper" id="localist"></div></div>
     <div class="bar globalist" id="bar-globalist"><div class="text-wrapper" id="globalist"></div></div>
-    <img id="img-globalist" src="value_images/globalist.png" height="128pt"/>
+    <img id="img-globalist" src="value_images/globalist.svg" height="128pt"/>
 </div>
 <h2>Culture Axis: <span class="weight-300" id="culture-label"></span></h2>
 <div class="axis">
-    <img id="img-traditionalist" src="value_images/traditionalist.png" height="128pt"/>
+    <img id="img-traditionalist" src="value_images/traditionalist.svg" height="128pt"/>
     <div class="bar traditionalist" id="bar-traditionalist"><div class="text-wrapper" id="traditionalist"></div></div>
     <div class="bar progressive" id="bar-progressive"><div class="text-wrapper" id="progressive"></div></div>
-    <img id="img-progressive" src="value_images/progressive.png" height="128pt"/>
+    <img id="img-progressive" src="value_images/progressive.svg" height="128pt"/>
 </div>
 <h2>Rebelliousness Axis: <span class="weight-300" id="rebelliousness-label"></span></h2>
 <div class="axis">
-    <img id="img-reform" src="value_images/reform.png" height="128pt"/>
+    <img id="img-reform" src="value_images/reform.svg" height="128pt"/>
     <div class="bar reform" id="bar-reform"><div class="text-wrapper" id="reform"></div></div>
     <div class="bar revolution" id="bar-revolution"><div class="text-wrapper" id="revolution"></div></div>
-    <img id="img-revolution" src="value_images/revolution.png" height="128pt"/>
+    <img id="img-revolution" src="value_images/revolution.svg" height="128pt"/>
 </div>
 <h2>Markets Axis: <span class="weight-300" id="markets-label"></span></h2>
 <div class="axis">
-    <img id="img-markets" src="value_images/markets.png" height="128pt"/>
+    <img id="img-markets" src="value_images/markets.svg" height="128pt"/>
     <div class="bar markets" id="bar-markets"><div class="text-wrapper" id="markets"></div></div>
     <div class="bar planning" id="bar-planning"><div class="text-wrapper" id="planning"></div></div>
-    <img id="img-planning" src="value_images/planning.png" height="128pt"/>
+    <img id="img-planning" src="value_images/planning.svg" height="128pt"/>
 </div>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
@@ -406,3 +418,4 @@
     }    
     </script>
 </body>
+</html>
