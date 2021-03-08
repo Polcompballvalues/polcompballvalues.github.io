@@ -16,7 +16,7 @@ ideologies = [
         "stats": {
             "radi": 100,
             "coop": 50,
-            "ownr": 75,
+            "ownr": 25,
             "glob": 0,
             "prog": 0,
             "rebl": 100,
@@ -52,9 +52,21 @@ ideologies = [
         "stats": {
             "radi": 75,
             "coop": 50,
-            "ownr": 75,
+            "ownr": 50,
             "glob": 25,
             "prog": 25,
+            "rebl": 100,
+            "mark": 60
+        }
+    },
+    {
+        "name": "Social Corporatism",
+        "stats": {
+            "radi": 75,
+            "coop": 50,
+            "ownr": 100,
+            "glob": 25,
+            "prog": 40,
             "rebl": 100,
             "mark": 60
         }
