@@ -718,5 +718,29 @@ questions = [
             "rebl": 0,
             "mark": 0
         }
+    },
+    {
+        "question": "Under no pretext...",
+        "effect": {
+            "radi": -10,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 0,
+            "rebl": -10,
+            "mark": 0
+        }
+    },
+    {
+        "question": "International Coalitions are a good way to spread our values",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": -10,
+            "prog": 0,
+            "rebl": 0,
+            "mark": 0
+        }
     }
 ];
