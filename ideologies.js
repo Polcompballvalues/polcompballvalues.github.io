@@ -120,18 +120,6 @@ ideologies = [
         }
     },
     {
-        "name": "Anarcho-Pacifism",
-        "stats": {
-            "radi": 0,
-            "coop": 25,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 25,
-            "rebl": 50,
-            "mark": 50
-        }
-    },
-    {
         "name": "Libertarian socialism",
         "stats": {
             "radi": 25,
