@@ -372,7 +372,7 @@ questions = [
         }
     },
     {
-        "question": "Revolution is the most succesfull and ideal way of achieving a Progressive society.",
+        "question": "Revolution is the most succesful and ideal way of achieving a Progressive society.",
         "effect": {
             "radi": 0,
             "coop": 0,
