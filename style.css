@@ -174,26 +174,26 @@ div.text-wrapper {
     margin-right: auto;
 }
 
-div.moderate {
-    background-color: #006aa7;
+div.sincerity {
+    background-color: #008080;
     text-align: left;
     border-right-style: solid;
 }
 
-div.radical {
-    background-color: #ff0000;
+div.irony {
+    background-color: #0000FF;
     text-align: right;
     border-left-style: solid;
 }
 
-div.leftunity {
-    background-color: #cd0000;
+div.jannyphobe {
+    background-color: #FFFF00;
     text-align: left;
     border-right-style: solid;
 }
 
-div.libunity {
-    background-color: #ff6600;
+div.jannyphile {
+    background-color: #D061A6;
     text-align: right;
     border-right-style: solid;
 }

@@ -37,21 +37,25 @@
 
 <!-- JavaScript for the test itself -->
 <script>
-    var max_radi, max_coop, max_ownr, max_glob, max_prog, max_rebl, max_mark // Max possible scores
-    max_radi = max_coop = max_ownr = max_glob = max_prog = max_rebl = max_mark = 0;
-    var radi, coop, ownr, glob, prog, rebl, mark // User's scores
-    radi = coop = ownr = glob = prog = rebl = mark = 0;
+    var max_spos, max_alle, max_serv, max_pers, max_horn, max_fame, max_show, max_sani, max_rela, max_fedp, max_acti // Max possible scores
+    max_spos = max_alle = max_serv = max_pers = max_horn = max_fame = max_show = max_sani = max_rela = max_fedp = max_acti = 0;
+    var spos, alle, serv, pers, horn, fame, show, sani, rela, fedp, acti // User's scores
+    spos = alle = serv = pers = horn = fame = show = sani = rela = fedp = acti = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_radi += Math.abs(questions[i].effect.radi)
-        max_coop += Math.abs(questions[i].effect.coop)
-        max_ownr += Math.abs(questions[i].effect.ownr)
-        max_glob += Math.abs(questions[i].effect.glob)
-		max_prog += Math.abs(questions[i].effect.prog)
-		max_rebl += Math.abs(questions[i].effect.rebl)
-		max_mark += Math.abs(questions[i].effect.mark)
+        max_spos += Math.abs(questions[i].effect.spos)
+        max_alle += Math.abs(questions[i].effect.alle)
+        max_serv += Math.abs(questions[i].effect.serv)
+        max_pers += Math.abs(questions[i].effect.pers)
+		max_horn += Math.abs(questions[i].effect.horn)
+		max_fame += Math.abs(questions[i].effect.fame)
+		max_show += Math.abs(questions[i].effect.show)
+        max_sani += Math.abs(questions[i].effect.sani)
+		max_rela += Math.abs(questions[i].effect.rela)
+		max_fedp += Math.abs(questions[i].effect.fedp)
+		max_acti += Math.abs(questions[i].effect.acti)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -67,13 +71,17 @@
     }
 
     function next_question(mult) {
-        radi += mult*questions[qn].effect.radi
-        coop += mult*questions[qn].effect.coop
-        ownr += mult*questions[qn].effect.ownr
-        glob += mult*questions[qn].effect.glob
-		prog += mult*questions[qn].effect.prog
-		rebl += mult*questions[qn].effect.rebl
-		mark += mult*questions[qn].effect.mark
+        spos += mult*questions[qn].effect.spos
+        alle += mult*questions[qn].effect.alle
+        serv += mult*questions[qn].effect.serv
+        pers += mult*questions[qn].effect.pers
+		horn += mult*questions[qn].effect.horn
+		fame += mult*questions[qn].effect.fame
+		show += mult*questions[qn].effect.show
+        sani += mult*questions[qn].effect.sani
+		rela += mult*questions[qn].effect.rela
+		fedp += mult*questions[qn].effect.fedp
+		acti += mult*questions[qn].effect.acti
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -87,13 +95,17 @@
             return;
         }
         qn--;
-        radi -= prev_answer * questions[qn].effect.radi;
-        coop -= prev_answer * questions[qn].effect.coop;
-        ownr -= prev_answer * questions[qn].effect.ownr;
-        glob -= prev_answer * questions[qn].effect.glob;
-		prog -= prev_answer * questions[qn].effect.prog;
-		rebl -= prev_answer * questions[qn].effect.rebl;
-		mark -= prev_answer * questions[qn].effect.mark;
+        radi -= prev_answer * questions[qn].effect.spos;
+        coop -= prev_answer * questions[qn].effect.alle;
+        ownr -= prev_answer * questions[qn].effect.serv;
+        glob -= prev_answer * questions[qn].effect.pers;
+		prog -= prev_answer * questions[qn].effect.horn;
+		rebl -= prev_answer * questions[qn].effect.fame;
+		mark -= prev_answer * questions[qn].effect.show;
+        glob -= prev_answer * questions[qn].effect.sani;
+		prog -= prev_answer * questions[qn].effect.rela;
+		rebl -= prev_answer * questions[qn].effect.fedp;
+		mark -= prev_answer * questions[qn].effect.acti;
         prev_answer = null;
         init_question();
 
@@ -103,13 +115,17 @@
     }
     function results() {
         location.href = `results.html`
-            + `?r=${calc_score(radi,max_radi)}`
-            + `&c=${calc_score(coop,max_coop)}`
-            + `&o=${calc_score(ownr,max_ownr)}`
-			+ `&g=${calc_score(glob,max_glob)}`
-            + `&p=${calc_score(prog,max_prog)}`
-			+ `&l=${calc_score(rebl,max_rebl)}`
-			+ `&m=${calc_score(mark,max_mark)}`
+            + `?s=${calc_score(spos,max_spos)}`
+            + `&j=${calc_score(alle,max_alle)}`
+            + `&c=${calc_score(serv,max_serv)}`
+            + `&w=${calc_score(pers,max_pers)}`
+			+ `&h=${calc_score(horn,max_horn)}`
+            + `&a=${calc_score(fame,max_fame)}`
+			+ `&t=${calc_score(show,max_show)}`
+			+ `&c=${calc_score(sani,max_sani)}`
+            + `&l=${calc_score(rela,max_rela)}`
+			+ `&i=${calc_score(fedp,max_fedp)}`
+			+ `&b=${calc_score(acti,max_acti)}`            
     }
 </script>
 </body>
