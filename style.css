@@ -241,26 +241,26 @@ div.antihorny {
     border-right-style: solid;
 }
 
-div.reform {
-    background-color: #ffafe4;
+div.active {
+    background-color: #FF0000;
     text-align: left;
     border-right-style: solid;
 }
 
-div.revolution {
-    background-color: #890000;
+div.lurker {
+    background-color: #FFFFFF;
     text-align: right;
     border-right-style: solid;
 }
 
-div.markets {
+div.schizo {
     background-color: #21b8e7;
     text-align: left;
     border-right-style: solid;
 }
 
-div.planning {
-    background-color: #ff4900;
+div.boring {
+    background-color: #F5DD00;
     text-align: right;
     border-right-style: solid;
 }
