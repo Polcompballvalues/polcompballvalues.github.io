@@ -198,38 +198,38 @@ div.jannyphile {
     border-right-style: solid;
 }
 
-div.centralized {
-    background-color: #ffe000;
+div.casual {
+    background-color: #999999;
     text-align: left;
     border-left-style: solid;
 }
 
-div.decentralized {
-    background-color: #ffffff;
+div.serious {
+    background-color: #FF0000;
     text-align: right;
     border-left-style: solid;
 }
 
-div.localist {
-    background-color: #ff9800;
+div.wholesome {
+    background-color: #C000FF;
     text-align: left;
     border-right-style: solid;
 }
 
-div.globalist {
-    background-color: #03a9f4;
+div.edgy {
+    background-color: #EE2436;
     text-align: right;
     border-left-style: solid;
 }
 
-div.traditionalist {
-    background-color: #6c9569;
+div.horny {
+    background-color: #000000;
     text-align: left;
     border-right-style: solid;
 }
 
-div.progressive {
-    background-color: #ff42ff;
+div.antihorny {
+    background-color: #F5DD00;
     text-align: right;
     border-right-style: solid;
 }
