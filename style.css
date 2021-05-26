@@ -253,14 +253,62 @@ div.lurker {
     border-right-style: solid;
 }
 
+div.standard {
+    background-color: #8B5320;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.wacky {
+    background-color: #00B5FF;
+    text-align: right;
+    border-right-style: solid;
+}
+
 div.schizo {
-    background-color: #21b8e7;
+    background-color: #7F3980;
     text-align: left;
     border-right-style: solid;
 }
 
 div.boring {
     background-color: #F5DD00;
+    text-align: right;
+    border-right-style: solid;
+}
+
+div.liked {
+    background-color: #52CE3C;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.disliked {
+    background-color: #F5A9B8;
+    text-align: right;
+    border-right-style: solid;
+}
+
+div.inclusive {
+    background-color: #FB0000;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.discriminatory {
+    background-color: #32B5D4;
+    text-align: right;
+    border-right-style: solid;
+}
+
+div.behaving {
+    background-color: #FFCC00;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.misbehaving {
+    background-color: #429B7D;
     text-align: right;
     border-right-style: solid;
 }
