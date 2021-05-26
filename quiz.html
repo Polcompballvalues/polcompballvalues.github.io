@@ -95,17 +95,17 @@
             return;
         }
         qn--;
-        radi -= prev_answer * questions[qn].effect.spos;
-        coop -= prev_answer * questions[qn].effect.alle;
-        ownr -= prev_answer * questions[qn].effect.serv;
-        glob -= prev_answer * questions[qn].effect.pers;
-		prog -= prev_answer * questions[qn].effect.horn;
-		rebl -= prev_answer * questions[qn].effect.fame;
-		mark -= prev_answer * questions[qn].effect.show;
-        glob -= prev_answer * questions[qn].effect.sani;
-		prog -= prev_answer * questions[qn].effect.rela;
-		rebl -= prev_answer * questions[qn].effect.fedp;
-		mark -= prev_answer * questions[qn].effect.acti;
+        spos -= prev_answer * questions[qn].effect.spos;
+        alle -= prev_answer * questions[qn].effect.alle;
+        serv -= prev_answer * questions[qn].effect.serv;
+        pers -= prev_answer * questions[qn].effect.pers;
+		horn -= prev_answer * questions[qn].effect.horn;
+		fame -= prev_answer * questions[qn].effect.fame;
+		show -= prev_answer * questions[qn].effect.show;
+        sani -= prev_answer * questions[qn].effect.sani;
+		rela -= prev_answer * questions[qn].effect.rela;
+		fedp -= prev_answer * questions[qn].effect.fedp;
+		acti -= prev_answer * questions[qn].effect.acti;
         prev_answer = null;
         init_question();
 
