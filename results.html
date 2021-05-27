@@ -18,7 +18,7 @@
 <meta charset="utf-8">
 </head>
 <script>
-  version = "Test Edition #2" //Remember to update this before making changes to the test itself!
+  version = "Pre-release edition" //Remember to update this before making changes to the test itself!
 </script>
 </head>
 <script type="application/javascript"
@@ -109,8 +109,9 @@
     <img id="img-misbehaving" src="value_images/misbehaving.svg" height="128pt"/>
 </div>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
-<p>Personality matching is a work in progress, and is much less accurate than the values and axes.</p>
-<p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to TheGhostOfInky#9229 on Discord or any other comments, questions, or criticism. </p>
+<p>This test is currently in testing stage, do not expect any kind of meaningful results</p>
+<!--Personality matching is a work in progress, and is much less accurate than the values and axes.-->
+<!--You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to TheGhostOfInky#9229 on Discord or any other comments, questions, or criticism.-->
 <hr/>
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
@@ -254,38 +255,54 @@
             var c = document.createElement("canvas")
                 var ctx = c.getContext("2d")
             c.width = 800;
-            c.height = 1000;
+            c.height = 1500;
             ctx.fillStyle = "#141414"
-            ctx.fillRect(0,0,800,1000);
+            ctx.fillRect(0,0,800,1500);
 
-            img = document.getElementById("img-moderate")
+            img = document.getElementById("img-sincerity")
             ctx.drawImage(img, 20, 170, 100, 100);
-            img = document.getElementById("img-radical")
+            img = document.getElementById("img-irony")
             ctx.drawImage(img, 680, 170, 100, 100)
-            img = document.getElementById("img-leftunity")
+            img = document.getElementById("img-jannyphobe")
             ctx.drawImage(img, 20, 290, 100, 100)
-            img = document.getElementById("img-libunity")
+            img = document.getElementById("img-jannyphile")
             ctx.drawImage(img, 680, 290, 100, 100)
-            img = document.getElementById("img-centralized")
+            img = document.getElementById("img-casual")
             ctx.drawImage(img, 20, 410, 100, 100)
-            img = document.getElementById("img-decentralized")
+            img = document.getElementById("img-serious")
             ctx.drawImage(img, 680, 410, 100, 100)
-            img = document.getElementById("img-localist")
+            img = document.getElementById("img-wholesome")
             ctx.drawImage(img, 20, 530, 100, 100)
-            img = document.getElementById("img-globalist")
+            img = document.getElementById("img-edgy")
             ctx.drawImage(img, 680, 530, 100, 100)
-            img = document.getElementById("img-traditionalist")
+            img = document.getElementById("img-horny")
             ctx.drawImage(img, 20, 650, 100, 100)
-            img = document.getElementById("img-progressive")
+            img = document.getElementById("img-antihorny")
             ctx.drawImage(img, 680, 650, 100, 100)
-            img = document.getElementById("img-reform")
+            img = document.getElementById("img-active")
             ctx.drawImage(img, 20, 770, 100, 100)
-            img = document.getElementById("img-revolution")
+            img = document.getElementById("img-lurker")
             ctx.drawImage(img, 680, 770, 100, 100)
-            img = document.getElementById("img-markets")
+            img = document.getElementById("img-standard")
             ctx.drawImage(img, 20, 890, 100, 100)
-            img = document.getElementById("img-planning")
+            img = document.getElementById("img-wacky")
             ctx.drawImage(img, 680, 890, 100, 100)
+            img = document.getElementById("img-schizo")
+            ctx.drawImage(img, 20, 1010, 100, 100)
+            img = document.getElementById("img-boring")
+            ctx.drawImage(img, 680, 1010, 100, 100)
+            img = document.getElementById("img-liked")
+            ctx.drawImage(img, 20, 1130, 100, 100)
+            img = document.getElementById("img-disliked")
+            ctx.drawImage(img, 680, 1130, 100, 100)
+            img = document.getElementById("img-inclusive")
+            ctx.drawImage(img, 20, 1250, 100, 100)
+            img = document.getElementById("img-discriminatory")
+            ctx.drawImage(img, 680, 1250, 100, 100)
+            img = document.getElementById("img-behaving")
+            ctx.drawImage(img, 20, 1370, 100, 100)
+            img = document.getElementById("img-misbehaving")
+            ctx.drawImage(img, 680, 1370, 100, 100)
 
             ctx.fillStyle="#222222"
             ctx.fillRect(120, 180, 560, 80)
@@ -295,107 +312,160 @@
             ctx.fillRect(120, 660, 560, 80)
             ctx.fillRect(120, 780, 560, 80)
             ctx.fillRect(120, 900, 560, 80)
-            ctx.fillStyle="#006aa7"
-            ctx.fillRect(120, 184, 5.6*moderate-2, 72)
-            ctx.fillStyle="#ff0000"
-            ctx.fillRect(682-5.6*radical, 184, 5.6*radical-2, 72)
-            ctx.fillStyle="#cd0000"
-            ctx.fillRect(120, 304, 5.6*leftunity-2, 72)
-            ctx.fillStyle="#ff6600"
-            ctx.fillRect(682-5.6*libunity, 304, 5.6*libunity-2, 72)
-            ctx.fillStyle="#ffe000"
-            ctx.fillRect(120, 424, 5.6*centralized-2, 72)
-            ctx.fillStyle="#ffffff"
-            ctx.fillRect(682-5.6*decentralized, 424, 5.6*decentralized-2, 72)
-            ctx.fillStyle="#ff9800"
-            ctx.fillRect(120, 544, 5.6*localist-2, 72)
-            ctx.fillStyle="#03a9f4"
-            ctx.fillRect(682-5.6*globalist, 544, 5.6*globalist-2, 72)
-            ctx.fillStyle="#6c9569"
-            ctx.fillRect(120, 664, 5.6*traditionalist-2, 72)
-            ctx.fillStyle="#ff42ff"
-            ctx.fillRect(682-5.6*progressive, 664, 5.6*progressive-2, 72)
-            ctx.fillStyle="#ffafe4"
-            ctx.fillRect(120, 784, 5.6*reform-2, 72)
-            ctx.fillStyle="#890000"
-            ctx.fillRect(682-5.6*revolution, 784, 5.6*revolution-2, 72)
-            ctx.fillStyle="#21b8e7"
-            ctx.fillRect(120, 904, 5.6*markets-2, 72)
-            ctx.fillStyle="#ff4900"
-            ctx.fillRect(682-5.6*planning, 904, 5.6*planning-2, 72)
+            ctx.fillRect(120, 1020, 560, 80)
+            ctx.fillRect(120, 1140, 560, 80)
+            ctx.fillRect(120, 1260, 560, 80)
+            ctx.fillRect(120, 1380, 560, 80)
+            ctx.fillStyle="#008080"
+            ctx.fillRect(120, 184, 5.6*sincerity-2, 72)
+            ctx.fillStyle="#0000FF"
+            ctx.fillRect(682-5.6*irony, 184, 5.6*irony-2, 72)
+            ctx.fillStyle="#FFFF00"
+            ctx.fillRect(120, 304, 5.6*jannyphobe-2, 72)
+            ctx.fillStyle="#D061A6"
+            ctx.fillRect(682-5.6*jannyphile, 304, 5.6*jannyphile-2, 72)
+            ctx.fillStyle="#003890"
+            ctx.fillRect(120, 424, 5.6*casual-2, 72)
+            ctx.fillStyle="#FF0000"
+            ctx.fillRect(682-5.6*serious, 424, 5.6*serious-2, 72)
+            ctx.fillStyle="#C000FF"
+            ctx.fillRect(120, 544, 5.6*wholesome-2, 72)
+            ctx.fillStyle="#EE2436"
+            ctx.fillRect(682-5.6*edgy, 544, 5.6*edgy-2, 72)
+            ctx.fillStyle="#000000"
+            ctx.fillRect(120, 664, 5.6*horny-2, 72)
+            ctx.fillStyle="#F5DD00"
+            ctx.fillRect(682-5.6*antihorny, 664, 5.6*antihorny-2, 72)
+            ctx.fillStyle="#FF0000"
+            ctx.fillRect(120, 784, 5.6*active-2, 72)
+            ctx.fillStyle="#FFFFFF"
+            ctx.fillRect(682-5.6*lurker, 784, 5.6*lurker-2, 72)
+            ctx.fillStyle="#8B5320"
+            ctx.fillRect(120, 904, 5.6*standard-2, 72)
+            ctx.fillStyle="#00B5FF"
+            ctx.fillRect(682-5.6*wacky, 904, 5.6*wacky-2, 72)
+            ctx.fillStyle="#7F3980"
+            ctx.fillRect(120, 1024, 5.6*schizo-2, 72)
+            ctx.fillStyle="#F5DD00"
+            ctx.fillRect(682-5.6*boring, 1024, 5.6*boring-2, 72)
+            ctx.fillStyle="#52CE3C"
+            ctx.fillRect(120, 1144, 5.6*liked-2, 72)
+            ctx.fillStyle="#F5A9B8"
+            ctx.fillRect(682-5.6*disliked, 1144, 5.6*disliked-2, 72)
+            ctx.fillStyle="#FB0000"
+            ctx.fillRect(120, 1264, 5.6*inclusive-2, 72)
+            ctx.fillStyle="#32B5D4"
+            ctx.fillRect(682-5.6*discriminatory, 1264, 5.6*discriminatory-2, 72)
+            ctx.fillStyle="#7F00FF"
+            ctx.fillRect(120, 1384, 5.6*behaving-2, 72)
+            ctx.fillStyle="#429B7D"
+            ctx.fillRect(682-5.6*misbehaving, 1384, 5.6*misbehaving-2, 72)
             ctx.fillStyle="#EEEEEE"
-            ctx.font="700 60px Montserrat"
+            ctx.font="700 50px Montserrat"
             ctx.textAlign="left"
-            ctx.fillText("liberationvalues", 20, 90)
+            ctx.fillText("PolcompballValues", 20, 90)
             ctx.font="50px Montserrat"
             ctx.fillText(ideology, 20, 140)
             ctx.fillStyle="#222222"
             ctx.textAlign="left"
-            if (moderate       > 30) {ctx.fillText(moderate + "%", 130, 237.5)}
-            if (leftunity      > 30) {ctx.fillText(leftunity + "%", 130, 357.5)}
-            if (centralized    > 30) {ctx.fillText(centralized + "%", 130, 477.5)}
-            if (localist       > 30) {ctx.fillText(localist + "%", 130, 597.5)}
-            if (traditionalist > 30) {ctx.fillText(traditionalist + "%", 130, 717.5)}
-            if (reform         > 30) {ctx.fillText(reform + "%", 130, 837.5)}
-            if (markets        > 30) {ctx.fillText(markets + "%", 130, 957.5)}
+            if (sincerity       > 30) {ctx.fillText(sincerity + "%", 130, 237.5)}
+            if (jannyphobe      > 30) {ctx.fillText(jannyphobe + "%", 130, 357.5)}
+            if (casual          > 30) {ctx.fillText(casual + "%", 130, 477.5)}
+            if (wholesome       > 30) {ctx.fillText(wholesome + "%", 130, 597.5)}
+            ctx.fillStyle="#DDDDDD"
+            if (horny           > 30) {ctx.fillText(horny + "%", 130, 717.5)}
+            ctx.fillStyle="#222222"
+            if (active          > 30) {ctx.fillText(active + "%", 130, 837.5)}
+            if (standard        > 30) {ctx.fillText(standard + "%", 130, 957.5)}
+            ctx.fillStyle="#DDDDDD"
+            if (schizo          > 30) {ctx.fillText(schizo + "%", 130, 1077.5)}
+            ctx.fillStyle="#222222"
+            if (liked           > 30) {ctx.fillText(liked + "%", 130, 1197.5)}
+            if (inclusive       > 30) {ctx.fillText(inclusive + "%", 130, 1317.5)}
+            if (behaving        > 30) {ctx.fillText(behaving + "%", 130, 1437.5)}
             ctx.textAlign="right"
-            if (radical        > 30) {ctx.fillText(radical + "%", 670, 237.5)}
-            if (libunity       > 30) {ctx.fillText(libunity + "%", 670, 357.5)}
-            if (decentralized  > 30) {ctx.fillText(decentralized + "%", 670, 477.5)}
-            if (globalist      > 30) {ctx.fillText(globalist + "%", 670, 597.5)}
-            if (progressive    > 30) {ctx.fillText(progressive + "%", 670, 717.5)}
-            if (revolution     > 30) {ctx.fillText(revolution + "%", 670, 837.5)}
-            if (planning       > 30) {ctx.fillText(planning + "%", 670, 957.5)}
+            if (irony           > 30) {ctx.fillText(irony + "%", 670, 237.5)}
+            if (jannyphile      > 30) {ctx.fillText(jannyphile + "%", 670, 357.5)}
+            if (serious         > 30) {ctx.fillText(serious + "%", 670, 477.5)}
+            if (edgy            > 30) {ctx.fillText(edgy + "%", 670, 597.5)}
+            if (antihorny       > 30) {ctx.fillText(antihorny + "%", 670, 717.5)}
+            if (lurker          > 30) {ctx.fillText(lurker + "%", 670, 837.5)}
+            if (wacky           > 30) {ctx.fillText(wacky + "%", 670, 957.5)}
+            if (boring          > 30) {ctx.fillText(boring + "%", 670, 1077.5)}
+            if (disliked        > 30) {ctx.fillText(disliked + "%", 670, 1197.5)}
+            if (discriminatory  > 30) {ctx.fillText(discriminatory + "%", 670, 1317.5)}
+            if (misbehaving     > 30) {ctx.fillText(misbehaving + "%", 670, 1437.5)}
             ctx.fillStyle="#EEEEEE"
             ctx.font="300 25px Montserrat"
-            ctx.fillText("liberationvalues.github.io", 780, 40)
+            ctx.fillText("polcompballvalues.github.io", 780, 40)
 	    	ctx.fillText(version, 780, 70)
             ctx.textAlign="center"
-            ctx.fillText("Radicality Axis: " + document.getElementById("radicality-label").innerHTML, 400, 175)
-            ctx.fillText("Co-operation Axis: " + document.getElementById("co-operation-label").innerHTML, 400, 295)
-            ctx.fillText("Ownership Axis: " + document.getElementById("ownership-label").innerHTML, 400, 415)
-            ctx.fillText("World Axis: " + document.getElementById("world-label").innerHTML, 400, 535)
-            ctx.fillText("Culture Axis: " + document.getElementById("culture-label").innerHTML, 400, 655)
-            ctx.fillText("Rebelliousness Axis: " + document.getElementById("rebelliousness-label").innerHTML, 400, 775)
-            ctx.fillText("Markets Axis: " + document.getElementById("markets-label").innerHTML, 400, 895)
+            ctx.fillText("Seriousposting Axis: " + document.getElementById("seriousposting-label").innerHTML, 400, 175)
+            ctx.fillText("Allegiance Axis: " + document.getElementById("allegiance-label").innerHTML, 400, 295)
+            ctx.fillText("Server Axis: " + document.getElementById("server-label").innerHTML, 400, 415)
+            ctx.fillText("Personality Axis: " + document.getElementById("personality-label").innerHTML, 400, 535)
+            ctx.fillText("Hornyposting Axis: " + document.getElementById("hornyposting-label").innerHTML, 400, 655)
+            ctx.fillText("Fame Axis: " + document.getElementById("fame-label").innerHTML, 400, 775)
+            ctx.fillText("Shower Axis: " + document.getElementById("shower-label").innerHTML, 400, 895)
+            ctx.fillText("Sanity Axis: " + document.getElementById("sanity-label").innerHTML, 400, 1015)
+            ctx.fillText("Relationship Axis: " + document.getElementById("relationship-label").innerHTML, 400, 1135)
+            ctx.fillText("Fedposting Axis: " + document.getElementById("fedposting-label").innerHTML, 400, 1255)
+            ctx.fillText("Actions Axis: " + document.getElementById("actions-label").innerHTML, 400, 1375)
 
             document.getElementById("banner").src = c.toDataURL();
     } else {
             var c = document.createElement("canvas")
                 var ctx = c.getContext("2d")
             c.width = 800;
-            c.height = 1000;
+            c.height = 1500;
             ctx.fillStyle = "#EEEEEE"
-            ctx.fillRect(0,0,800,1000);
+            ctx.fillRect(0,0,800,1500);
+            
 
-            img = document.getElementById("img-moderate")
+            img = document.getElementById("img-sincerity")
             ctx.drawImage(img, 20, 170, 100, 100);
-            img = document.getElementById("img-radical")
+            img = document.getElementById("img-irony")
             ctx.drawImage(img, 680, 170, 100, 100)
-            img = document.getElementById("img-leftunity")
+            img = document.getElementById("img-jannyphobe")
             ctx.drawImage(img, 20, 290, 100, 100)
-            img = document.getElementById("img-libunity")
+            img = document.getElementById("img-jannyphile")
             ctx.drawImage(img, 680, 290, 100, 100)
-            img = document.getElementById("img-centralized")
+            img = document.getElementById("img-casual")
             ctx.drawImage(img, 20, 410, 100, 100)
-            img = document.getElementById("img-decentralized")
+            img = document.getElementById("img-serious")
             ctx.drawImage(img, 680, 410, 100, 100)
-            img = document.getElementById("img-localist")
+            img = document.getElementById("img-wholesome")
             ctx.drawImage(img, 20, 530, 100, 100)
-            img = document.getElementById("img-globalist")
+            img = document.getElementById("img-edgy")
             ctx.drawImage(img, 680, 530, 100, 100)
-            img = document.getElementById("img-traditionalist")
+            img = document.getElementById("img-horny")
             ctx.drawImage(img, 20, 650, 100, 100)
-            img = document.getElementById("img-progressive")
+            img = document.getElementById("img-antihorny")
             ctx.drawImage(img, 680, 650, 100, 100)
-            img = document.getElementById("img-reform")
+            img = document.getElementById("img-active")
             ctx.drawImage(img, 20, 770, 100, 100)
-            img = document.getElementById("img-revolution")
+            img = document.getElementById("img-lurker")
             ctx.drawImage(img, 680, 770, 100, 100)
-            img = document.getElementById("img-markets")
+            img = document.getElementById("img-standard")
             ctx.drawImage(img, 20, 890, 100, 100)
-            img = document.getElementById("img-planning")
+            img = document.getElementById("img-wacky")
             ctx.drawImage(img, 680, 890, 100, 100)
+            img = document.getElementById("img-schizo")
+            ctx.drawImage(img, 20, 1010, 100, 100)
+            img = document.getElementById("img-boring")
+            ctx.drawImage(img, 680, 1010, 100, 100)
+            img = document.getElementById("img-liked")
+            ctx.drawImage(img, 20, 1130, 100, 100)
+            img = document.getElementById("img-disliked")
+            ctx.drawImage(img, 680, 1130, 100, 100)
+            img = document.getElementById("img-inclusive")
+            ctx.drawImage(img, 20, 1250, 100, 100)
+            img = document.getElementById("img-discriminatory")
+            ctx.drawImage(img, 680, 1250, 100, 100)
+            img = document.getElementById("img-behaving")
+            ctx.drawImage(img, 20, 1370, 100, 100)
+            img = document.getElementById("img-misbehaving")
+            ctx.drawImage(img, 680, 1370, 100, 100)
 
             ctx.fillStyle="#222222"
             ctx.fillRect(120, 180, 560, 80)
@@ -405,69 +475,106 @@
             ctx.fillRect(120, 660, 560, 80)
             ctx.fillRect(120, 780, 560, 80)
             ctx.fillRect(120, 900, 560, 80)
-            ctx.fillStyle="#006aa7"
-            ctx.fillRect(120, 184, 5.6*moderate-2, 72)
-            ctx.fillStyle="#ff0000"
-            ctx.fillRect(682-5.6*radical, 184, 5.6*radical-2, 72)
-            ctx.fillStyle="#cd0000"
-            ctx.fillRect(120, 304, 5.6*leftunity-2, 72)
-            ctx.fillStyle="#ff6600"
-            ctx.fillRect(682-5.6*libunity, 304, 5.6*libunity-2, 72)
-            ctx.fillStyle="#ffe000"
-            ctx.fillRect(120, 424, 5.6*centralized-2, 72)
-            ctx.fillStyle="#ffffff"
-            ctx.fillRect(682-5.6*decentralized, 424, 5.6*decentralized-2, 72)
-            ctx.fillStyle="#ff9800"
-            ctx.fillRect(120, 544, 5.6*localist-2, 72)
-            ctx.fillStyle="#03a9f4"
-            ctx.fillRect(682-5.6*globalist, 544, 5.6*globalist-2, 72)
-            ctx.fillStyle="#6c9569"
-            ctx.fillRect(120, 664, 5.6*traditionalist-2, 72)
-            ctx.fillStyle="#ff42ff"
-            ctx.fillRect(682-5.6*progressive, 664, 5.6*progressive-2, 72)
-            ctx.fillStyle="#ffafe4"
-            ctx.fillRect(120, 784, 5.6*reform-2, 72)
-            ctx.fillStyle="#890000"
-            ctx.fillRect(682-5.6*revolution, 784, 5.6*revolution-2, 72)
-            ctx.fillStyle="#21b8e7"
-            ctx.fillRect(120, 904, 5.6*markets-2, 72)
-            ctx.fillStyle="#ff4900"
-            ctx.fillRect(682-5.6*planning, 904, 5.6*planning-2, 72)
+            ctx.fillRect(120, 1020, 560, 80)
+            ctx.fillRect(120, 1140, 560, 80)
+            ctx.fillRect(120, 1260, 560, 80)
+            ctx.fillRect(120, 1380, 560, 80)
+            ctx.fillStyle="#008080"
+            ctx.fillRect(120, 184, 5.6*sincerity-2, 72)
+            ctx.fillStyle="#0000FF"
+            ctx.fillRect(682-5.6*irony, 184, 5.6*irony-2, 72)
+            ctx.fillStyle="#FFFF00"
+            ctx.fillRect(120, 304, 5.6*jannyphobe-2, 72)
+            ctx.fillStyle="#D061A6"
+            ctx.fillRect(682-5.6*jannyphile, 304, 5.6*jannyphile-2, 72)
+            ctx.fillStyle="#003890"
+            ctx.fillRect(120, 424, 5.6*casual-2, 72)
+            ctx.fillStyle="#FF0000"
+            ctx.fillRect(682-5.6*serious, 424, 5.6*serious-2, 72)
+            ctx.fillStyle="#C000FF"
+            ctx.fillRect(120, 544, 5.6*wholesome-2, 72)
+            ctx.fillStyle="#EE2436"
+            ctx.fillRect(682-5.6*edgy, 544, 5.6*edgy-2, 72)
+            ctx.fillStyle="#000000"
+            ctx.fillRect(120, 664, 5.6*horny-2, 72)
+            ctx.fillStyle="#F5DD00"
+            ctx.fillRect(682-5.6*antihorny, 664, 5.6*antihorny-2, 72)
+            ctx.fillStyle="#FF0000"
+            ctx.fillRect(120, 784, 5.6*active-2, 72)
+            ctx.fillStyle="#FFFFFF"
+            ctx.fillRect(682-5.6*lurker, 784, 5.6*lurker-2, 72)
+            ctx.fillStyle="#8B5320"
+            ctx.fillRect(120, 904, 5.6*standard-2, 72)
+            ctx.fillStyle="#00B5FF"
+            ctx.fillRect(682-5.6*wacky, 904, 5.6*wacky-2, 72)
+            ctx.fillStyle="#7F3980"
+            ctx.fillRect(120, 1024, 5.6*schizo-2, 72)
+            ctx.fillStyle="#F5DD00"
+            ctx.fillRect(682-5.6*boring, 1024, 5.6*boring-2, 72)
+            ctx.fillStyle="#52CE3C"
+            ctx.fillRect(120, 1144, 5.6*liked-2, 72)
+            ctx.fillStyle="#F5A9B8"
+            ctx.fillRect(682-5.6*disliked, 1144, 5.6*disliked-2, 72)
+            ctx.fillStyle="#FB0000"
+            ctx.fillRect(120, 1264, 5.6*inclusive-2, 72)
+            ctx.fillStyle="#32B5D4"
+            ctx.fillRect(682-5.6*discriminatory, 1264, 5.6*discriminatory-2, 72)
+            ctx.fillStyle="#7F00FF"
+            ctx.fillRect(120, 1384, 5.6*behaving-2, 72)
+            ctx.fillStyle="#429B7D"
+            ctx.fillRect(682-5.6*misbehaving, 1384, 5.6*misbehaving-2, 72)
             ctx.fillStyle="#222222"
-            ctx.font="700 60px Montserrat"
+            ctx.font="700 50px Montserrat"
             ctx.textAlign="left"
-            ctx.fillText("liberationvalues", 20, 90)
+            ctx.fillText("PolcompballValues", 20, 90)
             ctx.font="50px Montserrat"
             ctx.fillText(ideology, 20, 140)
 
+            ctx.fillStyle="#222222"
             ctx.textAlign="left"
-            if (moderate       > 30) {ctx.fillText(moderate + "%", 130, 237.5)}
-            if (leftunity      > 30) {ctx.fillText(leftunity + "%", 130, 357.5)}
-            if (centralized    > 30) {ctx.fillText(centralized + "%", 130, 477.5)}
-            if (localist       > 30) {ctx.fillText(localist + "%", 130, 597.5)}
-            if (traditionalist > 30) {ctx.fillText(traditionalist + "%", 130, 717.5)}
-            if (reform         > 30) {ctx.fillText(reform + "%", 130, 837.5)}
-            if (markets        > 30) {ctx.fillText(markets + "%", 130, 957.5)}
+            if (sincerity       > 30) {ctx.fillText(sincerity + "%", 130, 237.5)}
+            if (jannyphobe      > 30) {ctx.fillText(jannyphobe + "%", 130, 357.5)}
+            if (casual          > 30) {ctx.fillText(casual + "%", 130, 477.5)}
+            if (wholesome       > 30) {ctx.fillText(wholesome + "%", 130, 597.5)}
+            ctx.fillStyle="#DDDDDD"
+            if (horny           > 30) {ctx.fillText(horny + "%", 130, 717.5)}
+            ctx.fillStyle="#222222"
+            if (active          > 30) {ctx.fillText(active + "%", 130, 837.5)}
+            if (standard        > 30) {ctx.fillText(standard + "%", 130, 957.5)}
+            ctx.fillStyle="#DDDDDD"
+            if (schizo          > 30) {ctx.fillText(schizo + "%", 130, 1077.5)}
+            ctx.fillStyle="#222222"
+            if (liked           > 30) {ctx.fillText(liked + "%", 130, 1197.5)}
+            if (inclusive       > 30) {ctx.fillText(inclusive + "%", 130, 1317.5)}
+            if (behaving        > 30) {ctx.fillText(behaving + "%", 130, 1437.5)}
             ctx.textAlign="right"
-            if (radical        > 30) {ctx.fillText(radical + "%", 670, 237.5)}
-            if (libunity       > 30) {ctx.fillText(libunity + "%", 670, 357.5)}
-            if (decentralized  > 30) {ctx.fillText(decentralized + "%", 670, 477.5)}
-            if (globalist      > 30) {ctx.fillText(globalist + "%", 670, 597.5)}
-            if (progressive    > 30) {ctx.fillText(progressive + "%", 670, 717.5)}
-            if (revolution     > 30) {ctx.fillText(revolution + "%", 670, 837.5)}
-            if (planning       > 30) {ctx.fillText(planning + "%", 670, 957.5)}
+            if (irony           > 30) {ctx.fillText(irony + "%", 670, 237.5)}
+            if (jannyphile      > 30) {ctx.fillText(jannyphile + "%", 670, 357.5)}
+            if (serious         > 30) {ctx.fillText(serious + "%", 670, 477.5)}
+            if (edgy            > 30) {ctx.fillText(edgy + "%", 670, 597.5)}
+            if (antihorny       > 30) {ctx.fillText(antihorny + "%", 670, 717.5)}
+            if (lurker          > 30) {ctx.fillText(lurker + "%", 670, 837.5)}
+            if (wacky           > 30) {ctx.fillText(wacky + "%", 670, 957.5)}
+            if (boring          > 30) {ctx.fillText(boring + "%", 670, 1077.5)}
+            if (disliked        > 30) {ctx.fillText(disliked + "%", 670, 1197.5)}
+            if (discriminatory  > 30) {ctx.fillText(discriminatory + "%", 670, 1317.5)}
+            if (misbehaving     > 30) {ctx.fillText(misbehaving + "%", 670, 1437.5)}
 
             ctx.font="300 25px Montserrat"
-            ctx.fillText("liberationvalues.github.io", 780, 40)
+            ctx.fillText("polcompballvalues.github.io", 780, 40)
 	    	ctx.fillText(version, 780, 70)
             ctx.textAlign="center"
-            ctx.fillText("Radicality Axis: " + document.getElementById("radicality-label").innerHTML, 400, 175)
-            ctx.fillText("Co-operation Axis: " + document.getElementById("co-operation-label").innerHTML, 400, 295)
-            ctx.fillText("Ownership Axis: " + document.getElementById("ownership-label").innerHTML, 400, 415)
-            ctx.fillText("World Axis: " + document.getElementById("world-label").innerHTML, 400, 535)
-            ctx.fillText("Culture Axis: " + document.getElementById("culture-label").innerHTML, 400, 655)
-            ctx.fillText("Rebelliousness Axis: " + document.getElementById("rebelliousness-label").innerHTML, 400, 775)
-            ctx.fillText("Markets Axis: " + document.getElementById("markets-label").innerHTML, 400, 895)
+            ctx.fillText("Seriousposting Axis: " + document.getElementById("seriousposting-label").innerHTML, 400, 175)
+            ctx.fillText("Allegiance Axis: " + document.getElementById("allegiance-label").innerHTML, 400, 295)
+            ctx.fillText("Server Axis: " + document.getElementById("server-label").innerHTML, 400, 415)
+            ctx.fillText("Personality Axis: " + document.getElementById("personality-label").innerHTML, 400, 535)
+            ctx.fillText("Hornyposting Axis: " + document.getElementById("hornyposting-label").innerHTML, 400, 655)
+            ctx.fillText("Fame Axis: " + document.getElementById("fame-label").innerHTML, 400, 775)
+            ctx.fillText("Shower Axis: " + document.getElementById("shower-label").innerHTML, 400, 895)
+            ctx.fillText("Sanity Axis: " + document.getElementById("sanity-label").innerHTML, 400, 1015)
+            ctx.fillText("Relationship Axis: " + document.getElementById("relationship-label").innerHTML, 400, 1135)
+            ctx.fillText("Fedposting Axis: " + document.getElementById("fedposting-label").innerHTML, 400, 1255)
+            ctx.fillText("Actions Axis: " + document.getElementById("actions-label").innerHTML, 400, 1375)
 
             document.getElementById("banner").src = c.toDataURL();
         }
