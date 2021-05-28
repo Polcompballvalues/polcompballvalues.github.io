@@ -108,6 +108,14 @@ a {
     font-family: inherit;
 }
 
+img.big {
+    display: block;
+    margin: 1em auto;
+    width: 100%;
+    min-width: 500pt;
+}
+
+
 img.center {
     display: block;
     margin: 1em auto;

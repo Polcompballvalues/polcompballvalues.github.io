@@ -22,18 +22,16 @@
 <hr>
 <h2 style="text-align:center;">Instructions</h2>
 <p class="question">You will be presented with a series of statements. For each one, click the button with your opinion on it.</p>
-<button class="button" onclick="location.href='quiz.html';" style="background-color: #2196f3;">Full version</button> <br>
-<button class="button" onclick="location.href='quiz.html?s';" style="background-color: #2196f3;">Short Version</button> <br>
+<button class="button" onclick="location.href='quiz.html';" style="background-color: #2196f3;" id="short"></button> <br>
+<button class="button" onclick="location.href='quiz.html?s';" style="background-color: #2196f3;" id="long"></button> <br>
 <button class="button" onclick="location.href='index.html';" style="background-color: #f44336;">Wait, nevermind!</button> <br>
 </body>
 <script type="application/javascript"src="longquestions.js"></script>
 <script type="application/javascript"src="shortquestions.js"></script>
-<!--
+
 <script type="text/javascript">
-    longquestionslength = longquestions.length;
-    longlabel = "Full version: (" longquestionslength ")"
-    shortquestionslength = shortquestions.length;
-    shortlabel = "Full version: (" shortquestionslength ")"
+    document.getElementById("short").innerHTML = "Short version: (" + shortquestions.length + " questions)"
+    document.getElementById("long").innerHTML = "Full version: (" + longquestions.length + " questions)"
 </script>
--->
+
 </html>
