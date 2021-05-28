@@ -22,7 +22,7 @@
 </script>
 </head>
 <script type="application/javascript"
-        src="ideologies.js">
+        src="users.js">
 </script>
 
 <body>
@@ -77,7 +77,7 @@
 <div class="axis">
     <img id="img-standard" src="value_images/standard.svg" height="128pt"/>
     <div class="bar standard" id="bar-standard"><div class="text-wrapper" id="standard"></div></div>
-    <div class="bar wacky" id="bar-wacky"><div class="text-wrapper" id="wacky"></div></div>
+    <div class="bar wacky" id="bar-wacky"><div class="text-wrapper-white" id="wacky"></div></div>
     <img id="img-wacky" src="value_images/wacky.svg" height="128pt"/>
 </div>
 <h2>Sanity Axis: <span class="weight-300" id="sanity-label"></span></h2>
@@ -108,7 +108,7 @@
     <div class="bar misbehaving" id="bar-misbehaving"><div class="text-wrapper" id="misbehaving"></div></div>
     <img id="img-misbehaving" src="value_images/misbehaving.svg" height="128pt"/>
 </div>
-<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
+<h2>Closest Match: <span class="weight-300" id="user-label"></span></h2>
 <p>This test is currently in testing stage, do not expect any kind of meaningful results</p>
 <!--Personality matching is a work in progress, and is much less accurate than the values and axes.-->
 <!--You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to TheGhostOfInky#9229 on Discord or any other comments, questions, or criticism.-->
@@ -184,6 +184,10 @@
 	disliked       = (100 - liked      ).toFixed(1)
     discriminatory = (100 - inclusive  ).toFixed(1)
     misbehaving    = (100 - behaving   ).toFixed(1)
+    var length = ""
+    length         = getQueryVariable("d")
+    
+    console.log(length)
 
     setBarValue("sincerity", sincerity)
     setBarValue("jannyphobe", jannyphobe)
@@ -220,27 +224,27 @@
     document.getElementById("fedposting-label").innerHTML = setLabel(inclusive, fedpArray)
     document.getElementById("actions-label").innerHTML = setLabel(behaving, actiArray)
 
-    ideology = ""
-    ideodist = Infinity
-    for (var i = 0; i < ideologies.length; i++) {
+    user = ""
+    userdist = Infinity
+    for (var i = 0; i < users.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.spos - sincerity), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.alle - jannyphobe), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.serv - casual), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.pers - wholesome), 2)
-		dist += Math.pow(Math.abs(ideologies[i].stats.horn - horny), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.fame - active), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.show - standard), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.sani - schizo), 2)
-		dist += Math.pow(Math.abs(ideologies[i].stats.rela - liked), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.fedp - inclusive), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.acti - behaving), 2)
-        if (dist < ideodist) {
-            ideology = ideologies[i].name
-            ideodist = dist
+        dist += Math.pow(Math.abs(users[i].stats.spos - sincerity), 2)
+        dist += Math.pow(Math.abs(users[i].stats.alle - jannyphobe), 2)
+        dist += Math.pow(Math.abs(users[i].stats.serv - casual), 2)
+        dist += Math.pow(Math.abs(users[i].stats.pers - wholesome), 2)
+		dist += Math.pow(Math.abs(users[i].stats.horn - horny), 2)
+        dist += Math.pow(Math.abs(users[i].stats.fame - active), 2)
+        dist += Math.pow(Math.abs(users[i].stats.show - standard), 2)
+        dist += Math.pow(Math.abs(users[i].stats.sani - schizo), 2)
+		dist += Math.pow(Math.abs(users[i].stats.rela - liked), 2)
+        dist += Math.pow(Math.abs(users[i].stats.fedp - inclusive), 2)
+        dist += Math.pow(Math.abs(users[i].stats.acti - behaving), 2)
+        if (dist < userdist) {
+            user = users[i].name
+            userdist = dist
         }
     }
-    document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("user-label").innerHTML = user
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
@@ -251,21 +255,15 @@
     }
 
     window.onload = function() {
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            var c = document.createElement("canvas")
-                var ctx = c.getContext("2d")
+        var c = document.createElement("canvas")
+            var ctx = c.getContext("2d")
             c.width = 800;
             c.height = 1500;
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             ctx.fillStyle = "#141414"
+			} else {
+            ctx.fillStyle = "#EEEEEE"}
             ctx.fillRect(0,0,800,1500);
-			
-			    } else {
-            var c = document.createElement("canvas")
-                var ctx = c.getContext("2d")
-            c.width = 800;
-            c.height = 1500;
-            ctx.fillStyle = "#EEEEEE"
-            ctx.fillRect(0,0,800,1500);}
             img = document.getElementById("img-sincerity")
             ctx.drawImage(img, 20, 170, 100, 100);
             img = document.getElementById("img-irony")
@@ -349,7 +347,7 @@
             ctx.fillRect(682-5.6*lurker, 784, 5.6*lurker-2, 72)
             ctx.fillStyle="#8B5320"
             ctx.fillRect(120, 904, 5.6*standard-2, 72)
-            ctx.fillStyle="#00B5FF"
+            ctx.fillStyle="#89001C"
             ctx.fillRect(682-5.6*wacky, 904, 5.6*wacky-2, 72)
             ctx.fillStyle="#7F3980"
             ctx.fillRect(120, 1024, 5.6*schizo-2, 72)
@@ -374,8 +372,10 @@
             ctx.font="700 50px Montserrat"
             ctx.textAlign="left"
             ctx.fillText("PolcompballValues", 20, 90)
+            ctx.font="30px Montserrat"
+            usermatch = "Closest Match: " + user
+            ctx.fillText(usermatch, 20, 140)
             ctx.font="50px Montserrat"
-            ctx.fillText(ideology, 20, 140)
             ctx.textAlign="left"
             ctx.fillStyle="#222222"
             if (sincerity       > 30) {ctx.fillText(sincerity + "%", 130, 237.5)}
@@ -400,7 +400,9 @@
             if (edgy            > 30) {ctx.fillText(edgy + "%", 670, 597.5)}
             if (antihorny       > 30) {ctx.fillText(antihorny + "%", 670, 717.5)}
             if (lurker          > 30) {ctx.fillText(lurker + "%", 670, 837.5)}
+            ctx.fillStyle="#DDDDDD"
             if (wacky           > 30) {ctx.fillText(wacky + "%", 670, 957.5)}
+            ctx.fillStyle="#222222"
             if (boring          > 30) {ctx.fillText(boring + "%", 670, 1077.5)}
             if (disliked        > 30) {ctx.fillText(disliked + "%", 670, 1197.5)}
             if (discriminatory  > 30) {ctx.fillText(discriminatory + "%", 670, 1317.5)}
@@ -412,6 +414,11 @@
             ctx.font="300 25px Montserrat"
             ctx.fillText("polcompballvalues.github.io", 780, 40)
 	    	ctx.fillText(version, 780, 70)
+            if (length == "s") {
+            ctx.fillText("Short Test", 780, 100)
+            } else {
+            ctx.fillText("Full Test", 780, 100)
+            }
             ctx.textAlign="center"
             ctx.fillText("Seriousposting Axis: " + document.getElementById("seriousposting-label").innerHTML, 400, 175)
             ctx.fillText("Allegiance Axis: " + document.getElementById("allegiance-label").innerHTML, 400, 295)

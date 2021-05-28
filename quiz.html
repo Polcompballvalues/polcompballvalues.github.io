@@ -19,7 +19,10 @@
 </head>
 <body>
 <script type="application/javascript"
-        src="questions.js">
+        src="fullquestions.js">
+</script>
+<script type="application/javascript"
+        src="shortquestions.js">
 </script>
 <h1>PolcompballValues</h1>
 <hr>
@@ -37,6 +40,15 @@
 
 <!-- JavaScript for the test itself -->
 <script>
+questions = []
+var lenght = ""
+if (window.location.search.substring(1) == "s") {
+    questions = shortquestions
+    lenght = "s"
+  } else {
+    questions = longquestions
+  }
+  console.log(lenght)
     var max_spos, max_alle, max_serv, max_pers, max_horn, max_fame, max_show, max_sani, max_rela, max_fedp, max_acti // Max possible scores
     max_spos = max_alle = max_serv = max_pers = max_horn = max_fame = max_show = max_sani = max_rela = max_fedp = max_acti = 0;
     var spos, alle, serv, pers, horn, fame, show, sani, rela, fedp, acti // User's scores
@@ -125,7 +137,8 @@
 			+ `&c=${calc_score(sani,max_sani)}`
             + `&l=${calc_score(rela,max_rela)}`
 			+ `&i=${calc_score(fedp,max_fedp)}`
-			+ `&b=${calc_score(acti,max_acti)}`            
+			+ `&b=${calc_score(acti,max_acti)}`
+            + `&d=${lenght}`
     }
 </script>
 </body>
