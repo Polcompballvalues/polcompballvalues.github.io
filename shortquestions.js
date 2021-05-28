@@ -1,4 +1,4 @@
-fullquestions = [
+shortquestions = [
     {
         "question": "Sincerity good",
         "effect": {
