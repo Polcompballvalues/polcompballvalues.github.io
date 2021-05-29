@@ -46,5 +46,21 @@ users = [
             "fedp":60,
             "acti":35
         }
+    },
+    {
+        "name": "TechnoSynd",
+        "stats": {
+            "spos":80,
+            "alle":25,
+            "serv":15,
+            "pers":90,
+            "horn":95,
+            "fame":90,
+            "show":95,
+            "sani":95,
+            "rela":25,
+            "fedp":90,
+            "acti":90
+        }
     }
 ];
