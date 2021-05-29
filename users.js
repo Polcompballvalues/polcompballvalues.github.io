@@ -94,5 +94,21 @@ users = [
             "fedp":60,
             "acti":75
         }
+    },
+    {
+        "name": "Chara",
+        "stats": {
+            "spos":90,
+            "alle":10,
+            "serv":5,
+            "pers":80,
+            "horn":65,
+            "fame":90,
+            "show":80,
+            "sani":5,
+            "rela":70,
+            "fedp":90,
+            "acti":80
+        }
     }
 ];
