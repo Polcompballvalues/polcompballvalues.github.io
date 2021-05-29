@@ -142,5 +142,21 @@ users = [
             "fedp":10,
             "acti":15
         }
+    },
+    {
+        "name": "Denatidum",
+        "stats": {
+            "spos":60,
+            "alle":0,
+            "serv":50,
+            "pers":70,
+            "horn":25,
+            "fame":70,
+            "show":100,
+            "sani":50,
+            "rela":70,
+            "fedp":50,
+            "acti":80
+        }
     }
 ];
