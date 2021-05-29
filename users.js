@@ -110,5 +110,37 @@ users = [
             "fedp":90,
             "acti":80
         }
+    },
+    {
+        "name": "Jokie",
+        "stats": {
+            "spos":70,
+            "alle":45,
+            "serv":30,
+            "pers":60,
+            "horn":35,
+            "fame":80,
+            "show":75,
+            "sani":85,
+            "rela":30,
+            "fedp":40,
+            "acti":50
+        }
+    },
+    {
+        "name": "Bogg",
+        "stats": {
+            "spos":40,
+            "alle":80,
+            "serv":100,
+            "pers":30,
+            "horn":0,
+            "fame":60,
+            "show":70,
+            "sani":100,
+            "rela":80,
+            "fedp":10,
+            "acti":15
+        }
     }
 ];
