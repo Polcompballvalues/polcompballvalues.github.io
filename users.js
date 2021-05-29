@@ -62,5 +62,21 @@ users = [
             "fedp":90,
             "acti":90
         }
+    },
+    {
+        "name": "FdF",
+        "stats": {
+            "spos":70,
+            "alle":10,
+            "serv":15,
+            "pers":75,
+            "horn":25,
+            "fame":80,
+            "show":50,
+            "sani":100,
+            "rela":45,
+            "fedp":90,
+            "acti":85
+        }
     }
 ];

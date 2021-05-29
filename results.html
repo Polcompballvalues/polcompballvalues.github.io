@@ -184,10 +184,9 @@
 	disliked       = (100 - liked      ).toFixed(1)
     discriminatory = (100 - inclusive  ).toFixed(1)
     misbehaving    = (100 - behaving   ).toFixed(1)
+
     var length = ""
-    length         = getQueryVariable("d")
-    
-    console.log(length)
+    length = getQueryVariable("d")
 
     setBarValue("sincerity", sincerity)
     setBarValue("jannyphobe", jannyphobe)
@@ -260,9 +259,9 @@
             c.width = 800;
             c.height = 1500;
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            ctx.fillStyle = "#141414"
+            ctx.fillStyle = "#141414" //Dark mode
 			} else {
-            ctx.fillStyle = "#EEEEEE"}
+            ctx.fillStyle = "#EEEEEE"} //Light mode
             ctx.fillRect(0,0,800,1500);
             img = document.getElementById("img-sincerity")
             ctx.drawImage(img, 20, 170, 100, 100);
@@ -366,9 +365,9 @@
             ctx.fillStyle="#429B7D"
             ctx.fillRect(682-5.6*misbehaving, 1384, 5.6*misbehaving-2, 72)
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            ctx.fillStyle="#DDDDDD"
+            ctx.fillStyle="#DDDDDD" //Dark mode
             } else {
-            ctx.fillStyle="#222222"}
+            ctx.fillStyle="#222222"} //Light mode
             ctx.font="700 50px Montserrat"
             ctx.textAlign="left"
             ctx.fillText("PolcompballValues", 20, 90)
@@ -383,12 +382,12 @@
             if (casual          > 30) {ctx.fillText(casual + "%", 130, 477.5)}
             if (wholesome       > 30) {ctx.fillText(wholesome + "%", 130, 597.5)}
             ctx.fillStyle="#DDDDDD"
-            if (horny           > 30) {ctx.fillText(horny + "%", 130, 717.5)}
+            if (horny           > 30) {ctx.fillText(horny + "%", 130, 717.5)} //White font
             ctx.fillStyle="#222222"
             if (active          > 30) {ctx.fillText(active + "%", 130, 837.5)}
             if (standard        > 30) {ctx.fillText(standard + "%", 130, 957.5)}
             ctx.fillStyle="#DDDDDD"
-            if (schizo          > 30) {ctx.fillText(schizo + "%", 130, 1077.5)}
+            if (schizo          > 30) {ctx.fillText(schizo + "%", 130, 1077.5)} //White font
             ctx.fillStyle="#222222"
             if (liked           > 30) {ctx.fillText(liked + "%", 130, 1197.5)}
             if (inclusive       > 30) {ctx.fillText(inclusive + "%", 130, 1317.5)}
@@ -401,23 +400,23 @@
             if (antihorny       > 30) {ctx.fillText(antihorny + "%", 670, 717.5)}
             if (lurker          > 30) {ctx.fillText(lurker + "%", 670, 837.5)}
             ctx.fillStyle="#DDDDDD"
-            if (wacky           > 30) {ctx.fillText(wacky + "%", 670, 957.5)}
+            if (wacky           > 30) {ctx.fillText(wacky + "%", 670, 957.5)} //White font
             ctx.fillStyle="#222222"
             if (boring          > 30) {ctx.fillText(boring + "%", 670, 1077.5)}
             if (disliked        > 30) {ctx.fillText(disliked + "%", 670, 1197.5)}
             if (discriminatory  > 30) {ctx.fillText(discriminatory + "%", 670, 1317.5)}
             if (misbehaving     > 30) {ctx.fillText(misbehaving + "%", 670, 1437.5)}
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            ctx.fillStyle="#DDDDDD"
+            ctx.fillStyle="#DDDDDD" //Dark mode
             } else {
-            ctx.fillStyle="#222222"}
+            ctx.fillStyle="#222222"} //Light mode
             ctx.font="300 25px Montserrat"
             ctx.fillText("polcompballvalues.github.io", 780, 40)
 	    	ctx.fillText(version, 780, 70)
             if (length == "s") {
-            ctx.fillText("Short Test", 780, 100)
+            ctx.fillText("Short Test", 780, 100) //Short test
             } else {
-            ctx.fillText("Full Test", 780, 100)
+            ctx.fillText("Full Test", 780, 100) //Full test
             }
             ctx.textAlign="center"
             ctx.fillText("Seriousposting Axis: " + document.getElementById("seriousposting-label").innerHTML, 400, 175)
