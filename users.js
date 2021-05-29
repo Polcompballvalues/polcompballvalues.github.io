@@ -78,5 +78,21 @@ users = [
             "fedp":90,
             "acti":85
         }
+    },
+    {
+        "name": "Krab Man",
+        "stats": {
+            "spos":60,
+            "alle":40,
+            "serv":55,
+            "pers":30,
+            "horn":15,
+            "fame":75,
+            "show":75,
+            "sani":60,
+            "rela":60,
+            "fedp":60,
+            "acti":75
+        }
     }
 ];
