@@ -409,7 +409,8 @@ longquestions = [
             "horn":0,
             "fame":0,
             "show":0,
-            "sani":10,
+            "sani":0,
+            "rela":10,
             "fedp":0,
             "acti":0
         }
