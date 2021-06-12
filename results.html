@@ -18,7 +18,7 @@
 <meta charset="utf-8">
 </head>
 <script>
-  version = "Pre-release edition" //Remember to update this before making changes to the test itself!
+  version = "Beta 1 (release test)" //Remember to update this before making changes to the test itself!
 </script>
 </head>
 <script type="application/javascript"
@@ -109,12 +109,13 @@
     <img id="img-misbehaving" src="value_images/misbehaving.svg" height="128pt"/>
 </div>
 <h2>Closest Match: <span class="weight-300" id="user-label"></span></h2>
-<p>This test is currently in testing stage, do not expect any kind of meaningful results</p>
-<!--Personality matching is a work in progress, and is much less accurate than the values and axes.-->
-<!--You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to TheGhostOfInky#9229 on Discord or any other comments, questions, or criticism.-->
+<p>This test is currently in testing stage, report any bugs to TheGhostOfInky#9229 or in the #pcb-values channel in the official polcompball discord server</p>
+<p>User matching is a work in progress, and is much less accurate than the values and axes, new users are being regualrly added to the match so expect gradual improvements as time goes on</p>
+<p>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
 <hr/>
 <img src="" id="banner">
-<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
+<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button><br>
+<button class="button" onclick="location.href='credits.html';" style="background-color: #aaaaaa;">Credits</button> <br>
 
 <script>
     function getQueryVariable(variable)
@@ -139,16 +140,16 @@
     }
 
     sposArray = ["Genuine","Honest","Frank","Mixed","Sarcastic","Meta Ironic","Irony mask under irony mask"]
-    alleArray = ["Anarchist","No step on snek","Rebel","Neutral","","","Boot-licker"]
-    servArray = ["Eh","","","","","Competitive","Hardcore"]
-    persArray = ["Angelic","","","","","","3spoopy5me"]
-	hornArray = ["Touch-starved","R-rated","PG-13","","","","Dude there's kids on this server"]
-    fameArray = ["Main character","","","","","","Who?"]
-	showArray = ["","","","","","","Touch grass pls"]
+    alleArray = ["Anarchist","No step on snek","Rebel","Neutral","In good terms","Well-connected","Boot-licker"]
+    servArray = ["eh","Casual","Chill","Mixed","Serious","Competitive","Hardcore"]
+    persArray = ["Angelical","Innocent","Nice","Neutral","Cynical","Hostile","Cutting-edge"]
+    hornArray = ["Nymphomaniac","R-rated","PG-13","Mixed","Composed","Prude","Dude there's kids on this server"]
+    fameArray = ["Main character","Prominent","Well-known","Acknowledged","Extra #117","Interacts twice a month","Who?"]
+    showArray = ["Functioning Member of Society","Peaker","Occasional Member","Regular","Addicted","Obcessed","Touch grass pls"]
     saniArray = ["a̵̒̆a̶̋͗a̶͂͠a̴͂̅a̵̔̕a̴̔͒","Genuine Schizoid","Crazed","Mixed","Interesting","Tame","Bland"]
-	relaArray = ["Benerated","Loved","Likeable","Neutral","Unlikeable","Hated","Abhorred"]
-    fedpArray = ["Anti-Bigot","Accepting","","Mixed","","Federal","5th account this week"]
-	actiArray = ["Law-abiding citizen","Obedient","Well-behaved","Average","Rascal","Disobedient","Wanted criminal"]
+    relaArray = ["Benerated","Loved","Likeable","Neutral","Unlikeable","Hated","Abhorred"]
+    fedpArray = ["Anti-Bigot","Accepting","Tolerant","Mixed","Intolerant","Federal","5th account this week"]
+    actiArray = ["Law-abiding citizen","Obedient","Well-behaved","Average","Rascal","Disobedient","Wanted criminal"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else

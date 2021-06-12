@@ -67,6 +67,7 @@ h2 {
 }
 
 li {
+    font-family:'Montserrat', sans-serif;
     font-size: 16pt;
     text-indent: 16pt;
 }
@@ -99,10 +100,6 @@ a {
     margin: -4px auto;
 }
 /*General CSS*/
-li {
-    font-size: 16pt;
-    text-indent: 16pt;
-}
 
 a {
     font-family: inherit;
@@ -388,6 +385,7 @@ h2 {
     margin-bottom: 0pt;
 }
 li {
+    color: #333333;
     font-size: 16pt;
     text-indent: 16pt;
 }
@@ -482,6 +480,13 @@ h2 {
     margin-top: 12pt;
     margin-bottom: 0pt;
 }
+
+li {
+    color: #cccccc;
+    font-size: 16pt;
+    text-indent: 16pt;
+}
+
 .small_button, .small_button_off {
     background-color: #ddd;
     font-family: 'Montserrat', sans-serif;
