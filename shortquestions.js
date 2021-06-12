@@ -784,7 +784,7 @@ shortquestions = [
         }
     },
      {
-        "question": "I would never to tell someone on the server to kill themself, especially not unironically",
+        "question": "I would never tell someone on the server to kill themselves, especially not unironically",
         "effect":  {
             "spos":0,
             "alle":0,
