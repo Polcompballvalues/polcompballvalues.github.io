@@ -286,5 +286,101 @@ users = [
             "fedp":85.9,
             "acti":89.2
         }
+    },
+    {
+        "name": "TheLegend2T",
+        "stats": {
+            "spos":20.5,
+            "alle":60.6,
+            "serv":68.7,
+            "pers":68.1,
+            "horn":76.4,
+            "fame":44.7,
+            "show":61.5,
+            "sani":56.6,
+            "rela":71.2,
+            "fedp":76,
+            "acti":48.7
+        }
+    },
+    {
+        "name": "TechnoSynd",
+        "stats": {
+            "spos":82.1,
+            "alle":45.4,
+            "serv":38.7,
+            "pers":80.6,
+            "horn":83.4,
+            "fame":93.3,
+            "show":57.7,
+            "sani":38.7,
+            "rela":83.4,
+            "fedp":86.5,
+            "acti":84
+        }
+    },
+    {
+        "name": "LowMS",
+        "stats": {
+            "spos":57.1,
+            "alle":86.7,
+            "serv":50,
+            "pers":33.3,
+            "horn":83.3,
+            "fame":33.3,
+            "show":33.3,
+            "sani":50,
+            "rela":0,
+            "fedp":28.6,
+            "acti":36.4
+        }
+    },
+    {
+        "name": "Lexarete",
+        "stats": {
+            "spos":71.8,
+            "alle":81.8,
+            "serv":84,
+            "pers":41.6,
+            "horn":0,
+            "fame":64.4,
+            "show":35.9,
+            "sani":84,
+            "rela":63.7,
+            "fedp":16,
+            "acti":32.1
+        }
+    },
+    {
+        "name": "Sauntox",
+        "stats": {
+            "spos":73.1,
+            "alle":80.3,
+            "serv":70.7,
+            "pers":25,
+            "horn":84.7,
+            "fame":65.9,
+            "show":44.9,
+            "sani":70.7,
+            "rela":45.5,
+            "fedp":43.8,
+            "acti":29.5
+        }
+    },
+    {
+        "name": "AnLurk",
+        "stats": {
+            "spos":57.7,
+            "alle":66.7,
+            "serv":37.4,
+            "pers":45.9,
+            "horn":54.2,
+            "fame":7.6,
+            "show":60.3,
+            "sani":37.4,
+            "rela":71.3,
+            "fedp":57.4,
+            "acti":66.7
+        }
     }
 ];
