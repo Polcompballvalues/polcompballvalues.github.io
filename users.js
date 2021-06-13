@@ -254,5 +254,37 @@ users = [
             "fedp":71.5,
             "acti":100
         }
+    },
+    {
+        "name": "Chara",
+        "stats": {
+            "spos":87.2,
+            "alle":18.1,
+            "serv":26,
+            "pers":79.2,
+            "horn":61.0,
+            "fame":89.5,
+            "show":52.5,
+            "sani":26,
+            "rela":80.4,
+            "fedp":80.9,
+            "acti":84
+        }
+    },
+    {
+        "name": "Andalusian Union",
+        "stats": {
+            "spos":71.9,
+            "alle":25.8,
+            "serv":14.6,
+            "pers":69.4,
+            "horn":19.4,
+            "fame":37.8,
+            "show":62.8,
+            "sani":14.6,
+            "rela":75.8,
+            "fedp":85.9,
+            "acti":89.2
+        }
     }
 ];
