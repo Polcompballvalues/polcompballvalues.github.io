@@ -1,514 +1,542 @@
 /*Base CSS*/
 html {
-    background-color: #bbbbbb;
-    padding: 0px;
+	background-color: #bbbbbb;
+	padding: 0px;
 }
 
 body {
-    width: 80%;
-    min-height: calc(100vh - 4em);
-    margin: 0 auto;
-    padding: 2em;
-    background-color: #dddddd;
-    border-color: #eeeeee;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-width: 20px;
+	width: 80%;
+	min-height: calc(100vh - 4em);
+	margin: 0 auto;
+	padding: 2em;
+	background-color: #dddddd;
+	border-color: #eeeeee;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-width: 20px;
 }
 
 p {
-    color: #444444;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16pt;
-    line-height: 1;
-    margin: 4pt;
+	color: #444444;
+	font-family: "Roboto", sans-serif;
+	font-size: 16pt;
+	line-height: 1;
+	margin: 4pt;
 }
 
-    p.value-description {
-        text-indent: -16pt;
-        margin-left: 20pt;
-    }
+p.value-description {
+	text-indent: -16pt;
+	margin-left: 20pt;
+}
 
-    p.question {
-        margin: 16pt auto;
-        color: #333333;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: normal;
-        width: 70%;
-        min-width: 500pt;
-        min-height: 144pt;
-        background-color: #eeeeee;
-        padding: 16pt;
-        border-radius: 16pt;
-        font-size: 36pt;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+p.question {
+	margin: 16pt auto;
+	color: #333333;
+	font-family: "Montserrat", sans-serif;
+	font-weight: normal;
+	width: 70%;
+	min-width: 500pt;
+	min-height: 144pt;
+	background-color: #eeeeee;
+	padding: 16pt;
+	border-radius: 16pt;
+	font-size: 36pt;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
 
 h1 {
-    color: #222222;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 72pt;
-    text-align: center;
-    line-height: 72pt;
-    margin-top: 0pt;
-    margin-bottom: 0pt;
+	color: #222222;
+	font-family: "Montserrat", sans-serif;
+	font-size: 72pt;
+	text-align: center;
+	line-height: 72pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
 }
 
 h2 {
-    color: #333333;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36pt;
-    line-height: 36pt;
-    margin-top: 12pt;
-    margin-bottom: 0pt;
+	color: #333333;
+	font-family: "Montserrat", sans-serif;
+	font-size: 36pt;
+	line-height: 36pt;
+	margin-top: 12pt;
+	margin-bottom: 0pt;
 }
 
 li {
-    font-family:'Montserrat', sans-serif;
-    font-size: 16pt;
-    text-indent: 16pt;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16pt;
+	text-indent: 16pt;
 }
 
 a {
-    font-family: inherit;
+	font-family: inherit;
 }
-.small_button, .small_button_off {
-    background-color: #333;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 10%;
-    min-width: 100pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 18pt;
-    margin: -2px auto;
-    cursor: pointer;
+.small_button,
+.small_button_off {
+	background-color: #333;
+	font-family: "Montserrat", sans-serif;
+	border: none;
+	border-radius: 8pt;
+	color: white;
+	padding: 8pt;
+	width: 10%;
+	min-width: 100pt;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 18pt;
+	margin: -2px auto;
+	cursor: pointer;
 }
 
 .small_button_off {
-    background-color: #ddd;
-    color: #888;
-    border: 2px solid #888;
-    cursor: not-allowed;
-    margin: -4px auto;
+	background-color: #ddd;
+	color: #888;
+	border: 2px solid #888;
+	cursor: not-allowed;
+	margin: -4px auto;
 }
 /*General CSS*/
 
 a {
-    font-family: inherit;
+	font-family: inherit;
 }
 
 img.big {
-    display: block;
-    margin: 1em auto;
-    width: 100%;
-    min-width: 500pt;
+	display: block;
+	margin: 1em auto;
+	width: 100%;
+	min-width: 500pt;
 }
 
-
 img.center {
-    display: block;
-    margin: 1em auto;
-    width: 50%;
-    min-width: 500pt;
+	display: block;
+	margin: 1em auto;
+	width: 50%;
+	min-width: 500pt;
 }
 
 .button {
-    background-color: #2196f3;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 50%;
-    min-width: 500pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 24pt;
-    margin: -2px auto;
-    cursor: pointer;
+	background-color: #2196f3;
+	font-family: "Montserrat", sans-serif;
+	border: none;
+	border-radius: 8pt;
+	color: white;
+	padding: 8pt;
+	width: 50%;
+	min-width: 500pt;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 24pt;
+	margin: -2px auto;
+	cursor: pointer;
 }
 
 div.axis {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 div.bar {
-    height: 36pt;
-    line-height: 36pt;
-    padding: 8pt;
-    margin-top: 4pt;
-    margin-bottom: 4pt;
-    border-width: 4px;
-    border-right-width: 1px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: #222222;
-    background-color: #eeeeee;
-    display: block;
-    width: 50%;
+	height: 36pt;
+	line-height: 36pt;
+	padding: 8pt;
+	margin-top: 4pt;
+	margin-bottom: 4pt;
+	border-width: 4px;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color: #222222;
+	background-color: #eeeeee;
+	display: block;
+	width: 50%;
 }
 
 div.text-wrapper {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36pt;
-    line-height: 36pt;
-    color: #222222;
-    display: inline-block;
+	font-family: "Montserrat", sans-serif;
+	font-size: 36pt;
+	line-height: 36pt;
+	color: #222222;
+	display: inline-block;
 }
 div.text-wrapper-white {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36pt;
-    line-height: 36pt;
-    color: #DDDDDD;
-    display: inline-block;
+	font-family: "Montserrat", sans-serif;
+	font-size: 36pt;
+	line-height: 36pt;
+	color: #dddddd;
+	display: inline-block;
+}
+
+select {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 15px;
+}
+
+#banners {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.banner {
+	border-color: #444444;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 8pt;
+	display: inline-block;
+	margin: 8pt;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
 }
 
 #banner {
-    border-color: #444444;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 8pt;
-    display: block;
-    margin: 8pt;
-    margin-left: auto;
-    margin-right: auto;
+	border-color: #444444;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 8pt;
+	display: block;
+	margin: 8pt;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 div.sincerity {
-    background-color: #008080;
-    text-align: left;
-    border-right-style: solid;
+	background-color: #008080;
+	text-align: left;
+	border-right-style: solid;
 }
 
 div.irony {
-    background-color: #0000FF;
-    text-align: right;
-    border-left-style: solid;
+	background-color: #0000ff;
+	text-align: right;
+	border-left-style: solid;
 }
 
 div.jannyphobe {
-    background-color: #FFFF00;
-    text-align: left;
-    border-right-style: solid;
+	background-color: #ffff00;
+	text-align: left;
+	border-right-style: solid;
 }
 
 div.jannyphile {
-    background-color: #D061A6;
-    text-align: right;
-    border-right-style: solid;
+	background-color: #d061a6;
+	text-align: right;
+	border-right-style: solid;
 }
 
 div.casual {
-    background-color: #003890;
-    text-align: left;
-    border-left-style: solid;
+	background-color: #003890;
+	text-align: left;
+	border-left-style: solid;
 }
 
 div.serious {
-    background-color: #FF0000;
-    text-align: right;
-    border-left-style: solid;
+	background-color: #ff0000;
+	text-align: right;
+	border-left-style: solid;
 }
 
 div.wholesome {
-    background-color: #C000FF;
-    text-align: left;
-    border-right-style: solid;
+	background-color: #c000ff;
+	text-align: left;
+	border-right-style: solid;
 }
 
 div.edgy {
-    background-color: #EE2436;
-    text-align: right;
-    border-left-style: solid;
+	background-color: #ee2436;
+	text-align: right;
+	border-left-style: solid;
 }
 
 div.horny {
-    background-color: #000000;
-    text-align: left;
-    border-right-style: solid;
+	background-color: #000000;
+	text-align: left;
+	border-right-style: solid;
 }
 
 div.antihorny {
-    background-color: #F5DD00;
-    text-align: right;
-    border-right-style: solid;
+	background-color: #f5dd00;
+	text-align: right;
+	border-right-style: solid;
 }
 
 div.active {
-    background-color: #FF0000;
-    text-align: left;
-    border-right-style: solid;
+	background-color: #ff0000;
+	text-align: left;
+	border-right-style: solid;
 }
 
 div.lurker {
-    background-color: #FFFFFF;
-    text-align: right;
-    border-right-style: solid;
+	background-color: #ffffff;
+	text-align: right;
+	border-right-style: solid;
 }
 
 div.standard {
-    background-color: #8B5320;
-    text-align: left;
-    border-right-style: solid;
+	background-color: #8b5320;
+	text-align: left;
+	border-right-style: solid;
 }
 
 div.wacky {
-    background-color: #89001C;
-    text-align: right;
-    border-right-style: solid;
+	background-color: #89001c;
+	text-align: right;
+	border-right-style: solid;
 }
 
 div.schizo {
-    background-color: #7F3980;
-    text-align: left;
-    border-right-style: solid;
+	background-color: #7f3980;
+	text-align: left;
+	border-right-style: solid;
 }
 
 div.boring {
-    background-color: #F5DD00;
-    text-align: right;
-    border-right-style: solid;
+	background-color: #f5dd00;
+	text-align: right;
+	border-right-style: solid;
 }
 
 div.liked {
-    background-color: #52CE3C;
-    text-align: left;
-    border-right-style: solid;
+	background-color: #52ce3c;
+	text-align: left;
+	border-right-style: solid;
 }
 
 div.disliked {
-    background-color: #F5A9B8;
-    text-align: right;
-    border-right-style: solid;
+	background-color: #f5a9b8;
+	text-align: right;
+	border-right-style: solid;
 }
 
 div.inclusive {
-    background-color: #FB0000;
-    text-align: left;
-    border-right-style: solid;
+	background-color: #fb0000;
+	text-align: left;
+	border-right-style: solid;
 }
 
 div.discriminatory {
-    background-color: #32B5D4;
-    text-align: right;
-    border-right-style: solid;
+	background-color: #32b5d4;
+	text-align: right;
+	border-right-style: solid;
 }
 
 div.behaving {
-    background-color: #7F00FF;
-    text-align: left;
-    border-right-style: solid;
+	background-color: #7f00ff;
+	text-align: left;
+	border-right-style: solid;
 }
 
 div.misbehaving {
-    background-color: #429B7D;
-    text-align: right;
-    border-right-style: solid;
+	background-color: #429b7d;
+	text-align: right;
+	border-right-style: solid;
 }
 
 span.weight-300 {
-    font-weight: 300;
+	font-weight: 300;
 }
 /*Light Mode*/
-@media(prefers-color-scheme: light){
-html {
-    background-color: #bbbbbb;
-    padding: 0px;
-}
-body {
-    width: 80%;
-    min-height: calc(100vh - 4em);
-    margin: 0 auto;
-    padding: 2em;
-    background-color: #dddddd;
-    border-color: #eeeeee;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-width: 20px;
-}
-p {
-    color: #444444;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16pt;
-    line-height: 1;
-    margin: 4pt;
-}
-p.value-description {
-    text-indent: -16pt;
-    margin-left: 20pt;
-}
-p.question {
-    margin: 16pt auto;
-    color: #333333;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    width: 70%;
-    min-width: 500pt;
-    min-height: 144pt;
-    background-color: #eeeeee;
-    padding: 16pt;
-    border-radius: 16pt;
-    font-size: 36pt;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+@media (prefers-color-scheme: light) {
+	html {
+		background-color: #bbbbbb;
+		padding: 0px;
+	}
+	body {
+		width: 80%;
+		min-height: calc(100vh - 4em);
+		margin: 0 auto;
+		padding: 2em;
+		background-color: #dddddd;
+		border-color: #eeeeee;
+		border-left-style: solid;
+		border-right-style: solid;
+		border-width: 20px;
+	}
+	p {
+		color: #444444;
+		font-family: "Roboto", sans-serif;
+		font-size: 16pt;
+		line-height: 1;
+		margin: 4pt;
+	}
+	p.value-description {
+		text-indent: -16pt;
+		margin-left: 20pt;
+	}
+	p.question {
+		margin: 16pt auto;
+		color: #333333;
+		font-family: "Montserrat", sans-serif;
+		font-weight: normal;
+		width: 70%;
+		min-width: 500pt;
+		min-height: 144pt;
+		background-color: #eeeeee;
+		padding: 16pt;
+		border-radius: 16pt;
+		font-size: 36pt;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	h1 {
+		color: #222222;
+		font-family: "Montserrat", sans-serif;
+		font-size: 72pt;
+		text-align: center;
+		line-height: 72pt;
+		margin-top: 0pt;
+		margin-bottom: 0pt;
+	}
+	h2 {
+		color: #333333;
+		font-family: "Montserrat", sans-serif;
+		font-size: 36pt;
+		line-height: 36pt;
+		margin-top: 12pt;
+		margin-bottom: 0pt;
+	}
+	li {
+		color: #333333;
+		font-size: 16pt;
+		text-indent: 16pt;
+	}
+	a {
+		font-family: inherit;
+	}
+	.small_button,
+	.small_button_off {
+		background-color: #333;
+		font-family: "Montserrat", sans-serif;
+		border: none;
+		border-radius: 8pt;
+		color: white;
+		padding: 8pt;
+		width: 10%;
+		min-width: 100pt;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		font-size: 18pt;
+		margin: -2px auto;
+		cursor: pointer;
+	}
 
-}
-h1 {
-    color: #222222;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 72pt;
-    text-align: center;
-    line-height: 72pt;
-    margin-top: 0pt;
-    margin-bottom: 0pt;
-}
-h2 {
-    color: #333333;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36pt;
-    line-height: 36pt;
-    margin-top: 12pt;
-    margin-bottom: 0pt;
-}
-li {
-    color: #333333;
-    font-size: 16pt;
-    text-indent: 16pt;
-}
-a {
-    font-family: inherit;
-}
-.small_button, .small_button_off {
-    background-color: #333;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 10%;
-    min-width: 100pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 18pt;
-    margin: -2px auto;
-    cursor: pointer;
-}
-
-.small_button_off {
-    background-color: #ddd;
-    color: #888;
-    border: 2px solid #888;
-    cursor: not-allowed;
-    margin: -4px auto;
-}
+	.small_button_off {
+		background-color: #ddd;
+		color: #888;
+		border: 2px solid #888;
+		cursor: not-allowed;
+		margin: -4px auto;
+	}
 }
 /*Dark Mode*/
-@media(prefers-color-scheme: dark){
-html {
-    background-color: #000000;
-    padding: 0px;
-}
-body {
-    width: 80%;
-    min-height: calc(100vh - 4em);
-    margin: 0 auto;
-    padding: 2em;
-    background-color: #3b3b3b;
-    border-color: 505050;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-width: 20px;
-}
-p {
-    color: #cccccc;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16pt;
-    line-height: 1;
-    margin: 4pt;
-}
-p.value-description {
-    text-indent: -16pt;
-    margin-left: 20pt;
-}
-p.question {
-    margin: 16pt auto;
-    color: #cccccc;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    width: 70%;
-    min-width: 500pt;
-    min-height: 144pt;
-    background-color: #000000;
-    padding: 16pt;
-    border-radius: 16pt;
-    font-size: 36pt;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+@media (prefers-color-scheme: dark) {
+	html {
+		background-color: #000000;
+		padding: 0px;
+	}
+	body {
+		width: 80%;
+		min-height: calc(100vh - 4em);
+		margin: 0 auto;
+		padding: 2em;
+		background-color: #3b3b3b;
+		border-color: 505050;
+		border-left-style: solid;
+		border-right-style: solid;
+		border-width: 20px;
+	}
+	p {
+		color: #cccccc;
+		font-family: "Roboto", sans-serif;
+		font-size: 16pt;
+		line-height: 1;
+		margin: 4pt;
+	}
+	p.value-description {
+		text-indent: -16pt;
+		margin-left: 20pt;
+	}
+	p.question {
+		margin: 16pt auto;
+		color: #cccccc;
+		font-family: "Montserrat", sans-serif;
+		font-weight: normal;
+		width: 70%;
+		min-width: 500pt;
+		min-height: 144pt;
+		background-color: #000000;
+		padding: 16pt;
+		border-radius: 16pt;
+		font-size: 36pt;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	h1 {
+		color: #cccccc;
+		font-family: "Montserrat", sans-serif;
+		font-size: 72pt;
+		text-align: center;
+		line-height: 72pt;
+		margin-top: 0pt;
+		margin-bottom: 0pt;
+	}
+	h2 {
+		color: #cccccc;
+		font-family: "Montserrat", sans-serif;
+		font-size: 36pt;
+		line-height: 36pt;
+		margin-top: 12pt;
+		margin-bottom: 0pt;
+	}
 
-}
-h1 {
-    color: #cccccc;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 72pt;
-    text-align: center;
-    line-height: 72pt;
-    margin-top: 0pt;
-    margin-bottom: 0pt;
-}
-h2 {
-    color: #cccccc;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36pt;
-    line-height: 36pt;
-    margin-top: 12pt;
-    margin-bottom: 0pt;
-}
+	li {
+		color: #cccccc;
+		font-size: 16pt;
+		text-indent: 16pt;
+	}
 
-li {
-    color: #cccccc;
-    font-size: 16pt;
-    text-indent: 16pt;
-}
+	.small_button,
+	.small_button_off {
+		background-color: #ddd;
+		font-family: "Montserrat", sans-serif;
+		border: none;
+		border-radius: 8pt;
+		color: white;
+		padding: 8pt;
+		width: 10%;
+		min-width: 100pt;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		font-size: 18pt;
+		margin: -2px auto;
+		cursor: pointer;
+	}
 
-.small_button, .small_button_off {
-    background-color: #ddd;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 10%;
-    min-width: 100pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 18pt;
-    margin: -2px auto;
-    cursor: pointer;
-}
-
-.small_button_off {
-    background-color: #333;
-    color: #888;
-    border: 2px solid #888;
-    cursor: not-allowed;
-    margin: -4px auto;
-}
+	.small_button_off {
+		background-color: #333;
+		color: #888;
+		border: 2px solid #888;
+		cursor: not-allowed;
+		margin: -4px auto;
+	}
 }
