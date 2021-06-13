@@ -9,7 +9,7 @@ users = [
             "horn":80.6,
             "fame":100,
             "show":57.7,
-            "sani":10,
+            "sani":11.3,
             "rela":63.7,
             "fedp":87.6,
             "acti":93.6
