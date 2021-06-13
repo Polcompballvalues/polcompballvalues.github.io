@@ -622,5 +622,21 @@ users = [
             "fedp":79.7,
             "acti":48.7
         }
+    },
+    {
+        "name": "Sbolt",
+        "stats": {
+            "spos":40.4,
+            "alle":72.2,
+            "serv":70,
+            "pers":52.7,
+            "horn":19.4,
+            "fame":53.3,
+            "show":2.7,
+            "sani":70,
+            "rela":73.4,
+            "fedp":30.9,
+            "acti":62.1
+        }
     }
 ];
