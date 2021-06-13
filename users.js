@@ -238,5 +238,21 @@ users = [
             "fedp":54.3,
             "acti":63.4
         }
+    },
+    {
+        "name": "Xerunox",
+        "stats": {
+            "spos":40.5,
+            "alle":2.2,
+            "serv":16.7,
+            "pers":52.8,
+            "horn":0,
+            "fame":100,
+            "show":33.3,
+            "sani":16.7,
+            "rela":96.7,
+            "fedp":71.5,
+            "acti":100
+        }
     }
 ];
