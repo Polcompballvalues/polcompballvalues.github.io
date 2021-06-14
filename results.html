@@ -16,15 +16,10 @@
 <meta property="og:image:height" content="1024">
 <meta name="theme-color" content="#000000" data-react-helmet="true">
 <meta charset="utf-8">
+<script type="application/javascript" src="users.js"></script>
+<script type="application/javascript" src="axis.js"></script>
+<script type="application/javascript" src="version.js"></script>
 </head>
-<script>
-  version = "Beta 1.2" //Remember to update this before making changes to the test itself!
-</script>
-</head>
-<script type="application/javascript"
-        src="users.js">
-</script>
-
 <body>
 <h1>PolcompballValues</h1>
 <hr>
@@ -35,7 +30,7 @@
 <div class="axis">
     <img id="img-sincerity" src="value_images/sincerity.svg" height="128pt"/>
     <div class="bar sincerity" id="bar-sincerity"><div class="text-wrapper" id="sincerity"></div></div>
-    <div class="bar irony" id="bar-irony"><div class="text-wrapper" id="irony"></div></div>
+    <div class="bar irony" id="bar-irony"><div class="text-wrapper-white" id="irony"></div></div>
     <img id="img-irony" src="value_images/irony.svg" height="128pt"/>
 </div>
 <h2>Allegiance Axis: <span class="weight-300" id="allegiance-label"></span></h2>
@@ -115,7 +110,8 @@
 <hr/>
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button><br>
-<button class="button" onclick="location.href='credits.html';" style="background-color: #aaaaaa;">Credits</button> <br>
+<button class="button" onclick="location.href='gallery.html';" style="background-color: #1faf12;">Users Gallery</button><br>
+<button class="button" onclick="location.href='credits.html';" style="background-color: #aaaaaa;">Credits</button><br>
 
 <script>
     function getQueryVariable(variable)
@@ -138,18 +134,6 @@
             innerel.style.visibility = "hidden"
         }
     }
-
-    sposArray = ["Ascetic","Stern","Genuine","Rational","Silly","Playful","Incomprehensibly Ironic"]
-    alleArray = ["Revolutionary","Rebellious","Populist","Neutral","Establishment","Elitist","Loyal"]
-    servArray = ["Truly Deep","Reliving the times","Cultured","Clueless","Homely","Generality","Anti-Casual"]
-    persArray = ["Angelic","Benevolent","Friendly","Mannered","Rude","Harsh","Cruel"]
-    hornArray = ["Nymphomaniac","Lustful","Libertine","Moderated","Composed","Prudish","Overprotective"]
-    fameArray = ["Protagonist","Famed","Recognizable","NPC","Stranger","Nobody","Incognito"]
-    showArray = ["Apolitical","Ordinary","Mostly Conventional","Politicized","Missed A Few","Weird","Otherworldly"]
-    saniArray = ["a̵̒̆a̶̋͗a̶͂͠a̴͂̅a̵̔̕a̴̔͒","Deranged","Out There","Interesting","Sane","Tame","Bland"]
-    relaArray = ["Venerated","Loved","Respected","No Opinion","Unwanted","Disliked","Abhorred"]
-    fedpArray = ["SJW","Accepting","Tolerant","Mixed","Prejudiced","Bigoted","Glowie"]
-    actiArray = ["Lawful","Obedient","Behaved","Occasional","Rascal","Disobedient","Criminal"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -380,7 +364,9 @@
             ctx.fillStyle="#222222"
             if (sincerity       > 30) {ctx.fillText(sincerity + "%", 130, 237.5)}
             if (jannyphobe      > 30) {ctx.fillText(jannyphobe + "%", 130, 357.5)}
-            if (casual          > 30) {ctx.fillText(casual + "%", 130, 477.5)}
+            ctx.fillStyle="#DDDDDD"
+            if (casual          > 30) {ctx.fillText(casual + "%", 130, 477.5)} //White font
+            ctx.fillStyle="#222222"
             if (wholesome       > 30) {ctx.fillText(wholesome + "%", 130, 597.5)}
             ctx.fillStyle="#DDDDDD"
             if (horny           > 30) {ctx.fillText(horny + "%", 130, 717.5)} //White font
@@ -394,7 +380,9 @@
             if (inclusive       > 30) {ctx.fillText(inclusive + "%", 130, 1317.5)}
             if (behaving        > 30) {ctx.fillText(behaving + "%", 130, 1437.5)}
             ctx.textAlign="right"
-            if (irony           > 30) {ctx.fillText(irony + "%", 670, 237.5)}
+            ctx.fillStyle="#DDDDDD"
+            if (irony           > 30) {ctx.fillText(irony + "%", 670, 237.5)} //White font
+            ctx.fillStyle="#222222"
             if (jannyphile      > 30) {ctx.fillText(jannyphile + "%", 670, 357.5)}
             if (serious         > 30) {ctx.fillText(serious + "%", 670, 477.5)}
             if (edgy            > 30) {ctx.fillText(edgy + "%", 670, 597.5)}

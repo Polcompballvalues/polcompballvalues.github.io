@@ -638,5 +638,341 @@ users = [
             "fedp":30.9,
             "acti":62.1
         }
+    },
+    {
+        "name": "monkeysszz",
+        "stats": {
+            "spos":75.6,
+            "alle":37.9,
+            "serv":38.7,
+            "pers":59.8,
+            "horn":9.7,
+            "fame":87.2,
+            "show":53.8,
+            "sani":38.7,
+            "rela":80.4,
+            "fedp":65.4,
+            "acti":74.4
+        }
+    },
+    {
+        "name": "Boil the Bagels",
+        "stats": {
+            "spos":43.6,
+            "alle":69.8,
+            "serv":96,
+            "pers":40.3,
+            "horn":13.9,
+            "fame":72.1,
+            "show":38.4,
+            "sani":69,
+            "rela":50,
+            "fedp":9.9,
+            "acti":33.3
+        }
+    },
+    {
+        "name": "Miguel724",
+        "stats": {
+            "spos":29.4,
+            "alle":36.3,
+            "serv":52.7,
+            "pers":75.1,
+            "horn":41.7,
+            "fame":75.8,
+            "show":84.7,
+            "sani":52.7,
+            "rela":62.1,
+            "fedp":72.9,
+            "acti":61.6
+        }
+    },
+    {
+        "name": "Echoes Act 3",
+        "stats": {
+            "spos":51.3,
+            "alle":47.0,
+            "serv":63.4,
+            "pers":65.3,
+            "horn":9.7,
+            "fame":21.2,
+            "show":67.9,
+            "sani":63.4,
+            "rela":62.1,
+            "fedp":58.7,
+            "acti":78.9
+        }
+    },
+    {
+        "name": "DripSAY",
+        "stats": {
+            "spos":79.5,
+            "alle":45.5,
+            "serv":51.3,
+            "pers":59.8,
+            "horn":50,
+            "fame":40.9,
+            "show":66.7,
+            "sani":51.3,
+            "rela":66.6,
+            "fedp":42,
+            "acti":86.6
+        }
+    },
+    {
+        "name": "Roxxagon",
+        "stats": {
+            "spos":56.4,
+            "alle":66.6,
+            "serv":46.7,
+            "pers":69.5,
+            "horn":75,
+            "fame":88,
+            "show":65.4,
+            "sani":46.7,
+            "rela":45.5,
+            "fedp":65.4,
+            "acti":58.4
+        }
+    },
+    {
+        "name": "Autistic_Kaiser",
+        "stats": {
+            "spos":65.4,
+            "alle":36.4,
+            "serv":46,
+            "pers":59.7,
+            "horn":8.3,
+            "fame":90.9,
+            "show":47.5,
+            "sani":46,
+            "rela":87.9,
+            "fedp":30.9,
+            "acti":89.8
+        }
+    },
+    {
+        "name": "Erstanden",
+        "stats": {
+            "spos":46.1,
+            "alle":66.6,
+            "serv":72.7,
+            "pers":34.7,
+            "horn":27.8,
+            "fame":9.8,
+            "show":41,
+            "sani":72.7,
+            "rela":40.9,
+            "fedp":4.3,
+            "acti":21.7
+        }
+    },
+    {
+        "name": "tungster24",
+        "stats": {
+            "spos":47.4,
+            "alle":43.9,
+            "serv":56.7,
+            "pers":59.7,
+            "horn":43,
+            "fame":29.5,
+            "show":57.7,
+            "sani":56.7,
+            "rela":57.6,
+            "fedp":82.1,
+            "acti":59
+        }
+    },
+    {
+        "name": "Anafi",
+        "stats": {
+            "spos":45.3,
+            "alle":54.5,
+            "serv":70,
+            "pers":72.3,
+            "horn":22.2,
+            "fame":70,
+            "show":69.6,
+            "sani":70,
+            "rela":83.5,
+            "fedp":42.8,
+            "acti":46.9
+        }
+    },
+    {
+        "name": "KeyJoard249Russia",
+        "stats": {
+            "spos":56.4,
+            "alle":34.8,
+            "serv":50.6,
+            "pers":65.4,
+            "horn":47.2,
+            "fame":46.9,
+            "show":56.5,
+            "sani":50.6,
+            "rela":69.7,
+            "fedp":54.3,
+            "acti":66.7
+        }
+    },
+    {
+        "name": "IncendiaryBullet",
+        "stats": {
+            "spos":46.1,
+            "alle":69.6,
+            "serv":53.3,
+            "pers":19.4,
+            "horn":19.5,
+            "fame":78.8,
+            "show":74.4,
+            "sani":53.3,
+            "rela":30.3,
+            "fedp":14.8,
+            "acti":21.8
+        }
+    },
+    {
+        "name": "vend",
+        "stats": {
+            "spos":50,
+            "alle":32.2,
+            "serv":26.7,
+            "pers":52.8,
+            "horn":30.4,
+            "fame":62.3,
+            "show":75,
+            "sani":26.7,
+            "rela":63.3,
+            "fedp":90.6,
+            "acti":75.8
+        }
+    },
+    {
+        "name": "Ali",
+        "stats": {
+            "spos":42.9,
+            "alle":75.6,
+            "serv":96.7,
+            "pers":36.1,
+            "horn":22.2,
+            "fame":83.4,
+            "show":86.3,
+            "sani":96.7,
+            "rela":80.1,
+            "fedp":2.4,
+            "acti":9
+        }
+    },
+    {
+        "name": "jtracome87",
+        "stats": {
+            "spos":43.5,
+            "alle":71.2,
+            "serv":89.4,
+            "pers":45.8,
+            "horn":36,
+            "fame":79.6,
+            "show":60.3,
+            "sani":89.4,
+            "rela":63.6,
+            "fedp":38.2,
+            "acti":41.7
+        }
+    },
+    {
+        "name": "Galileo",
+        "stats": {
+            "spos":42.9,
+            "alle":48.9,
+            "serv":73.4,
+            "pers":61.2,
+            "horn":13.8,
+            "fame":100,
+            "show":97.3,
+            "sani":73.4,
+            "rela":86.7,
+            "fedp":38.1,
+            "acti":30.3
+        }
+    },
+    {
+        "name": "Gato Sexo",
+        "stats": {
+            "spos":21.8,
+            "alle":69.7,
+            "serv":78,
+            "pers":32,
+            "horn":64,
+            "fame":50,
+            "show":39.7,
+            "sani":78,
+            "rela":59.1,
+            "fedp":68.6,
+            "acti":57.7
+        }
+    },
+    {
+        "name": "H man",
+        "stats": {
+            "spos":21.7,
+            "alle":80.4,
+            "serv":93.4,
+            "pers":52.8,
+            "horn":11.1,
+            "fame":56.8,
+            "show":62.8,
+            "sani":93.4,
+            "rela":66.6,
+            "fedp":28.4,
+            "acti":30.7
+        }
+    },
+    {
+        "name": "Raging Cajun",
+        "stats": {
+            "spos":51.3,
+            "alle":25.7,
+            "serv":43.4,
+            "pers":66.7,
+            "horn":23.5,
+            "fame":23.4,
+            "show":48.8,
+            "sani":43.4,
+            "rela":60.6,
+            "fedp":33.9,
+            "acti":80.2
+        }
+    },
+    {
+        "name": "Ganzo",
+        "stats": {
+            "spos":19.3,
+            "alle":60.6,
+            "serv":74.1,
+            "pers":69.4,
+            "horn":55.5,
+            "fame":50,
+            "show":43.6,
+            "sani":74.1,
+            "rela":66.7,
+            "fedp":43.2,
+            "acti":27.5
+        }
+    },
+    {
+        "name": "Polish Italian",
+        "stats": {
+            "spos":69.3,
+            "alle":87.9,
+            "serv":53.4,
+            "pers":57,
+            "horn":5.5,
+            "fame":56.1,
+            "show":43.5,
+            "sani":53.4,
+            "rela":48.5,
+            "fedp":7.4,
+            "acti":59
+        }
     }
 ];
