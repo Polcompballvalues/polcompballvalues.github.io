@@ -974,5 +974,421 @@ users = [
             "fedp":7.4,
             "acti":59
         }
+    },
+    {
+        "name": "RandomBlue",
+        "stats": {
+            "spos":30.9,
+            "alle":21,
+            "serv":56.7,
+            "pers":88.9,
+            "horn":16.6,
+            "fame":10,
+            "show":97.3,
+            "sani":56.7,
+            "rela":56.6,
+            "fedp":54.7,
+            "acti":72.8
+        }
+    },
+    {
+        "name": "Denatidum",
+        "stats": {
+            "spos":61.6,
+            "alle":24.2,
+            "serv":45.9,
+            "pers":62.5,
+            "horn":18,
+            "fame":50,
+            "show":55.2,
+            "sani":45.9,
+            "rela":68.3,
+            "fedp":72.9,
+            "acti":81.5
+        }
+    },
+    {
+        "name": "Preache",
+        "stats": {
+            "spos":9,
+            "alle":75.8,
+            "serv":98.7,
+            "pers":20.8,
+            "horn":7,
+            "fame":84.9,
+            "show":73.1,
+            "sani":98.7,
+            "rela":92.5,
+            "fedp":9.9,
+            "acti":17.3
+        }
+    },
+    {
+        "name": "Basque",
+        "stats": {
+            "spos":6.4,
+            "alle":90.9,
+            "serv":90.7,
+            "pers":1.4,
+            "horn":9.7,
+            "fame":69.7,
+            "show":91,
+            "sani":90.7,
+            "rela":89.4,
+            "fedp":7.4,
+            "acti":1.3
+        }
+    },
+    {
+        "name": "Kebab Imperium",
+        "stats": {
+            "spos":50,
+            "alle":98.5,
+            "serv":98.7,
+            "pers":1.4,
+            "horn":18,
+            "fame":45.5,
+            "show":41,
+            "sani":98.7,
+            "rela":37.8,
+            "fedp":6.1,
+            "acti":7.7
+        }
+    },
+    {
+        "name": "Chum",
+        "stats": {
+            "spos":7.7,
+            "alle":81.8,
+            "serv":96,
+            "pers":4.2,
+            "horn":7.3,
+            "fame":60.6,
+            "show":37.2,
+            "sani":96,
+            "rela":90.9,
+            "fedp":0,
+            "acti":11.5
+        }
+    },
+    {
+        "name": "Squide",
+        "stats": {
+            "spos":44.9,
+            "alle":89.4,
+            "serv":90.7,
+            "pers":56.9,
+            "horn":7,
+            "fame":61.4,
+            "show":55.1,
+            "sani":90.7,
+            "rela":3,
+            "fedp":20.9,
+            "acti":17.2
+        }
+    },
+    {
+        "name": "OzymandiasFR",
+        "stats": {
+            "spos":71.8,
+            "alle":46.9,
+            "serv":35.3,
+            "pers":72.2,
+            "horn":16.7,
+            "fame":39.4,
+            "show":60.3,
+            "sani":35.3,
+            "rela":56,
+            "fedp":80.3,
+            "acti":81.5
+        }
+    },
+    {
+        "name": "ThereIsIt",
+        "stats": {
+            "spos":42.3,
+            "alle":72.7,
+            "serv":61.3,
+            "pers":100,
+            "horn":0,
+            "fame":65.1,
+            "show":59,
+            "sani":61.3,
+            "rela":81.8,
+            "fedp":77.8,
+            "acti":57.7
+        }
+    },
+    {
+        "name": "Henzeg",
+        "stats": {
+            "spos":69.1,
+            "alle":79,
+            "serv":43.4,
+            "pers":69.5,
+            "horn":11.1,
+            "fame":46.7,
+            "show":8.2,
+            "sani":43.4,
+            "rela":56.7,
+            "fedp":19,
+            "acti":51.4
+        }
+    },
+    {
+        "name": "Heinrich Cheung",
+        "stats": {
+            "spos":62.9,
+            "alle":24.2,
+            "serv":51.3,
+            "pers":44.5,
+            "horn":66.6,
+            "fame":18.2,
+            "show":37.2,
+            "sani":51.3,
+            "rela":66.6,
+            "fedp":50.6,
+            "acti":73.8
+        }
+    },
+    {
+        "name": "Popedesu",
+        "stats": {
+            "spos":53.9,
+            "alle":51.5,
+            "serv":62.1,
+            "pers":70.9,
+            "horn":44.4,
+            "fame":79.6,
+            "show":51.3,
+            "sani":62.1,
+            "rela":81.9,
+            "fedp":73.5,
+            "acti":68.6
+        }
+    },
+    {
+        "name": "Silver Moon Gaming",
+        "stats": {
+            "spos":56.4,
+            "alle":33.2,
+            "serv":56.7,
+            "pers":64,
+            "horn":41.6,
+            "fame":22.7,
+            "show":59,
+            "sani":56.7,
+            "rela":69.7,
+            "fedp":50,
+            "acti":87.9
+        }
+    },
+    {
+        "name": "tPatrick",
+        "stats": {
+            "spos":71.8,
+            "alle":51.5,
+            "serv":57.4,
+            "pers":55.6,
+            "horn":19.5,
+            "fame":34.8,
+            "show":69.3,
+            "sani":57.4,
+            "rela":75.9,
+            "fedp":72.9,
+            "acti":66.7
+        }
+    },
+    {
+        "name": "Patrick Bateman",
+        "stats": {
+            "spos":84.6,
+            "alle":48.5,
+            "serv":42.7,
+            "pers":58.3,
+            "horn":43.0,
+            "fame":12.1,
+            "show":24.3,
+            "sani":42.7,
+            "rela":60.6,
+            "fedp":12.4,
+            "acti":44.2
+        }
+    },
+    {
+        "name": "Cyb3rklev",
+        "stats": {
+            "spos":76.9,
+            "alle":68.8,
+            "serv":32.7,
+            "pers":39.9,
+            "horn":70.5,
+            "fame":34.9,
+            "show":75.5,
+            "sani":32.7,
+            "rela":60.5,
+            "fedp":54.3,
+            "acti":21.3
+        }
+    },
+    {
+        "name": "Left Alex-ism",
+        "stats": {
+            "spos":9,
+            "alle":62.1,
+            "serv":28,
+            "pers":54.2,
+            "horn":22.2,
+            "fame":88.7,
+            "show":41,
+            "sani":28,
+            "rela":97,
+            "fedp":70.4,
+            "acti":38.5
+        }
+    },
+    {
+        "name": "Timm",
+        "stats": {
+            "spos":23.9,
+            "alle":70,
+            "serv":93.3,
+            "pers":44.5,
+            "horn":19.4,
+            "fame":56.6,
+            "show":80.6,
+            "sani":93.3,
+            "rela":53.3,
+            "fedp":21.4,
+            "acti":33.4
+        }
+    },
+    {
+        "name": "Weed eater",
+        "stats": {
+            "spos":30.8,
+            "alle":89.4,
+            "serv":100,
+            "pers":20.8,
+            "horn":36.1,
+            "fame":25.7,
+            "show":55.1,
+            "sani":100,
+            "rela":50,
+            "fedp":40.7,
+            "acti":17.3
+        }
+    },
+    {
+        "name": "rooben",
+        "stats": {
+            "spos":50.1,
+            "alle":33.4,
+            "serv":50,
+            "pers":50,
+            "horn":24.9,
+            "fame":10,
+            "show":58.4,
+            "sani":50,
+            "rela":56.7,
+            "fedp":50,
+            "acti":84.9
+        }
+    },
+    {
+        "name": "Recryo",
+        "stats": {
+            "spos":45.2,
+            "alle":45.6,
+            "serv":70,
+            "pers":50,
+            "horn":22.2,
+            "fame":29.9,
+            "show":50,
+            "sani":70,
+            "rela":50,
+            "fedp":64.4,
+            "acti":62.1
+        }
+    },
+    {
+        "name": "NJT44",
+        "stats": {
+            "spos":18,
+            "alle":89.4,
+            "serv":97.4,
+            "pers":34.7,
+            "horn":11.1,
+            "fame":50,
+            "show":51.3,
+            "sani":97.4,
+            "rela":71.3,
+            "fedp":0,
+            "acti":1.3
+        }
+    },
+    {
+        "name": "FdF",
+        "stats": {
+            "spos":65.4,
+            "alle":51.5,
+            "serv":26.6,
+            "pers":79.2,
+            "horn":40.2,
+            "fame":76.5,
+            "show":53.8,
+            "sani":26.6,
+            "rela":47,
+            "fedp":69.8,
+            "acti":90.4
+        }
+    },
+        {
+        "name": "Mishkaboy",
+        "stats": {
+            "spos":47.6,
+            "alle":63.3,
+            "serv":66.7,
+            "pers":83.3,
+            "horn":94.4,
+            "fame":10,
+            "show":55.5,
+            "sani":66.7,
+            "rela":60,
+            "fedp":33.4,
+            "acti":48.5
+        }
+    },
+    {
+        "name": "Peculiar Specimen ~553",
+        "stats": {
+            "spos":59,
+            "alle":65.2,
+            "serv":80.7,
+            "pers":43,
+            "horn":12.2,
+            "fame":39.4,
+            "show":59,
+            "sani":80.7,
+            "rela":66.6,
+            "fedp":53.1,
+            "acti":65.4
+        }
+    },
+    {
+        "name": "buyfallout76",
+        "stats": {
+            "spos":38.1,
+            "alle":73.3,
+            "serv":66.7,
+            "pers":47.2,
+            "horn":0,
+            "fame":73.3,
+            "show":80.5,
+            "sani":66.7,
+            "rela":73.4,
+            "fedp":76.3,
+            "acti":54.6
+        }
     }
 ];
