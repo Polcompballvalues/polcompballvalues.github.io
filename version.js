@@ -1,1 +1,1 @@
-version = "Beta 2.1"
+version = "V1 Beta 2.1 (EoL)"
