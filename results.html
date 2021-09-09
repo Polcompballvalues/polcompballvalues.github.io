@@ -1,427 +1,206 @@
+<!DOCTYPE html>
 <html lang="en-US">
-<head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
-<link href='style.css' rel='stylesheet' type='text/css'>
-<link rel="icon" type="x-icon" href="icon.png">
-<link rel="shortcut icon" type="x-icon" href="icon.png">
-<title>PolcompballValues</title>
-<meta property="og:ttl" content="600">
-<meta property="og:site_name" content="polcompballvalues.github.io">
-<meta property="og:title" content="PolcompballValues">
-<meta property="og:type" content="website">
-<meta property="og:description" content="PolcompballValues a quiz aimed at members of the Polcompball community, specially the official Discord server">
-<meta property="og:url" content="https://polcompballvalues.github.io/">
-<meta property="og:image" content="https://polcompballvalues.github.io/previcon.png">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height" content="1024">
-<meta name="theme-color" content="#000000" data-react-helmet="true">
-<meta charset="utf-8">
-<script type="application/javascript" src="users.js"></script>
-<script type="application/javascript" src="axis.js"></script>
-<script type="application/javascript" src="version.js"></script>
-</head>
-<body>
-<h1>PolcompballValues</h1>
-<hr>
-
-<h1>Results</h1>
-
-<h2>Seriousposting Axis: <span class="weight-300" id="seriousposting-label"></span></h2>
-<div class="axis">
-    <img id="img-sincerity" src="value_images/sincerity.svg" height="128pt"/>
-    <div class="bar sincerity" id="bar-sincerity"><div class="text-wrapper" id="sincerity"></div></div>
-    <div class="bar irony" id="bar-irony"><div class="text-wrapper-white" id="irony"></div></div>
-    <img id="img-irony" src="value_images/irony.svg" height="128pt"/>
-</div>
-<h2>Allegiance Axis: <span class="weight-300" id="allegiance-label"></span></h2>
-<div class="axis">
-    <img id="img-jannyphobe" src="value_images/jannyphobe.svg" height="128pt"/>
-    <div class="bar jannyphobe" id="bar-jannyphobe"><div class="text-wrapper" id="jannyphobe"></div></div>
-    <div class="bar jannyphile" id="bar-jannyphile"><div class="text-wrapper" id="jannyphile"></div></div>
-    <img id="img-jannyphile" src="value_images/jannyphile.svg" height="128pt"/>
-</div>
-<h2>Server Axis: <span class="weight-300" id="server-label"></span></h2>
-<div class="axis">
-    <img id="img-casual" src="value_images/casual.svg" height="128pt"/>
-    <div class="bar casual" id="bar-casual"><div class="text-wrapper-white" id="casual"></div></div>
-    <div class="bar serious" id="bar-serious"><div class="text-wrapper" id="serious"></div></div>
-    <img id="img-serious" src="value_images/serious.svg" height="128pt"/>
-</div>
-<h2>Personality Axis: <span class="weight-300" id="personality-label"></span></h2>
-<div class="axis">
-    <img id="img-wholesome" src="value_images/wholesome.svg" height="128pt"/>
-    <div class="bar wholesome" id="bar-wholesome"><div class="text-wrapper" id="wholesome"></div></div>
-    <div class="bar edgy" id="bar-edgy"><div class="text-wrapper" id="edgy"></div></div>
-    <img id="img-edgy" src="value_images/edgy.svg" height="128pt"/>
-</div>
-<h2>Hornyposting Axis: <span class="weight-300" id="hornyposting-label"></span></h2>
-<div class="axis">
-    <img id="img-horny" src="value_images/horny.svg" height="128pt"/>
-    <div class="bar horny" id="bar-horny"><div class="text-wrapper-white" id="horny"></div></div>
-    <div class="bar antihorny" id="bar-antihorny"><div class="text-wrapper" id="antihorny"></div></div>
-    <img id="img-antihorny" src="value_images/antihorny.svg" height="128pt"/>
-</div>
-<h2>Fame Axis: <span class="weight-300" id="fame-label"></span></h2>
-<div class="axis">
-    <img id="img-active" src="value_images/active.svg" height="128pt"/>
-    <div class="bar active" id="bar-active"><div class="text-wrapper" id="active"></div></div>
-    <div class="bar lurker" id="bar-lurker"><div class="text-wrapper" id="lurker"></div></div>
-    <img id="img-lurker" src="value_images/lurker.svg" height="128pt"/>
-</div>
-<h2>Shower Axis: <span class="weight-300" id="shower-label"></span></h2>
-<div class="axis">
-    <img id="img-standard" src="value_images/standard.svg" height="128pt"/>
-    <div class="bar standard" id="bar-standard"><div class="text-wrapper" id="standard"></div></div>
-    <div class="bar wacky" id="bar-wacky"><div class="text-wrapper-white" id="wacky"></div></div>
-    <img id="img-wacky" src="value_images/wacky.svg" height="128pt"/>
-</div>
-<h2>Sanity Axis: <span class="weight-300" id="sanity-label"></span></h2>
-<div class="axis">
-    <img id="img-schizo" src="value_images/schizo.svg" height="128pt"/>
-    <div class="bar schizo" id="bar-schizo"><div class="text-wrapper-white" id="schizo"></div></div>
-    <div class="bar boring" id="bar-boring"><div class="text-wrapper" id="boring"></div></div>
-    <img id="img-boring" src="value_images/boring.svg" height="128pt"/>
-</div>
-<h2>Relationship Axis: <span class="weight-300" id="relationship-label"></span></h2>
-<div class="axis">
-    <img id="img-liked" src="value_images/liked.svg" height="128pt"/>
-    <div class="bar liked" id="bar-liked"><div class="text-wrapper" id="liked"></div></div>
-    <div class="bar disliked" id="bar-disliked"><div class="text-wrapper" id="disliked"></div></div>
-    <img id="img-disliked" src="value_images/disliked.svg" height="128pt"/>
-</div>
-<h2>Fedposting Axis: <span class="weight-300" id="fedposting-label"></span></h2>
-<div class="axis">
-    <img id="img-inclusive" src="value_images/inclusive.svg" height="128pt"/>
-    <div class="bar inclusive" id="bar-inclusive"><div class="text-wrapper" id="inclusive"></div></div>
-    <div class="bar discriminatory" id="bar-discriminatory"><div class="text-wrapper" id="discriminatory"></div></div>
-    <img id="img-discriminatory" src="value_images/discriminatory.svg" height="128pt"/>
-</div>
-<h2>Actions Axis: <span class="weight-300" id="actions-label"></span></h2>
-<div class="axis">
-    <img id="img-behaving" src="value_images/behaving.svg" height="128pt"/>
-    <div class="bar behaving" id="bar-behaving"><div class="text-wrapper" id="behaving"></div></div>
-    <div class="bar misbehaving" id="bar-misbehaving"><div class="text-wrapper" id="misbehaving"></div></div>
-    <img id="img-misbehaving" src="value_images/misbehaving.svg" height="128pt"/>
-</div>
-<h2>Closest Match: <span class="weight-300" id="user-label"></span></h2>
-<p>This test is currently in testing stage, report any bugs to TheGhostOfInky#9229 or in the #pcb-values channel in the official polcompball discord server</p>
-<p>User matching is a work in progress, and is much less accurate than the values and axes, new users are being regualrly added to the match so expect gradual improvements as time goes on</p>
-<p>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
-<hr/>
-<img src="" id="banner">
-<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button><br>
-<button class="button" onclick="location.href='gallery.html';" style="background-color: #1faf12;">Users Gallery</button><br>
-<button class="button" onclick="location.href='credits.html';" style="background-color: #aaaaaa;">Credits</button><br>
-
-<script>
-    function getQueryVariable(variable)
-    {
-           var query = window.location.search.substring(1)
-           var vars = query.split("&")
-           for (var i=0;i<vars.length;i++) {
-                   var pair = vars[i].split("=")
-                   if(pair[0] == variable) {return pair[1]}
-           }
-           return(NaN);
-    }
-
-    function setBarValue(name, value) {
-        innerel = document.getElementById(name)
-        outerel = document.getElementById("bar-" + name)
-        outerel.style.width = (value + "%")
-        innerel.innerHTML = (value + "%")
-        if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
-            innerel.style.visibility = "hidden"
-        }
-    }
-
-    function setLabel(val,ary) {
-        if (val > 100) { return "" } else
-        if (val > 90) { return ary[0] } else
-        if (val > 75) { return ary[1] } else
-        if (val > 60) { return ary[2] } else
-        if (val >= 40) { return ary[3] } else
-        if (val >= 25) { return ary[4] } else
-        if (val >= 10) { return ary[5] } else
-        if (val >= 0) { return ary[6] } else
-        	{return ""}
-    }
-
-    sincerity      = getQueryVariable("s")
-    jannyphobe     = getQueryVariable("j")
-    casual         = getQueryVariable("c")
-    wholesome      = getQueryVariable("w")
-    horny          = getQueryVariable("h")
-    active         = getQueryVariable("a")
-    standard       = getQueryVariable("t")
-    schizo         = getQueryVariable("n")
-    liked          = getQueryVariable("l")
-    inclusive      = getQueryVariable("i")
-    behaving       = getQueryVariable("b")
-    irony          = (100 - sincerity  ).toFixed(1)
-    jannyphile     = (100 - jannyphobe ).toFixed(1)
-    serious        = (100 - casual     ).toFixed(1)
-    edgy           = (100 - wholesome  ).toFixed(1)
-	antihorny      = (100 - horny      ).toFixed(1)
-    lurker         = (100 - active     ).toFixed(1)
-    wacky          = (100 - standard   ).toFixed(1)
-    boring         = (100 - schizo     ).toFixed(1)
-	disliked       = (100 - liked      ).toFixed(1)
-    discriminatory = (100 - inclusive  ).toFixed(1)
-    misbehaving    = (100 - behaving   ).toFixed(1)
-
-    var length = ""
-    length = getQueryVariable("d")
-
-    setBarValue("sincerity", sincerity)
-    setBarValue("jannyphobe", jannyphobe)
-    setBarValue("casual", casual)
-    setBarValue("wholesome", wholesome)
-    setBarValue("horny", horny)
-    setBarValue("active", active)
-    setBarValue("standard", standard)
-    setBarValue("schizo", schizo)
-	setBarValue("liked", liked)
-    setBarValue("inclusive", inclusive)
-    setBarValue("behaving", behaving)
-    setBarValue("irony", irony)
-    setBarValue("jannyphile", jannyphile)
-    setBarValue("serious", serious)
-    setBarValue("edgy", edgy)
-    setBarValue("antihorny", antihorny)
-	setBarValue("lurker", lurker)
-    setBarValue("wacky", wacky)
-    setBarValue("boring", boring)
-    setBarValue("disliked", disliked)
-    setBarValue("discriminatory", discriminatory)
-    setBarValue("misbehaving", misbehaving)
-
-    document.getElementById("seriousposting-label").innerHTML = setLabel(sincerity, sposArray)
-    document.getElementById("allegiance-label").innerHTML = setLabel(jannyphobe, alleArray)
-    document.getElementById("server-label").innerHTML = setLabel(casual, servArray)
-    document.getElementById("personality-label").innerHTML = setLabel(wholesome, persArray)
-    document.getElementById("hornyposting-label").innerHTML = setLabel(horny, hornArray)
-    document.getElementById("fame-label").innerHTML = setLabel(active, fameArray)
-    document.getElementById("shower-label").innerHTML = setLabel(standard, showArray)
-    document.getElementById("sanity-label").innerHTML = setLabel(schizo, saniArray)
-    document.getElementById("relationship-label").innerHTML = setLabel(liked, relaArray)
-    document.getElementById("fedposting-label").innerHTML = setLabel(inclusive, fedpArray)
-    document.getElementById("actions-label").innerHTML = setLabel(behaving, actiArray)
-
-    user = ""
-    userdist = Infinity
-    for (var i = 0; i < users.length; i++) {
-        dist = 0
-        dist += Math.pow(Math.abs(users[i].stats.spos - sincerity), 2)
-        dist += Math.pow(Math.abs(users[i].stats.alle - jannyphobe), 2)
-        dist += Math.pow(Math.abs(users[i].stats.serv - casual), 2)
-        dist += Math.pow(Math.abs(users[i].stats.pers - wholesome), 2)
-		dist += Math.pow(Math.abs(users[i].stats.horn - horny), 2)
-        dist += Math.pow(Math.abs(users[i].stats.fame - active), 2)
-        dist += Math.pow(Math.abs(users[i].stats.show - standard), 2)
-        dist += Math.pow(Math.abs(users[i].stats.sani - schizo), 2)
-		dist += Math.pow(Math.abs(users[i].stats.rela - liked), 2)
-        dist += Math.pow(Math.abs(users[i].stats.fedp - inclusive), 2)
-        dist += Math.pow(Math.abs(users[i].stats.acti - behaving), 2)
-        if (dist < userdist) {
-            user = users[i].name
-            userdist = dist
-        }
-    }
-    document.getElementById("user-label").innerHTML = user
-
-    function createImage(src, x, y, w, h) {
-        img = new Image ()
-        img.src = src
-        img.onLoad = function() {
-            ctx.drawImage(img, x, y, w, h)
-        }
-    }
-
-    window.onload = function() {
-        var c = document.createElement("canvas")
-            var ctx = c.getContext("2d")
-            c.width = 800;
-            c.height = 1500;
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            ctx.fillStyle = "#141414" //Dark mode
-			} else {
-            ctx.fillStyle = "#EEEEEE"} //Light mode
-            ctx.fillRect(0,0,800,1500);
-            img = document.getElementById("img-sincerity")
-            ctx.drawImage(img, 20, 170, 100, 100);
-            img = document.getElementById("img-irony")
-            ctx.drawImage(img, 680, 170, 100, 100)
-            img = document.getElementById("img-jannyphobe")
-            ctx.drawImage(img, 20, 290, 100, 100)
-            img = document.getElementById("img-jannyphile")
-            ctx.drawImage(img, 680, 290, 100, 100)
-            img = document.getElementById("img-casual")
-            ctx.drawImage(img, 20, 410, 100, 100)
-            img = document.getElementById("img-serious")
-            ctx.drawImage(img, 680, 410, 100, 100)
-            img = document.getElementById("img-wholesome")
-            ctx.drawImage(img, 20, 530, 100, 100)
-            img = document.getElementById("img-edgy")
-            ctx.drawImage(img, 680, 530, 100, 100)
-            img = document.getElementById("img-horny")
-            ctx.drawImage(img, 20, 650, 100, 100)
-            img = document.getElementById("img-antihorny")
-            ctx.drawImage(img, 680, 650, 100, 100)
-            img = document.getElementById("img-active")
-            ctx.drawImage(img, 20, 770, 100, 100)
-            img = document.getElementById("img-lurker")
-            ctx.drawImage(img, 680, 770, 100, 100)
-            img = document.getElementById("img-standard")
-            ctx.drawImage(img, 20, 890, 100, 100)
-            img = document.getElementById("img-wacky")
-            ctx.drawImage(img, 680, 890, 100, 100)
-            img = document.getElementById("img-schizo")
-            ctx.drawImage(img, 20, 1010, 100, 100)
-            img = document.getElementById("img-boring")
-            ctx.drawImage(img, 680, 1010, 100, 100)
-            img = document.getElementById("img-liked")
-            ctx.drawImage(img, 20, 1130, 100, 100)
-            img = document.getElementById("img-disliked")
-            ctx.drawImage(img, 680, 1130, 100, 100)
-            img = document.getElementById("img-inclusive")
-            ctx.drawImage(img, 20, 1250, 100, 100)
-            img = document.getElementById("img-discriminatory")
-            ctx.drawImage(img, 680, 1250, 100, 100)
-            img = document.getElementById("img-behaving")
-            ctx.drawImage(img, 20, 1370, 100, 100)
-            img = document.getElementById("img-misbehaving")
-            ctx.drawImage(img, 680, 1370, 100, 100)
-
-            ctx.fillStyle="#222222"
-            ctx.fillRect(120, 180, 560, 80)
-            ctx.fillRect(120, 300, 560, 80)
-            ctx.fillRect(120, 420, 560, 80)
-            ctx.fillRect(120, 540, 560, 80)
-            ctx.fillRect(120, 660, 560, 80)
-            ctx.fillRect(120, 780, 560, 80)
-            ctx.fillRect(120, 900, 560, 80)
-            ctx.fillRect(120, 1020, 560, 80)
-            ctx.fillRect(120, 1140, 560, 80)
-            ctx.fillRect(120, 1260, 560, 80)
-            ctx.fillRect(120, 1380, 560, 80)
-            ctx.fillStyle="#008080"
-            ctx.fillRect(120, 184, 5.6*sincerity-2, 72)
-            ctx.fillStyle="#0000FF"
-            ctx.fillRect(682-5.6*irony, 184, 5.6*irony-2, 72)
-            ctx.fillStyle="#FFFF00"
-            ctx.fillRect(120, 304, 5.6*jannyphobe-2, 72)
-            ctx.fillStyle="#D061A6"
-            ctx.fillRect(682-5.6*jannyphile, 304, 5.6*jannyphile-2, 72)
-            ctx.fillStyle="#003890"
-            ctx.fillRect(120, 424, 5.6*casual-2, 72)
-            ctx.fillStyle="#FF0000"
-            ctx.fillRect(682-5.6*serious, 424, 5.6*serious-2, 72)
-            ctx.fillStyle="#C000FF"
-            ctx.fillRect(120, 544, 5.6*wholesome-2, 72)
-            ctx.fillStyle="#EE2436"
-            ctx.fillRect(682-5.6*edgy, 544, 5.6*edgy-2, 72)
-            ctx.fillStyle="#000000"
-            ctx.fillRect(120, 664, 5.6*horny-2, 72)
-            ctx.fillStyle="#F5DD00"
-            ctx.fillRect(682-5.6*antihorny, 664, 5.6*antihorny-2, 72)
-            ctx.fillStyle="#FF0000"
-            ctx.fillRect(120, 784, 5.6*active-2, 72)
-            ctx.fillStyle="#FFFFFF"
-            ctx.fillRect(682-5.6*lurker, 784, 5.6*lurker-2, 72)
-            ctx.fillStyle="#8B5320"
-            ctx.fillRect(120, 904, 5.6*standard-2, 72)
-            ctx.fillStyle="#89001C"
-            ctx.fillRect(682-5.6*wacky, 904, 5.6*wacky-2, 72)
-            ctx.fillStyle="#7F3980"
-            ctx.fillRect(120, 1024, 5.6*schizo-2, 72)
-            ctx.fillStyle="#F5DD00"
-            ctx.fillRect(682-5.6*boring, 1024, 5.6*boring-2, 72)
-            ctx.fillStyle="#52CE3C"
-            ctx.fillRect(120, 1144, 5.6*liked-2, 72)
-            ctx.fillStyle="#F5A9B8"
-            ctx.fillRect(682-5.6*disliked, 1144, 5.6*disliked-2, 72)
-            ctx.fillStyle="#FB0000"
-            ctx.fillRect(120, 1264, 5.6*inclusive-2, 72)
-            ctx.fillStyle="#32B5D4"
-            ctx.fillRect(682-5.6*discriminatory, 1264, 5.6*discriminatory-2, 72)
-            ctx.fillStyle="#7F00FF"
-            ctx.fillRect(120, 1384, 5.6*behaving-2, 72)
-            ctx.fillStyle="#429B7D"
-            ctx.fillRect(682-5.6*misbehaving, 1384, 5.6*misbehaving-2, 72)
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            ctx.fillStyle="#DDDDDD" //Dark mode
-            } else {
-            ctx.fillStyle="#222222"} //Light mode
-            ctx.font="700 50px Montserrat"
-            ctx.textAlign="left"
-            ctx.fillText("PolcompballValues", 20, 90)
-            ctx.font="30px Montserrat"
-            usermatch = "Closest Match: " + user
-            ctx.fillText(usermatch, 20, 140)
-            ctx.font="50px Montserrat"
-            ctx.textAlign="left"
-            ctx.fillStyle="#222222"
-            if (sincerity       > 30) {ctx.fillText(sincerity + "%", 130, 237.5)}
-            if (jannyphobe      > 30) {ctx.fillText(jannyphobe + "%", 130, 357.5)}
-            ctx.fillStyle="#DDDDDD"
-            if (casual          > 30) {ctx.fillText(casual + "%", 130, 477.5)} //White font
-            ctx.fillStyle="#222222"
-            if (wholesome       > 30) {ctx.fillText(wholesome + "%", 130, 597.5)}
-            ctx.fillStyle="#DDDDDD"
-            if (horny           > 30) {ctx.fillText(horny + "%", 130, 717.5)} //White font
-            ctx.fillStyle="#222222"
-            if (active          > 30) {ctx.fillText(active + "%", 130, 837.5)}
-            if (standard        > 30) {ctx.fillText(standard + "%", 130, 957.5)}
-            ctx.fillStyle="#DDDDDD"
-            if (schizo          > 30) {ctx.fillText(schizo + "%", 130, 1077.5)} //White font
-            ctx.fillStyle="#222222"
-            if (liked           > 30) {ctx.fillText(liked + "%", 130, 1197.5)}
-            if (inclusive       > 30) {ctx.fillText(inclusive + "%", 130, 1317.5)}
-            if (behaving        > 30) {ctx.fillText(behaving + "%", 130, 1437.5)}
-            ctx.textAlign="right"
-            ctx.fillStyle="#DDDDDD"
-            if (irony           > 30) {ctx.fillText(irony + "%", 670, 237.5)} //White font
-            ctx.fillStyle="#222222"
-            if (jannyphile      > 30) {ctx.fillText(jannyphile + "%", 670, 357.5)}
-            if (serious         > 30) {ctx.fillText(serious + "%", 670, 477.5)}
-            if (edgy            > 30) {ctx.fillText(edgy + "%", 670, 597.5)}
-            if (antihorny       > 30) {ctx.fillText(antihorny + "%", 670, 717.5)}
-            if (lurker          > 30) {ctx.fillText(lurker + "%", 670, 837.5)}
-            ctx.fillStyle="#DDDDDD"
-            if (wacky           > 30) {ctx.fillText(wacky + "%", 670, 957.5)} //White font
-            ctx.fillStyle="#222222"
-            if (boring          > 30) {ctx.fillText(boring + "%", 670, 1077.5)}
-            if (disliked        > 30) {ctx.fillText(disliked + "%", 670, 1197.5)}
-            if (discriminatory  > 30) {ctx.fillText(discriminatory + "%", 670, 1317.5)}
-            if (misbehaving     > 30) {ctx.fillText(misbehaving + "%", 670, 1437.5)}
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            ctx.fillStyle="#DDDDDD" //Dark mode
-            } else {
-            ctx.fillStyle="#222222"} //Light mode
-            ctx.font="300 25px Montserrat"
-            ctx.fillText("polcompballvalues.github.io", 780, 40)
-	    	ctx.fillText(version, 780, 70)
-            if (length == "s") {
-            ctx.fillText("Short Test", 780, 100) //Short test
-            } else {
-            ctx.fillText("Full Test", 780, 100) //Full test
-            }
-            ctx.textAlign="center"
-            ctx.fillText("Seriousposting Axis: " + document.getElementById("seriousposting-label").innerHTML, 400, 175)
-            ctx.fillText("Allegiance Axis: " + document.getElementById("allegiance-label").innerHTML, 400, 295)
-            ctx.fillText("Server Axis: " + document.getElementById("server-label").innerHTML, 400, 415)
-            ctx.fillText("Personality Axis: " + document.getElementById("personality-label").innerHTML, 400, 535)
-            ctx.fillText("Hornyposting Axis: " + document.getElementById("hornyposting-label").innerHTML, 400, 655)
-            ctx.fillText("Fame Axis: " + document.getElementById("fame-label").innerHTML, 400, 775)
-            ctx.fillText("Shower Axis: " + document.getElementById("shower-label").innerHTML, 400, 895)
-            ctx.fillText("Sanity Axis: " + document.getElementById("sanity-label").innerHTML, 400, 1015)
-            ctx.fillText("Relationship Axis: " + document.getElementById("relationship-label").innerHTML, 400, 1135)
-            ctx.fillText("Fedposting Axis: " + document.getElementById("fedposting-label").innerHTML, 400, 1255)
-            ctx.fillText("Actions Axis: " + document.getElementById("actions-label").innerHTML, 400, 1375)
-
-            document.getElementById("banner").src = c.toDataURL();
-    }    
-    </script>
-</body>
+    <head>
+        <link href='stylesheets/style.css' rel='stylesheet' type='text/css'>
+        <link href='stylesheets/results.css' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="x-icon" href="assets/icon.png">
+        <link rel="shortcut icon" type="x-icon" href="assets/icon.png">
+        <title>PolcompballValues</title>
+        <meta property="og:ttl" content="600">
+        <meta property="og:site_name" content="polcompballvalues.github.io">
+        <meta property="og:title" content="PolcompballValues">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="PolcompballValues a quiz aimed at members of the Polcompball community, specially the official Discord server">
+        <meta property="og:url" content="https://polcompballvalues.github.io/">
+        <meta property="og:image" content="https://polcompballvalues.github.io/assets/previcon.png">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
+        <meta name="theme-color" content="#000000" data-react-helmet="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>PolcompballValues</h1>
+        <h2>Results</h2>
+        <div class="results">
+            <!--Seriousposting axis-->
+            <h2>Seriousposting Axis: <span class="weight-300" id="seriousposting-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-sincerity" src="assets/values/sincerity.svg" height="128pt"/>
+                <div class="bar sincerity" id="bar-sincerity">
+                    <div class="text-wrapper" id="sincerity"></div>
+                </div>
+                <div class="bar irony" id="bar-irony">
+                    <div class="text-wrapper" id="irony"></div>
+                </div>
+                <img class="value" id="img-irony" src="assets/values/irony.svg" height="128pt"/>
+            </div>
+            <!--Allegiance axis-->
+            <h2>Allegiance Axis: <span class="weight-300" id="allegiance-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-jannyphobe" src="assets/values/jannyphobe.svg" height="128pt"/>
+                <div class="bar jannyphobe" id="bar-jannyphobe">
+                    <div class="text-wrapper" id="jannyphobe"></div>
+                </div>
+                <div class="bar jannyphile" id="bar-jannyphile">
+                    <div class="text-wrapper-white" id="jannyphile"></div>
+                </div>
+                <img class="value" id="img-jannyphile" src="assets/values/jannyphile.svg" height="128pt"/>
+            </div>
+            <!--Experience axis-->
+            <h2>Experience Axis: <span class="weight-300" id="experience-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-veteran" src="assets/values/veteran.svg" height="128pt"/>
+                <div class="bar veteran" id="bar-veteran">
+                    <div class="text-wrapper" id="veteran"></div>
+                </div>
+                <div class="bar newbie" id="bar-newbie">
+                    <div class="text-wrapper" id="newbie"></div>
+                </div>
+                <img class="value" id="img-newbie" src="assets/values/newbie.svg" height="128pt"/>
+            </div>
+            <!--Personality axis-->
+            <h2>Personality Axis: <span class="weight-300" id="personality-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-wholesome" src="assets/values/wholesome.svg" height="128pt"/>
+                <div class="bar wholesome" id="bar-wholesome">
+                    <div class="text-wrapper" id="wholesome"></div>
+                </div>
+                <div class="bar edgy" id="bar-edgy">
+                    <div class="text-wrapper" id="edgy"></div>
+                </div>
+                <img class="value" id="img-edgy" src="assets/values/edgy.svg" height="128pt"/>
+            </div>
+            <!--Hornyposting axis-->
+            <h2>Hornyposting Axis: <span class="weight-300" id="hornyposting-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-horny" src="assets/values/horny.svg" height="128pt"/>
+                <div class="bar horny" id="bar-horny">
+                    <div class="text-wrapper" id="horny"></div>
+                </div>
+                <div class="bar antihorny" id="bar-antihorny">
+                    <div class="text-wrapper" id="antihorny"></div>
+                </div>
+                <img class="value" id="img-antihorny" src="assets/values/antihorny.svg" height="128pt"/>
+            </div>
+            <!--Fame axis-->
+            <h2>Fame Axis: <span class="weight-300" id="fame-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-active" src="assets/values/active.svg" height="128pt"/>
+                <div class="bar active" id="bar-active">
+                    <div class="text-wrapper" id="active"></div>
+                </div>
+                <div class="bar lurker" id="bar-lurker">
+                    <div class="text-wrapper" id="lurker"></div>
+                </div>
+                <img class="value" id="img-lurker" src="assets/values/lurker.svg" height="128pt"/>
+            </div>
+            <!--Shower axis-->
+            <h2>Shower Axis: <span class="weight-300" id="shower-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-standard" src="assets/values/standard.svg" height="128pt"/>
+                <div class="bar standard" id="bar-standard">
+                    <div class="text-wrapper" id="standard"></div>
+                </div>
+                <div class="bar wacky" id="bar-wacky">
+                    <div class="text-wrapper" id="wacky"></div>
+                </div>
+                <img class="value" id="img-wacky" src="assets/values/wacky.svg" height="128pt"/>
+            </div>
+            <!--Sanity axis-->
+            <h2>Sanity Axis: <span class="weight-300" id="sanity-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-boring" src="assets/values/boring.svg" height="128pt"/>
+                <div class="bar boring" id="bar-boring">
+                    <div class="text-wrapper" id="boring"></div>
+                </div>
+                <div class="bar schizo" id="bar-schizo">
+                    <div class="text-wrapper" id="schizo"></div>
+                </div>
+                <img class="value" id="img-schizo" src="assets/values/schizo.svg" height="128pt"/>
+            </div>
+            <!--Relationship axis-->
+            <h2>Relationship Axis: <span class="weight-300" id="relationship-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-liked" src="assets/values/liked.svg" height="128pt"/>
+                <div class="bar liked" id="bar-liked">
+                    <div class="text-wrapper" id="liked"></div>
+                </div>
+                <div class="bar disliked" id="bar-disliked">
+                    <div class="text-wrapper" id="disliked"></div>
+                </div>
+                <img class="value" id="img-disliked" src="assets/values/disliked.svg" height="128pt"/>
+            </div>
+            <!--Fedposting axis-->
+            <h2>Fedposting Axis: <span class="weight-300" id="fedposting-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-discriminatory" src="assets/values/discriminatory.svg" height="128pt"/>
+                <div class="bar discriminatory" id="bar-discriminatory">
+                    <div class="text-wrapper" id="discriminatory"></div>
+                </div>
+                <div class="bar inclusive" id="bar-inclusive">
+                    <div class="text-wrapper" id="inclusive"></div>
+                </div>
+                <img class="value" id="img-inclusive" src="assets/values/inclusive.svg" height="128pt"/>
+            </div>
+            <!--Actions axis-->
+            <h2>Actions Axis: <span class="weight-300" id="actions-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-behaving" src="assets/values/behaving.svg" height="128pt"/>
+                <div class="bar behaving" id="bar-behaving">
+                    <div class="text-wrapper" id="behaving"></div>
+                </div>
+                <div class="bar misbehaving" id="bar-misbehaving">
+                    <div class="text-wrapper" id="misbehaving"></div>
+                </div>
+                <img class="value" id="img-misbehaving" src="assets/values/misbehaving.svg" height="128pt"/>
+            </div>
+            <!--Purpose axis-->
+            <h2>Purpose Axis: <span class="weight-300" id="purpose-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-artist" src="assets/values/artist.svg" height="128pt"/>
+                <div class="bar artist" id="bar-artist">
+                    <div class="text-wrapper" id="artist"></div>
+                </div>
+                <div class="bar community" id="bar-community">
+                    <div class="text-wrapper-white" id="community"></div>
+                </div>
+                <img class="value" id="img-community" src="assets/values/community.svg" height="128pt"/>
+            </div>
+            <!--Perception axis-->
+            <h2>Perception Axis: <span class="weight-300" id="perception-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-pleasant" src="assets/values/pleasant.svg" height="128pt"/>
+                <div class="bar pleasant" id="bar-pleasant">
+                    <div class="text-wrapper" id="pleasant"></div>
+                </div>
+                <div class="bar annoying" id="bar-annoying">
+                    <div class="text-wrapper-white" id="annoying"></div>
+                </div>
+                <img class="value" id="img-annoying" src="assets/values/annoying.svg" height="128pt"/>
+            </div>
+            <!--Comedy axis-->
+            <h2>Comedy Axis: <span class="weight-300" id="comedy-label"></span></h2>
+            <div class="axis">
+                <img class="value" id="img-funny" src="assets/values/funny.svg" height="128pt"/>
+                <div class="bar funny" id="bar-funny">
+                    <div class="text-wrapper" id="funny"></div>
+                </div>
+                <div class="bar unfunny" id="bar-unfunny">
+                    <div class="text-wrapper" id="unfunny"></div>
+                </div>
+                <img class="value" id="img-unfunny" src="assets/values/unfunny.svg" height="128pt"/>
+            </div>
+        </div>
+        <h2>Closest Match: <span class="weight-300" id="user-label"></span></h2>
+        <img src="" id="banner">
+        <br>
+        <button class="button" onclick="submit()" id="submit-button">Submit Your Scores</button> <br>
+        <button class="button" onclick="location.href='gallery.html'" id="gallery-button">User Gallery</button> <br>
+        <button class="button" onclick="location.href='credits.html'" id="credits-button">Credits</button> <br>
+        <script type="application/javascript"src="scripts/users.js"></script>
+        <script type="application/javascript"src="scripts/axes.js"></script>
+        <script type="application/javascript"src="scripts/canvas.js"></script>
+        <script type="application/javascript"src="scripts/results.js"></script>
+    </body>
 </html>

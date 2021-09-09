@@ -1,0 +1,11 @@
+{
+    "files.exclude": {
+        "**/.vscode": true,
+        "**/*.css": true,
+        "**/*.js": true,
+        "**/*.png": true,
+        "**/legacy": true,
+        "**/LICENSE": true,
+        "**/values": true
+    }
+}

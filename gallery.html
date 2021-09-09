@@ -1,295 +1,58 @@
+<!DOCTYPE html>
 <html lang="en-US">
-<head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
-<link href='style.css' rel='stylesheet' type='text/css'>
-<link rel="icon" type="x-icon" href="icon.png">
-<link rel="shortcut icon" type="x-icon" href="icon.png">
-<title>PolcompballValues</title>
-<meta property="og:ttl" content="600">
-<meta property="og:site_name" content="polcompballvalues.github.io">
-<meta property="og:title" content="PolcompballValues">
-<meta property="og:type" content="website">
-<meta property="og:description" content="PolcompballValues a quiz aimed at members of the Polcompball community, specially the official Discord server">
-<meta property="og:url" content="https://polcompballvalues.github.io/">
-<meta property="og:image" content="https://polcompballvalues.github.io/previcon.png">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height" content="1024">
-<meta name="theme-color" content="#000000" data-react-helmet="true">
-<meta charset="utf-8">
-<script type="application/javascript" src="users.js"></script>
-<script type="application/javascript" src="axis.js"></script>
-<script type="application/javascript" src="version.js"></script>
-</head>
-<body>
-<h1>PolcompballValues</h1>
-<hr>
-<select name="user" id="userdropdown" style="display:flex; font-size:30pt; margin:auto; text-align:center; width:50%" onchange="userdropdownChanged()"></select>
-<img src="" id="banner">
-</hr>
-<button class="button" onclick="goBack()" style="background-color: #2196f3;">Back</button><br>
-<button class="button" onclick="location.href='credits.html';" style="background-color: #aaaaaa;">Credits</button> <br>
-<script>
-	function goBack() {
-		window.history.back();
-	}
+    <head>
+        <link href='stylesheets/style.css' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="x-icon" href="assets/icon.png">
+        <link rel="shortcut icon" type="x-icon" href="assets/icon.png">
+        <title>PolcompballValues</title>
+        <meta property="og:ttl" content="600">
+        <meta property="og:site_name" content="polcompballvalues.github.io">
+        <meta property="og:title" content="PolcompballValues">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="PolcompballValues a quiz aimed at members of the Polcompball community, specially the official Discord server">
+        <meta property="og:url" content="https://polcompballvalues.github.io/">
+        <meta property="og:image" content="https://polcompballvalues.github.io/assets/previcon.png">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
+        <meta name="theme-color" content="#000000" data-react-helmet="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>PolcompballValues</h1>
+        <h2>User Gallery</h2>
+        <select name="user" id="userdropdown" onchange="userdropdownChanged()"></select>
+        <br>
+        <img src="" id="banner">
+        <br style="margin-bottom: 1vw">
+        <button class="button" onclick="goBack()" id="back-button">Back</button><br>
+        <button class="button" onclick="location.href='credits.html'" id="credits-button">Credits</button> <br>
+        <script type="application/javascript" src="scripts/axes.js"></script>
+        <script type="application/javascript" src="scripts/users.js"></script>
+        <script type="application/javascript" src="scripts/canvas.js"></script>
+        <script>
+            userdropdown = document.getElementById("userdropdown")
 
-function setLabel(val, ary)
-{
-	if(val > 100) {return ""} else
-	if(val > 90) {return ary[0]} else
-	if(val > 75) {return ary[1]} else
-	if(val > 60) {return ary[2]} else
-	if(val >= 40) {return ary[3]} else
-	if(val >= 25) {return ary[4]} else
-	if(val >= 10) {return ary[5]} else
-	if(val >= 0) {return ary[6]} else
-	{return ""}
-}
-
-var img_sincerity      = new Image();
-img_sincerity.src      = "value_images/sincerity.svg";
-var img_irony          = new Image();
-img_irony.src          = "value_images/irony.svg";
-var img_jannyphobe     = new Image();
-img_jannyphobe.src     = "value_images/jannyphobe.svg";
-var img_jannyphile     = new Image();
-img_jannyphile.src     = "value_images/jannyphile.svg";
-var img_casual         = new Image();
-img_casual.src         = "value_images/casual.svg";
-var img_serious        = new Image();
-img_serious.src        = "value_images/serious.svg";
-var img_wholesome      = new Image();
-img_wholesome.src      = "value_images/wholesome.svg";
-var img_edgy           = new Image();
-img_edgy.src           = "value_images/edgy.svg";
-var img_horny          = new Image();
-img_horny.src          = "value_images/horny.svg";
-var img_antihorny      = new Image();
-img_antihorny.src      = "value_images/antihorny.svg";
-var img_active         = new Image();
-img_active.src         = "value_images/active.svg";
-var img_lurker         = new Image();
-img_lurker.src         = "value_images/lurker.svg";
-var img_standard       = new Image();
-img_standard.src       = "value_images/standard.svg";
-var img_wacky          = new Image();
-img_wacky.src          = "value_images/wacky.svg";
-var img_schizo         = new Image();
-img_schizo.src         = "value_images/schizo.svg";
-var img_boring         = new Image();
-img_boring.src         = "value_images/boring.svg";
-var img_liked          = new Image();
-img_liked.src          = "value_images/liked.svg";
-var img_disliked       = new Image();
-img_disliked.src       = "value_images/disliked.svg";
-var img_inclusive      = new Image();
-img_inclusive.src      = "value_images/inclusive.svg";
-var img_discriminatory = new Image();
-img_discriminatory.src = "value_images/discriminatory.svg";
-var img_behaving       = new Image();
-img_behaving.src       = "value_images/behaving.svg";
-var img_misbehaving    = new Image();
-img_misbehaving.src    = "value_images/misbehaving.svg";
-
-function makeUserCanvas(user, sincerity, jannyphobe, casual, wholesome, horny, active, standard, schizo, liked, inclusive, behaving)
-	{
-	sincerity      = sincerity.toFixed(1)
-	irony          = (100 - sincerity).toFixed(1)
-	jannyphobe     = jannyphobe.toFixed(1)
-	jannyphile     = (100 - jannyphobe).toFixed(1)
-	casual         = casual.toFixed(1)
-	serious        = (100 - casual).toFixed(1)
-	wholesome      = wholesome.toFixed(1)
-	edgy           = (100 - wholesome).toFixed(1)
-	horny          = horny.toFixed(1)
-	antihorny      = (100 - horny).toFixed(1)
-	active         = active.toFixed(1)
-	lurker         = (100 - active).toFixed(1)
-	standard       = standard.toFixed(1)
-	wacky          = (100 - standard).toFixed(1)
-	schizo         = schizo.toFixed(1)
-	boring         = (100 - schizo).toFixed(1)
-	liked          = liked.toFixed(1)
-	disliked       = (100 - liked).toFixed(1)
-	inclusive      = inclusive.toFixed(1)
-	discriminatory = (100 - inclusive).toFixed(1)
-	behaving       = behaving.toFixed(1)
-	misbehaving    = (100 - behaving).toFixed(1)
-
-	var c = document.createElement("canvas")
-	var ctx = c.getContext("2d")
-	c.width = 800;
-	c.height = 1500;
-	if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
-	ctx.fillStyle = "#141414" //Dark mode
-	} else {
-	ctx.fillStyle = "#EEEEEE"} //Light mode
-	ctx.fillRect(0, 0, 800, 1500);
-	ctx.drawImage(img_sincerity, 20, 170, 100, 100)
-	ctx.drawImage(img_irony, 680, 170, 100, 100)
-	ctx.drawImage(img_jannyphobe, 20, 290, 100, 100)
-	ctx.drawImage(img_jannyphile, 680, 290, 100, 100)
-	ctx.drawImage(img_casual, 20, 410, 100, 100)
-	ctx.drawImage(img_serious, 680, 410, 100, 100)
-	ctx.drawImage(img_wholesome, 20, 530, 100, 100)
-	ctx.drawImage(img_edgy, 680, 530, 100, 100)
-	ctx.drawImage(img_horny, 20, 650, 100, 100)
-	ctx.drawImage(img_antihorny, 680, 650, 100, 100)
-	ctx.drawImage(img_active, 20, 770, 100, 100)
-	ctx.drawImage(img_lurker, 680, 770, 100, 100)
-	ctx.drawImage(img_standard, 20, 890, 100, 100)
-	ctx.drawImage(img_wacky, 680, 890, 100, 100)
-	ctx.drawImage(img_schizo, 20, 1010, 100, 100)
-	ctx.drawImage(img_boring, 680, 1010, 100, 100)
-	ctx.drawImage(img_liked, 20, 1130, 100, 100)
-	ctx.drawImage(img_disliked, 680, 1130, 100, 100)
-	ctx.drawImage(img_inclusive, 20, 1250, 100, 100)
-	ctx.drawImage(img_discriminatory, 680, 1250, 100, 100)
-	ctx.drawImage(img_behaving, 20, 1370, 100, 100)
-	ctx.drawImage(img_misbehaving, 680, 1370, 100, 100)
-
-	ctx.fillStyle = "#222222"
-	ctx.fillRect(120, 180, 560, 80)
-	ctx.fillRect(120, 300, 560, 80)
-	ctx.fillRect(120, 420, 560, 80)
-	ctx.fillRect(120, 540, 560, 80)
-	ctx.fillRect(120, 660, 560, 80)
-	ctx.fillRect(120, 780, 560, 80)
-	ctx.fillRect(120, 900, 560, 80)
-	ctx.fillRect(120, 1020, 560, 80)
-	ctx.fillRect(120, 1140, 560, 80)
-	ctx.fillRect(120, 1260, 560, 80)
-	ctx.fillRect(120, 1380, 560, 80)
-	ctx.fillStyle = "#008080"
-	ctx.fillRect(120, 184, 5.6 * sincerity - 2, 72)
-	ctx.fillStyle = "#0000FF"
-	ctx.fillRect(682 - 5.6 * irony, 184, 5.6 * irony - 2, 72)
-	ctx.fillStyle = "#FFFF00"
-	ctx.fillRect(120, 304, 5.6 * jannyphobe - 2, 72)
-	ctx.fillStyle = "#D061A6"
-	ctx.fillRect(682 - 5.6 * jannyphile, 304, 5.6 * jannyphile - 2, 72)
-	ctx.fillStyle = "#003890"
-	ctx.fillRect(120, 424, 5.6 * casual - 2, 72)
-	ctx.fillStyle = "#FF0000"
-	ctx.fillRect(682 - 5.6 * serious, 424, 5.6 * serious - 2, 72)
-	ctx.fillStyle = "#C000FF"
-	ctx.fillRect(120, 544, 5.6 * wholesome - 2, 72)
-	ctx.fillStyle = "#EE2436"
-	ctx.fillRect(682 - 5.6 * edgy, 544, 5.6 * edgy - 2, 72)
-	ctx.fillStyle = "#000000"
-	ctx.fillRect(120, 664, 5.6 * horny - 2, 72)
-	ctx.fillStyle = "#F5DD00"
-	ctx.fillRect(682 - 5.6 * antihorny, 664, 5.6 * antihorny - 2, 72)
-	ctx.fillStyle = "#FF0000"
-	ctx.fillRect(120, 784, 5.6 * active - 2, 72)
-	ctx.fillStyle = "#FFFFFF"
-	ctx.fillRect(682 - 5.6 * lurker, 784, 5.6 * lurker - 2, 72)
-	ctx.fillStyle = "#8B5320"
-	ctx.fillRect(120, 904, 5.6 * standard - 2, 72)
-	ctx.fillStyle = "#89001C"
-	ctx.fillRect(682 - 5.6 * wacky, 904, 5.6 * wacky - 2, 72)
-	ctx.fillStyle = "#7F3980"
-	ctx.fillRect(120, 1024, 5.6 * schizo - 2, 72)
-	ctx.fillStyle = "#F5DD00"
-	ctx.fillRect(682 - 5.6 * boring, 1024, 5.6 * boring - 2, 72)
-	ctx.fillStyle = "#52CE3C"
-	ctx.fillRect(120, 1144, 5.6 * liked - 2, 72)
-	ctx.fillStyle = "#F5A9B8"
-	ctx.fillRect(682 - 5.6 * disliked, 1144, 5.6 * disliked - 2, 72)
-	ctx.fillStyle = "#FB0000"
-	ctx.fillRect(120, 1264, 5.6 * inclusive - 2, 72)
-	ctx.fillStyle = "#32B5D4"
-	ctx.fillRect(682 - 5.6 * discriminatory, 1264, 5.6 * discriminatory - 2, 72)
-	ctx.fillStyle = "#7F00FF"
-	ctx.fillRect(120, 1384, 5.6 * behaving - 2, 72)
-	ctx.fillStyle = "#429B7D"
-	ctx.fillRect(682 - 5.6 * misbehaving, 1384, 5.6 * misbehaving - 2, 72)
-	if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
-	ctx.fillStyle = "#DDDDDD" //Dark mode
-	} else{
-	ctx.fillStyle = "#222222"} //Light mode
-	ctx.font = "700 50px Montserrat"
-	ctx.textAlign = "left"
-	ctx.fillText("PolcompballValues", 20, 90)
-	ctx.font = "30px Montserrat"
-	usermatch = user
-	ctx.fillText(usermatch, 20, 140)
-	ctx.font = "50px Montserrat"
-	ctx.textAlign = "left"
-	ctx.fillStyle = "#222222"
-    ctx.fillStyle="#222222"
-    if (sincerity       > 30) {ctx.fillText(sincerity + "%", 130, 237.5)}
-    if (jannyphobe      > 30) {ctx.fillText(jannyphobe + "%", 130, 357.5)}
-    ctx.fillStyle="#DDDDDD"
-    if (casual          > 30) {ctx.fillText(casual + "%", 130, 477.5)} //White font
-    ctx.fillStyle="#222222"
-    if (wholesome       > 30) {ctx.fillText(wholesome + "%", 130, 597.5)}
-    ctx.fillStyle="#DDDDDD"
-    if (horny           > 30) {ctx.fillText(horny + "%", 130, 717.5)} //White font
-    ctx.fillStyle="#222222"
-    if (active          > 30) {ctx.fillText(active + "%", 130, 837.5)}
-    if (standard        > 30) {ctx.fillText(standard + "%", 130, 957.5)}
-    ctx.fillStyle="#DDDDDD"
-    if (schizo          > 30) {ctx.fillText(schizo + "%", 130, 1077.5)} //White font
-    ctx.fillStyle="#222222"
-    if (liked           > 30) {ctx.fillText(liked + "%", 130, 1197.5)}
-    if (inclusive       > 30) {ctx.fillText(inclusive + "%", 130, 1317.5)}
-    if (behaving        > 30) {ctx.fillText(behaving + "%", 130, 1437.5)}
-    ctx.textAlign="right"
-    ctx.fillStyle="#DDDDDD"
-    if (irony           > 30) {ctx.fillText(irony + "%", 670, 237.5)} //White font
-    ctx.fillStyle="#222222"
-    if (jannyphile      > 30) {ctx.fillText(jannyphile + "%", 670, 357.5)}
-    if (serious         > 30) {ctx.fillText(serious + "%", 670, 477.5)}
-    if (edgy            > 30) {ctx.fillText(edgy + "%", 670, 597.5)}
-    if (antihorny       > 30) {ctx.fillText(antihorny + "%", 670, 717.5)}
-    if (lurker          > 30) {ctx.fillText(lurker + "%", 670, 837.5)}
-    ctx.fillStyle="#DDDDDD"
-    if (wacky           > 30) {ctx.fillText(wacky + "%", 670, 957.5)} //White font
-    ctx.fillStyle="#222222"
-    if (boring          > 30) {ctx.fillText(boring + "%", 670, 1077.5)}
-    if (disliked        > 30) {ctx.fillText(disliked + "%", 670, 1197.5)}
-    if (discriminatory  > 30) {ctx.fillText(discriminatory + "%", 670, 1317.5)}
-    if (misbehaving     > 30) {ctx.fillText(misbehaving + "%", 670, 1437.5)}
-	if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
-	{ctx.fillStyle = "#DDDDDD" //Dark mode
-	} else{
-	ctx.fillStyle = "#222222"} //Light mode
-	ctx.font = "300 25px Montserrat"
-	ctx.fillText("polcompballvalues.github.io", 780, 40)
-	ctx.fillText(version, 780, 70)
-	ctx.fillText("Users Gallery", 780, 100) 
-	ctx.textAlign = "center"
-	ctx.font="30px Montserrat"
-	ctx.fillText("Seriousposting Axis: " + setLabel(sincerity, sposArray), 400, 175)
-	ctx.fillText("Allegiance Axis: "     + setLabel(jannyphobe, alleArray), 400, 295)
-	ctx.fillText("Server Axis: "         + setLabel(casual, servArray), 400, 415)
-	ctx.fillText("Personality Axis: "    + setLabel(wholesome, persArray), 400, 535)
-	ctx.fillText("Hornyposting Axis: "   + setLabel(horny, hornArray), 400, 655)
-	ctx.fillText("Fame Axis: "           + setLabel(active, fameArray), 400, 775)
-	ctx.fillText("Shower Axis: "         + setLabel(standard, showArray), 400, 895)
-	ctx.fillText("Sanity Axis: "         + setLabel(schizo, saniArray), 400, 1015)
-	ctx.fillText("Relationship Axis: "   + setLabel(liked, relaArray), 400, 1135)
-	ctx.fillText("Fedposting Axis: "     + setLabel(inclusive, fedpArray), 400, 1255)
-	ctx.fillText("Actions Axis: "        + setLabel(behaving, actiArray), 400, 1375)
-
-	document.getElementById("banner").src = c.toDataURL()
-	}
-
-	userdropdown = document.getElementById("userdropdown")
-	function userdropdownChanged()
-	{
-		i = userdropdown.selectedIndex
-		makeUserCanvas(users[i].name, users[i].stats.spos, users[i].stats.alle, users[i].stats.serv, users[i].stats.pers, users[i].stats.horn, users[i].stats.fame, users[i].stats.show, users[i].stats.sani, users[i].stats.rela, users[i].stats.fedp, users[i].stats.acti)
-		}
-	window.onload = function()
-	{
-		for(let i = 0;i < users.length;i++)
-		{
-		userdropdown.innerHTML += "<option value=\"" + i + "\">" + users[i].name + "</option>"
-		}
-	userdropdownChanged(1)
-	}
-</script>
-</body>
+            function goBack() {
+                window.history.back();
+            }            
+            
+            function userdropdownChanged() {
+                i = userdropdown.selectedIndex
+                makeUserCanvas(users[i].stats.spos, users[i].stats.alle, users[i].stats.expr, users[i].stats.pers, users[i].stats.horn, users[i].stats.fame, users[i].stats.shwr, users[i].stats.sani, users[i].stats.rela, users[i].stats.fedp, users[i].stats.actn, users[i].stats.purp, users[i].stats.perc, users[i].stats.cmdy, true, false, darkmode, users[i].name)
+            }
+            
+            window.onload = function() {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    darkmode = true
+                } else {
+                    darkmode = false
+                }
+                for(let i = 0;i < users.length;i++) {
+                    userdropdown.innerHTML += "<option value=\"" + i + "\">" + users[i].name + "</option>"
+                }
+                userdropdownChanged(1)
+            }
+        </script>
+    </body>
 </html>

@@ -1,89 +1,101 @@
+<!DOCTYPE html>
 <html lang="en-US">
-<head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
-<link href='style.css' rel='stylesheet' type='text/css'>
-<link rel="icon" type="x-icon" href="icon.png">
-<link rel="shortcut icon" type="x-icon" href="icon.png">
-<title>PolcompballValues</title>
-<meta property="og:ttl" content="600">
-<meta property="og:site_name" content="polcompballvalues.github.io">
-<meta property="og:title" content="PolcompballValues">
-<meta property="og:type" content="website">
-<meta property="og:description" content="PolcompballValues a quiz aimed at members of the Polcompball community, specially the official Discord server">
-<meta property="og:url" content="https://polcompballvalues.github.io/">
-<meta property="og:image" content="https://polcompballvalues.github.io/previcon.png">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height" content="1024">
-<meta name="theme-color" content="#000000" data-react-helmet="true">
-<meta charset="utf-8">
-</head>
-<body>
-    <h1>PolcompballValues</h1>
-<hr>
-<h2 style="text-align:center;">Credits</h2>
-<p><b style ="font-size: 24pt;">Coding:</b></p>
-<ul>
-    <li>TheGhostOfInky</li>
-    <li>Vizdun (Assistance)</li>
-    <li>(Based on the code of) TristanBomb</li>
-</ul>
-<p><b style ="font-size: 24pt;">Art assets and vectorization:</b></p>
-<ul>
-    <li>TheLegend2T</li>
-    <li>Jao</li>
-    <li>TheGhostOfInky</li>
-    <li>Vizdun</li>
-    <li>Denatidum</li>
-</ul>
-<p><b style ="font-size: 24pt;">Axis labels:</b></p>
-<ul>
-    <li>Spade</li>
-    <li>Xerunox</li>
-    <li>Denatidum</li>
-    <li>dof247</li>
-    <li>TheGhostOfInky</li>
-    <li>Rayz9989</li>
-</ul>
-<p><b style ="font-size: 24pt;">Value representatives:</b></p>
-<ul>
-    <li style="color:#0000FF;">TheLegend2T (Irony)</li>
-    <li style="color:#008080;">Anne Vuulphie (Sincerity)</li>
-    <li style="color:#FFFF00;">AWOIII (Jannyphobe)</li>
-    <li style="color:#D061A6;">dof247 (Jannyphile)</li>
-    <li style="color:#FF0000;">FdF (Serious)</li>
-    <li style="color:#003890;">Boil the Bagels (Casual)</li>
-    <li style="color:#EE2436;">SomeDude™ (Edgy)</li>
-    <li style="color:#C000FF;">Rayz9989 (Wholesome)</li>
-    <li style="color:#F5DD00;">MV (Antihorny)</li>
-    <li style="color:#000000;">StormTigrex (Horny)</li>
-    <li>Undefined lurker (Lurker)</li>
-    <li style="color:#FF0000;">TheGhostOfInky (Active)</li>
-    <li style="color:#89001C;">Plenderplar (Wacky)</li>
-    <li style="color:#8B5320;">Atzyn (Standard)</li>
-    <li style="color:#F5DD00;">Jokie1024 (Boring)</li>
-    <li style="color:#7F3980;">Bogg (Schizo)</li>
-    <li style="color:#F5A9B8;">Vizdun (Disliked)</li>
-    <li style="color:#52CE3C;">Founding Froggers (Liked)</li>
-    <li style="color:#32B5D4;">Bullet (Discriminatory)</li>
-    <li style="color:#FB0000;">Vend (Inclusive)</li>
-    <li style="color:#429B7D;">Bavyera (Misbehaving)</li>
-    <li style="color:#7F00FF;">Knightshade (Behaving)</li>
-</ul>
-<p><b style ="font-size: 24pt;">Questions:</b></p>
-<ul>
-    <li>The polcompball discord community</li>
-    <li>Rayz9989</li>
-</ul>
-<p><b style ="font-size: 24pt;">Index descriptions:</b></p>
-<ul>
-    <li>TheGhostOfInky</li>
-</ul>
-<button class="button" onclick="goBack()" style="background-color: #2196f3;">Back</button><br>
-<button class="button" onclick="location.href='gallery.html';" style="background-color: #1faf12;">Users Gallery</button> <br>
-<script>
-	function goBack() {
-		window.history.back();
-	}
-</script>
-</body>
+    <head>
+        <link href='stylesheets/style.css' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="x-icon" href="assets/icon.png">
+        <link rel="shortcut icon" type="x-icon" href="assets/icon.png">
+        <title>PolcompballValues</title>
+        <meta property="og:ttl" content="600">
+        <meta property="og:site_name" content="polcompballvalues.github.io">
+        <meta property="og:title" content="PolcompballValues">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="PolcompballValues a quiz aimed at members of the Polcompball community, specially the official Discord server">
+        <meta property="og:url" content="https://polcompballvalues.github.io/">
+        <meta property="og:image" content="https://polcompballvalues.github.io/assets/previcon.png">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
+        <meta name="theme-color" content="#000000" data-react-helmet="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>PolcompballValues</h1>
+        <h2>Credits</h2>
+        <div id="credits">
+            <p><b style ="font-size: 24pt;">Coding:</b></p>
+            <ul>
+                <li>TheGhostOfInky</li>
+                <li>Vizdun (Assistance)</li>
+                <li>(Based on the code of) TristanBomb</li>
+            </ul>
+            <p><b style ="font-size: 24pt;">Art assets and vectorization:</b></p>
+            <ul>
+                <li>Based and Jedpilled</li>
+                <li>Spade</li>
+                <li>TheLegend2T</li>
+                <li>Jao</li>
+                <li>TheGhostOfInky</li>
+                <li>Vizdun</li>
+                <li>Denatidum</li>
+            </ul>
+            <p><b style ="font-size: 24pt;">Axis labels:</b></p>
+            <ul>
+                <li>Spade</li>
+                <li>Xerunox</li>
+                <li>Denatidum</li>
+                <li>dof247</li>
+                <li>TheGhostOfInky</li>
+                <li>Rayz9989</li>
+            </ul>
+            <p><b style ="font-size: 24pt;">Value representatives:</b></p>
+            <ul>
+                <li style="color:#B22222;">TechnoSynd (Sincerity)</li>
+                <li style="color:#0000FF;">TheLegend2T (Irony)</li>
+                <li style="color:#EDB509;">byonn (Jannyphobe)</li>
+                <li style="color:#000;">StormTigrex (Jannyphile)</li>
+                <li style="color:#0000FF;">KEVIN (Veteran)</li>
+                <li style="color:#FF0000;">gaming.org (Newbie)</li>
+                <li style="color:#C000FF;">Rayz9989 (Wholesome)</li>
+                <li style="color:#EE2436;">SomeDude™ (Edgy)</li>
+                <li style="color:#880015;">Swoosho (Horny)</li>
+                <li style="color:#dba100;">Based and Jedpilled (Antihorny)</li>
+                <li style="color:#FF0000;">TheGhostOfInky (Active)</li>
+                <li>Undefined lurker (Lurker)</li>
+                <li style="color:#8B5320;">Atzyn (Standard)</li>
+                <li style="color:#89001C;">Plenderplar (Wacky)</li>
+                <li style="color:#cfbb00;">Jokie1024 (Boring)</li>
+                <li style="color:#7F3980;">Bogg (Schizo)</li>
+                <li style="color:#52CE3C;">Founding Froggers (Liked)</li>
+                <li style="color:#db94a3;">Vizdun (Disliked)</li>
+                <li style="color:#32B5D4;">Bullet (Discriminatory)</li>
+                <li style="color:#FB0000;">nguyenreich (Inclusive)</li>
+                <li style="color:#7F00FF;">Knightshade (Behaving)</li>
+                <li style="color:#429B7D;">Bavyera (Misbehaving)</li>
+                <li style="color:#003AAD;">Artist (OzymandiasFR)</li>
+                <li style="color:#01632a;">Community (ItsDanny101)</li>
+                <li style="color:#E88401;">Pleasant (Voizen)</li>
+                <li style="color:#02002e;">Annoying (lexarate)</li>
+                <li style="color:#05D243;">Funny (Basque)</li>
+                <li style="color:#7F66DE;">Unfunny (Librlec)</li>
+
+            </ul>
+            <p><b style ="font-size: 24pt;">Questions:</b></p>
+            <ul>
+                <li>The polcompball discord community</li>
+                <li>Rayz9989</li>
+            </ul>
+            <p><b style ="font-size: 24pt;">Index descriptions:</b></p>
+            <ul>
+                <li>Rayz9989</li>
+            </ul>
+        </div>
+        <br>
+        <button class="button" onclick="goBack()" id="back-button">Back</button><br>
+        <button class="button" onclick="location.href='gallery.html'" id="gallery-button">User Gallery</button> <br>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+    </body>
 </html>

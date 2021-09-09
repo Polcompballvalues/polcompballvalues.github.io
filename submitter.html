@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link href='stylesheets/style.css' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="x-icon" href="assets/icon.png">
+        <link rel="shortcut icon" type="x-icon" href="assets/icon.png">
+        <title>PolcompballValues</title>
+        <meta property="og:ttl" content="600">
+        <meta property="og:site_name" content="polcompballvalues.github.io">
+        <meta property="og:title" content="PolcompballValues">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="PolcompballValues a quiz aimed at members of the Polcompball community, specially the official Discord server">
+        <meta property="og:url" content="https://polcompballvalues.github.io/">
+        <meta property="og:image" content="https://polcompballvalues.github.io/assets/previcon.png">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
+        <meta name="theme-color" content="#000000" data-react-helmet="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>PolcompballValues</h1>
+        <h2 style="text-align:center;">Result submitter</h2>
+        <form>
+            <label for="name">Insert the name you want displayed below:</label>
+            <br style="margin-bottom: 1.5vw">
+            <input for="text" id="name" name="name">
+        </form>
+        <br style="margin-bottom: 0.5vw">
+        <button class="button" onclick="sendMessage()" id="send-button">Send</button><br>
+        <button class="button" onclick="goBack()" id="back-button" >Back</button><br>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script><script type="application/javascript"src="scripts/users.js"></script><script>function goBack(){window.history.back();};getQueryVariable=function(variable){var query,vars;query=window.location.search.substring(1);vars=query.split("&");for(var i=0;i<vars.length;i++){var pair=vars[i].split("=");if(pair[0]==variable){return pair[1]}};return 0/0;};function sendMessage(){var a=getQueryVariable("a");var b= getQueryVariable("b");var c=getQueryVariable("c");var d=getQueryVariable("d");var e=getQueryVariable("e");var f=getQueryVariable("f");var g=getQueryVariable("g");var qeury = window.location.hostname;var h=getQueryVariable("h");var i=getQueryVariable("i");var j=getQueryVariable("j");var k=getQueryVariable("k");var l=getQueryVariable("l");var m=getQueryVariable("m");var n=getQueryVariable("n");var request=new XMLHttpRequest();request.open("POST", CryptoJS.AES.decrypt(userlink,qeury).toString(CryptoJS.enc.Utf8));name=document.getElementById('name').value;whookname="Polcompballvalues - "+name; request.setRequestHeader('Content-type','application/json');score=`\`\`\`js\n,\n  \"name\" \= ${name}\n  \"stats\"\:\n    \"spos\"\: ${a}\n    \"alle\"\: ${b}\n    \"expr\"\: ${c}\n    \"pers\"\: ${d}\n    \"horn\"\: ${e}\n    \"fame\"\: ${f}\n    \"shwr\"\: ${g}\n    \"sani\"\: ${h}\n    \"rela\"\: ${i}\n    \"fedp\"\: ${j}\n    \"actn\"\: ${k}\n    \"purp\"\: ${l}\n    \"perc\"\: ${m}\n    \"cmdy\"\: ${n}\n\`\`\``;qeury="";var params={username:whookname,avatar_url:"https://polcompballvalues.github.io/assets/icon.png",content:score};request.send(JSON.stringify(params));alert("Scores submitted!");}</script>
+    </body>
+</html>

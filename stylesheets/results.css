@@ -1,0 +1,187 @@
+div.axis {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.bar {
+  height: 36pt;
+  line-height: 36pt;
+  padding: 10pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 6px;
+  border-color: #000;
+  background-color: #fff;
+  width: 50%;
+}
+
+div.text-wrapper, div.text-wrapper-white {
+  font-size: 36pt;
+  line-height: 36pt;
+  color: #222222;
+}
+
+div.text-wrapper-white {
+  color: #DDDDDD;
+}
+
+div.results {
+  width: 80%;
+  max-width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.funny, div.pleasant, div.artist, div.behaving, div.discriminatory, div.liked, div.boring, div.standard, div.active, div.horny, div.wholesome, div.veteran, div.jannyphobe, div.sincerity {
+  text-align: left;
+  border-left-style: solid;
+  border-top-left-radius: 28pt;
+  border-bottom-left-radius: 28pt;
+  margin-left: 4px;
+}
+
+div.unfunny, div.annoying, div.community, div.misbehaving, div.inclusive, div.disliked, div.schizo, div.wacky, div.lurker, div.antihorny, div.edgy, div.newbie, div.jannyphile, div.irony {
+  text-align: right;
+  border-right-style: solid;
+  border-top-right-radius: 28pt;
+  border-bottom-right-radius: 28pt;
+  margin-right: 4px;
+}
+
+div.sincerity {
+  background-color: #B22222;
+}
+
+div.irony {
+  background-color: #00F;
+}
+
+div.jannyphobe {
+  background-color: #EDB509;
+}
+
+div.jannyphile {
+  background-color: #333;
+}
+
+div.veteran {
+  background-color: #00F;
+}
+
+div.newbie {
+  background-color: #FF0000;
+}
+
+div.wholesome {
+  background-color: #C000FF;
+}
+
+div.edgy {
+  background-color: #EE2436;
+}
+
+div.horny {
+  background-color: #880015;
+}
+
+div.antihorny {
+  background-color: #FEC62B;
+}
+
+div.active {
+  background-color: #FF0000;
+}
+
+div.lurker {
+  background-color: #FFFFFF;
+}
+
+div.standard {
+  background-color: #8B5320;
+}
+
+div.wacky {
+  background-color: #89001C;
+}
+
+div.boring {
+  background-color: #F5DD00;
+}
+
+div.schizo {
+  background-color: #7F3980;
+}
+
+div.liked {
+  background-color: #52CE3C;
+}
+
+div.disliked {
+  background-color: #F5A9B8;
+}
+
+div.discriminatory {
+  background-color: #32B5D4;
+}
+
+div.inclusive {
+  background-color: #EB0DEA;
+}
+
+div.behaving {
+  background-color: #7F00FF;
+}
+
+div.misbehaving {
+  background-color: #429B7D;
+}
+
+div.artist {
+  background-color: #003AAD;
+}
+
+div.community {
+  background-color: #01411C;
+}
+
+div.pleasant {
+  background-color: #E88401;
+}
+
+div.annoying {
+  background-color: #1A193A;
+}
+
+div.funny {
+  background-color: #05D243;
+}
+
+div.unfunny {
+  background-color: #7F66DE;
+}
+
+@media screen and (max-width: 800px) {
+  div.results {
+    width: 80vw;
+  }
+
+  div.bar {
+    height: 4vw;
+    width: 25vw;
+  }
+
+  img.value {
+    height: 20vw;
+    width: 20vw;
+  }
+
+  div.text-wrapper, div.text-wrapper-white {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+}
