@@ -26,20 +26,3 @@ let purp_array: Array<string> = ["Maestro", "Art Hero", "Aesthetic", "Artistic F
 let perc_array: Array<string> = ["Therapeutic", "Comforting", "Calming", "Chill", "Tolerable", "Ambivalent", "Uncomforting", "Pestering", "Obnoxious", "Infuriating", "Proof that God is testing us"]
 //Comedy axis (Funny vs Unfunny)
 let cmdy_array: Array<string> = ["Hysterical", "Hilarious", "Humorous", "Comical", "Amusing", "Undifferentiated", "Superficial", "Unironic", "Lackluster", "Crickets", "Epitome of Boredom"]
-
-/*
-console.log(spos_array.length)
-console.log(alle_array.length)
-console.log(expr_array.length)
-console.log(pers_array.length)
-console.log(cmdy_array.length)
-console.log(fame_array.length)
-console.log(shwr_array.length)
-console.log(sani_array.length)
-console.log(rela_array.length)
-console.log(fedp_array.length)
-console.log(actn_array.length)
-console.log(purp_array.length)
-console.log(perc_array.length)
-console.log(cmdy_array.length)
-*/
