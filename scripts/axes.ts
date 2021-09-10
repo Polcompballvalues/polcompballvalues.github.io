@@ -17,7 +17,7 @@ let sani_array: Array<string> = ["Too Normal", "Bland", "Healthy", "Sound Minded
 //Relationship axis (Liked vs Disliked)
 let rela_array: Array<string> = ["Venerated", "Loved", "Admired", "Appreciated", "Respected", "No Opinion", "Mixed Feelings", "Unwanted", "Disliked", "Hated", "Abhorred"]
 //Fedposting axis (Discriminatory vs Inclusive)
-let fedp_array: Array<string> = ["SJW", "Cosmopolitan", "Accepting", "Tolerant", "Open-minded", "Varying", "Biased", "Exclusive", "Prejudicial", "Bigoted", "Glowie"]
+let fedp_array: Array<string> = ["Glowie", "Bigoted", "Prejudicial", "Exclusive", "Biased", "Varying", "Open-minded", "Tolerant", "Accepting", "Cosmopolitan", "SJW"]
 //Actions axis (Behaving vs Misbehaving)
 let actn_array: Array<string> = ["Robotic", "Lawful", "Obedient", "Compliant", "Behaved", "Occasional",  "Tripping-up", "Unruly", "Disobedient", "Chaotic", "Criminal"]
 //Purpose axis (Artist vs Community)
