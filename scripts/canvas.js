@@ -1,4 +1,4 @@
-var version = "V2 Alpha 1";
+var version = "V2 Alpha 2";
 var edition;
 function setLabel(val, ary) {
     if (val > 100) {

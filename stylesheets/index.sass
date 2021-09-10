@@ -17,7 +17,7 @@ img.column:hover
     transform: scale(1.05)
 
 div.axis_label
-    font-size: 18pt
+    font-size: 16pt
     color: #000
 
 div.block
@@ -54,7 +54,7 @@ div.expl-axis
     margin: 4pt
     margin-top: 50px
 
-div.expl-text
+p.expl-text-left, p.expl-text-right
     display: block
     font-size: 16pt
     width: 90%
@@ -201,7 +201,7 @@ p.value
         font-size: 4vw
     div.expl-block
         width: 95%
-    p.expl-text, p.axis
+    p.axis
         font-size: 3vw
     p.value 
         font-size: 3.5vw
@@ -213,13 +213,28 @@ p.value
         width: 80%
         text-align: center
         margin: auto
+    div.spacer 
+        display: flex
+        justify-content: flex
+        margin-left: auto
+        margin-right: auto
     div.expl-axis
         width: 25%
         font-size: 3vw
         letter-spacing: normal
         margin: 1vw
-        margin-top: 10%
-    div.expl-left, div.expl-right
-        width: 50%
-        margin-left: 0%
+        margin-top: 10%        
+    div.expl-right, div.expl-right
+        width: 35%
+    p.expl-text-left
+        float: right
+        font-size: 3vw
+        margin-left: 2%
         margin-right: 0%
+        margin-top: 0%
+    p.expl-text-right
+        float: left
+        font-size: 3vw
+        margin-left: 0%
+        margin-right: 2%
+        margin-top: 0%
