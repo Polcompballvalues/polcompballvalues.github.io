@@ -24,20 +24,20 @@ users = [
   {
     "name": "nguyenreich",
     "stats": {
-      "spos": 53.4,
-      "alle": 31.6,
-      "expr": 65.3,
-      "pers": 80.9,
-      "horn": 60.0,
-      "fame": 92.4,
-      "shwr": 52.7,
-      "sani": 68.1,
-      "rela": 77.4,
-      "fedp": 13.1,
-      "actn": 70.5,
-      "purp": 63.7,
-      "perc": 81.7,
-      "cmdy": 70.4
+      "spos": 65.0,
+      "alle": 33.2,
+      "expr": 56.9,
+      "pers": 77.4,
+      "horn": 71.7,
+      "fame": 83.5,
+      "shwr": 43.6,
+      "sani": 65.3,
+      "rela": 73.8,
+      "fedp": 6.0,
+      "actn": 69.3,
+      "purp": 71.2,
+      "perc": 76.7,
+      "cmdy": 61.2
     }
   },
   {
@@ -266,6 +266,63 @@ users = [
       "purp": 88.0,
       "perc": 65.6,
       "cmdy": 50.1
+    }
+  },
+  {
+    "name": "Voizen",
+    "stats": {
+      "spos": 48.4,
+      "alle": 40.1,
+      "expr": 25.0,
+      "pers": 78.6,
+      "horn": 28.3,
+      "fame": 56.1,
+      "shwr": 61.6,
+      "sani": 70.9,
+      "rela": 71.4,
+      "fedp": 17.9,
+      "actn": 68.0,
+      "purp": 33.3,
+      "perc": 70.1,
+      "cmdy": 59.2
+    }
+  },
+  {
+    "name": "chicken piccata",
+    "stats": {
+      "spos": 63.3,
+      "alle": 31.7,
+      "expr": 18.0,
+      "pers": 83.4,
+      "horn": 51.6,
+      "fame": 43.9,
+      "shwr": 70.6,
+      "sani": 71.0,
+      "rela": 54.8,
+      "fedp": 22.6,
+      "actn": 83.4,
+      "purp": 48.5,
+      "perc": 73.4,
+      "cmdy": 14.8
+    }
+  },
+  {
+    "name": "YourLocalDegenerateMao",
+    "stats": {
+      "spos": 55.0,
+      "alle": 56.6,
+      "expr": 38.9,
+      "pers": 82.3,
+      "horn": 51.6,
+      "fame": 65.2,
+      "shwr": 57.7,
+      "sani": 61.1,
+      "rela": 73.9,
+      "fedp": 22.6,
+      "actn": 74.3,
+      "purp": 36.3,
+      "perc": 73.3,
+      "cmdy": 55.6
     }
   }
 ];

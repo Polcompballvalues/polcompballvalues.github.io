@@ -24,13 +24,13 @@ As you might be aware the web has been standardized on 3 main technologies, HTML
 
 ### How do I compile the .sass, .coffee and .ts files in the repo?
 To compile these files into regular css and javascript you'll need to install node.js and the following packages (sass, coffeescript and typescript) and then run the compile commands of each, if you're on windows running the compile.ps1 file in the utilities folder will compile all the files for you, otherwise below there's a set of commands for the default versions of each environment:
-```coffeescript
+```powershell
 #installing the packages
 npm i -g sass coffee typescript
 #compiling the files
-sass style.sass style.css
-coffee -c -b script.coffee
-tsc script.ts
+sass src:dist --no-source-map
+coffee -c -b -o  dist/ src/
+tsc
 ```
 
 

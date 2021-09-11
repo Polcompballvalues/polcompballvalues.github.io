@@ -1,5 +1,8 @@
+//Version type
 var version = "V2 Alpha 2";
+//Other vars
 var edition;
+//Sets label for each axis
 function setLabel(val, ary) {
     if (val > 100) {
         return "";
@@ -41,63 +44,80 @@ function setLabel(val, ary) {
         return "";
     }
 }
+//Setting value svg sources
+//Seriousposting axis
 var img_sincerity = new Image();
 img_sincerity.src = "assets/values/sincerity.svg";
 var img_irony = new Image();
 img_irony.src = "assets/values/irony.svg";
+//Allegiance axis
 var img_jannyphobe = new Image();
 img_jannyphobe.src = "assets/values/jannyphobe.svg";
 var img_jannyphile = new Image();
 img_jannyphile.src = "assets/values/jannyphile.svg";
+//Experience axis
 var img_veteran = new Image();
 img_veteran.src = "assets/values/veteran.svg";
 var img_newbie = new Image();
 img_newbie.src = "assets/values/newbie.svg";
+//Personality axis
 var img_wholesome = new Image();
 img_wholesome.src = "assets/values/wholesome.svg";
 var img_edgy = new Image();
 img_edgy.src = "assets/values/edgy.svg";
+//Hornyposting axis
 var img_horny = new Image();
 img_horny.src = "assets/values/horny.svg";
 var img_antihorny = new Image();
 img_antihorny.src = "assets/values/antihorny.svg";
+//Fame axis
 var img_active = new Image();
 img_active.src = "assets/values/active.svg";
 var img_lurker = new Image();
 img_lurker.src = "assets/values/lurker.svg";
+//Shower axis
 var img_standard = new Image();
 img_standard.src = "assets/values/standard.svg";
 var img_wacky = new Image();
 img_wacky.src = "assets/values/wacky.svg";
+//Sanity axis
 var img_boring = new Image();
 img_boring.src = "assets/values/boring.svg";
 var img_schizo = new Image();
 img_schizo.src = "assets/values/schizo.svg";
+//Relationship axis
 var img_liked = new Image();
 img_liked.src = "assets/values/liked.svg";
 var img_disliked = new Image();
 img_disliked.src = "assets/values/disliked.svg";
+//Fedposting axis
 var img_discriminatory = new Image();
 img_discriminatory.src = "assets/values/discriminatory.svg";
 var img_inclusive = new Image();
 img_inclusive.src = "assets/values/inclusive.svg";
+//Action axis
 var img_behaving = new Image();
 img_behaving.src = "assets/values/behaving.svg";
 var img_misbehaving = new Image();
 img_misbehaving.src = "assets/values/misbehaving.svg";
+//Purpose axis
 var img_artist = new Image();
 img_artist.src = "assets/values/artist.svg";
 var img_community = new Image();
 img_community.src = "assets/values/community.svg";
+//Perception axis
 var img_pleasant = new Image();
 img_pleasant.src = "assets/values/pleasant.svg";
 var img_annoying = new Image();
 img_annoying.src = "assets/values/annoying.svg";
+//Comedy axis
 var img_funny = new Image();
 img_funny.src = "assets/values/funny.svg";
 var img_unfunny = new Image();
 img_unfunny.src = "assets/values/unfunny.svg";
+//Creates canvas
 var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, horn_input, fame_input, shwr_input, sani_input, rela_input, fedp_input, actn_input, purp_input, perc_input, cmdy_input, gallery, short, dark, user) {
+    //Parseing input values into numbers
     var spos = parseFloat(spos_input);
     var alle = parseFloat(alle_input);
     var expr = parseFloat(expr_input);
@@ -112,6 +132,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     var purp = parseFloat(purp_input);
     var perc = parseFloat(perc_input);
     var cmdy = parseFloat(cmdy_input);
+    //toFixed(1) of all values
     var sincerity = spos.toFixed(1);
     var jannyphobe = alle.toFixed(1);
     var veteran = expr.toFixed(1);
@@ -140,6 +161,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     var community = (100 - purp).toFixed(1);
     var annoying = (100 - perc).toFixed(1);
     var unfunny = (100 - cmdy).toFixed(1);
+    //Canvas drawing
     var c = document.createElement("canvas");
     var ctx = c.getContext("2d");
     c.width = 800;
@@ -150,6 +172,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     else {
         ctx.fillStyle = "#EEE";
     }
+    //Drawing value images
     ctx.fillRect(0, 0, 800, 1860);
     ctx.drawImage(img_sincerity, 20, 170, 100, 100);
     ctx.drawImage(img_irony, 680, 170, 100, 100);
@@ -179,14 +202,17 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     ctx.drawImage(img_annoying, 680, 1610, 100, 100);
     ctx.drawImage(img_funny, 20, 1730, 100, 100);
     ctx.drawImage(img_unfunny, 680, 1730, 100, 100);
+    //Drawing bar background
     ctx.fillStyle = "#222222";
     for (i = 0, len = 15; i < len; i++) {
         ctx.lineJoin = "round";
         ctx.lineWidth = 75;
         ctx.strokeRect(165, 220 + 120 * i, 470, 0);
     }
+    //Drawing bars
     ctx.lineJoin = "round";
     ctx.lineWidth = 65;
+    //Seriousposting axis
     if (spos >= 50) {
         ctx.strokeStyle = "#00F";
         ctx.strokeRect(636 - 4.72 * (100 - spos), 220, 4.72 * (100 - spos) - 2, 0);
@@ -199,6 +225,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#00F";
         ctx.strokeRect(636 - 4.72 * (100 - spos), 220, 4.72 * (100 - spos) - 2, 0);
     }
+    //Allegiance axis
     if (alle >= 50) {
         ctx.strokeStyle = "#333";
         ctx.strokeRect(636 - 4.72 * (100 - alle), 340, 4.72 * (100 - alle) - 2, 0);
@@ -211,6 +238,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#333";
         ctx.strokeRect(636 - 4.72 * (100 - alle), 340, 4.72 * (100 - alle) - 2, 0);
     }
+    //Experience axis
     if (expr >= 50) {
         ctx.strokeStyle = "#FF0000";
         ctx.strokeRect(636 - 4.72 * (100 - expr), 460, 4.72 * (100 - expr) - 2, 0);
@@ -223,6 +251,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#FF0000";
         ctx.strokeRect(636 - 4.72 * (100 - expr), 460, 4.72 * (100 - expr) - 2, 0);
     }
+    //Personality axis
     if (pers >= 50) {
         ctx.strokeStyle = "#EE2436";
         ctx.strokeRect(636 - 4.72 * (100 - pers), 580, 4.72 * (100 - pers) - 2, 0);
@@ -235,6 +264,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#EE2436";
         ctx.strokeRect(636 - 4.72 * (100 - pers), 580, 4.72 * (100 - pers) - 2, 0);
     }
+    //Hornyposting axis
     if (horn >= 50) {
         ctx.strokeStyle = "#FEC62B";
         ctx.strokeRect(636 - 4.72 * (100 - horn), 700, 4.72 * (100 - horn) - 2, 0);
@@ -247,6 +277,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#FEC62B";
         ctx.strokeRect(636 - 4.72 * (100 - horn), 700, 4.72 * (100 - horn) - 2, 0);
     }
+    //Fame axis
     if (fame >= 50) {
         ctx.strokeStyle = "#FFFFFF";
         ctx.strokeRect(636 - 4.72 * (100 - fame), 820, 4.72 * (100 - fame) - 2, 0);
@@ -259,6 +290,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#FFFFFF";
         ctx.strokeRect(636 - 4.72 * (100 - fame), 820, 4.72 * (100 - fame) - 2, 0);
     }
+    //Shower axis
     if (shwr >= 50) {
         ctx.strokeStyle = "#89001C";
         ctx.strokeRect(636 - 4.72 * (100 - shwr), 940, 4.72 * (100 - shwr) - 2, 0);
@@ -271,6 +303,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#89001C";
         ctx.strokeRect(636 - 4.72 * (100 - shwr), 940, 4.72 * (100 - shwr) - 2, 0);
     }
+    //Sanity axis
     if (sani >= 50) {
         ctx.strokeStyle = "#7F3980";
         ctx.strokeRect(636 - 4.72 * (100 - sani), 1060, 4.72 * (100 - sani) - 2, 0);
@@ -283,6 +316,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#7F3980";
         ctx.strokeRect(636 - 4.72 * (100 - sani), 1060, 4.72 * (100 - sani) - 2, 0);
     }
+    //Relationship axis
     if (rela >= 50) {
         ctx.strokeStyle = "#F5A9B8";
         ctx.strokeRect(636 - 4.72 * (100 - rela), 1180, 4.72 * (100 - rela) - 2, 0);
@@ -295,6 +329,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#F5A9B8";
         ctx.strokeRect(636 - 4.72 * (100 - rela), 1180, 4.72 * (100 - rela) - 2, 0);
     }
+    //Fedposting axis
     if (fedp >= 50) {
         ctx.strokeStyle = "#EB0DEA";
         ctx.strokeRect(636 - 4.72 * (100 - fedp), 1300, 4.72 * (100 - fedp) - 2, 0);
@@ -307,6 +342,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#EB0DEA";
         ctx.strokeRect(636 - 4.72 * (100 - fedp), 1300, 4.72 * (100 - fedp) - 2, 0);
     }
+    //Actions axis
     if (actn >= 50) {
         ctx.strokeStyle = "#429B7D";
         ctx.strokeRect(636 - 4.72 * (100 - actn), 1420, 4.72 * (100 - actn) - 2, 0);
@@ -319,6 +355,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#429B7D";
         ctx.strokeRect(636 - 4.72 * (100 - actn), 1420, 4.72 * (100 - actn) - 2, 0);
     }
+    //Purpose axis
     if (purp >= 50) {
         ctx.strokeStyle = "#01411C";
         ctx.strokeRect(636 - 4.72 * (100 - purp), 1540, 4.72 * (100 - purp) - 2, 0);
@@ -331,6 +368,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#01411C";
         ctx.strokeRect(636 - 4.72 * (100 - purp), 1540, 4.72 * (100 - purp) - 2, 0);
     }
+    //Perception axis
     if (perc >= 50) {
         ctx.strokeStyle = "#1A193A";
         ctx.strokeRect(636 - 4.72 * (100 - perc), 1660, 4.72 * (100 - perc) - 2, 0);
@@ -343,6 +381,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#1A193A";
         ctx.strokeRect(636 - 4.72 * (100 - perc), 1660, 4.72 * (100 - perc) - 2, 0);
     }
+    //Comedy axis
     if (cmdy >= 50) {
         ctx.strokeStyle = "#7F66DE";
         ctx.strokeRect(636 - 4.72 * (100 - cmdy), 1780, 4.72 * (100 - cmdy) - 2, 0);
@@ -355,6 +394,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.strokeStyle = "#7F66DE";
         ctx.strokeRect(636 - 4.72 * (100 - cmdy), 1780, 4.72 * (100 - cmdy) - 2, 0);
     }
+    //Top info
     if (dark == true) {
         ctx.fillStyle = "#DDDDDD";
     }
@@ -365,10 +405,12 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     ctx.textAlign = "left";
     ctx.fillText("PolcompballValues", 20, 90);
     ctx.font = "30px Source Sans Pro";
+    //Gallery set
     if (gallery == false) {
         user = "Closest Match: " + user;
     }
     ctx.fillText(user, 20, 130);
+    //Left column percentages
     ctx.font = "50px Source Sans Pro";
     ctx.textAlign = "left";
     ctx.fillStyle = "#000";
@@ -411,10 +453,12 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     if (cmdy > 30) {
         ctx.fillText(funny + "%", 150, 1797.5);
     }
+    //White text
     ctx.fillStyle = "#DDD";
     if (horn > 30) {
         ctx.fillText(horny + "%", 150, 717.5);
     }
+    //Right column percentages
     ctx.textAlign = "right";
     ctx.fillStyle = "#000";
     if (spos < 70) {
@@ -447,6 +491,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     if (cmdy < 70) {
         ctx.fillText(unfunny + "%", 650, 1797.5);
     }
+    //White text 
     ctx.fillStyle = "#DDD";
     if (alle < 70) {
         ctx.fillText(jannyphile + "%", 650, 357.5);
@@ -460,6 +505,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     if (perc < 70) {
         ctx.fillText(annoying + "%", 650, 1677.5);
     }
+    //Adds more text on the top
     if (dark == true) {
         ctx.fillStyle = "#DDDDDD";
     }
@@ -481,21 +527,37 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         }
     }
     ctx.fillText(edition, 780, 100);
+    //Draw array matches
     ctx.textAlign = "center";
     ctx.font = "bold 30px Source Sans Pro";
+    //@ts-ignore
     ctx.fillText("Seriousposting Axis: " + setLabel(spos, spos_array), 400, 170);
+    //@ts-ignore
     ctx.fillText("Allegiance Axis: " + setLabel(alle, alle_array), 400, 290);
+    //@ts-ignore
     ctx.fillText("Experience Axis: " + setLabel(expr, expr_array), 400, 410);
+    //@ts-ignore
     ctx.fillText("Personality Axis: " + setLabel(pers, pers_array), 400, 530);
+    //@ts-ignore
     ctx.fillText("Hornyposting Axis: " + setLabel(horn, horn_array), 400, 650);
+    //@ts-ignore
     ctx.fillText("Fame Axis: " + setLabel(fame, fame_array), 400, 770);
+    //@ts-ignore
     ctx.fillText("Shower Axis: " + setLabel(shwr, shwr_array), 400, 890);
+    //@ts-ignore
     ctx.fillText("Sanity Axis: " + setLabel(sani, sani_array), 400, 1010);
+    //@ts-ignore
     ctx.fillText("Relationship Axis: " + setLabel(rela, rela_array), 400, 1130);
+    //@ts-ignore
     ctx.fillText("Fedposting Axis: " + setLabel(fedp, fedp_array), 400, 1250);
+    //@ts-ignore
     ctx.fillText("Actions Axis: " + setLabel(actn, actn_array), 400, 1370);
+    //@ts-ignore
     ctx.fillText("Purpose Axis: " + setLabel(purp, purp_array), 400, 1490);
+    //@ts-ignore
     ctx.fillText("Perception Axis: " + setLabel(perc, perc_array), 400, 1610);
+    //@ts-ignore
     ctx.fillText("Comedy Axis: " + setLabel(cmdy, cmdy_array), 400, 1730);
+    //@ts-ignore
     document.getElementById("banner").src = c.toDataURL();
 };
