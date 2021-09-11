@@ -1,4 +1,19 @@
-div.center 
+:root
+    --axis: calc(18pt * 3)
+    --arrow: calc(var(--axis) + 4px)
+    --arrow-color: #333333
+
+.expl-axis
+    background: linear-gradient(180deg,transparent var(--axis),var(--arrow-color) var(--axis))
+    mask-image: linear-gradient(180deg,white var(--axis),transparent var(--axis)),url(../assets/arrow-w.svg)
+    mask-repeat: no-repeat
+    mask-size: 100%, 60% auto
+    mask-position: 0 0, 50% var(--arrow)
+
+.arrows
+    display: none
+
+div.center
     border-radius: 8pt
     padding: 8pt
     color: white
@@ -8,12 +23,12 @@ div.center
     align-items: center
     text-align: center
 
-img.column 
+img.column
     width: 45%
     transition: transform .3s
     padding: 1%
 
-img.column:hover 
+img.column:hover
     transform: scale(1.05)
 
 div.axis_label
@@ -60,21 +75,21 @@ p.expl-text-left, p.expl-text-right
     width: 90%
     margin-left: auto
     margin-right: auto
-    
-div.spacer 
+
+div.spacer
     display: flex
 
-img.arrows 
+img.arrows
     width: 60%
     height: auto
 
-p.axis 
+p.axis
     display: block
 
 p.expl-text
     font-size: 18pt
 
-p.value 
+p.value
     font-size: 28pt
     text-indent: -16pt
     line-height: 2px
@@ -165,9 +180,11 @@ p.value
     color: #7F66DE
 
 @media (prefers-color-scheme: dark)
+    :root
+        --arrow-color: #dddddd
     div.axis_label
         color: #FFF
-    div.block 
+    div.block
         background-color: #111
     div.expl-block
         background-color: #333
@@ -195,27 +212,29 @@ p.value
         color: #3b37b3
 
 @media screen and (max-width: 1000px)
+    :root
+        --axis: calc(3vw * 3)
     div.center
         width: 80%
     div.block
         width: 42.5%
-    div.axis_label 
+    div.axis_label
         font-size: 4vw
     div.expl-block
         width: 95%
     p.axis
         font-size: 3vw
-    p.value 
+    p.value
         font-size: 3.5vw
         text-indent: 0px
         letter-spacing: normal
-    p.extras 
-        font-size: 5vw 
+    p.extras
+        font-size: 5vw
         display: block
         width: 80%
         text-align: center
         margin: auto
-    div.spacer 
+    div.spacer
         display: flex
         justify-content: flex
         margin-left: auto
@@ -225,7 +244,7 @@ p.value
         font-size: 3vw
         letter-spacing: normal
         margin: 1vw
-        margin-top: 10%        
+        margin-top: 10%
     div.expl-right, div.expl-right
         width: 35%
     p.expl-text-left
