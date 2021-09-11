@@ -1,3 +1,21 @@
+:root {
+  --axis: calc(18pt * 3);
+  --arrow: calc(var(--axis) + 4px);
+  --arrow-color: #333333;
+}
+
+.expl-axis {
+  background: linear-gradient(180deg, transparent var(--axis), var(--arrow-color) var(--axis));
+  mask-image: linear-gradient(180deg, white var(--axis), transparent var(--axis)), url(../assets/arrow-w.svg);
+  mask-repeat: no-repeat;
+  mask-size: 100%, 60% auto;
+  mask-position: 0 0, 50% var(--arrow);
+}
+
+.arrows {
+  display: none;
+}
+
 div.center {
   border-radius: 8pt;
   padding: 8pt;
@@ -207,6 +225,10 @@ p.value {
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --arrow-color: #dddddd;
+  }
+
   div.axis_label {
     color: #FFF;
   }
@@ -264,6 +286,10 @@ p.value {
   }
 }
 @media screen and (max-width: 1000px) {
+  :root {
+    --axis: calc(3vw * 3);
+  }
+
   div.center {
     width: 80%;
   }
@@ -333,3 +359,5 @@ p.value {
     margin-top: 0%;
   }
 }
+
+/*# sourceMappingURL=index.css.map */
