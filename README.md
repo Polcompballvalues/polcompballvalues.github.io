@@ -23,7 +23,7 @@ As you might be aware the web has been standardized on 3 main technologies, HTML
 >Typescript is a superset of javascript that provides a way to assign types to variables and make sure these do not get changed, which comes in helpful in guaranteeing the desired outcomes if  your javascript code is doing some less-than-orthodox things with variables.
 
 ### How do I compile the .sass, .coffee and .ts files in the repo?
-To compile these files into regular css and javascript you'll need to install node.js and the following packages (sass, coffeescript and typescript) and then run the compile commands of each, if you're on windows running the compile.ps1 file in the utilities folder will compile all the files for you, otherwise below there's a set of commands for the default versions of each environment:
+To compile these files into regular css and javascript you'll need to install node.js and the following packages (sass, coffeescript and typescript) and then run the compile commands of each, if you're on windows running the compile.ps1 file in the tools folder will compile all the files for you, otherwise below there's a set of commands for the default versions of each environment:
 ```powershell
 #installing the packages
 npm i -g sass coffee typescript

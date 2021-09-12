@@ -203,7 +203,7 @@ users = [
     "perc": 35.0
     "cmdy": 77.8
 ,
-  "name" : "Librlec "
+  "name" : "Librlec"
   "stats":
     "spos": 23.2
     "alle": 31.6
@@ -287,5 +287,39 @@ users = [
     "purp": 36.3
     "perc": 73.3
     "cmdy": 55.6
+,
+  "name" : "bowie"
+  "stats":
+    "spos": 41.6
+    "alle": 36.6
+    "expr": 40.3
+    "pers": 45.3
+    "horn": 61.7
+    "fame": 59.1
+    "shwr": 35.9
+    "sani": 52.8
+    "rela": 45.3
+    "fedp": 23.8
+    "actn": 47.5
+    "purp": 47.0
+    "perc": 46.7
+    "cmdy": 59.3
+,
+  "name" : "Libtard"
+  "stats":
+    "spos": 65.0
+    "alle": 83.5
+    "expr": 83.4
+    "pers": 41.6
+    "horn": 60.0
+    "fame": 34.7
+    "shwr": 53.9
+    "sani": 55.6
+    "rela": 53.6
+    "fedp": 35.6
+    "actn": 48.7
+    "purp": 34.9
+    "perc": 58.3
+    "cmdy": 37.1
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"
