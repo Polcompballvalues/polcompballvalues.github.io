@@ -37,9 +37,8 @@
             shortquestions = questions = []
             if (window.location.search.substring(1) === "s") {
                 for (i = 0, len = fullquestions.length; i < len; i++) {
-                    question = fullquestions[i];
-                    if (question.short === true) {
-                        shortquestions.push(question);
+                    if (fullquestions[i].short === true) {
+                        shortquestions.push(fullquestions[i]);
                     }
                 }
                 questions = shortquestions;

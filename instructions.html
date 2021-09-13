@@ -27,12 +27,10 @@
         <button class="button" onclick="location.href='index.html';" id="nevermind-button">Wait, nevermind!</button>
         <script type="application/javascript" src="dist/questions.js"></script>
         <script>
-            var shortquestions, questions
-            shortquestions = questions = []
+            var shortquestions = []
             for (i = 0, len = fullquestions.length; i < len; i++) {
-                question = fullquestions[i];
-                if (question.short === true) {
-                    shortquestions.push(question);
+                if (fullquestions[i].short === true) {
+                    shortquestions.push(fullquestions[i]);
                 }
             }
             document.getElementById("shortq-button").innerHTML = "Short version: (" + shortquestions.length + " questions)"
