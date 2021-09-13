@@ -2,15 +2,11 @@ $dark: #000;
 $light: #fff;
 
 .github-corner{
-    fill:#000; 
+    fill: $dark; 
 }
 
 .github-corner
-    .octo-arm{
-        fill: $light
-    }
-.github-corner
-    .octo-body{
+    .octo-arm, .octo-body{
         fill: $light
     }
 
@@ -42,11 +38,7 @@ $light: #fff;
         fill:$light; 
     }
     .github-corner
-        .octo-arm{
-            fill: $dark
-        }
-    .github-corner
-        .octo-body{
+        .octo-arm, .octo-body{
             fill: $dark
         }
 }
