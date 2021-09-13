@@ -1,5 +1,5 @@
 //Version type
-let version:        string = "V2 Alpha 4.2";
+let version:        string = "V2 Alpha 4.3";
 //Other vars
 let edition:        string;
 declare var i:      any;

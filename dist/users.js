@@ -438,6 +438,25 @@ users = [
       "perc": 40.0,
       "cmdy": 30.6
     }
+  },
+  {
+    "name": "Quark",
+    "stats": {
+      "spos": 87.5,
+      "alle": 100.0,
+      "expr": 66.7,
+      "pers": 56.3,
+      "horn": 25.0,
+      "fame": 100.0,
+      "shwr": 6.3,
+      "sani": 25.0,
+      "rela": 0.0,
+      "fedp": 75.0,
+      "actn": 0.0,
+      "purp": 56.3,
+      "perc": 0.0,
+      "cmdy": 25.0
+    }
   }
 ];
 

@@ -389,5 +389,22 @@ users = [
     "purp": 34.1
     "perc": 40.0
     "cmdy": 30.6
+,
+  "name" : "Quark"
+  "stats":
+    "spos": 87.5
+    "alle": 100.0
+    "expr": 66.7
+    "pers": 56.3
+    "horn": 25.0
+    "fame": 100.0
+    "shwr": 6.3
+    "sani": 25.0
+    "rela": 0.0
+    "fedp": 75.0
+    "actn": 0.0
+    "purp": 56.3
+    "perc": 0.0
+    "cmdy": 25.0
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"

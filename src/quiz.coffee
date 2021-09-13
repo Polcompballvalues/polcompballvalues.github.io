@@ -1,5 +1,6 @@
 #Initializes questions text
 init_question = () ->
+    console.log(questions[qn].yesno)
     document.getElementById("question-text").innerHTML = questions[qn].question
     document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length)
     if answers.length is 0
@@ -8,6 +9,18 @@ init_question = () ->
     else
         document.getElementById("back_button").style.display = "block"
         document.getElementById("back_button_off").style.display = "none"
+    if questions[qn].yesno == false
+        document.getElementById("stragree-button").innerHTML = "Strongly Agree"
+        document.getElementById("strdisag-button").innerHTML = "Strongly Disagree"
+        document.getElementById("agree-button").style.display = "block"
+        document.getElementById("neutral-button").style.display = "block"
+        document.getElementById("disag-button").style.display = "block"
+    else
+        document.getElementById("stragree-button").innerHTML = "Yes"
+        document.getElementById("strdisag-button").innerHTML = "No"
+        document.getElementById("agree-button").style.display = "none"
+        document.getElementById("neutral-button").style.display = "none"
+        document.getElementById("disag-button").style.display = "none"
 
 #Jumps to next question when option button clicked
 next_question = (mult) ->

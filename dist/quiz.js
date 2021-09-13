@@ -3,14 +3,28 @@
 var actn, alle, answers, calc_score, cmdy, expr, fame, fedp, horn, i, init_question, len, max_actn, max_alle, max_cmdy, max_expr, max_fame, max_fedp, max_horn, max_perc, max_pers, max_purp, max_rela, max_sani, max_shwr, max_spos, next_question, perc, pers, prev_question, purp, qn, question, rela, results, sani, shwr, spos;
 
 init_question = function() {
+  console.log(questions[qn].yesno);
   document.getElementById("question-text").innerHTML = questions[qn].question;
   document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + questions.length;
   if (answers.length === 0) {
     document.getElementById("back_button").style.display = "none";
-    return document.getElementById("back_button_off").style.display = "block";
+    document.getElementById("back_button_off").style.display = "block";
   } else {
     document.getElementById("back_button").style.display = "block";
-    return document.getElementById("back_button_off").style.display = "none";
+    document.getElementById("back_button_off").style.display = "none";
+  }
+  if (questions[qn].yesno === false) {
+    document.getElementById("stragree-button").innerHTML = "Strongly Agree";
+    document.getElementById("strdisag-button").innerHTML = "Strongly Disagree";
+    document.getElementById("agree-button").style.display = "block";
+    document.getElementById("neutral-button").style.display = "block";
+    return document.getElementById("disag-button").style.display = "block";
+  } else {
+    document.getElementById("stragree-button").innerHTML = "Yes";
+    document.getElementById("strdisag-button").innerHTML = "No";
+    document.getElementById("agree-button").style.display = "none";
+    document.getElementById("neutral-button").style.display = "none";
+    return document.getElementById("disag-button").style.display = "none";
   }
 };
 
