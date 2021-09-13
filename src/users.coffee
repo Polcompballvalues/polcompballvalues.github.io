@@ -406,5 +406,56 @@ users = [
     "purp": 56.3
     "perc": 0.0
     "cmdy": 25.0
+,
+  "name" : "Solar"
+  "stats":
+    "spos": 100.0
+    "alle": 100.0
+    "expr": 25.0
+    "pers": 56.3
+    "horn": 75.0
+    "fame": 6.3
+    "shwr": 6.3
+    "sani": 43.7
+    "rela": 0.0
+    "fedp": 25.0
+    "actn": 56.3
+    "purp": 93.7
+    "perc": 25.0
+    "cmdy": 0.0
+,
+  "name" : "Sven Brender"
+  "stats":
+    "spos": 67.5
+    "alle": 100.0
+    "expr": 100.0
+    "pers": 50.0
+    "horn": 32.5
+    "fame": 40.9
+    "shwr": 44.2
+    "sani": 60.4
+    "rela": 71.4
+    "fedp": 78.6
+    "actn": 28.8
+    "purp": 18.2
+    "perc": 45.0
+    "cmdy": 66.7
+,
+  "name" : "ThatoneguyG"
+  "stats":
+    "spos": 50.0
+    "alle": 100.0
+    "expr": 33.3
+    "pers": 100.0
+    "horn": 100.0
+    "fame": 0.0
+    "shwr": 0.0
+    "sani": 93.8
+    "rela": 68.8
+    "fedp": 18.8
+    "actn": 45.0
+    "purp": 31.3
+    "perc": 50.0
+    "cmdy": 62.5
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"
