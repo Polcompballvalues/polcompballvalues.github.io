@@ -362,6 +362,44 @@ users = [
       "perc": 58.3,
       "cmdy": 37.1
     }
+  },
+  {
+    "name": "Rayz9989",
+    "stats": {
+      "spos": 73.4,
+      "alle": 13.4,
+      "expr": 23.6,
+      "pers": 100.0,
+      "horn": 70.0,
+      "fame": 100.0,
+      "shwr": 5.1,
+      "sani": 77.8,
+      "rela": 73.8,
+      "fedp": 14.3,
+      "actn": 83.3,
+      "purp": 28.8,
+      "perc": 33.3,
+      "cmdy": 74.1
+    }
+  },
+  {
+    "name": "Swoosho",
+    "stats": {
+      "spos": 56.7,
+      "alle": 62.5,
+      "expr": 65.2,
+      "pers": 56.2,
+      "horn": 100.0,
+      "fame": 68.8,
+      "shwr": 77.8,
+      "sani": 38.9,
+      "rela": 75.0,
+      "fedp": 31.3,
+      "actn": 43.2,
+      "purp": 37.5,
+      "perc": 75.0,
+      "cmdy": 62.5
+    }
   }
 ];
 
