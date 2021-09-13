@@ -3,13 +3,10 @@ $light: #fff;
 
 .github-corner{
     fill: $dark; 
-}
-
-.github-corner
     .octo-arm, .octo-body{
         fill: $light
     }
-
+}
 .github-corner:hover 
     .octo-arm{
         animation:octocat-wave 560ms ease-in-out;
@@ -36,9 +33,8 @@ $light: #fff;
 @media (prefers-color-scheme: dark){
     .github-corner{
         fill:$light; 
-    }
-    .github-corner
         .octo-arm, .octo-body{
             fill: $dark
         }
+    }
 }

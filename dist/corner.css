@@ -1,9 +1,7 @@
 .github-corner {
   fill: #000;
 }
-
-.github-corner .octo-arm,
-.octo-body {
+.github-corner .octo-arm, .github-corner .octo-body {
   fill: #fff;
 }
 
@@ -35,9 +33,7 @@
   .github-corner {
     fill: #fff;
   }
-
-  .github-corner .octo-arm,
-.octo-body {
+  .github-corner .octo-arm, .github-corner .octo-body {
     fill: #000;
   }
 }
