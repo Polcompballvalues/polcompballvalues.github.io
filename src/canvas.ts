@@ -1,5 +1,5 @@
 //Version type
-let version:        string = "V2 Alpha 4.1";
+let version:        string = "V2 Alpha 4.2";
 //Other vars
 let edition:        string;
 declare var i:      any;
@@ -95,7 +95,7 @@ img_unfunny.src        = "assets/values/unfunny.svg"
 
 //Creates canvas
 let makeUserCanvas = function (spos_input: string, alle_input: string, expr_input: string, pers_input: string, horn_input: string, fame_input: string, shwr_input: string, sani_input: string, rela_input: string, fedp_input: string, actn_input: string, purp_input: string, perc_input: string, cmdy_input: string, gallery: boolean, short: boolean, dark: boolean, user: string){
-//Parseing input values into numbers
+//Parsing input values into numbers
 let spos: number = parseFloat(spos_input)
 let alle: number = parseFloat(alle_input)
 let expr: number = parseFloat(expr_input)

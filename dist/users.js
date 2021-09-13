@@ -400,6 +400,44 @@ users = [
       "perc": 75.0,
       "cmdy": 62.5
     }
+  },
+  {
+    "name": "Diviny",
+    "stats": {
+      "spos": 56.3,
+      "alle": 100.0,
+      "expr": 41.7,
+      "pers": 100.0,
+      "horn": 100.0,
+      "fame": 93.8,
+      "shwr": 0.0,
+      "sani": 31.3,
+      "rela": 62.5,
+      "fedp": 0.0,
+      "actn": 55.0,
+      "purp": 18.8,
+      "perc": 0.0,
+      "cmdy": 31.3
+    }
+  },
+  {
+    "name": "Thunder",
+    "stats": {
+      "spos": 35.0,
+      "alle": 50.0,
+      "expr": 25.0,
+      "pers": 48.2,
+      "horn": 70.0,
+      "fame": 47.7,
+      "shwr": 65.4,
+      "sani": 37.5,
+      "rela": 25.0,
+      "fedp": 42.9,
+      "actn": 59.6,
+      "purp": 34.1,
+      "perc": 40.0,
+      "cmdy": 30.6
+    }
   }
 ];
 

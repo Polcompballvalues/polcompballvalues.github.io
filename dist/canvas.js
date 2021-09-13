@@ -1,5 +1,5 @@
 //Version type
-var version = "V2 Alpha 4.1";
+var version = "V2 Alpha 4.2";
 //Other vars
 var edition;
 //Sets label for each axis
@@ -117,7 +117,7 @@ var img_unfunny = new Image();
 img_unfunny.src = "assets/values/unfunny.svg";
 //Creates canvas
 var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, horn_input, fame_input, shwr_input, sani_input, rela_input, fedp_input, actn_input, purp_input, perc_input, cmdy_input, gallery, short, dark, user) {
-    //Parseing input values into numbers
+    //Parsing input values into numbers
     var spos = parseFloat(spos_input);
     var alle = parseFloat(alle_input);
     var expr = parseFloat(expr_input);
