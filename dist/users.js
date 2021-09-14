@@ -514,6 +514,25 @@ users = [
       "perc": 50.0,
       "cmdy": 62.5
     }
+  },
+  {
+    "name": "märkl",
+    "stats": {
+      "spos": 60.0,
+      "alle": 27.5,
+      "expr": 29.2,
+      "pers": 73.2,
+      "horn": 42.5,
+      "fame": 22.7,
+      "shwr": 48.1,
+      "sani": 66.7,
+      "rela": 64.3,
+      "fedp": 42.9,
+      "actn": 75.0,
+      "purp": 52.3,
+      "perc": 67.5,
+      "cmdy": 41.7
+    }
   }
 ];
 
