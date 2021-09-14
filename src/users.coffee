@@ -324,20 +324,20 @@ users = [
 ,
   "name" : "Rayz9989"
   "stats":
-    "spos": 73.4
-    "alle": 13.4
-    "expr": 23.6
+    "spos": 65.0
+    "alle": 20.5
+    "expr": 27.1
     "pers": 100.0
-    "horn": 70.0
+    "horn": 67.5
     "fame": 100.0
-    "shwr": 5.1
-    "sani": 77.8
-    "rela": 73.8
-    "fedp": 14.3
-    "actn": 83.3
-    "purp": 28.8
-    "perc": 33.3
-    "cmdy": 74.1
+    "shwr": 5.8
+    "sani": 75.0
+    "rela": 60.7
+    "fedp": 12.9
+    "actn": 84.6
+    "purp": 37.5
+    "perc": 37.5
+    "cmdy": 75.0
 ,
   "name" : "Swoosho"
   "stats":

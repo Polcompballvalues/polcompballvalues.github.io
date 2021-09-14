@@ -1,5 +1,5 @@
 //Version type
-var version = "V2 Alpha 5";
+var version = "V2 Alpha 5.1";
 //Other vars
 var edition;
 //Sets label for each axis
