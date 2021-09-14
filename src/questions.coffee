@@ -379,7 +379,7 @@ fullquestions = [
     "perc": 0
     "cmdy": 0
 ,
-  "question": "The posting of any test results, self-charts, compass bingos, self-ratings, etc. should be allowed even if they cover mature topics"
+  "question": "The posting of any test results, self-charts, compass bingos, ratings/rankings, etc. should be allowed even if they cover mature topics"
   "yesno": false
   "short": false
   "effect":
@@ -475,7 +475,7 @@ fullquestions = [
     "cmdy": 0
 ,
   "question": "In my past on this community I had more power, recognition, or prominence compared to now"
-  "yesno": true
+  "yesno": false
   "short": false
   "effect":
     "spos": 0
@@ -493,7 +493,7 @@ fullquestions = [
     "perc": 0
     "cmdy": 0
 ,
-  "question": "Generally speaking, I’d rather buy myself a little something extra than donate to charity or others who are less fortunate"
+  "question": "Generally speaking, I’d rather buy myself a little something extra than donate to charity or help others who are less fortunate"
   "yesno": false
   "short": false
   "effect":
@@ -588,7 +588,7 @@ fullquestions = [
     "perc": 0
     "cmdy": 0
 ,
-  "question": "I make impulsive or spur-of-the-moment decisions, and impulsivity sometimes leads to unhealthiness or danger"
+  "question": "I make impulsive or spur-of-the-moment decisions, and that impulsivity can lead to unhealthiness or danger"
   "yesno": false
   "short": false
   "effect":
@@ -1063,7 +1063,7 @@ fullquestions = [
     "perc": 0
     "cmdy": 0
 ,
-  "question": "People in our community seem to dislike me for being a newf-"
+  "question": "Some people in our community seem to think of me derogatorily as a newf-"
   "yesno": false
   "short": true
   "effect":
@@ -1082,7 +1082,7 @@ fullquestions = [
     "perc": 0
     "cmdy": 0
 ,
-  "question": "There is probably something wrong with people who take the time to help others without expecting anything in return"
+  "question": "I just don't understand people who take the time to help others without expecting anything in return"
   "yesno": false
   "short": false
   "effect":
@@ -1158,7 +1158,7 @@ fullquestions = [
     "perc": 0
     "cmdy": 0
 ,
-  "question": "I remember and witnessed the first demographics survey that took place in the new art server, or I was in our community before that even happened as I was in other earlier servers"
+  "question": "I witnessed the first demographics survey that took place in the new art server, or I was in our community before that even happened as I was in other earlier servers"
   "yesno": true
   "short": false
   "effect":
@@ -1196,7 +1196,7 @@ fullquestions = [
     "perc": 0
     "cmdy": 0
 ,
-  "question": "Polcompball Projects is a better server than the main Polcompball server"
+  "question": "Polcompball Projects is a better server than the main Polcompball server, or I don't know about it, but I think a server for art projects would be superior to a server for talking"
   "yesno": false
   "short": false
   "effect":
@@ -1481,7 +1481,7 @@ fullquestions = [
     "perc": 0
     "cmdy": 0
 ,
-  "question": "I am much more likely to get on starboard than soyboard"
+  "question": "Somethings I do or say can spark debate, or the content I show others is quite disliked"
   "yesno": false
   "short": false
   "effect":
@@ -1493,11 +1493,11 @@ fullquestions = [
     "fame": 0
     "shwr": 0
     "sani": 0
-    "rela": 10
+    "rela": 0
     "fedp": 0
     "actn": 0
     "purp": 0
-    "perc": 0
+    "perc": -10
     "cmdy": 0
 ,
   "question": "I often think people should be more considerate before they say and do things that may be offensive to others"
@@ -1576,6 +1576,25 @@ fullquestions = [
     "perc": 0
     "cmdy": 0
 ,
+  "question": "If I receive a direct message it's more likely to be of praising or asking nicely than be degrading/attacking/threatening"
+  "yesno": false
+  "short": true
+  "effect":
+    "spos": 0
+    "alle": 0
+    "expr": 0
+    "pers": 0
+    "horn": 0
+    "fame": 0
+    "shwr": 0
+    "sani": 0
+    "rela": 10
+    "fedp": 0
+    "actn": 0
+    "purp": 0
+    "perc": 0
+    "cmdy": 0
+,
   "question": "I don’t care much for the wiki or subreddit, our server is more important"
   "yesno": false
   "short": true
@@ -1614,7 +1633,7 @@ fullquestions = [
     "perc": 0
     "cmdy": 0
 ,
-  "question": "I say what I mean and mean what I say"
+  "question": "I would not like to talk in ‘memey’ way with intentionally wrong spelling/grammar"
   "yesno": false
   "short": false
   "effect":
