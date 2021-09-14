@@ -474,5 +474,39 @@ users = [
     "purp": 52.3
     "perc": 67.5
     "cmdy": 41.7
+,
+  "name" : "Xerunox"
+  "stats":
+    "spos": 12.5
+    "alle": 100.0
+    "expr": 100.0
+    "pers": 12.5
+    "horn": 0
+    "fame": 68.8
+    "shwr": 75.0
+    "sani": 75.0
+    "rela": 50.0
+    "fedp": 93.8
+    "actn": 40.0
+    "purp": 0.0
+    "perc": 68.8
+    "cmdy": 93.8
+,
+  "name" : "Sven Brender"
+  "stats":
+    "spos": 67.5
+    "alle": 100.0
+    "expr": 100.0
+    "pers": 50.0
+    "horn": 32.5
+    "fame": 40.9
+    "shwr": 44.2
+    "sani": 60.4
+    "rela": 71.4
+    "fedp": 78.6
+    "actn": 28.8
+    "purp": 18.2
+    "perc": 45.0
+    "cmdy": 66.7
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"
