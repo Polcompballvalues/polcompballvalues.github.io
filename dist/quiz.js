@@ -13,18 +13,18 @@ init_question = function() {
     document.getElementById("back_button").style.display = "block";
     document.getElementById("back_button_off").style.display = "none";
   }
-  if (questions[qn].yesno === false) {
-    document.getElementById("stragree-button").innerHTML = "Strongly Agree";
-    document.getElementById("strdisag-button").innerHTML = "Strongly Disagree";
-    document.getElementById("agree-button").style.display = "block";
-    document.getElementById("neutral-button").style.display = "block";
-    return document.getElementById("disag-button").style.display = "block";
-  } else {
+  if (questions[qn].yesno === true) {
     document.getElementById("stragree-button").innerHTML = "Yes";
     document.getElementById("strdisag-button").innerHTML = "No";
     document.getElementById("agree-button").style.display = "none";
     document.getElementById("neutral-button").style.display = "none";
     return document.getElementById("disag-button").style.display = "none";
+  } else {
+    document.getElementById("stragree-button").innerHTML = "Strongly Agree";
+    document.getElementById("strdisag-button").innerHTML = "Strongly Disagree";
+    document.getElementById("agree-button").style.display = "block";
+    document.getElementById("neutral-button").style.display = "block";
+    return document.getElementById("disag-button").style.display = "block";
   }
 };
 
