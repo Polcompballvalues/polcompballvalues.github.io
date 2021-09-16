@@ -1,4 +1,8 @@
 # What is Polcompballvalues?
+[![Discord](https://img.shields.io/badge/Polcompball-Discord-%235865F2?style=flat&logo=discord)](https://discord.gg/KVB2QPH)
+[![Reddit](https://img.shields.io/badge/r%2FPolcompball-Reddit-%23FF4500?style=flat&logo=reddit)](https://www.reddit.com/r/Polcompball/)
+[![Miraheze](https://img.shields.io/badge/Polcompball%20Wiki-Miraheze-%23FFC200?style=flat&logo=Wikipedia)](https://polcompball.miraheze.org/wiki/Polcompball_Wiki)
+
 PolcompballValues is a quiz aimed at members of the Polcompball community, in particular the discord server, that attempts to assign percentages for 28 different values based on common differentating factors of the community's population.
 
 ## Where is the old version of Polcompballvalues?
@@ -14,9 +18,9 @@ You can be added by taking the test and selecting the "Submit Your Scores" optio
 You can see the full list of involved members in the [credits](https://polcompballvalues.github.io/credits.html) page.
 
 ## What are the .sass/.SCSS, .coffee and .ts in this repository?
-[![Sass](https://img.shields.io/badge/Sass-%23CC6699?style=for-the-badge&logo=Sass&logoColor=white)](https://github.com/sass/sass)
-[![CoffeeScript](https://img.shields.io/badge/CoffeeScript%20-%232F2625?style=for-the-badge&logo=CoffeeScript)](https://github.com/jashkenas/coffeescript)
-[![TypeScript](https://img.shields.io/badge/TypeScript%20-%233178C6?style=for-the-badge&logo=TypeScript&logoColor=white)](https://github.com/microsoft/TypeScript)
+[![Sass](https://img.shields.io/badge/Sass-%23CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://github.com/sass/sass)
+[![CoffeeScript](https://img.shields.io/badge/CoffeeScript%20-%232F2625?style=for-the-badge&logo=coffeescript)](https://github.com/jashkenas/coffeescript)
+[![TypeScript](https://img.shields.io/badge/TypeScript%20-%233178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://github.com/microsoft/TypeScript)
 
 As you might be aware the web has been standardized on 3 main technologies, HTML, CSS and Javascript, but many alternative languages exist that provide compatibility with existing web technologies while building upon them with various quality of life improvements:
 

@@ -552,6 +552,101 @@ users = [
       "perc": 68.8,
       "cmdy": 93.8
     }
+  },
+  {
+    "name": "H man",
+    "stats": {
+      "spos": 15.0,
+      "alle": 84.1,
+      "expr": 100.0,
+      "pers": 66.1,
+      "horn": 12.5,
+      "fame": 48.8,
+      "shwr": 76.9,
+      "sani": 56.3,
+      "rela": 58.9,
+      "fedp": 59.7,
+      "actn": 46.2,
+      "purp": 20.8,
+      "perc": 59.1,
+      "cmdy": 67.5
+    }
+  },
+  {
+    "name": "Padstar34",
+    "stats": {
+      "spos": 37.5,
+      "alle": 68.8,
+      "expr": 33.3,
+      "pers": 81.3,
+      "horn": 50.0,
+      "fame": 56.3,
+      "shwr": 25.0,
+      "sani": 62.5,
+      "rela": 55.0,
+      "fedp": 0.0,
+      "actn": 70.0,
+      "purp": 31.3,
+      "perc": 31.3,
+      "cmdy": 68.8
+    }
+  },
+  {
+    "name": "Arch",
+    "stats": {
+      "spos": 47.5,
+      "alle": 79.5,
+      "expr": 20.8,
+      "pers": 33.9,
+      "horn": 72.5,
+      "fame": 42.9,
+      "shwr": 25.0,
+      "sani": 47.9,
+      "rela": 64.3,
+      "fedp": 46.0,
+      "actn": 46.2,
+      "purp": 33.3,
+      "perc": 56.8,
+      "cmdy": 65.0
+    }
+  },
+  {
+    "name": "jao",
+    "stats": {
+      "spos": 37.5,
+      "alle": 68.8,
+      "expr": 58.3,
+      "pers": 18.8,
+      "horn": 31.3,
+      "fame": 56.3,
+      "shwr": 93.8,
+      "sani": 68.8,
+      "rela": 65.0,
+      "fedp": 81.3,
+      "actn": 35.0,
+      "purp": 93.8,
+      "perc": 43.8,
+      "cmdy": 43.8
+    }
+  },
+  {
+    "name": "Lego Spiny Piranha Plant ",
+    "stats": {
+      "spos": 37.5,
+      "alle": 56.3,
+      "expr": 75.0,
+      "pers": 68.8,
+      "horn": 18.8,
+      "fame": 0.0,
+      "shwr": 68.8,
+      "sani": 62.5,
+      "rela": 50.0,
+      "fedp": 31.3,
+      "actn": 60.0,
+      "purp": 50.0,
+      "perc": 62.5,
+      "cmdy": 50.0
+    }
   }
 ];
 
