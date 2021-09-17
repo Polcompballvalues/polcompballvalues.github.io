@@ -576,5 +576,158 @@ users = [
     "purp": 50.0
     "perc": 62.5
     "cmdy": 50.0
+,
+  "name" : "Solidarity"
+  "stats":
+    "spos": 92.5
+    "alle": 54.5
+    "expr": 41.7
+    "pers": 71.4
+    "horn": 70.0
+    "fame": 29.8
+    "shwr": 21.2
+    "sani": 39.6
+    "rela": 67.9
+    "fedp": 19.4
+    "actn": 51.9
+    "purp": 45.8
+    "perc": 59.1
+    "cmdy": 30.0
+,
+  "name" : "Cavalieria"
+  "stats":
+    "spos": 52.5
+    "alle": 54.5
+    "expr": 27.1
+    "pers": 33.9
+    "horn": 35.0
+    "fame": 53.6
+    "shwr": 63.5
+    "sani": 43.8
+    "rela": 51.8
+    "fedp": 71.0
+    "actn": 51.9
+    "purp": 56.3
+    "perc": 50.0
+    "cmdy": 50.0
+,
+  "name" : "IncendiaryBullet"
+  "stats":
+    "spos": 35.0
+    "alle": 79.5
+    "expr": 100.0
+    "pers": 28.6
+    "horn": 15.0
+    "fame": 72.6
+    "shwr": 53.8
+    "sani": 70.8
+    "rela": 42.9
+    "fedp": 95.2
+    "actn": 19.2
+    "purp": 52.1
+    "perc": 29.5
+    "cmdy": 82.5
+,
+  "name" : "Austin"
+  "stats":
+    "spos": 75.0
+    "alle": 18.8
+    "expr": 58.3
+    "pers": 93.8
+    "horn": 50.0
+    "fame": 6.3
+    "shwr": 75.0
+    "sani": 56.3
+    "rela": 80.0
+    "fedp": 18.8
+    "actn": 90.0
+    "purp": 31.3
+    "perc": 68.8
+    "cmdy": 62.5
+,
+  "name" : "Sloppy Joe"
+  "stats":
+    "spos": 17.5
+    "alle": 57.3
+    "expr": 90.9
+    "pers": 46.4
+    "horn": 2.5
+    "fame": 60.7
+    "shwr": 88.5
+    "sani": 79.2
+    "rela": 75.4
+    "fedp": 47.6
+    "actn": 65.8
+    "purp": 4.6
+    "perc": 84.1
+    "cmdy": 77.5
+,
+  "name" : "The Infinity Pizza"
+  "stats":
+    "spos": 50.0
+    "alle": 65.9
+    "expr": 31.3
+    "pers": 46.4
+    "horn": 62.5
+    "fame": 31.0
+    "shwr": 69.2
+    "sani": 60.4
+    "rela": 66.1
+    "fedp": 32.3
+    "actn": 59.6
+    "purp": 54.2
+    "perc": 59.1
+    "cmdy": 55.0
+,
+  "name" : "PastaGuy27"
+  "stats":
+    "spos": 56.3
+    "alle": 81.3
+    "expr": 75.0
+    "pers": 43.8
+    "horn": 37.5
+    "fame": 6.3
+    "shwr": 62.5
+    "sani": 75.0
+    "rela": 55.0
+    "fedp": 18.8
+    "actn": 85.0
+    "purp": 31.3
+    "perc": 62.5
+    "cmdy": 37.5
+,
+  "name" : "Sorcer Verjiloz"
+  "stats":
+    "spos": 90.0
+    "alle": 22.7
+    "expr": 0.0
+    "pers": 66.1
+    "horn": 5.0
+    "fame": 11.9
+    "shwr": 19.2
+    "sani": 39.6
+    "rela": 51.8
+    "fedp": 32.3
+    "actn": 50.0
+    "purp": 58.3
+    "perc": 25.0
+    "cmdy": 25.0
+,
+  "name" : "Res."
+  "stats":
+    "spos": 55.0
+    "alle": 45.5
+    "expr": 20.8
+    "pers": 71.4
+    "horn": 57.5
+    "fame": 14.3
+    "shwr": 38.5
+    "sani": 77.1
+    "rela": 44.6
+    "fedp": 54.8
+    "actn": 80.8
+    "purp": 25.0
+    "perc": 61.4
+    "cmdy": 57.5
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"
