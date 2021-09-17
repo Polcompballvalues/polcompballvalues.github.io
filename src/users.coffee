@@ -729,5 +729,22 @@ users = [
     "purp": 25.0
     "perc": 61.4
     "cmdy": 57.5
+,
+  "name" : "antichristhater"
+  "stats":
+    "spos": 56.3
+    "alle": 68.8
+    "expr": 33.3
+    "pers": 37.5
+    "horn": 6.3
+    "fame": 50.0
+    "shwr": 75.0
+    "sani": 81.3
+    "rela": 65.0
+    "fedp": 50.0
+    "actn": 75.0
+    "purp": 12.5
+    "perc": 43.8
+    "cmdy": 75.0
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"

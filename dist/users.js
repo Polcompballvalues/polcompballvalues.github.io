@@ -818,6 +818,25 @@ users = [
       "perc": 61.4,
       "cmdy": 57.5
     }
+  },
+  {
+    "name": "antichristhater",
+    "stats": {
+      "spos": 56.3,
+      "alle": 68.8,
+      "expr": 33.3,
+      "pers": 37.5,
+      "horn": 6.3,
+      "fame": 50.0,
+      "shwr": 75.0,
+      "sani": 81.3,
+      "rela": 65.0,
+      "fedp": 50.0,
+      "actn": 75.0,
+      "purp": 12.5,
+      "perc": 43.8,
+      "cmdy": 75.0
+    }
   }
 ];
 
