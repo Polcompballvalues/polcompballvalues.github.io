@@ -10,7 +10,7 @@ getQueryVariable = (variable) ->
         i++
     return(NaN)
 
-#Sets the value for each bar div
+#Sets the value for each bar div (if value is over 20%)
 setBarValue = (name, value) ->
     innerel = document.getElementById(name)
     outerel = document.getElementById("bar-" + name)
@@ -163,7 +163,7 @@ for user in users
         userdist = dist
 document.getElementById("user-label").innerHTML = thisuser
 
-#Starts canvas element
+#Starts canvas element and sets darkmode to true if present
 window.onload = -> 
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
         darkmode = true

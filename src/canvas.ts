@@ -109,7 +109,7 @@ let purp: number = parseFloat(purp_input)
 let perc: number = parseFloat(perc_input)
 let cmdy: number = parseFloat(cmdy_input)
 
-//toFixed(1) of all values
+//toFixed(1) of all values (converts to string with 1 decimal)
 let sincerity:      string = spos.toFixed(1)
 let jannyphobe:     string = alle.toFixed(1)
 let veteran:        string = expr.toFixed(1)

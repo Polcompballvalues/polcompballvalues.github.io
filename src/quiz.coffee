@@ -1,14 +1,15 @@
 #Initializes questions text
 init_question = () ->
-    console.log(questions[qn].yesno)
-    document.getElementById("question-text").innerHTML = questions[qn].question
-    document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length)
+    document.getElementById("question-text").innerHTML = questions[qn].question #Sets question text
+    document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length) # Sets question number
+    #Disables back button if answers is empty
     if answers.length is 0
         document.getElementById("back_button").style.display = "none"
         document.getElementById("back_button_off").style.display = "block"
     else
         document.getElementById("back_button").style.display = "block"
         document.getElementById("back_button_off").style.display = "none"
+    #Disables middle 3 buttons and renames remaining buttons to yes and no if yesno is true
     if questions[qn].yesno is true
         document.getElementById("stragree-button").innerHTML = "Yes"
         document.getElementById("strdisag-button").innerHTML = "No"
@@ -23,7 +24,7 @@ init_question = () ->
         document.getElementById("disag-button").style.display = "block"
 
 
-#Jumps to next question when option button clicked
+#Jumps to next question when option button clicked or to results if no questions are left
 next_question = (mult) ->
     spos += mult*questions[qn].effect.spos
     alle += mult*questions[qn].effect.alle
@@ -41,12 +42,12 @@ next_question = (mult) ->
     cmdy += mult*questions[qn].effect.cmdy
     qn++
     answers.push mult
-    if (qn < questions.length)
+    if qn < questions.length
         do init_question
     else
         do results
 
-#Rewinds to previous question when back button clicked
+#Rewinds to previous question when back button clicked (if previous answer exists)
 prev_question = () ->
     if answers.length is 0
         return
@@ -99,9 +100,11 @@ results = () ->
 #Defines each variable as 0
 max_spos = max_alle = max_expr = max_pers = max_horn = max_fame = max_shwr = max_sani = max_rela = max_fedp = max_actn = max_purp = max_perc = max_cmdy =\
 spos = alle = expr = pers = horn = fame = shwr = sani = rela = fedp = actn = purp = perc = cmdy = qn = 0
+#Defines arrrays as empty
 answers = []
 shortquestions = []
 questions = []
+#Fetches short questions if url substring is s
 if window.location.search.substring(1) is "s"
     for question in fullquestions
         if question.short is true

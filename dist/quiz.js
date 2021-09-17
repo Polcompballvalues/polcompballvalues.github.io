@@ -3,9 +3,9 @@
 var actn, alle, answers, calc_score, cmdy, expr, fame, fedp, horn, i, init_question, j, len, len1, length, max_actn, max_alle, max_cmdy, max_expr, max_fame, max_fedp, max_horn, max_perc, max_pers, max_purp, max_rela, max_sani, max_shwr, max_spos, next_question, perc, pers, prev_question, purp, qn, question, questions, rela, results, sani, shortquestions, shwr, spos;
 
 init_question = function() {
-  console.log(questions[qn].yesno);
-  document.getElementById("question-text").innerHTML = questions[qn].question;
-  document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + questions.length;
+  document.getElementById("question-text").innerHTML = questions[qn].question; //Sets question text
+  document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + questions.length; // Sets question number
+  //Disables back button if answers is empty
   if (answers.length === 0) {
     document.getElementById("back_button").style.display = "none";
     document.getElementById("back_button_off").style.display = "block";
@@ -13,6 +13,7 @@ init_question = function() {
     document.getElementById("back_button").style.display = "block";
     document.getElementById("back_button_off").style.display = "none";
   }
+  //Disables middle 3 buttons and renames remaining buttons to yes and no if yesno is true
   if (questions[qn].yesno === true) {
     document.getElementById("stragree-button").innerHTML = "Yes";
     document.getElementById("strdisag-button").innerHTML = "No";
@@ -28,7 +29,7 @@ init_question = function() {
   }
 };
 
-//Jumps to next question when option button clicked
+//Jumps to next question when option button clicked or to results if no questions are left
 next_question = function(mult) {
   spos += mult * questions[qn].effect.spos;
   alle += mult * questions[qn].effect.alle;
@@ -53,7 +54,7 @@ next_question = function(mult) {
   }
 };
 
-//Rewinds to previous question when back button clicked
+//Rewinds to previous question when back button clicked (if previous answer exists)
 prev_question = function() {
   var prev_answer;
   if (answers.length === 0) {
@@ -97,12 +98,14 @@ results = function() {
 //Defines each variable as 0
 max_spos = max_alle = max_expr = max_pers = max_horn = max_fame = max_shwr = max_sani = max_rela = max_fedp = max_actn = max_purp = max_perc = max_cmdy = spos = alle = expr = pers = horn = fame = shwr = sani = rela = fedp = actn = purp = perc = cmdy = qn = 0;
 
+//Defines arrrays as empty
 answers = [];
 
 shortquestions = [];
 
 questions = [];
 
+//Fetches short questions if url substring is s
 if (window.location.search.substring(1) === "s") {
   for (i = 0, len = fullquestions.length; i < len; i++) {
     question = fullquestions[i];

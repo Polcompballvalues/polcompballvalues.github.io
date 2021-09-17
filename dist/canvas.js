@@ -132,7 +132,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     var purp = parseFloat(purp_input);
     var perc = parseFloat(perc_input);
     var cmdy = parseFloat(cmdy_input);
-    //toFixed(1) of all values
+    //toFixed(1) of all values (converts to string with 1 decimal)
     var sincerity = spos.toFixed(1);
     var jannyphobe = alle.toFixed(1);
     var veteran = expr.toFixed(1);

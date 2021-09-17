@@ -17,7 +17,7 @@ getQueryVariable = function(variable) {
   return 0/0;
 };
 
-//Sets the value for each bar div
+//Sets the value for each bar div (if value is over 20%)
 setBarValue = function(name, value) {
   var innerel, outerel;
   innerel = document.getElementById(name);
@@ -251,7 +251,7 @@ for (j = 0, len = users.length; j < len; j++) {
 
 document.getElementById("user-label").innerHTML = thisuser;
 
-//Starts canvas element
+//Starts canvas element and sets darkmode to true if present
 window.onload = function() {
   var darkmode;
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
