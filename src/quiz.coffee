@@ -100,6 +100,17 @@ results = () ->
 max_spos = max_alle = max_expr = max_pers = max_horn = max_fame = max_shwr = max_sani = max_rela = max_fedp = max_actn = max_purp = max_perc = max_cmdy =\
 spos = alle = expr = pers = horn = fame = shwr = sani = rela = fedp = actn = purp = perc = cmdy = qn = 0
 answers = []
+shortquestions = []
+questions = []
+if window.location.search.substring(1) is "s"
+    for question in fullquestions
+        if question.short is true
+            shortquestions.push(question)
+    questions = shortquestions;
+    length = "s";
+else
+    questions = fullquestions;
+    length = "f";
 
 #Calculates max score for each axis
 for question in questions

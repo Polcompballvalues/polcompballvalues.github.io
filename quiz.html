@@ -32,22 +32,6 @@
             <button class="small_button_off" id="back_button_off">Back</button><br>    
         </div>
         <script type="application/javascript" src="dist/questions.js"></script>
-        <script>
-            var shortquestions, questions
-            shortquestions = questions = []
-            if (window.location.search.substring(1) === "s") {
-                for (i = 0, len = fullquestions.length; i < len; i++) {
-                    if (fullquestions[i].short === true) {
-                        shortquestions.push(fullquestions[i]);
-                    }
-                }
-                questions = shortquestions;
-                length = "s";
-            } else {
-                questions = fullquestions;
-                length = "f";
-            }
-        </script>
         <script type="application/javascript"src="dist/quiz.js"></script>
     </body>
 </html>

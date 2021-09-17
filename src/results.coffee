@@ -2,10 +2,12 @@
 getQueryVariable = (variable) ->
     query = window.location.search.substring(1)
     vars = query.split("&")
-    `for (var i=0;i<vars.length;i++) {
-            var pair = vars[i].split("=")
-            if(pair[0] == variable) {return pair[1]}
-    }`
+    i = 0
+    while i < vars.length
+        pair = vars[i].split("=")
+        if pair[0] is variable
+            return pair[1]
+        i++
     return(NaN)
 
 #Sets the value for each bar div
@@ -162,11 +164,9 @@ for user in users
 document.getElementById("user-label").innerHTML = thisuser
 
 #Starts canvas element
-`window.onload = function(){
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+window.onload = -> 
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
         darkmode = true
-    } else {
+    else
         darkmode = false
-    }
     makeUserCanvas(sincerity,jannyphobe,veteran,wholesome,horny,active,standard,boring,liked,discriminatory,behaving,artist,pleasant,funny,false,short,darkmode,thisuser)
-}`

@@ -43,7 +43,7 @@
                 } else {
                     darkmode = false
                 }
-                for(let i = 0;i < users.length;i++) {
+                for(var i = 0;i < users.length;i++) {
                     userdropdown.innerHTML += "<option value=\"" + i + "\">" + users[i].name + "</option>"
                 }
                 userdropdownChanged(1)
