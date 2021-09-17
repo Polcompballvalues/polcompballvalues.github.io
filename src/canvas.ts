@@ -1,9 +1,7 @@
 //Version type
-let version:        string = "V2 1.0.1";
+let version: string = "V2 1.0.1";
 //Other vars
-let edition:        string;
-declare var i:      any;
-declare var len:    any;
+let edition: string;
 
 //Sets label for each axis
 function setLabel(val, ary) {
@@ -184,7 +182,7 @@ ctx.drawImage(img_unfunny, 680, 1730, 100, 100)
 
 //Drawing bar background
 ctx.fillStyle = "#222222"
-for (i = 0, len = 15; i < len; i++){
+for (let i: number = 0, len : number = 15; i < len; i++){
     ctx.lineJoin = "round"
     ctx.lineWidth = 75;
     ctx.strokeRect(165, 220 + 120 * i, 470, 0)

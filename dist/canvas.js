@@ -204,7 +204,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     ctx.drawImage(img_unfunny, 680, 1730, 100, 100);
     //Drawing bar background
     ctx.fillStyle = "#222222";
-    for (i = 0, len = 15; i < len; i++) {
+    for (var i = 0, len = 15; i < len; i++) {
         ctx.lineJoin = "round";
         ctx.lineWidth = 75;
         ctx.strokeRect(165, 220 + 120 * i, 470, 0);
