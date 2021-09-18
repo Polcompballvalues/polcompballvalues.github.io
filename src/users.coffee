@@ -746,5 +746,124 @@ users = [
     "purp": 12.5
     "perc": 43.8
     "cmdy": 75.0
+,
+  "name" : "oRange"
+  "stats":
+    "spos": 52.5
+    "alle": 56.8
+    "expr": 83.3
+    "pers": 66.1
+    "horn": 30.0
+    "fame": 72.6
+    "shwr": 42.3
+    "sani": 60.4
+    "rela": 82.1
+    "fedp": 43.5
+    "actn": 55.8
+    "purp": 64.6
+    "perc": 81.8
+    "cmdy": 87.5
+,
+  "name" : "Leo9"
+  "stats":
+    "spos": 55.0
+    "alle": 81.8
+    "expr": 29.2
+    "pers": 64.3
+    "horn": 62.5
+    "fame": 13.1
+    "shwr": 21.2
+    "sani": 47.9
+    "rela": 57.1
+    "fedp": 8.1
+    "actn": 48.1
+    "purp": 58.3
+    "perc": 65.9
+    "cmdy": 45.0
+,
+  "name" : "Yelling Yowie"
+  "stats":
+    "spos": 68.8
+    "alle": 50.0
+    "expr": 58.3
+    "pers": 68.8
+    "horn": 62.5
+    "fame": 6.3
+    "shwr": 68.8
+    "sani": 56.3
+    "rela": 45.0
+    "fedp": 18.8
+    "actn": 95.0
+    "purp": 50.0
+    "perc": 68.8
+    "cmdy": 31.3
+,
+  "name" : "Lexarete"
+  "stats":
+    "spos": 37.5
+    "alle": 97.7
+    "expr": 55.4
+    "pers": 35.4
+    "horn": 0
+    "fame": 60.7
+    "shwr": 42.3
+    "sani": 59.6
+    "rela": 43.6
+    "fedp": 82.3
+    "actn": 34.6
+    "purp": 22.9
+    "perc": 25.0
+    "cmdy": 85.0
+,
+  "name" : "AltarEgo"
+  "stats":
+    "spos": 50.0
+    "alle": 81.3
+    "expr": 66.7
+    "pers": 75.0
+    "horn": 68.8
+    "fame": 37.5
+    "shwr": 18.8
+    "sani": 62.5
+    "rela": 40.0
+    "fedp": 6.3
+    "actn": 60.0
+    "purp": 18.8
+    "perc": 56.3
+    "cmdy": 56.3
+,
+  "name" : "Mannerheim"
+  "stats":
+    "spos": 47.5
+    "alle": 88.6
+    "expr": 41.7
+    "pers": 69.6
+    "horn": 32.5
+    "fame": 63.1
+    "shwr": 67.3
+    "sani": 58.3
+    "rela": 75.0
+    "fedp": 39.5
+    "actn": 38.5
+    "purp": 43.8
+    "perc": 65.9
+    "cmdy": 62.5
+,
+  "name" : "Thonk"
+  "stats":
+    "spos": 60.0
+    "alle": 45.5
+    "expr": 25.0
+    "pers": 41.1
+    "horn": 60.0
+    "fame": 57.1
+    "shwr": 46.2
+    "sani": 54.2
+    "rela": 41.1
+    "fedp": 37.1
+    "actn": 57.7
+    "purp": 43.8
+    "perc": 56.8
+    "cmdy": 45.0
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"
