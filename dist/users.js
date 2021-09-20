@@ -43,20 +43,20 @@ users = [
   {
     "name": "Kaiser",
     "stats": {
-      "spos": 70.1,
-      "alle": 63.3,
-      "expr": 91.7,
-      "pers": 44.0,
-      "horn": 13.4,
-      "fame": 90.9,
-      "shwr": 41.0,
-      "sani": 44.5,
-      "rela": 91.7,
-      "fedp": 91.7,
-      "actn": 75.6,
-      "purp": 34.9,
-      "perc": 71.7,
-      "cmdy": 83.3
+      "spos": 70.0,
+      "alle": 47.7,
+      "expr": 100.0,
+      "pers": 28.6,
+      "horn": 0.0,
+      "fame": 76.2,
+      "shwr": 38.5,
+      "sani": 37.5,
+      "rela": 98.2,
+      "fedp": 96.8,
+      "actn": 69.2,
+      "purp": 35.4,
+      "perc": 75.0,
+      "cmdy": 90.0
     }
   },
   {
@@ -969,6 +969,44 @@ users = [
       "purp": 43.8,
       "perc": 56.8,
       "cmdy": 45.0
+    }
+  },
+  {
+    "name": "Whiprust",
+    "stats": {
+      "spos": 68.8,
+      "alle": 62.5,
+      "expr": 58.3,
+      "pers": 81.3,
+      "horn": 93.8,
+      "fame": 50.0,
+      "shwr": 31.3,
+      "sani": 68.8,
+      "rela": 55.0,
+      "fedp": 31.3,
+      "actn": 80.0,
+      "purp": 68.8,
+      "perc": 37.5,
+      "cmdy": 50.0
+    }
+  },
+  {
+    "name": "Jlakshan",
+    "stats": {
+      "spos": 55.0,
+      "alle": 81.8,
+      "expr": 39.6,
+      "pers": 50.0,
+      "horn": 80.0,
+      "fame": 58.3,
+      "shwr": 42.3,
+      "sani": 54.2,
+      "rela": 55.4,
+      "fedp": 52.4,
+      "actn": 26.9,
+      "purp": 50.0,
+      "perc": 29.5,
+      "cmdy": 62.5
     }
   }
 ];
