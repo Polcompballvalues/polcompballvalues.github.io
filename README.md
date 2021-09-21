@@ -34,7 +34,7 @@ As you might be aware the web has been standardized on 3 main technologies, HTML
 To compile these files into regular css and javascript you'll need to install node.js and the following packages (sass, coffeescript and typescript) and then run the compile commands of each, if your development environment is on Windows running the compile.ps1 file in the tools folder will compile all the files for you, otherwise below there's a set of commands for the default versions of each environment:
 ```powershell
 #installing the packages
-npm i -g sass coffee typescript
+npm i -g sass coffeescript typescript
 #compiling the files
 sass src:dist --no-source-map
 coffee -c -b -o  dist/ src/
