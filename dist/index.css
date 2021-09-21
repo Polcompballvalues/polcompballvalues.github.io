@@ -7,9 +7,13 @@
 .expl-axis {
   background: linear-gradient(180deg, transparent var(--axis), var(--arrow-color) var(--axis));
   mask-image: linear-gradient(180deg, white var(--axis), transparent var(--axis)), url(../assets/arrow.svg);
+  -webkit-mask-image: linear-gradient(180deg, white var(--axis), transparent var(--axis)), url(../assets/arrow.svg);
   mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   mask-size: 100%, 60% auto;
+  -webkit-mask-size: 100%, 60% auto;
   mask-position: 0 0, 50% var(--arrow);
+  -webkit-mask-position: 0 0, 50% var(--arrow);
 }
 
 .arrows {

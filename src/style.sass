@@ -9,6 +9,15 @@ html
     scroll-behavior: smooth
     scrollbar-width: thin
     font-family: $font
+::-webkit-scrollbar
+    width: 12px
+::-webkit-scrollbar-track
+    background: #CCC
+::-webkit-scrollbar-thumb
+    border: 2px solid #CCC
+    width: 10px
+    background-color: #222
+    border-radius: 20px
 p 
     font-size: 18pt
 p.question
@@ -141,7 +150,12 @@ label
     #userdropdown
         background-color: #333
         color: #FFF
-
+    ::-webkit-scrollbar-track
+        background: #222
+    ::-webkit-scrollbar-thumb
+        border: 2px solid #222
+        background-color: #CCC
+        
 @media screen and (max-width: 800px)
     p.question
         min-width: 40vw
