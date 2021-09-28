@@ -899,5 +899,39 @@ users = [
     "purp": 50.0
     "perc": 29.5
     "cmdy": 62.5
+,
+  "name" : "L O R D M U S H R O O M"
+  "stats":
+    "spos": 56.3
+    "alle": 62.5
+    "expr": 50.0
+    "pers": 56.3
+    "horn": 6.3
+    "fame": 0.0
+    "shwr": 25.0
+    "sani": 50.0
+    "rela": 70.0
+    "fedp": 6.3
+    "actn": 80.0
+    "purp": 18.8
+    "perc": 75.0
+    "cmdy": 43.8
+,
+  "name" : "TheGhostOfInky"
+  "stats":
+    "spos": 92.5
+    "alle": 9.1
+    "expr": 66.7
+    "pers": 82.1
+    "horn": 67.5
+    "fame": 94.0
+    "shwr": 28.8
+    "sani": 70.8
+    "rela": 44.6
+    "fedp": 6.5
+    "actn": 82.7
+    "purp": 85.4
+    "perc": 50.0
+    "cmdy": 57.5
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"
