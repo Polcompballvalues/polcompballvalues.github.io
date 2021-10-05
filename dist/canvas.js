@@ -2,6 +2,35 @@
 var version = "V2 1.0.5";
 //Other vars
 var edition;
+//Arrays
+//Seriousposting axis (Sincerity vs Irony)
+var spos_array = ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"];
+//Allegiance axis (Jannyphobe vs Jannyphile)
+var alle_array = ["Revolutionary", "Rebellious", "Opposed", "Unrested", "Populist", "Neutral", "Establishment", "Elitist", "Loyal", "Aristocratic", "Enslaved"];
+//Experience axis (Veteran vs Newbie)
+var expr_array = ["Primordial", "Ancient", "Historical", "Former", "Time-honored", "Reminiscent", "Apprentice", "Contemporary", "Missed Out", "Uninformed", "Novice"];
+//Personality axis (Wholesome vs Edgy)
+var pers_array = ["Angelic", "Benevolent", "Empathic", "Goodwilling", "Respectful", "Polite", "Rude", "Harsh", "Cruel", "Heartless", "Inhumane"];
+//Hornyposting axis (Horny vs Anti-Horny)
+var horn_array = ["Nymphomaniac", "Decadent", "Down Bad", "Lustful", "Libertine", "Moderated", "Composed", "Pure", "Prudish", "Restrained", "Overprotective"];
+//Fame axis (Active vs Lurker)
+var fame_array = ["Protagonist", "Celebrity", "Important", "Famed", "Recognizable", "NPC", "Integrated", "Sometimes", "Stranger", "Nobody", "Incognito"];
+//Shower axis (Standard vs Wacky)
+var shwr_array = ["Apolitical", "Uncaring", "Ordinary", "Moderate", "Opinionated", "Political", "Ideological", "Radical", "Extremist", "Convoluted", "Otherworldly"];
+//Sanity axis (Boring vs Schizo)
+var sani_array = ["Too Normal", "Bland", "Healthy", "Sound Minded", "Tame", "Interesting", "Different", "Neurotic", "Out There", "Deranged", "a̵̒̆a̶̋͗a̶͂͠a̴͂̅a̵̔̕a̴̔͒"];
+//Relationship axis (Liked vs Disliked)
+var rela_array = ["Venerated", "Loved", "Admired", "Appreciated", "Respected", "No Opinion", "Mixed Feelings", "Unwanted", "Disliked", "Hated", "Abhorred"];
+//Fedposting axis (Discriminatory vs Inclusive)
+var fedp_array = ["Glowie", "Bigoted", "Prejudicial", "Exclusive", "Biased", "Varying", "Open-minded", "Tolerant", "Accepting", "Cosmopolitan", "SJW"];
+//Actions axis (Behaving vs Misbehaving)
+var actn_array = ["Robotic", "Lawful", "Obedient", "Compliant", "Behaved", "Occasional", "Tripping-up", "Unruly", "Disobedient", "Chaotic", "Criminal"];
+//Purpose axis (Artist vs Community)
+var purp_array = ["Maestro", "Art Hero", "Aesthetic", "Artistic Focused", "Wikiredditor", "Undecided", "Member", "Conversational", "Chatty", "Talkative", "Talentless"];
+//Perception axis (Pleasant vs Annoying)
+var perc_array = ["Therapeutic", "Comforting", "Calming", "Chill", "Tolerable", "Ambivalent", "Uncomforting", "Pestering", "Obnoxious", "Infuriating", "Proof that God is testing us"];
+//Comedy axis (Funny vs Unfunny)
+var cmdy_array = ["Hysterical", "Hilarious", "Humorous", "Comical", "Amusing", "Undifferentiated", "Superficial", "Unironic", "Lackluster", "Crickets", "Epitome of Boredom"];
 //Sets label for each axis
 function setLabel(val, ary) {
     if (val > 100) {
@@ -530,33 +559,19 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     //Draw array matches
     ctx.textAlign = "center";
     ctx.font = "bold 30px Source Sans Pro";
-    //@ts-ignore
     ctx.fillText("Seriousposting Axis: " + setLabel(spos, spos_array), 400, 170);
-    //@ts-ignore
     ctx.fillText("Allegiance Axis: " + setLabel(alle, alle_array), 400, 290);
-    //@ts-ignore
     ctx.fillText("Experience Axis: " + setLabel(expr, expr_array), 400, 410);
-    //@ts-ignore
     ctx.fillText("Personality Axis: " + setLabel(pers, pers_array), 400, 530);
-    //@ts-ignore
     ctx.fillText("Hornyposting Axis: " + setLabel(horn, horn_array), 400, 650);
-    //@ts-ignore
     ctx.fillText("Fame Axis: " + setLabel(fame, fame_array), 400, 770);
-    //@ts-ignore
     ctx.fillText("Shower Axis: " + setLabel(shwr, shwr_array), 400, 890);
-    //@ts-ignore
     ctx.fillText("Sanity Axis: " + setLabel(sani, sani_array), 400, 1010);
-    //@ts-ignore
     ctx.fillText("Relationship Axis: " + setLabel(rela, rela_array), 400, 1130);
-    //@ts-ignore
     ctx.fillText("Fedposting Axis: " + setLabel(fedp, fedp_array), 400, 1250);
-    //@ts-ignore
     ctx.fillText("Actions Axis: " + setLabel(actn, actn_array), 400, 1370);
-    //@ts-ignore
     ctx.fillText("Purpose Axis: " + setLabel(purp, purp_array), 400, 1490);
-    //@ts-ignore
     ctx.fillText("Perception Axis: " + setLabel(perc, perc_array), 400, 1610);
-    //@ts-ignore
     ctx.fillText("Comedy Axis: " + setLabel(cmdy, cmdy_array), 400, 1730);
     //@ts-ignore
     document.getElementById("banner").src = c.toDataURL();

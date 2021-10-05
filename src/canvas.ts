@@ -2,6 +2,35 @@
 let version: string = "V2 1.0.5";
 //Other vars
 let edition: string;
+//Arrays
+//Seriousposting axis (Sincerity vs Irony)
+let spos_array: Array<string> = ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"]
+//Allegiance axis (Jannyphobe vs Jannyphile)
+let alle_array: Array<string> = ["Revolutionary", "Rebellious", "Opposed", "Unrested", "Populist",  "Neutral", "Establishment", "Elitist", "Loyal", "Aristocratic", "Enslaved"]
+//Experience axis (Veteran vs Newbie)
+let expr_array: Array<string> = ["Primordial", "Ancient", "Historical", "Former", "Time-honored", "Reminiscent", "Apprentice", "Contemporary", "Missed Out", "Uninformed", "Novice"]
+//Personality axis (Wholesome vs Edgy)
+let pers_array: Array<string> = ["Angelic", "Benevolent", "Empathic", "Goodwilling", "Respectful", "Polite", "Rude", "Harsh", "Cruel", "Heartless", "Inhumane"]
+//Hornyposting axis (Horny vs Anti-Horny)
+let horn_array: Array<string> = ["Nymphomaniac", "Decadent", "Down Bad", "Lustful", "Libertine", "Moderated", "Composed", "Pure", "Prudish", "Restrained", "Overprotective"]
+//Fame axis (Active vs Lurker)
+let fame_array: Array<string> = ["Protagonist", "Celebrity", "Important", "Famed", "Recognizable", "NPC", "Integrated", "Sometimes", "Stranger", "Nobody", "Incognito"]
+//Shower axis (Standard vs Wacky)
+let shwr_array: Array<string> = ["Apolitical", "Uncaring", "Ordinary", "Moderate", "Opinionated", "Political", "Ideological", "Radical", "Extremist", "Convoluted", "Otherworldly"]
+//Sanity axis (Boring vs Schizo)
+let sani_array: Array<string> = ["Too Normal", "Bland", "Healthy", "Sound Minded", "Tame", "Interesting", "Different", "Neurotic", "Out There", "Deranged", "a̵̒̆a̶̋͗a̶͂͠a̴͂̅a̵̔̕a̴̔͒"]
+//Relationship axis (Liked vs Disliked)
+let rela_array: Array<string> = ["Venerated", "Loved", "Admired", "Appreciated", "Respected", "No Opinion", "Mixed Feelings", "Unwanted", "Disliked", "Hated", "Abhorred"]
+//Fedposting axis (Discriminatory vs Inclusive)
+let fedp_array: Array<string> = ["Glowie", "Bigoted", "Prejudicial", "Exclusive", "Biased", "Varying", "Open-minded", "Tolerant", "Accepting", "Cosmopolitan", "SJW"]
+//Actions axis (Behaving vs Misbehaving)
+let actn_array: Array<string> = ["Robotic", "Lawful", "Obedient", "Compliant", "Behaved", "Occasional",  "Tripping-up", "Unruly", "Disobedient", "Chaotic", "Criminal"]
+//Purpose axis (Artist vs Community)
+let purp_array: Array<string> = ["Maestro", "Art Hero", "Aesthetic", "Artistic Focused", "Wikiredditor", "Undecided", "Member", "Conversational", "Chatty", "Talkative", "Talentless"]    
+//Perception axis (Pleasant vs Annoying)
+let perc_array: Array<string> = ["Therapeutic", "Comforting", "Calming", "Chill", "Tolerable", "Ambivalent", "Uncomforting", "Pestering", "Obnoxious", "Infuriating", "Proof that God is testing us"]
+//Comedy axis (Funny vs Unfunny)
+let cmdy_array: Array<string> = ["Hysterical", "Hilarious", "Humorous", "Comical", "Amusing", "Undifferentiated", "Superficial", "Unironic", "Lackluster", "Crickets", "Epitome of Boredom"]
 
 //Sets label for each axis
 function setLabel(val, ary) {
@@ -436,33 +465,19 @@ ctx.fillText(edition, 780, 100)
 //Draw array matches
 ctx.textAlign = "center"
 ctx.font="bold 30px Source Sans Pro"
-//@ts-ignore
 ctx.fillText("Seriousposting Axis: " + setLabel(spos, spos_array), 400, 170)
-//@ts-ignore
 ctx.fillText("Allegiance Axis: "     + setLabel(alle, alle_array), 400, 290)
-//@ts-ignore
 ctx.fillText("Experience Axis: "     + setLabel(expr, expr_array), 400, 410)
-//@ts-ignore
 ctx.fillText("Personality Axis: "    + setLabel(pers, pers_array), 400, 530)
-//@ts-ignore
 ctx.fillText("Hornyposting Axis: "   + setLabel(horn, horn_array), 400, 650)
-//@ts-ignore
 ctx.fillText("Fame Axis: "           + setLabel(fame, fame_array), 400, 770)
-//@ts-ignore
 ctx.fillText("Shower Axis: "         + setLabel(shwr, shwr_array), 400, 890)
-//@ts-ignore
 ctx.fillText("Sanity Axis: "         + setLabel(sani, sani_array), 400, 1010)
-//@ts-ignore
 ctx.fillText("Relationship Axis: "   + setLabel(rela, rela_array), 400, 1130)
-//@ts-ignore
 ctx.fillText("Fedposting Axis: "     + setLabel(fedp, fedp_array), 400, 1250)
-//@ts-ignore
 ctx.fillText("Actions Axis: "        + setLabel(actn, actn_array), 400, 1370)
-//@ts-ignore
 ctx.fillText("Purpose Axis: "        + setLabel(purp, purp_array), 400, 1490)
-//@ts-ignore
 ctx.fillText("Perception Axis: "     + setLabel(perc, perc_array), 400, 1610)
-//@ts-ignore
 ctx.fillText("Comedy Axis: "         + setLabel(cmdy, cmdy_array), 400, 1730);
 //@ts-ignore
 document.getElementById("banner").src = c.toDataURL();
