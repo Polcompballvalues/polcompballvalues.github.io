@@ -29,19 +29,16 @@
         <script type="application/javascript" src="dist/users.js"></script>
         <script type="application/javascript" src="dist/canvas.js"></script>
         <script>
-            userdropdown = document.getElementById("userdropdown")     
-            
             function userdropdownChanged() {
-                i = userdropdown.selectedIndex
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    var darkmode = true
+                } else {
+                    var darkmode = false
+                }
+                var i = document.getElementById("userdropdown").selectedIndex
                 makeUserCanvas(users[i].stats.spos, users[i].stats.alle, users[i].stats.expr, users[i].stats.pers, users[i].stats.horn, users[i].stats.fame, users[i].stats.shwr, users[i].stats.sani, users[i].stats.rela, users[i].stats.fedp, users[i].stats.actn, users[i].stats.purp, users[i].stats.perc, users[i].stats.cmdy, true, false, darkmode, users[i].name)
             }
-            
             window.onload = function() {
-                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                    darkmode = true
-                } else {
-                    darkmode = false
-                }
                 for(var i = 0;i < users.length;i++) {
                     userdropdown.innerHTML += "<option value=\"" + i + "\">" + users[i].name + "</option>"
                 }

@@ -2,16 +2,16 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "typescript",
-			"tsconfig": "tsconfig.json",
-			"problemMatcher": [
-				"$tsc"
-			],
-			"group": "build",
-			"label": "tsc: build - tsconfig.json"
-		},
-		{				
-			"label": "Coffeescript compile",
+            "type": "typescript",
+            "tsconfig": "tsconfig.json",
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "group": "build",
+            "label": "tsc: build - tsconfig.json"
+        },
+        {				
+            "label": "Coffeescript compile",
             "type": "shell",
             "command": "coffee",
             "args": [
@@ -25,8 +25,8 @@
                 "kind": "build",
                 "isDefault": true
             }
-		},
-		{
+        },
+        {
             "label": "Sass compiler",
             "type": "shell",
             "command": "sass",
@@ -35,6 +35,6 @@
                 "--no-source-map"
             ],
             "group": "build",
-        }
+        }       
 	]
 }
