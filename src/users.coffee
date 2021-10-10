@@ -256,20 +256,20 @@ users = [
 ,
   "name" : "chicken piccata"
   "stats":
-    "spos": 63.3
-    "alle": 31.7
-    "expr": 18.0
-    "pers": 83.4
-    "horn": 51.6
-    "fame": 43.9
-    "shwr": 70.6
-    "sani": 71.0
-    "rela": 54.8
-    "fedp": 22.6
-    "actn": 83.4
-    "purp": 48.5
-    "perc": 73.4
-    "cmdy": 14.8
+    "spos": 67.5
+    "alle": 22.7
+    "expr": 8.3
+    "pers": 89.3
+    "horn": 22.5
+    "fame": 57.1
+    "shwr": 71.2
+    "sani": 75.0
+    "rela": 75.0
+    "fedp": 20.2
+    "actn": 84.6
+    "purp": 50.0
+    "perc": 75.0
+    "cmdy": 15.0
 ,
   "name" : "YourLocalDegenerateMao"
   "stats":
@@ -933,5 +933,39 @@ users = [
     "purp": 85.4
     "perc": 50.0
     "cmdy": 57.5
+,
+  "name" : "orion"
+  "stats":
+    "spos": 37.5
+    "alle": 31.3
+    "expr": 25.0
+    "pers": 75.0
+    "horn": 6.3
+    "fame": 37.4
+    "shwr": 75.0
+    "sani": 62.5
+    "rela": 55.0
+    "fedp": 25.0
+    "actn": 65.0
+    "purp": 62.5
+    "perc": 50.0
+    "cmdy": 75.0
+,
+  "name" : "Arksiane"
+  "stats":
+    "spos": 7.5
+    "alle": 95.5
+    "expr": 95.8
+    "pers": 7.1
+    "horn": 55.0
+    "fame": 67.9
+    "shwr": 84.6
+    "sani": 43.8
+    "rela": 62.5
+    "fedp": 75.8
+    "actn": 19.2
+    "purp": 22.9
+    "perc": 38.6
+    "cmdy": 82.5
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"

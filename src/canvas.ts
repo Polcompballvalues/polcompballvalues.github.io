@@ -1,5 +1,5 @@
 //Version type
-let version: string = "V2 1.0.5";
+let version: string = "V2 1.0.6";
 //Other vars
 let edition: string;
 //Arrays
