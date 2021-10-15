@@ -290,20 +290,20 @@ users = [
 ,
   "name" : "bowie"
   "stats":
-    "spos": 41.6
-    "alle": 36.6
-    "expr": 40.3
-    "pers": 45.3
-    "horn": 61.7
-    "fame": 59.1
-    "shwr": 35.9
-    "sani": 52.8
-    "rela": 45.3
-    "fedp": 23.8
-    "actn": 47.5
-    "purp": 47.0
-    "perc": 46.7
-    "cmdy": 59.3
+    "spos": 50.0
+    "alle": 50.0
+    "expr": 33.3
+    "pers": 35.7
+    "horn": 52.5
+    "fame": 65.5
+    "shwr": 48.1
+    "sani": 52.1
+    "rela": 62.5
+    "fedp": 33.1
+    "actn": 51.9
+    "purp": 33.3
+    "perc": 63.6
+    "cmdy": 65.0
 ,
   "name" : "Libtard"
   "stats":
@@ -460,20 +460,20 @@ users = [
 ,
   "name" : "märkl"
   "stats":
-    "spos": 60.0
-    "alle": 27.5
-    "expr": 29.2
-    "pers": 73.2
-    "horn": 42.5
-    "fame": 22.7
-    "shwr": 48.1
-    "sani": 66.7
-    "rela": 64.3
-    "fedp": 42.9
+    "spos": 37.5
+    "alle": 25.0
+    "expr": 33.3
+    "pers": 62.5
+    "horn": 62.5
+    "fame": 25.0
+    "shwr": 50.0
+    "sani": 75.0
+    "rela": 75.0
+    "fedp": 25.0
     "actn": 75.0
-    "purp": 52.3
-    "perc": 67.5
-    "cmdy": 41.7
+    "purp": 50.0
+    "perc": 62.5
+    "cmdy": 62.5
 ,
   "name" : "Xerunox"
   "stats":
@@ -902,20 +902,20 @@ users = [
 ,
   "name" : "L O R D M U S H R O O M"
   "stats":
-    "spos": 56.3
-    "alle": 62.5
+    "spos": 43.8
+    "alle": 56.3
     "expr": 50.0
-    "pers": 56.3
-    "horn": 6.3
-    "fame": 0.0
-    "shwr": 25.0
-    "sani": 50.0
-    "rela": 70.0
-    "fedp": 6.3
+    "pers": 37.5
+    "horn": 43.8
+    "fame": 12.5
+    "shwr": 12.5
+    "sani": 43.8
+    "rela": 75.0
+    "fedp": 25.0
     "actn": 80.0
-    "purp": 18.8
-    "perc": 75.0
-    "cmdy": 43.8
+    "purp": 25.0
+    "perc": 68.8
+    "cmdy": 37.5
 ,
   "name" : "TheGhostOfInky"
   "stats":
