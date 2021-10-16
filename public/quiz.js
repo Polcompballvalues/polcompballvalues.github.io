@@ -5,14 +5,6 @@ var actn, alle, answers, calc_score, cmdy, expr, fame, fedp, horn, i, init_quest
 init_question = function() {
   document.getElementById("question-text").innerHTML = questions[qn].question; //Sets question text
   document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + questions.length; // Sets question number
-  //Disables back button if answers is empty
-  if (answers.length === 0) {
-    document.getElementById("back_button").style.display = "none";
-    document.getElementById("back_button_off").style.display = "block";
-  } else {
-    document.getElementById("back_button").style.display = "block";
-    document.getElementById("back_button_off").style.display = "none";
-  }
   //Disables middle 3 buttons and renames remaining buttons to yes and no if yesno is true
   if (questions[qn].yesno === true) {
     document.getElementById("stragree-button").innerHTML = "Yes";
@@ -58,7 +50,7 @@ next_question = function(mult) {
 prev_question = function() {
   var prev_answer;
   if (answers.length === 0) {
-
+    return window.history.back();
   } else {
     qn--;
     prev_answer = answers.slice(0).pop();
