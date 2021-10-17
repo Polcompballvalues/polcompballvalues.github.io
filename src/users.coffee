@@ -936,20 +936,20 @@ users = [
 ,
   "name" : "orion"
   "stats":
-    "spos": 37.5
-    "alle": 31.3
+    "spos": 25.0
+    "alle": 12.5
     "expr": 25.0
-    "pers": 75.0
+    "pers": 87.5
     "horn": 6.3
-    "fame": 37.4
+    "fame": 62.5
     "shwr": 75.0
     "sani": 62.5
-    "rela": 55.0
-    "fedp": 25.0
-    "actn": 65.0
-    "purp": 62.5
-    "perc": 50.0
-    "cmdy": 75.0
+    "rela": 45.0
+    "fedp": 12.5
+    "actn": 45.0
+    "purp": 43.8
+    "perc": 31.3
+    "cmdy": 56.3
 ,
   "name" : "Arksiane"
   "stats":
@@ -967,5 +967,39 @@ users = [
     "purp": 22.9
     "perc": 38.6
     "cmdy": 82.5
+,
+  "name" : "Sauntox"
+  "stats":
+    "spos": 82.5
+    "alle": 100.0
+    "expr": 31.3
+    "pers": 42.9
+    "horn": 85.0
+    "fame": 64.3
+    "shwr": 19.2
+    "sani": 33.3
+    "rela": 33.9
+    "fedp": 21.0
+    "actn": 46.2
+    "purp": 31.3
+    "perc": 40.9
+    "cmdy": 30.0
+,
+  "name" : "Black Prussian"
+  "stats":
+    "spos": 47.5
+    "alle": 59.1
+    "expr": 18.8
+    "pers": 60.7
+    "horn": 60.0
+    "fame": 23.8
+    "shwr": 44.2
+    "sani": 50.0
+    "rela": 39.3
+    "fedp": 25.0
+    "actn": 65.4
+    "purp": 29.2
+    "perc": 52.3
+    "cmdy": 15.0
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"
