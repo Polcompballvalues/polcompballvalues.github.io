@@ -1122,6 +1122,44 @@ users = [
       "perc": 52.3,
       "cmdy": 15.0
     }
+  },
+  {
+    "name": "Ted Chadczynski",
+    "stats": {
+      "spos": 100.0,
+      "alle": 62.5,
+      "expr": 8.3,
+      "pers": 31.3,
+      "horn": 75.0,
+      "fame": 87.5,
+      "shwr": 0.0,
+      "sani": 6.3,
+      "rela": 20.0,
+      "fedp": 87.5,
+      "actn": 40.0,
+      "purp": 25.0,
+      "perc": 0.0,
+      "cmdy": 12.5
+    }
+  },
+  {
+    "name": "Porosha",
+    "stats": {
+      "spos": 60.0,
+      "alle": 38.6,
+      "expr": 43.8,
+      "pers": 89.3,
+      "horn": 20.0,
+      "fame": 47.6,
+      "shwr": 36.5,
+      "sani": 47.9,
+      "rela": 85.7,
+      "fedp": 30.6,
+      "actn": 82.7,
+      "purp": 35.4,
+      "perc": 90.9,
+      "cmdy": 75.0
+    }
   }
 ];
 
