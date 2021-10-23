@@ -133,3 +133,5 @@ for (j = 0, len1 = questions.length; j < len1; j++) {
 
 //starts the question initializer
 init_question();
+
+//# sourceMappingURL=quiz.js.map

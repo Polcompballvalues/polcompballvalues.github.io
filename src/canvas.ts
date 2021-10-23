@@ -1,5 +1,5 @@
 //Version type
-let version: string = "V2 1.0.9";
+let version: string = "V2 1.1.0";
 //Other vars
 let edition: string;
 //Arrays
@@ -424,7 +424,7 @@ if (cmdy > 30) {ctx.fillText(funny          + "%", 150, 1797.5)}
 ctx.fillStyle = "#DDD"
 if (horn > 30) {ctx.fillText(horny          + "%", 150, 717.5)}
 //Right column percentages
-ctx.textAlign="right"
+ctx.textAlign ="right"
 ctx.fillStyle = "#000"
 if (spos < 70) {ctx.fillText(irony          + "%", 650, 237.5)}
 if (expr < 70) {ctx.fillText(newbie         + "%", 650, 477.5)}

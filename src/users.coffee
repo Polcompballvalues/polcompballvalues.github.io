@@ -1035,5 +1035,107 @@ users = [
     "purp": 35.4
     "perc": 90.9
     "cmdy": 75.0
+,
+  "name" : "Cynical Man"
+  "stats":
+    "spos": 47.5
+    "alle": 90.9
+    "expr": 22.9
+    "pers": 23.2
+    "horn": 7.5
+    "fame": 14.3
+    "shwr": 15.4
+    "sani": 56.3
+    "rela": 48.2
+    "fedp": 79.0
+    "actn": 53.8
+    "purp": 25.0
+    "perc": 77.3
+    "cmdy": 65.0
+,
+  "name" : "Rajun Cajun"
+  "stats":
+    "spos": 52.5
+    "alle": 36.4
+    "expr": 22.9
+    "pers": 57.1
+    "horn": 17.5
+    "fame": 38.1
+    "shwr": 28.8
+    "sani": 37.5
+    "rela": 67.9
+    "fedp": 56.5
+    "actn": 67.3
+    "purp": 37.5
+    "perc": 61.4
+    "cmdy": 52.5
+,
+  "name" : "Sykar"
+  "stats":
+    "spos": 56.3
+    "alle": 43.8
+    "expr": 50.0
+    "pers": 87.5
+    "horn": 25.0
+    "fame": 25.0
+    "shwr": 68.8
+    "sani": 43.8
+    "rela": 55.0
+    "fedp": 0.0
+    "actn": 65.0
+    "purp": 56.3
+    "perc": 81.3
+    "cmdy": 37.5
+,
+  "name" : "KiwiCommie"
+  "stats":
+    "spos": 65.0
+    "alle": 63.6
+    "expr": 62.5
+    "pers": 94.6
+    "horn": 55.0
+    "fame": 28.6
+    "shwr": 36.5
+    "sani": 66.7
+    "rela": 75.0
+    "fedp": 4.8
+    "actn": 63.5
+    "purp": 68.8
+    "perc": 75.0
+    "cmdy": 72.5
+,
+  "name" : "Byonn"
+  "stats":
+    "spos": 20.0
+    "alle": 93.2
+    "expr": 100.0
+    "pers": 16.1
+    "horn": 27.5
+    "fame": 47.6
+    "shwr": 69.2
+    "sani": 75.0
+    "rela": 73.2
+    "fedp": 90.3
+    "actn": 21.2
+    "purp": 25.0
+    "perc": 36.4
+    "cmdy": 82.5
+,
+  "name" : "Hospee"
+  "stats":
+    "spos": 42.5
+    "alle": 6.8
+    "expr": 20.8
+    "pers": 64.3
+    "horn": 85.0
+    "fame": 35.7
+    "shwr": 44.2
+    "sani": 52.1
+    "rela": 66.1
+    "fedp": 22.6
+    "actn": 71.2
+    "purp": 41.7
+    "perc": 63.6
+    "cmdy": 75.0
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"

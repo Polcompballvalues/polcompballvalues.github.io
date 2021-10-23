@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
-            "outDir": "public",
+            "outDir": "dist",
             "rootDir": "src",
+            "sourceMap": true
     }
 }

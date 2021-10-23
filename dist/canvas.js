@@ -1,5 +1,5 @@
 //Version type
-var version = "V2 1.0.9";
+var version = "V2 1.1.0";
 //Other vars
 var edition;
 //Arrays
@@ -576,3 +576,4 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     //@ts-ignore
     document.getElementById("banner").src = c.toDataURL();
 };
+//# sourceMappingURL=canvas.js.map

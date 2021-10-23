@@ -261,3 +261,5 @@ window.onload = function() {
   }
   return makeUserCanvas(sincerity, jannyphobe, veteran, wholesome, horny, active, standard, boring, liked, discriminatory, behaving, artist, pleasant, funny, false, short, darkmode, thisuser);
 };
+
+//# sourceMappingURL=results.js.map

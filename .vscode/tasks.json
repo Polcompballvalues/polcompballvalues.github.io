@@ -17,8 +17,9 @@
             "args": [
                 "-c",
                 "-b",
+                "-m",
                 "-o",
-                "public/",
+                "dist/",
                 "src/"
             ],
             "group": {
@@ -31,8 +32,7 @@
             "type": "shell",
             "command": "sass",
             "args": [
-                "src:public",
-                "--no-source-map"
+                "src:dist"
             ],
             "group": "build",
         }       
