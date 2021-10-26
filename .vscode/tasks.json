@@ -27,6 +27,24 @@
                 "isDefault": true
             }
         },
+        {				
+            "label": "Coffeescript compile & warch",
+            "type": "shell",
+            "command": "coffee",
+            "args": [
+                "-c",
+                "-b",
+                "-w",
+                "-m",
+                "-o",
+                "dist/",
+                "src/"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
         {
             "label": "Sass compiler",
             "type": "shell",

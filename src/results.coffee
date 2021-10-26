@@ -22,7 +22,7 @@ setBarValue = (name, value) ->
         innerel.style.display = "block"
 
 #Jumps to submit page with url query
-submit = () ->
+submit = ->
     window.location.href = "submitter.html?" \
     + window.location.search.substring(1)
 
@@ -54,6 +54,26 @@ setLabel = (val,ary) ->
         return ary[10]
     else
         return ""
+
+sortVal = (e1,e2) ->
+    if e1.value < e2.value
+        return -1
+    if e1.value > e2.value
+        return 1
+    else 
+        return 0
+
+percComp = (val) ->
+    console.log val
+    if val[0].value > 14
+        maxval = val[0].value
+    else
+        maxval = 1400
+    i = 0
+    while i < val.length
+        val[i].value = 100 * maxval / val[i].value
+        i++
+    return val
 
 #Defines value of each value
 sincerity      = getQueryVariable("a")
@@ -140,33 +160,39 @@ document.getElementById("perception-label").innerHTML     = setLabel(pleasant,  
 document.getElementById("comedy-label").innerHTML         = setLabel(funny,         cmdy_array)
 
 #Finds closest match to this user
-thisuser = ""
-userdist = Infinity
-for user in users
+i = 0
+while i < users.length
     dist = 0
-    dist += Math.pow(Math.abs(user.stats.spos - sincerity), 2)
-    dist += Math.pow(Math.abs(user.stats.alle - jannyphobe), 2)
-    dist += Math.pow(Math.abs(user.stats.expr - veteran), 2)
-    dist += Math.pow(Math.abs(user.stats.pers - wholesome), 2)
-    dist += Math.pow(Math.abs(user.stats.horn - horny), 2)
-    dist += Math.pow(Math.abs(user.stats.fame - active), 2)
-    dist += Math.pow(Math.abs(user.stats.shwr - standard), 2)
-    dist += Math.pow(Math.abs(user.stats.sani - boring), 2)
-    dist += Math.pow(Math.abs(user.stats.rela - liked), 2)
-    dist += Math.pow(Math.abs(user.stats.fedp - discriminatory), 2)
-    dist += Math.pow(Math.abs(user.stats.actn - behaving), 2)
-    dist += Math.pow(Math.abs(user.stats.purp - artist), 2)
-    dist += Math.pow(Math.abs(user.stats.perc - pleasant), 2)
-    dist += Math.pow(Math.abs(user.stats.cmdy - funny), 2)
-    if dist < userdist
-        thisuser = user.name
-        userdist = dist
-document.getElementById("user-label").innerHTML = thisuser
+    dist += Math.pow(Math.abs(users[i].stats.spos - sincerity), 2)
+    dist += Math.pow(Math.abs(users[i].stats.alle - jannyphobe), 2)
+    dist += Math.pow(Math.abs(users[i].stats.expr - veteran), 2)
+    dist += Math.pow(Math.abs(users[i].stats.pers - wholesome), 2)
+    dist += Math.pow(Math.abs(users[i].stats.horn - horny), 2)
+    dist += Math.pow(Math.abs(users[i].stats.fame - active), 2)
+    dist += Math.pow(Math.abs(users[i].stats.shwr - standard), 2)
+    dist += Math.pow(Math.abs(users[i].stats.sani - boring), 2)
+    dist += Math.pow(Math.abs(users[i].stats.rela - liked), 2)
+    dist += Math.pow(Math.abs(users[i].stats.fedp - discriminatory), 2)
+    dist += Math.pow(Math.abs(users[i].stats.actn - behaving), 2)
+    dist += Math.pow(Math.abs(users[i].stats.purp - artist), 2)
+    dist += Math.pow(Math.abs(users[i].stats.perc - pleasant), 2)
+    dist += Math.pow(Math.abs(users[i].stats.cmdy - funny), 2)
+    #console.log dist
+    users[i].value = dist 
+    i++
+users.sort(sortVal)
+users = percComp(users)
+console.log users
 
+document.getElementById("user-label").innerHTML = users[0].name
+document.getElementById("match2").innerHTML = "#{users[1].value.toFixed(1)}% - #{users[1].name}"
+document.getElementById("match3").innerHTML = "#{users[2].value.toFixed(1)}% - #{users[2].name}"
+document.getElementById("match4").innerHTML = "#{users[3].value.toFixed(1)}% - #{users[3].name}"
+document.getElementById("match5").innerHTML = "#{users[4].value.toFixed(1)}% - #{users[4].name}"
 #Starts canvas element and sets darkmode to true if present
 window.onload = -> 
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
         darkmode = true
     else
         darkmode = false
-    makeUserCanvas(sincerity,jannyphobe,veteran,wholesome,horny,active,standard,boring,liked,discriminatory,behaving,artist,pleasant,funny,false,short,darkmode,thisuser)
+    makeUserCanvas(sincerity,jannyphobe,veteran,wholesome,horny,active,standard,boring,liked,discriminatory,behaving,artist,pleasant,funny,false,short,darkmode,users[0].name)

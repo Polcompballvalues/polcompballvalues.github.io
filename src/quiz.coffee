@@ -1,5 +1,5 @@
 #Initializes questions text
-init_question = () ->
+init_question = ->
     document.getElementById("question-text").innerHTML = questions[qn].question #Sets question text
     document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length) # Sets question number
     #Disables middle 3 buttons and renames remaining buttons to yes and no if yesno is true
@@ -41,7 +41,7 @@ next_question = (mult) ->
         do results
 
 #Rewinds to previous question when back button clicked (if previous answer exists)
-prev_question = () ->
+prev_question = ->
     if answers.length is 0
         do window.history.back
     else
@@ -72,7 +72,7 @@ calc_score = (score,max) ->
         return (100*(max+score)/(2*max)).toFixed(1)
 
 #Jumps to results page with the correct percentage scores for each axis
-results = () ->
+results = ->
     window.location.href = "results.html" \
         + "?a=" + calc_score(spos,max_spos) \
         + "&b=" + calc_score(alle,max_alle) \
