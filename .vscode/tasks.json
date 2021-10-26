@@ -28,7 +28,7 @@
             }
         },
         {				
-            "label": "Coffeescript compile & warch",
+            "label": "Coffeescript compile & watch",
             "type": "shell",
             "command": "coffee",
             "args": [

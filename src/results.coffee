@@ -64,7 +64,6 @@ sortVal = (e1,e2) ->
         return 0
 
 percComp = (val) ->
-    console.log val
     if val[0].value > 14
         maxval = val[0].value
     else
@@ -182,7 +181,6 @@ while i < users.length
     i++
 users.sort(sortVal)
 users = percComp(users)
-console.log users
 
 document.getElementById("user-label").innerHTML = users[0].name
 document.getElementById("match2").innerHTML = "#{users[1].value.toFixed(1)}% - #{users[1].name}"

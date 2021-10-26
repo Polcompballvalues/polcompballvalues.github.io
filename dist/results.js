@@ -80,7 +80,6 @@ sortVal = function(e1, e2) {
 
 percComp = function(val) {
   var i, maxval;
-  console.log(val);
   if (val[0].value > 14) {
     maxval = val[0].value;
   } else {
@@ -275,8 +274,6 @@ while (i < users.length) {
 users.sort(sortVal);
 
 users = percComp(users);
-
-console.log(users);
 
 document.getElementById("user-label").innerHTML = users[0].name;
 
