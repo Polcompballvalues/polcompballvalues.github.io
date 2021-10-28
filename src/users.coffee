@@ -1375,5 +1375,39 @@ users = [
     "purp": 50.0
     "perc": 43.8
     "cmdy": 43.8
+,
+  "name" : "Matmaj THM"
+  "stats":
+    "spos": 90.0
+    "alle": 0.0
+    "expr": 41.7
+    "pers": 50.0
+    "horn": 0.0
+    "fame": 19.0
+    "shwr": 23.1
+    "sani": 16.7
+    "rela": 0.0
+    "fedp": 6.5
+    "actn": 84.6
+    "purp": 66.7
+    "perc": 45.5
+    "cmdy": 10.0
+,
+  "name" : "Matmaj THM (Party Approved)"
+  "stats":
+    "spos": 100.0
+    "alle": 0.0
+    "expr": 41.7
+    "pers": 50.0
+    "horn": 0.0
+    "fame": 0.0
+    "shwr": 0
+    "sani": 0
+    "rela": 0.0
+    "fedp": 0
+    "actn": 100
+    "purp": 66.7
+    "perc": 100
+    "cmdy": 0.0
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"

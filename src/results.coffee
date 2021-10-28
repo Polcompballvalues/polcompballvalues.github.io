@@ -70,7 +70,7 @@ percComp = (val) ->
         maxval = 1400
     i = 0
     while i < val.length
-        val[i].value = 100 * maxval / val[i].value
+        val[i].value = 100 * (maxval / val[i].value)
         i++
     return val
 

@@ -1,5 +1,5 @@
 //Version type
-var version = "V2 1.2.0";
+var version = "V2 1.2.1";
 //Other vars
 var edition;
 //Arrays
