@@ -1578,6 +1578,44 @@ users = [
       "perc": 100,
       "cmdy": 0.0
     }
+  },
+  {
+    "name": "Cyb3klev",
+    "stats": {
+      "spos": 77.5,
+      "alle": 100.0,
+      "expr": 20.8,
+      "pers": 42.5,
+      "horn": 82.5,
+      "fame": 16.7,
+      "shwr": 53.8,
+      "sani": 60.4,
+      "rela": 53.6,
+      "fedp": 51.9,
+      "actn": 32.3,
+      "purp": 29.2,
+      "perc": 72.7,
+      "cmdy": 40.0
+    }
+  },
+  {
+    "name": "Sabkv",
+    "stats": {
+      "spos": 75.0,
+      "alle": 100.0,
+      "expr": 66.7,
+      "pers": 25.0,
+      "horn": 100.0,
+      "fame": 50.0,
+      "shwr": 0.0,
+      "sani": 25.0,
+      "rela": 55.0,
+      "fedp": 50.0,
+      "actn": 10.0,
+      "purp": 56.3,
+      "perc": 50.0,
+      "cmdy": 25.0
+    }
   }
 ];
 
