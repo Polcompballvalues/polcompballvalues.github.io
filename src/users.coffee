@@ -35,20 +35,20 @@ users = [
 ,
   "name" : "Kaiser"
   "stats":
-    "spos": 70.0
-    "alle": 47.7
-    "expr": 100.0
-    "pers": 28.6
-    "horn": 0.0
-    "fame": 76.2
-    "shwr": 38.5
-    "sani": 37.5
-    "rela": 98.2
-    "fedp": 96.8
-    "actn": 69.2
-    "purp": 35.4
-    "perc": 75.0
-    "cmdy": 90.0
+    "spos": 42.5
+    "alle": 79.5
+    "expr": 91.7
+    "pers": 1.8
+    "horn": 10.0
+    "fame": 73.8
+    "shwr": 48.1
+    "sani": 27.1
+    "rela": 80.4
+    "fedp": 100.0
+    "actn": 17.3
+    "purp": 22.9
+    "perc": 38.6
+    "cmdy": 97.5
 ,
   "name" : "Erstanden"
   "stats":
@@ -1443,5 +1443,90 @@ users = [
     "purp": 56.3
     "perc": 50.0
     "cmdy": 25.0
+,
+  "name" : "Carpenter family"
+  "stats":
+    "spos": 37.5
+    "alle": 50.0
+    "expr": 58.3
+    "pers": 68.8
+    "horn": 50.0
+    "fame": 43.8
+    "shwr": 56.3
+    "sani": 62.5
+    "rela": 35.0
+    "fedp": 25.0
+    "actn": 45.0
+    "purp": 43.8
+    "perc": 6.3
+    "cmdy": 62.5
+,
+  "name" : "Schizology"
+  "stats":
+    "spos": 43.8
+    "alle": 93.8
+    "expr": 91.7
+    "pers": 0.0
+    "horn": 50.0
+    "fame": 56.3
+    "shwr": 18.8
+    "sani": 0.0
+    "rela": 35.0
+    "fedp": 68.8
+    "actn": 5.0
+    "purp": 0.0
+    "perc": 56.3
+    "cmdy": 56.3
+,
+  "name" : "Sölvi"
+  "stats":
+    "spos": 72.5
+    "alle": 22.7
+    "expr": 12.5
+    "pers": 76.8
+    "horn": 67.5
+    "fame": 11.9
+    "shwr": 36.5
+    "sani": 50.0
+    "rela": 44.6
+    "fedp": 40.3
+    "actn": 65.4
+    "purp": 33.3
+    "perc": 56.8
+    "cmdy": 30.0
+,
+  "name" : "Erstanden"
+  "stats":
+    "spos": 50.0
+    "alle": 84.1
+    "expr": 31.3
+    "pers": 30.4
+    "horn": 20.0
+    "fame": 53.6
+    "shwr": 30.8
+    "sani": 56.3
+    "rela": 42.9
+    "fedp": 95.2
+    "actn": 23.1
+    "purp": 35.4
+    "perc": 31.8
+    "cmdy": 47.5
+,
+  "name" : "Pope Pius XV"
+  "stats":
+    "spos": 37.5
+    "alle": 79.5
+    "expr": 39.6
+    "pers": 75.0
+    "horn": 47.5
+    "fame": 32.1
+    "shwr": 40.4
+    "sani": 47.9
+    "rela": 48.2
+    "fedp": 38.7
+    "actn": 38.5
+    "purp": 35.4
+    "perc": 56.8
+    "cmdy": 77.5
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"

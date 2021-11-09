@@ -86,6 +86,10 @@ li {
   font-size: 18pt;
 }
 
+select {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 #credits {
   text-align: left;
   width: 75%;
