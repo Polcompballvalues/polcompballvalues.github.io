@@ -1,5 +1,5 @@
 //Version type
-let version: string = "V2 1.2.3";
+let version: string = "V2 1.2.4";
 //Other vars
 let edition: string;
 //Arrays
@@ -26,7 +26,7 @@ let fedp_array: Array<string> = ["Glowie", "Bigoted", "Prejudicial", "Exclusive"
 //Actions axis (Behaving vs Misbehaving)
 let actn_array: Array<string> = ["Robotic", "Lawful", "Obedient", "Compliant", "Behaved", "Occasional",  "Tripping-up", "Unruly", "Disobedient", "Chaotic", "Criminal"]
 //Purpose axis (Artist vs Community)
-let purp_array: Array<string> = ["Maestro", "Art Hero", "Aesthetic", "Artistic Focused", "Wikiredditor", "Undecided", "Member", "Conversational", "Chatty", "Talkative", "Talentless"]    
+let purp_array: Array<string> = ["Maestro", "Art Hero", "Aesthetic", "Artistic Focused", "Wikiredditor", "Undecided", "Member", "Conversational", "Chatty", "Talkative", "Talentless"]
 //Perception axis (Pleasant vs Annoying)
 let perc_array: Array<string> = ["Therapeutic", "Comforting", "Calming", "Chill", "Tolerable", "Ambivalent", "Uncomforting", "Pestering", "Obnoxious", "Infuriating", "Proof that God is testing us"]
 //Comedy axis (Funny vs Unfunny)
@@ -247,7 +247,7 @@ if(alle >= 50){
 //Experience axis
 if(expr >= 50){
     ctx.strokeStyle = "#FF0000"
-    ctx.strokeRect(636 - 4.72 * (100 - expr), 460, 4.72 * (100 - expr) - 2, 0) 
+    ctx.strokeRect(636 - 4.72 * (100 - expr), 460, 4.72 * (100 - expr) - 2, 0)
     ctx.strokeStyle = "#00F"
     ctx.strokeRect(166, 460, 4.72 * expr - 2, 0)
 } else {
@@ -295,7 +295,7 @@ if(fame >= 50){
 //Shower axis
 if(shwr >= 50){
     ctx.strokeStyle = "#89001C"
-    ctx.strokeRect(636 - 4.72 * (100 - shwr), 940, 4.72 * (100 - shwr) - 2, 0)  
+    ctx.strokeRect(636 - 4.72 * (100 - shwr), 940, 4.72 * (100 - shwr) - 2, 0)
     ctx.strokeStyle = "#8B5320"
     ctx.strokeRect(166, 940, 4.72 * shwr - 2, 0)
 } else {
@@ -409,7 +409,7 @@ ctx.textAlign = "left"
 ctx.fillStyle = "#000"
 if (spos > 30) {ctx.fillText(sincerity      + "%", 150, 237.5)}
 if (alle > 30) {ctx.fillText(jannyphobe     + "%", 150, 357.5)}
-if (expr > 30) {ctx.fillText(veteran        + "%", 150, 477.5)} 
+if (expr > 30) {ctx.fillText(veteran        + "%", 150, 477.5)}
 if (pers > 30) {ctx.fillText(wholesome      + "%", 150, 597.5)}
 if (fame > 30) {ctx.fillText(active         + "%", 150, 837.5)}
 if (shwr > 30) {ctx.fillText(standard       + "%", 150, 957.5)}
@@ -436,7 +436,7 @@ if (rela < 70) {ctx.fillText(disliked       + "%", 650, 1197.5)}
 if (fedp < 70) {ctx.fillText(inclusive      + "%", 650, 1317.5)}
 if (actn < 70) {ctx.fillText(misbehaving    + "%", 650, 1437.5)}
 if (cmdy < 70) {ctx.fillText(unfunny        + "%", 650, 1797.5)}
-//White text 
+//White text
 ctx.fillStyle = "#DDD"
 if (alle < 70) {ctx.fillText(jannyphile     + "%", 650, 357.5)}
 if (shwr < 70) {ctx.fillText(wacky          + "%", 650, 957.5)}
@@ -461,7 +461,7 @@ if(gallery == true){
         edition = "Full test"
     }
 }
-ctx.fillText(edition, 780, 100) 
+ctx.fillText(edition, 780, 100)
 //Draw array matches
 ctx.textAlign = "center"
 ctx.font="bold 30px Source Sans Pro"

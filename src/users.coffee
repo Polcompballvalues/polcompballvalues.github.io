@@ -1528,5 +1528,22 @@ users = [
     "purp": 35.4
     "perc": 56.8
     "cmdy": 77.5
+,
+  "name" : "Duckles"
+  "stats":
+    "spos": 70.0
+    "alle": 31.8
+    "expr": 14.6
+    "pers": 76.8
+    "horn": 80.0
+    "fame": 16.7
+    "shwr": 26.9
+    "sani": 39.6
+    "rela": 48.2
+    "fedp": 1.6
+    "actn": 69.2
+    "purp": 22.9
+    "perc": 65.9
+    "cmdy": 30.0
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"

@@ -1711,6 +1711,25 @@ users = [
       "perc": 56.8,
       "cmdy": 77.5
     }
+  },
+  {
+    "name": "Duckles",
+    "stats": {
+      "spos": 70.0,
+      "alle": 31.8,
+      "expr": 14.6,
+      "pers": 76.8,
+      "horn": 80.0,
+      "fame": 16.7,
+      "shwr": 26.9,
+      "sani": 39.6,
+      "rela": 48.2,
+      "fedp": 1.6,
+      "actn": 69.2,
+      "purp": 22.9,
+      "perc": 65.9,
+      "cmdy": 30.0
+    }
   }
 ];
 

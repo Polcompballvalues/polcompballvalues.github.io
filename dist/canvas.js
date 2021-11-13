@@ -1,5 +1,5 @@
 //Version type
-var version = "V2 1.2.3";
+var version = "V2 1.2.4";
 //Other vars
 var edition;
 //Arrays
@@ -520,7 +520,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     if (cmdy < 70) {
         ctx.fillText(unfunny + "%", 650, 1797.5);
     }
-    //White text 
+    //White text
     ctx.fillStyle = "#DDD";
     if (alle < 70) {
         ctx.fillText(jannyphile + "%", 650, 357.5);
