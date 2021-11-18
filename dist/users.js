@@ -1730,6 +1730,196 @@ users = [
       "perc": 65.9,
       "cmdy": 30.0
     }
+  },
+  {
+    "name": "Duke Atom",
+    "stats": {
+      "spos": 47.5,
+      "alle": 84.1,
+      "expr": 37.5,
+      "pers": 32.1,
+      "horn": 100.0,
+      "fame": 54.8,
+      "shwr": 30.8,
+      "sani": 58.3,
+      "rela": 80.4,
+      "fedp": 25.8,
+      "actn": 36.5,
+      "purp": 81.3,
+      "perc": 63.6,
+      "cmdy": 82.5
+    }
+  },
+  {
+    "name": "Banana dispenser",
+    "stats": {
+      "spos": 62.5,
+      "alle": 68.8,
+      "expr": 58.3,
+      "pers": 81.3,
+      "horn": 25.0,
+      "fame": 50.0,
+      "shwr": 43.8,
+      "sani": 25.0,
+      "rela": 60.0,
+      "fedp": 50.0,
+      "actn": 80.0,
+      "purp": 37.5,
+      "perc": 68.8,
+      "cmdy": 43.8
+    }
+  },
+  {
+    "name": "Livony",
+    "stats": {
+      "spos": 43.8,
+      "alle": 6.3,
+      "expr": 41.7,
+      "pers": 75.0,
+      "horn": 43.8,
+      "fame": 25.0,
+      "shwr": 68.8,
+      "sani": 25.0,
+      "rela": 55.0,
+      "fedp": 0.0,
+      "actn": 100.0,
+      "purp": 18.8,
+      "perc": 62.5,
+      "cmdy": 50.0
+    }
+  },
+  {
+    "name": "Immorxius",
+    "stats": {
+      "spos": 50.0,
+      "alle": 56.3,
+      "expr": 50.0,
+      "pers": 37.5,
+      "horn": 50.0,
+      "fame": 31.3,
+      "shwr": 43.8,
+      "sani": 56.3,
+      "rela": 50.0,
+      "fedp": 37.5,
+      "actn": 80.0,
+      "purp": 43.8,
+      "perc": 62.5,
+      "cmdy": 31.3
+    }
+  },
+  {
+    "name": "Chad_Enthusiast",
+    "stats": {
+      "spos": 70.0,
+      "alle": 56.8,
+      "expr": 27.1,
+      "pers": 73.2,
+      "horn": 20.6,
+      "fame": 25.0,
+      "shwr": 7.7,
+      "sani": 48.6,
+      "rela": 50.0,
+      "fedp": 70.2,
+      "actn": 45.7,
+      "purp": 62.5,
+      "perc": 68.2,
+      "cmdy": 45.0
+    }
+  },
+  {
+    "name": "Heinrich Cheung",
+    "stats": {
+      "spos": 45.0,
+      "alle": 22.7,
+      "expr": 33.3,
+      "pers": 42.9,
+      "horn": 70.0,
+      "fame": 38.1,
+      "shwr": 30.8,
+      "sani": 62.5,
+      "rela": 55.4,
+      "fedp": 88.7,
+      "actn": 61.5,
+      "purp": 52.1,
+      "perc": 70.5,
+      "cmdy": 45.0
+    }
+  },
+  {
+    "name": "Krab Man",
+    "stats": {
+      "spos": 50.0,
+      "alle": 50.0,
+      "expr": 83.3,
+      "pers": 50.0,
+      "horn": 62.5,
+      "fame": 68.8,
+      "shwr": 37.5,
+      "sani": 62.5,
+      "rela": 55.0,
+      "fedp": 6.3,
+      "actn": 55.0,
+      "purp": 56.3,
+      "perc": 25.0,
+      "cmdy": 37.5
+    }
+  },
+  {
+    "name": "GweenTea",
+    "stats": {
+      "spos": 67.5,
+      "alle": 47.7,
+      "expr": 29.2,
+      "pers": 76.8,
+      "horn": 62.5,
+      "fame": 22.6,
+      "shwr": 51.9,
+      "sani": 52.1,
+      "rela": 48.2,
+      "fedp": 34.7,
+      "actn": 61.5,
+      "purp": 54.2,
+      "perc": 72.7,
+      "cmdy": 42.5
+    }
+  },
+  {
+    "name": "incredibledeadman",
+    "stats": {
+      "spos": 62.5,
+      "alle": 6.3,
+      "expr": 58.3,
+      "pers": 68.8,
+      "horn": 37.5,
+      "fame": 0.0,
+      "shwr": 62.5,
+      "sani": 75.0,
+      "rela": 45.0,
+      "fedp": 12.5,
+      "actn": 90.0,
+      "purp": 43.8,
+      "perc": 56.3,
+      "cmdy": 12.5
+    }
+  },
+  {
+    "name": "Al'Zeta",
+    "stats": {
+      "spos": 50.0,
+      "alle": 6.3,
+      "expr": 41.7,
+      "pers": 75.0,
+      "horn": 62.5,
+      "fame": 50.0,
+      "shwr": 37.5,
+      "sani": 37.5,
+      "rela": 85.0,
+      "fedp": 62.5,
+      "actn": 80.0,
+      "purp": 37.5,
+      "perc": 75.0,
+      "cmdy": 75.0
+    }
   }
 ];
 
