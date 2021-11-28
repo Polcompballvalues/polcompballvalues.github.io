@@ -1715,5 +1715,90 @@ users = [
     "purp": 37.5
     "perc": 75.0
     "cmdy": 75.0
+,
+  "name" : "nyteulo"
+  "stats":
+    "spos": 22.5
+    "alle": 25.0
+    "expr": 22.9
+    "pers": 67.9
+    "horn": 32.5
+    "fame": 40.5
+    "shwr": 34.6
+    "sani": 77.1
+    "rela": 64.3
+    "fedp": 29.8
+    "actn": 67.3
+    "purp": 31.3
+    "perc": 72.7
+    "cmdy": 67.5
+,
+  "name" : "AquaHeart"
+  "stats":
+    "spos": 62.5
+    "alle": 25.0
+    "expr": 50.0
+    "pers": 93.8
+    "horn": 31.3
+    "fame": 0.0
+    "shwr": 62.5
+    "sani": 50.0
+    "rela": 75.0
+    "fedp": 6.3
+    "actn": 95.0
+    "purp": 43.8
+    "perc": 68.8
+    "cmdy": 18.8
+,
+  "name" : "Plant"
+  "stats":
+    "spos": 35.0
+    "alle": 79.5
+    "expr": 100.0
+    "pers": 58.9
+    "horn": 17.5
+    "fame": 65.5
+    "shwr": 63.5
+    "sani": 60.4
+    "rela": 73.2
+    "fedp": 57.3
+    "actn": 42.3
+    "purp": 16.7
+    "perc": 63.6
+    "cmdy": 65.0
+,
+  "name" : "Arunn"
+  "stats":
+    "spos": 35.0
+    "alle": 70.5
+    "expr": 81.3
+    "pers": 57.1
+    "horn": 12.5
+    "fame": 9.5
+    "shwr": 25.0
+    "sani": 70.8
+    "rela": 69.6
+    "fedp": 25.8
+    "actn": 61.5
+    "purp": 39.6
+    "perc": 63.6
+    "cmdy": 37.5
+,
+  "name" : "somi"
+  "stats":
+    "spos": 42.5
+    "alle": 59.1
+    "expr": 27.1
+    "pers": 58.9
+    "horn": 15.0
+    "fame": 44.0
+    "shwr": 23.1
+    "sani": 45.8
+    "rela": 60.7
+    "fedp": 71.0
+    "actn": 57.7
+    "purp": 39.6
+    "perc": 38.6
+    "cmdy": 72.5
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"
