@@ -37,6 +37,6 @@ To compile these files into regular css and javascript you'll need to install no
 npm i -g sass coffeescript typescript
 #compiling the files
 sass src:dist
-coffee -c -b -m -o dist/ src/
+coffee -c -b -m -o /dist /src
 tsc
 ```

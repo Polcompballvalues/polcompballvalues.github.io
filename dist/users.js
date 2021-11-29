@@ -2015,6 +2015,25 @@ users = [
       "perc": 38.6,
       "cmdy": 72.5
     }
+  },
+  {
+    "name": "Ukraiana",
+    "stats": {
+      "spos": 95.0,
+      "alle": 34.1,
+      "expr": 25.0,
+      "pers": 26.8,
+      "horn": 27.5,
+      "fame": 11.9,
+      "shwr": 17.3,
+      "sani": 70.8,
+      "rela": 71.4,
+      "fedp": 87.9,
+      "actn": 67.3,
+      "purp": 45.8,
+      "perc": 65.9,
+      "cmdy": 55.0
+    }
   }
 ];
 

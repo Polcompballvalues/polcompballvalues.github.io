@@ -37,8 +37,8 @@
                 "-w",
                 "-m",
                 "-o",
-                "dist/",
-                "src/"
+                "/dist",
+                "/src"
             ],
             "group": {
                 "kind": "build",

@@ -1800,5 +1800,22 @@ users = [
     "purp": 39.6
     "perc": 38.6
     "cmdy": 72.5
+,
+  "name" : "Ukraiana"
+  "stats":
+    "spos": 95.0
+    "alle": 34.1
+    "expr": 25.0
+    "pers": 26.8
+    "horn": 27.5
+    "fame": 11.9
+    "shwr": 17.3
+    "sani": 70.8
+    "rela": 71.4
+    "fedp": 87.9
+    "actn": 67.3
+    "purp": 45.8
+    "perc": 65.9
+    "cmdy": 55.0
 ]
 userlink = "U2FsdGVkX1/BSiD5beXHcgi3TaXQI7FhqaEHsM/388w6QOHg7HhMEIbLPqvTqFE3RXsPqtjLf+dXdVI0YeSdvO32dGIAcWfGteS4C/g/60CFT6Mmjj1RoNCEbV5HcIY1xIco5A0B1fcSD8Z1/ZsqwEkllTA85izJk6d+Vd+baOC6nfZl8cFEFXO3X7J56Rgg"
