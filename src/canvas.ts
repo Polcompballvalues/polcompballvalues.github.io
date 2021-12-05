@@ -120,7 +120,7 @@ function setLabel(val:number, ary:Array<string>) {
 }
 
 //Draws each axis
-function axisDraw(ctx, val:number, height:number, l_color:string, r_color:string,){
+function axisDraw(ctx, val:number, height:number, l_color:string, r_color:string){
     if(val >= 50){
         ctx.strokeStyle = r_color
         ctx.strokeRect(636 - 4.72 * (100 - val), height, 4.72 * (100 - val) - 2, 0)
@@ -263,7 +263,7 @@ function makeUserCanvas(spos_input: string, alle_input: string, expr_input: stri
     ctx.fillText("PolcompballValues", 20, 90)
     ctx.font = "30px Source Sans Pro"
     //Gallery set
-    if(gallery){
+    if(!gallery){
         user = "Closest Match: " + user
     }
     ctx.fillText(user, 20, 130)

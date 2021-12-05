@@ -282,7 +282,7 @@ function makeUserCanvas(spos_input, alle_input, expr_input, pers_input, horn_inp
     ctx.fillText("PolcompballValues", 20, 90);
     ctx.font = "30px Source Sans Pro";
     //Gallery set
-    if (gallery) {
+    if (!gallery) {
         user = "Closest Match: " + user;
     }
     ctx.fillText(user, 20, 130);
