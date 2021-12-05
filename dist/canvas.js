@@ -1,78 +1,34 @@
 //Version type
-var version = "V2 1.2.7";
-//Other vars
-var edition;
+const version = "V2 1.2.9";
 //Arrays
 //Seriousposting axis (Sincerity vs Irony)
-var spos_array = ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"];
+const spos_array = ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"];
 //Allegiance axis (Jannyphobe vs Jannyphile)
-var alle_array = ["Revolutionary", "Rebellious", "Opposed", "Unrested", "Populist", "Neutral", "Establishment", "Elitist", "Loyal", "Aristocratic", "Enslaved"];
+const alle_array = ["Revolutionary", "Rebellious", "Opposed", "Unrested", "Populist", "Neutral", "Establishment", "Elitist", "Loyal", "Aristocratic", "Enslaved"];
 //Experience axis (Veteran vs Newbie)
-var expr_array = ["Primordial", "Ancient", "Historical", "Former", "Time-honored", "Reminiscent", "Apprentice", "Contemporary", "Missed Out", "Uninformed", "Novice"];
+const expr_array = ["Primordial", "Ancient", "Historical", "Former", "Time-honored", "Reminiscent", "Apprentice", "Contemporary", "Missed Out", "Uninformed", "Novice"];
 //Personality axis (Wholesome vs Edgy)
-var pers_array = ["Angelic", "Benevolent", "Empathic", "Goodwilling", "Respectful", "Polite", "Rude", "Harsh", "Cruel", "Heartless", "Inhumane"];
+const pers_array = ["Angelic", "Benevolent", "Empathic", "Goodwilling", "Respectful", "Polite", "Rude", "Harsh", "Cruel", "Heartless", "Inhumane"];
 //Hornyposting axis (Horny vs Anti-Horny)
-var horn_array = ["Nymphomaniac", "Decadent", "Down Bad", "Lustful", "Libertine", "Moderated", "Composed", "Pure", "Prudish", "Restrained", "Overprotective"];
+const horn_array = ["Nymphomaniac", "Decadent", "Down Bad", "Lustful", "Libertine", "Moderated", "Composed", "Pure", "Prudish", "Restrained", "Overprotective"];
 //Fame axis (Active vs Lurker)
-var fame_array = ["Protagonist", "Celebrity", "Important", "Famed", "Recognizable", "NPC", "Integrated", "Sometimes", "Stranger", "Nobody", "Incognito"];
+const fame_array = ["Protagonist", "Celebrity", "Important", "Famed", "Recognizable", "NPC", "Integrated", "Sometimes", "Stranger", "Nobody", "Incognito"];
 //Shower axis (Standard vs Wacky)
-var shwr_array = ["Apolitical", "Uncaring", "Ordinary", "Moderate", "Opinionated", "Political", "Ideological", "Radical", "Extremist", "Convoluted", "Otherworldly"];
+const shwr_array = ["Apolitical", "Uncaring", "Ordinary", "Moderate", "Opinionated", "Political", "Ideological", "Radical", "Extremist", "Convoluted", "Otherworldly"];
 //Sanity axis (Boring vs Schizo)
-var sani_array = ["Too Normal", "Bland", "Healthy", "Sound Minded", "Tame", "Interesting", "Different", "Neurotic", "Out There", "Deranged", "a̵̒̆a̶̋͗a̶͂͠a̴͂̅a̵̔̕a̴̔͒"];
+const sani_array = ["Too Normal", "Bland", "Healthy", "Sound Minded", "Tame", "Interesting", "Different", "Neurotic", "Out There", "Deranged", "a̵̒̆a̶̋͗a̶͂͠a̴͂̅a̵̔̕a̴̔͒"];
 //Relationship axis (Liked vs Disliked)
-var rela_array = ["Venerated", "Loved", "Admired", "Appreciated", "Respected", "No Opinion", "Mixed Feelings", "Unwanted", "Disliked", "Hated", "Abhorred"];
+const rela_array = ["Venerated", "Loved", "Admired", "Appreciated", "Respected", "No Opinion", "Mixed Feelings", "Unwanted", "Disliked", "Hated", "Abhorred"];
 //Fedposting axis (Discriminatory vs Inclusive)
-var fedp_array = ["Glowie", "Bigoted", "Prejudicial", "Exclusive", "Biased", "Varying", "Open-minded", "Tolerant", "Accepting", "Cosmopolitan", "SJW"];
+const fedp_array = ["Glowie", "Bigoted", "Prejudicial", "Exclusive", "Biased", "Varying", "Open-minded", "Tolerant", "Accepting", "Cosmopolitan", "SJW"];
 //Actions axis (Behaving vs Misbehaving)
-var actn_array = ["Robotic", "Lawful", "Obedient", "Compliant", "Behaved", "Occasional", "Tripping-up", "Unruly", "Disobedient", "Chaotic", "Criminal"];
+const actn_array = ["Robotic", "Lawful", "Obedient", "Compliant", "Behaved", "Occasional", "Tripping-up", "Unruly", "Disobedient", "Chaotic", "Criminal"];
 //Purpose axis (Artist vs Community)
-var purp_array = ["Maestro", "Art Hero", "Aesthetic", "Artistic Focused", "Wikiredditor", "Undecided", "Member", "Conversational", "Chatty", "Talkative", "Talentless"];
+const purp_array = ["Maestro", "Art Hero", "Aesthetic", "Artistic Focused", "Wikiredditor", "Undecided", "Member", "Conversational", "Chatty", "Talkative", "Talentless"];
 //Perception axis (Pleasant vs Annoying)
-var perc_array = ["Therapeutic", "Comforting", "Calming", "Chill", "Tolerable", "Ambivalent", "Uncomforting", "Pestering", "Obnoxious", "Infuriating", "Proof that God is testing us"];
+const perc_array = ["Therapeutic", "Comforting", "Calming", "Chill", "Tolerable", "Ambivalent", "Uncomforting", "Pestering", "Obnoxious", "Infuriating", "Proof that God is testing us"];
 //Comedy axis (Funny vs Unfunny)
-var cmdy_array = ["Hysterical", "Hilarious", "Humorous", "Comical", "Amusing", "Undifferentiated", "Superficial", "Unironic", "Lackluster", "Crickets", "Epitome of Boredom"];
-//Sets label for each axis
-function setLabel(val, ary) {
-    if (val > 100) {
-        return "";
-    }
-    else if (val > 95) {
-        return ary[0];
-    }
-    else if (val > 85) {
-        return ary[1];
-    }
-    else if (val > 75) {
-        return ary[2];
-    }
-    else if (val > 65) {
-        return ary[3];
-    }
-    else if (val > 55) {
-        return ary[4];
-    }
-    else if (val >= 45) {
-        return ary[5];
-    }
-    else if (val >= 35) {
-        return ary[6];
-    }
-    else if (val >= 25) {
-        return ary[7];
-    }
-    else if (val >= 15) {
-        return ary[8];
-    }
-    else if (val >= 5) {
-        return ary[9];
-    }
-    else if (val >= 0) {
-        return ary[10];
-    }
-    else {
-        return "";
-    }
-}
+const cmdy_array = ["Hysterical", "Hilarious", "Humorous", "Comical", "Amusing", "Undifferentiated", "Superficial", "Unironic", "Lackluster", "Crickets", "Epitome of Boredom"];
 //Setting value svg sources
 //Seriousposting axis
 var img_sincerity = new Image();
@@ -144,58 +100,115 @@ var img_funny = new Image();
 img_funny.src = "assets/values/funny.svg";
 var img_unfunny = new Image();
 img_unfunny.src = "assets/values/unfunny.svg";
+//Sets label for each axis
+function setLabel(val, ary) {
+    if (val > 100) {
+        return "";
+    }
+    else if (val > 95) {
+        return ary[0];
+    }
+    else if (val > 85) {
+        return ary[1];
+    }
+    else if (val > 75) {
+        return ary[2];
+    }
+    else if (val > 65) {
+        return ary[3];
+    }
+    else if (val > 55) {
+        return ary[4];
+    }
+    else if (val >= 45) {
+        return ary[5];
+    }
+    else if (val >= 35) {
+        return ary[6];
+    }
+    else if (val >= 25) {
+        return ary[7];
+    }
+    else if (val >= 15) {
+        return ary[8];
+    }
+    else if (val >= 5) {
+        return ary[9];
+    }
+    else if (val >= 0) {
+        return ary[10];
+    }
+    else {
+        return "";
+    }
+}
+//Draws each axis
+function axisDraw(ctx, val, height, l_color, r_color) {
+    if (val >= 50) {
+        ctx.strokeStyle = r_color;
+        ctx.strokeRect(636 - 4.72 * (100 - val), height, 4.72 * (100 - val) - 2, 0);
+        ctx.strokeStyle = l_color;
+        ctx.strokeRect(166, height, 4.72 * val - 2, 0);
+    }
+    else {
+        ctx.strokeStyle = l_color;
+        ctx.strokeRect(166, height, 4.72 * val - 2, 0);
+        ctx.strokeStyle = r_color;
+        ctx.strokeRect(636 - 4.72 * (100 - val), height, 4.72 * (100 - val) - 2, 0);
+    }
+}
 //Creates canvas
-var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, horn_input, fame_input, shwr_input, sani_input, rela_input, fedp_input, actn_input, purp_input, perc_input, cmdy_input, gallery, short, dark, user) {
+function makeUserCanvas(spos_input, alle_input, expr_input, pers_input, horn_input, fame_input, shwr_input, sani_input, rela_input, fedp_input, actn_input, purp_input, perc_input, cmdy_input, gallery, short, dark, user) {
     //Parsing input values into numbers
-    var spos = parseFloat(spos_input);
-    var alle = parseFloat(alle_input);
-    var expr = parseFloat(expr_input);
-    var pers = parseFloat(pers_input);
-    var horn = parseFloat(horn_input);
-    var fame = parseFloat(fame_input);
-    var shwr = parseFloat(shwr_input);
-    var sani = parseFloat(sani_input);
-    var rela = parseFloat(rela_input);
-    var fedp = parseFloat(fedp_input);
-    var actn = parseFloat(actn_input);
-    var purp = parseFloat(purp_input);
-    var perc = parseFloat(perc_input);
-    var cmdy = parseFloat(cmdy_input);
+    let spos = parseFloat(spos_input);
+    let alle = parseFloat(alle_input);
+    let expr = parseFloat(expr_input);
+    let pers = parseFloat(pers_input);
+    let horn = parseFloat(horn_input);
+    let fame = parseFloat(fame_input);
+    let shwr = parseFloat(shwr_input);
+    let sani = parseFloat(sani_input);
+    let rela = parseFloat(rela_input);
+    let fedp = parseFloat(fedp_input);
+    let actn = parseFloat(actn_input);
+    let purp = parseFloat(purp_input);
+    let perc = parseFloat(perc_input);
+    let cmdy = parseFloat(cmdy_input);
     //toFixed(1) of all values (converts to string with 1 decimal)
-    var sincerity = spos.toFixed(1);
-    var jannyphobe = alle.toFixed(1);
-    var veteran = expr.toFixed(1);
-    var wholesome = pers.toFixed(1);
-    var horny = horn.toFixed(1);
-    var active = fame.toFixed(1);
-    var standard = shwr.toFixed(1);
-    var boring = sani.toFixed(1);
-    var liked = rela.toFixed(1);
-    var discriminatory = fedp.toFixed(1);
-    var behaving = actn.toFixed(1);
-    var artist = purp.toFixed(1);
-    var pleasant = perc.toFixed(1);
-    var funny = cmdy.toFixed(1);
-    var irony = (100 - spos).toFixed(1);
-    var jannyphile = (100 - alle).toFixed(1);
-    var newbie = (100 - expr).toFixed(1);
-    var edgy = (100 - pers).toFixed(1);
-    var antihorny = (100 - horn).toFixed(1);
-    var lurker = (100 - fame).toFixed(1);
-    var wacky = (100 - shwr).toFixed(1);
-    var schizo = (100 - sani).toFixed(1);
-    var disliked = (100 - rela).toFixed(1);
-    var inclusive = (100 - fedp).toFixed(1);
-    var misbehaving = (100 - actn).toFixed(1);
-    var community = (100 - purp).toFixed(1);
-    var annoying = (100 - perc).toFixed(1);
-    var unfunny = (100 - cmdy).toFixed(1);
+    let sincerity = spos.toFixed(1);
+    let jannyphobe = alle.toFixed(1);
+    let veteran = expr.toFixed(1);
+    let wholesome = pers.toFixed(1);
+    let horny = horn.toFixed(1);
+    let active = fame.toFixed(1);
+    let standard = shwr.toFixed(1);
+    let boring = sani.toFixed(1);
+    let liked = rela.toFixed(1);
+    let discriminatory = fedp.toFixed(1);
+    let behaving = actn.toFixed(1);
+    let artist = purp.toFixed(1);
+    let pleasant = perc.toFixed(1);
+    let funny = cmdy.toFixed(1);
+    let irony = (100 - spos).toFixed(1);
+    let jannyphile = (100 - alle).toFixed(1);
+    let newbie = (100 - expr).toFixed(1);
+    let edgy = (100 - pers).toFixed(1);
+    let antihorny = (100 - horn).toFixed(1);
+    let lurker = (100 - fame).toFixed(1);
+    let wacky = (100 - shwr).toFixed(1);
+    let schizo = (100 - sani).toFixed(1);
+    let disliked = (100 - rela).toFixed(1);
+    let inclusive = (100 - fedp).toFixed(1);
+    let misbehaving = (100 - actn).toFixed(1);
+    let community = (100 - purp).toFixed(1);
+    let annoying = (100 - perc).toFixed(1);
+    let unfunny = (100 - cmdy).toFixed(1);
     //Canvas drawing
-    var c = document.createElement("canvas");
-    var ctx = c.getContext("2d");
+    let c = document.createElement("canvas");
+    let ctx = c.getContext("2d");
     c.width = 800;
     c.height = 1860;
-    if (dark == true) {
+    if (dark) {
         ctx.fillStyle = "#333";
     }
     else {
@@ -233,7 +246,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     ctx.drawImage(img_unfunny, 680, 1730, 100, 100);
     //Drawing bar background
     ctx.fillStyle = "#222222";
-    for (var i = 0, len = 15; i < len; i++) {
+    for (let i = 0; i < 15; i++) {
         ctx.lineJoin = "round";
         ctx.lineWidth = 75;
         ctx.strokeRect(165, 220 + 120 * i, 470, 0);
@@ -241,190 +254,24 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     //Drawing bars
     ctx.lineJoin = "round";
     ctx.lineWidth = 65;
-    //Seriousposting axis
-    if (spos >= 50) {
-        ctx.strokeStyle = "#00F";
-        ctx.strokeRect(636 - 4.72 * (100 - spos), 220, 4.72 * (100 - spos) - 2, 0);
-        ctx.strokeStyle = "#B22222";
-        ctx.strokeRect(166, 220, 4.72 * spos - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#B22222";
-        ctx.strokeRect(166, 220, 4.72 * spos - 2, 0);
-        ctx.strokeStyle = "#00F";
-        ctx.strokeRect(636 - 4.72 * (100 - spos), 220, 4.72 * (100 - spos) - 2, 0);
-    }
-    //Allegiance axis
-    if (alle >= 50) {
-        ctx.strokeStyle = "#333";
-        ctx.strokeRect(636 - 4.72 * (100 - alle), 340, 4.72 * (100 - alle) - 2, 0);
-        ctx.strokeStyle = "#EDB509";
-        ctx.strokeRect(166, 340, 4.72 * alle - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#EDB509";
-        ctx.strokeRect(166, 340, 4.72 * alle - 2, 0);
-        ctx.strokeStyle = "#333";
-        ctx.strokeRect(636 - 4.72 * (100 - alle), 340, 4.72 * (100 - alle) - 2, 0);
-    }
-    //Experience axis
-    if (expr >= 50) {
-        ctx.strokeStyle = "#FF0000";
-        ctx.strokeRect(636 - 4.72 * (100 - expr), 460, 4.72 * (100 - expr) - 2, 0);
-        ctx.strokeStyle = "#00F";
-        ctx.strokeRect(166, 460, 4.72 * expr - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#00F";
-        ctx.strokeRect(166, 460, 4.72 * expr - 2, 0);
-        ctx.strokeStyle = "#FF0000";
-        ctx.strokeRect(636 - 4.72 * (100 - expr), 460, 4.72 * (100 - expr) - 2, 0);
-    }
-    //Personality axis
-    if (pers >= 50) {
-        ctx.strokeStyle = "#EE2436";
-        ctx.strokeRect(636 - 4.72 * (100 - pers), 580, 4.72 * (100 - pers) - 2, 0);
-        ctx.strokeStyle = "#C000FF";
-        ctx.strokeRect(166, 580, 4.72 * pers - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#C000FF";
-        ctx.strokeRect(166, 580, 4.72 * pers - 2, 0);
-        ctx.strokeStyle = "#EE2436";
-        ctx.strokeRect(636 - 4.72 * (100 - pers), 580, 4.72 * (100 - pers) - 2, 0);
-    }
-    //Hornyposting axis
-    if (horn >= 50) {
-        ctx.strokeStyle = "#FEC62B";
-        ctx.strokeRect(636 - 4.72 * (100 - horn), 700, 4.72 * (100 - horn) - 2, 0);
-        ctx.strokeStyle = "#880015";
-        ctx.strokeRect(166, 700, 4.72 * horn - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#880015";
-        ctx.strokeRect(166, 700, 4.72 * horn - 2, 0);
-        ctx.strokeStyle = "#FEC62B";
-        ctx.strokeRect(636 - 4.72 * (100 - horn), 700, 4.72 * (100 - horn) - 2, 0);
-    }
-    //Fame axis
-    if (fame >= 50) {
-        ctx.strokeStyle = "#FFFFFF";
-        ctx.strokeRect(636 - 4.72 * (100 - fame), 820, 4.72 * (100 - fame) - 2, 0);
-        ctx.strokeStyle = "#FF0000";
-        ctx.strokeRect(166, 820, 4.72 * fame - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#FF0000";
-        ctx.strokeRect(166, 820, 4.72 * fame - 2, 0);
-        ctx.strokeStyle = "#FFFFFF";
-        ctx.strokeRect(636 - 4.72 * (100 - fame), 820, 4.72 * (100 - fame) - 2, 0);
-    }
-    //Shower axis
-    if (shwr >= 50) {
-        ctx.strokeStyle = "#89001C";
-        ctx.strokeRect(636 - 4.72 * (100 - shwr), 940, 4.72 * (100 - shwr) - 2, 0);
-        ctx.strokeStyle = "#8B5320";
-        ctx.strokeRect(166, 940, 4.72 * shwr - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#8B5320";
-        ctx.strokeRect(166, 940, 4.72 * shwr - 2, 0);
-        ctx.strokeStyle = "#89001C";
-        ctx.strokeRect(636 - 4.72 * (100 - shwr), 940, 4.72 * (100 - shwr) - 2, 0);
-    }
-    //Sanity axis
-    if (sani >= 50) {
-        ctx.strokeStyle = "#7F3980";
-        ctx.strokeRect(636 - 4.72 * (100 - sani), 1060, 4.72 * (100 - sani) - 2, 0);
-        ctx.strokeStyle = "#F5DD00";
-        ctx.strokeRect(166, 1060, 4.72 * sani - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#F5DD00";
-        ctx.strokeRect(166, 1060, 4.72 * sani - 2, 0);
-        ctx.strokeStyle = "#7F3980";
-        ctx.strokeRect(636 - 4.72 * (100 - sani), 1060, 4.72 * (100 - sani) - 2, 0);
-    }
-    //Relationship axis
-    if (rela >= 50) {
-        ctx.strokeStyle = "#F5A9B8";
-        ctx.strokeRect(636 - 4.72 * (100 - rela), 1180, 4.72 * (100 - rela) - 2, 0);
-        ctx.strokeStyle = "#52CE3C";
-        ctx.strokeRect(166, 1180, 4.72 * rela - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#52CE3C";
-        ctx.strokeRect(166, 1180, 4.72 * rela - 2, 0);
-        ctx.strokeStyle = "#F5A9B8";
-        ctx.strokeRect(636 - 4.72 * (100 - rela), 1180, 4.72 * (100 - rela) - 2, 0);
-    }
-    //Fedposting axis
-    if (fedp >= 50) {
-        ctx.strokeStyle = "#EB0DEA";
-        ctx.strokeRect(636 - 4.72 * (100 - fedp), 1300, 4.72 * (100 - fedp) - 2, 0);
-        ctx.strokeStyle = "#32B5D4";
-        ctx.strokeRect(166, 1300, 4.72 * fedp - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#32B5D4";
-        ctx.strokeRect(166, 1300, 4.72 * fedp - 2, 0);
-        ctx.strokeStyle = "#EB0DEA";
-        ctx.strokeRect(636 - 4.72 * (100 - fedp), 1300, 4.72 * (100 - fedp) - 2, 0);
-    }
-    //Actions axis
-    if (actn >= 50) {
-        ctx.strokeStyle = "#429B7D";
-        ctx.strokeRect(636 - 4.72 * (100 - actn), 1420, 4.72 * (100 - actn) - 2, 0);
-        ctx.strokeStyle = "#7F00FF";
-        ctx.strokeRect(166, 1420, 4.72 * actn - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#7F00FF";
-        ctx.strokeRect(166, 1420, 4.72 * actn - 2, 0);
-        ctx.strokeStyle = "#429B7D";
-        ctx.strokeRect(636 - 4.72 * (100 - actn), 1420, 4.72 * (100 - actn) - 2, 0);
-    }
-    //Purpose axis
-    if (purp >= 50) {
-        ctx.strokeStyle = "#01411C";
-        ctx.strokeRect(636 - 4.72 * (100 - purp), 1540, 4.72 * (100 - purp) - 2, 0);
-        ctx.strokeStyle = "#003AAD";
-        ctx.strokeRect(166, 1540, 4.72 * purp - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#003AAD";
-        ctx.strokeRect(166, 1540, 4.72 * purp - 2, 0);
-        ctx.strokeStyle = "#01411C";
-        ctx.strokeRect(636 - 4.72 * (100 - purp), 1540, 4.72 * (100 - purp) - 2, 0);
-    }
-    //Perception axis
-    if (perc >= 50) {
-        ctx.strokeStyle = "#1A193A";
-        ctx.strokeRect(636 - 4.72 * (100 - perc), 1660, 4.72 * (100 - perc) - 2, 0);
-        ctx.strokeStyle = "#E88401";
-        ctx.strokeRect(166, 1660, 4.72 * perc - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#E88401";
-        ctx.strokeRect(166, 1660, 4.72 * perc - 2, 0);
-        ctx.strokeStyle = "#1A193A";
-        ctx.strokeRect(636 - 4.72 * (100 - perc), 1660, 4.72 * (100 - perc) - 2, 0);
-    }
-    //Comedy axis
-    if (cmdy >= 50) {
-        ctx.strokeStyle = "#7F66DE";
-        ctx.strokeRect(636 - 4.72 * (100 - cmdy), 1780, 4.72 * (100 - cmdy) - 2, 0);
-        ctx.strokeStyle = "#05D243";
-        ctx.strokeRect(166, 1780, 4.72 * cmdy - 2, 0);
-    }
-    else {
-        ctx.strokeStyle = "#05D243";
-        ctx.strokeRect(166, 1780, 4.72 * cmdy - 2, 0);
-        ctx.strokeStyle = "#7F66DE";
-        ctx.strokeRect(636 - 4.72 * (100 - cmdy), 1780, 4.72 * (100 - cmdy) - 2, 0);
-    }
+    //Drawing axes
+    axisDraw(ctx, spos, 220, "#B22222", "#00F");
+    axisDraw(ctx, alle, 340, "#EDB509", "#333");
+    axisDraw(ctx, expr, 460, "#00F", "#FF0000");
+    axisDraw(ctx, pers, 580, "#C000FF", "#EE2436");
+    axisDraw(ctx, horn, 700, "#880015", "#FEC62B");
+    axisDraw(ctx, fame, 820, "#FF0000", "#FFF");
+    axisDraw(ctx, shwr, 940, "#8B5320", "#89001C");
+    axisDraw(ctx, sani, 1060, "#F5DD00", "#7F3980");
+    axisDraw(ctx, rela, 1180, "#52CE3C", "#F5A9B8");
+    axisDraw(ctx, fedp, 1300, "#32B5D4", "#EB0DEA");
+    axisDraw(ctx, actn, 1420, "#7F00FF", "#429B7D");
+    axisDraw(ctx, purp, 1540, "#003AAD", "#01411C");
+    axisDraw(ctx, purp, 1540, "#003AAD", "#01411C");
+    axisDraw(ctx, perc, 1660, "#E88401", "#1A193A");
+    axisDraw(ctx, cmdy, 1780, "#05D243", "#7F66DE");
     //Top info
-    if (dark == true) {
+    if (dark) {
         ctx.fillStyle = "#DDDDDD";
     }
     else {
@@ -435,7 +282,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     ctx.fillText("PolcompballValues", 20, 90);
     ctx.font = "30px Source Sans Pro";
     //Gallery set
-    if (gallery == false) {
+    if (gallery) {
         user = "Closest Match: " + user;
     }
     ctx.fillText(user, 20, 130);
@@ -535,7 +382,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
         ctx.fillText(annoying + "%", 650, 1677.5);
     }
     //Adds more text on the top
-    if (dark == true) {
+    if (dark) {
         ctx.fillStyle = "#DDDDDD";
     }
     else {
@@ -544,11 +391,12 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     ctx.font = "300 25px Source Sans Pro";
     ctx.fillText("polcompballvalues.github.io", 780, 40);
     ctx.fillText(version, 780, 70);
-    if (gallery == true) {
+    let edition;
+    if (gallery) {
         edition = "User gallery";
     }
     else {
-        if (short == true) {
+        if (short) {
             edition = "Short test";
         }
         else {
@@ -574,7 +422,7 @@ var makeUserCanvas = function (spos_input, alle_input, expr_input, pers_input, h
     ctx.fillText("Perception Axis: " + setLabel(perc, perc_array), 400, 1610);
     ctx.fillText("Comedy Axis: " + setLabel(cmdy, cmdy_array), 400, 1730);
     //Output Banner to Image
-    var banner = document.getElementById("banner");
+    let banner = document.getElementById("banner");
     banner.src = c.toDataURL();
-};
+}
 //# sourceMappingURL=canvas.js.map

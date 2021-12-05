@@ -1,127 +1,141 @@
 //Version type
-let version: string = "V2 1.2.7";
-//Other vars
-let edition: string;
+const version: string = "V2 1.2.9";
 //Arrays
 //Seriousposting axis (Sincerity vs Irony)
-let spos_array: Array<string> = ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"]
+const spos_array: Array<string> = ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"]
 //Allegiance axis (Jannyphobe vs Jannyphile)
-let alle_array: Array<string> = ["Revolutionary", "Rebellious", "Opposed", "Unrested", "Populist",  "Neutral", "Establishment", "Elitist", "Loyal", "Aristocratic", "Enslaved"]
+const alle_array: Array<string> = ["Revolutionary", "Rebellious", "Opposed", "Unrested", "Populist",  "Neutral", "Establishment", "Elitist", "Loyal", "Aristocratic", "Enslaved"]
 //Experience axis (Veteran vs Newbie)
-let expr_array: Array<string> = ["Primordial", "Ancient", "Historical", "Former", "Time-honored", "Reminiscent", "Apprentice", "Contemporary", "Missed Out", "Uninformed", "Novice"]
+const expr_array: Array<string> = ["Primordial", "Ancient", "Historical", "Former", "Time-honored", "Reminiscent", "Apprentice", "Contemporary", "Missed Out", "Uninformed", "Novice"]
 //Personality axis (Wholesome vs Edgy)
-let pers_array: Array<string> = ["Angelic", "Benevolent", "Empathic", "Goodwilling", "Respectful", "Polite", "Rude", "Harsh", "Cruel", "Heartless", "Inhumane"]
+const pers_array: Array<string> = ["Angelic", "Benevolent", "Empathic", "Goodwilling", "Respectful", "Polite", "Rude", "Harsh", "Cruel", "Heartless", "Inhumane"]
 //Hornyposting axis (Horny vs Anti-Horny)
-let horn_array: Array<string> = ["Nymphomaniac", "Decadent", "Down Bad", "Lustful", "Libertine", "Moderated", "Composed", "Pure", "Prudish", "Restrained", "Overprotective"]
+const horn_array: Array<string> = ["Nymphomaniac", "Decadent", "Down Bad", "Lustful", "Libertine", "Moderated", "Composed", "Pure", "Prudish", "Restrained", "Overprotective"]
 //Fame axis (Active vs Lurker)
-let fame_array: Array<string> = ["Protagonist", "Celebrity", "Important", "Famed", "Recognizable", "NPC", "Integrated", "Sometimes", "Stranger", "Nobody", "Incognito"]
+const fame_array: Array<string> = ["Protagonist", "Celebrity", "Important", "Famed", "Recognizable", "NPC", "Integrated", "Sometimes", "Stranger", "Nobody", "Incognito"]
 //Shower axis (Standard vs Wacky)
-let shwr_array: Array<string> = ["Apolitical", "Uncaring", "Ordinary", "Moderate", "Opinionated", "Political", "Ideological", "Radical", "Extremist", "Convoluted", "Otherworldly"]
+const shwr_array: Array<string> = ["Apolitical", "Uncaring", "Ordinary", "Moderate", "Opinionated", "Political", "Ideological", "Radical", "Extremist", "Convoluted", "Otherworldly"]
 //Sanity axis (Boring vs Schizo)
-let sani_array: Array<string> = ["Too Normal", "Bland", "Healthy", "Sound Minded", "Tame", "Interesting", "Different", "Neurotic", "Out There", "Deranged", "a̵̒̆a̶̋͗a̶͂͠a̴͂̅a̵̔̕a̴̔͒"]
+const sani_array: Array<string> = ["Too Normal", "Bland", "Healthy", "Sound Minded", "Tame", "Interesting", "Different", "Neurotic", "Out There", "Deranged", "a̵̒̆a̶̋͗a̶͂͠a̴͂̅a̵̔̕a̴̔͒"]
 //Relationship axis (Liked vs Disliked)
-let rela_array: Array<string> = ["Venerated", "Loved", "Admired", "Appreciated", "Respected", "No Opinion", "Mixed Feelings", "Unwanted", "Disliked", "Hated", "Abhorred"]
+const rela_array: Array<string> = ["Venerated", "Loved", "Admired", "Appreciated", "Respected", "No Opinion", "Mixed Feelings", "Unwanted", "Disliked", "Hated", "Abhorred"]
 //Fedposting axis (Discriminatory vs Inclusive)
-let fedp_array: Array<string> = ["Glowie", "Bigoted", "Prejudicial", "Exclusive", "Biased", "Varying", "Open-minded", "Tolerant", "Accepting", "Cosmopolitan", "SJW"]
+const fedp_array: Array<string> = ["Glowie", "Bigoted", "Prejudicial", "Exclusive", "Biased", "Varying", "Open-minded", "Tolerant", "Accepting", "Cosmopolitan", "SJW"]
 //Actions axis (Behaving vs Misbehaving)
-let actn_array: Array<string> = ["Robotic", "Lawful", "Obedient", "Compliant", "Behaved", "Occasional",  "Tripping-up", "Unruly", "Disobedient", "Chaotic", "Criminal"]
+const actn_array: Array<string> = ["Robotic", "Lawful", "Obedient", "Compliant", "Behaved", "Occasional",  "Tripping-up", "Unruly", "Disobedient", "Chaotic", "Criminal"]
 //Purpose axis (Artist vs Community)
-let purp_array: Array<string> = ["Maestro", "Art Hero", "Aesthetic", "Artistic Focused", "Wikiredditor", "Undecided", "Member", "Conversational", "Chatty", "Talkative", "Talentless"]
+const purp_array: Array<string> = ["Maestro", "Art Hero", "Aesthetic", "Artistic Focused", "Wikiredditor", "Undecided", "Member", "Conversational", "Chatty", "Talkative", "Talentless"]
 //Perception axis (Pleasant vs Annoying)
-let perc_array: Array<string> = ["Therapeutic", "Comforting", "Calming", "Chill", "Tolerable", "Ambivalent", "Uncomforting", "Pestering", "Obnoxious", "Infuriating", "Proof that God is testing us"]
+const perc_array: Array<string> = ["Therapeutic", "Comforting", "Calming", "Chill", "Tolerable", "Ambivalent", "Uncomforting", "Pestering", "Obnoxious", "Infuriating", "Proof that God is testing us"]
 //Comedy axis (Funny vs Unfunny)
-let cmdy_array: Array<string> = ["Hysterical", "Hilarious", "Humorous", "Comical", "Amusing", "Undifferentiated", "Superficial", "Unironic", "Lackluster", "Crickets", "Epitome of Boredom"]
+const cmdy_array: Array<string> = ["Hysterical", "Hilarious", "Humorous", "Comical", "Amusing", "Undifferentiated", "Superficial", "Unironic", "Lackluster", "Crickets", "Epitome of Boredom"]
 
-//Sets label for each axis
-function setLabel(val, ary) {
-if(val > 100) {return ""} else
-if(val >  95) {return ary[0]} else
-if(val >  85) {return ary[1]} else
-if(val >  75) {return ary[2]} else
-if(val >  65) {return ary[3]} else
-if(val >  55) {return ary[4]} else
-if(val >= 45) {return ary[5]} else
-if(val >= 35) {return ary[6]} else
-if(val >= 25) {return ary[7]} else
-if(val >= 15) {return ary[8]} else
-if(val >=  5) {return ary[9]} else
-if(val >=  0) {return ary[10]} else
-{return ""}
-}
 //Setting value svg sources
 //Seriousposting axis
-var img_sincerity      = new Image()
+var img_sincerity      = <HTMLImageElement> new Image()
 img_sincerity.src      = "assets/values/sincerity.svg"
-var img_irony          = new Image()
+var img_irony          = <HTMLImageElement> new Image()
 img_irony.src          = "assets/values/irony.svg"
 //Allegiance axis
-var img_jannyphobe     = new Image()
+var img_jannyphobe     = <HTMLImageElement> new Image()
 img_jannyphobe.src     = "assets/values/jannyphobe.svg"
-var img_jannyphile     = new Image()
+var img_jannyphile     = <HTMLImageElement> new Image()
 img_jannyphile.src     = "assets/values/jannyphile.svg"
 //Experience axis
-var img_veteran        = new Image()
+var img_veteran        = <HTMLImageElement> new Image()
 img_veteran.src        = "assets/values/veteran.svg"
-var img_newbie         = new Image()
+var img_newbie         = <HTMLImageElement> new Image()
 img_newbie.src         = "assets/values/newbie.svg"
 //Personality axis
-var img_wholesome      = new Image()
+var img_wholesome      = <HTMLImageElement> new Image()
 img_wholesome.src      = "assets/values/wholesome.svg"
-var img_edgy           = new Image()
+var img_edgy           = <HTMLImageElement> new Image()
 img_edgy.src           = "assets/values/edgy.svg"
 //Hornyposting axis
-var img_horny          = new Image()
+var img_horny          = <HTMLImageElement> new Image()
 img_horny.src          = "assets/values/horny.svg"
-var img_antihorny      = new Image()
+var img_antihorny      = <HTMLImageElement> new Image()
 img_antihorny.src      = "assets/values/antihorny.svg"
 //Fame axis
-var img_active         = new Image()
+var img_active         = <HTMLImageElement> new Image()
 img_active.src         = "assets/values/active.svg"
-var img_lurker         = new Image()
+var img_lurker         = <HTMLImageElement> new Image()
 img_lurker.src         = "assets/values/lurker.svg"
 //Shower axis
-var img_standard       = new Image()
+var img_standard       = <HTMLImageElement> new Image()
 img_standard.src       = "assets/values/standard.svg"
-var img_wacky          = new Image()
+var img_wacky          = <HTMLImageElement> new Image()
 img_wacky.src          = "assets/values/wacky.svg"
 //Sanity axis
-var img_boring         = new Image()
+var img_boring         = <HTMLImageElement> new Image()
 img_boring.src         = "assets/values/boring.svg"
-var img_schizo         = new Image()
+var img_schizo         = <HTMLImageElement> new Image()
 img_schizo.src         = "assets/values/schizo.svg"
 //Relationship axis
-var img_liked          = new Image()
+var img_liked          = <HTMLImageElement> new Image()
 img_liked.src          = "assets/values/liked.svg"
-var img_disliked       = new Image()
+var img_disliked       = <HTMLImageElement> new Image()
 img_disliked.src       = "assets/values/disliked.svg"
 //Fedposting axis
-var img_discriminatory = new Image()
+var img_discriminatory = <HTMLImageElement> new Image()
 img_discriminatory.src = "assets/values/discriminatory.svg"
-var img_inclusive      = new Image()
+var img_inclusive      = <HTMLImageElement> new Image()
 img_inclusive.src      = "assets/values/inclusive.svg"
 //Action axis
-var img_behaving       = new Image()
+var img_behaving       = <HTMLImageElement> new Image()
 img_behaving.src       = "assets/values/behaving.svg"
-var img_misbehaving    = new Image()
+var img_misbehaving    = <HTMLImageElement> new Image()
 img_misbehaving.src    = "assets/values/misbehaving.svg"
 //Purpose axis
-var img_artist         = new Image()
+var img_artist         = <HTMLImageElement> new Image()
 img_artist.src         = "assets/values/artist.svg"
-var img_community      = new Image()
+var img_community      = <HTMLImageElement> new Image()
 img_community.src      = "assets/values/community.svg"
 //Perception axis
-var img_pleasant       = new Image()
+var img_pleasant       = <HTMLImageElement> new Image()
 img_pleasant.src       = "assets/values/pleasant.svg"
-var img_annoying       = new Image()
+var img_annoying       = <HTMLImageElement> new Image()
 img_annoying.src       = "assets/values/annoying.svg"
 //Comedy axis
-var img_funny          = new Image()
+var img_funny          = <HTMLImageElement> new Image()
 img_funny.src          = "assets/values/funny.svg"
-var img_unfunny        = new Image()
+var img_unfunny        = <HTMLImageElement> new Image()
 img_unfunny.src        = "assets/values/unfunny.svg"
 
+//Sets label for each axis
+function setLabel(val:number, ary:Array<string>) {
+    if(val > 100) {return ""} else
+    if(val >  95) {return ary[0]} else
+    if(val >  85) {return ary[1]} else
+    if(val >  75) {return ary[2]} else
+    if(val >  65) {return ary[3]} else
+    if(val >  55) {return ary[4]} else
+    if(val >= 45) {return ary[5]} else
+    if(val >= 35) {return ary[6]} else
+    if(val >= 25) {return ary[7]} else
+    if(val >= 15) {return ary[8]} else
+    if(val >=  5) {return ary[9]} else
+    if(val >=  0) {return ary[10]} else
+    {return ""}
+}
+
+//Draws each axis
+function axisDraw(ctx, val:number, height:number, l_color:string, r_color:string,){
+    if(val >= 50){
+        ctx.strokeStyle = r_color
+        ctx.strokeRect(636 - 4.72 * (100 - val), height, 4.72 * (100 - val) - 2, 0)
+        ctx.strokeStyle = l_color
+        ctx.strokeRect(166, height, 4.72 * val - 2, 0)
+    } else {
+        ctx.strokeStyle = l_color
+        ctx.strokeRect(166, height, 4.72 * val - 2, 0)
+        ctx.strokeStyle = r_color
+        ctx.strokeRect(636 - 4.72 * (100 - val), height, 4.72 * (100 - val) - 2, 0)
+    }
+}
+
 //Creates canvas
-let makeUserCanvas = function (spos_input: string, alle_input: string, expr_input: string, pers_input: string, horn_input: string, fame_input: string, shwr_input: string, sani_input: string, rela_input: string, fedp_input: string, actn_input: string, purp_input: string, perc_input: string, cmdy_input: string, gallery: boolean, short: boolean, dark: boolean, user: string){
+function makeUserCanvas(spos_input: string, alle_input: string, expr_input: string, pers_input: string, horn_input: string, fame_input: string, shwr_input: string, sani_input: string, rela_input: string, fedp_input: string, actn_input: string, purp_input: string, perc_input: string, cmdy_input: string, gallery: boolean, short: boolean, dark: boolean, user: string){
     //Parsing input values into numbers
     let spos: number = parseFloat(spos_input)
     let alle: number = parseFloat(alle_input)
@@ -169,11 +183,11 @@ let makeUserCanvas = function (spos_input: string, alle_input: string, expr_inpu
     let unfunny:        string = (100 - cmdy).toFixed(1)
 
     //Canvas drawing
-    var c = document.createElement("canvas")
-    var ctx = c.getContext("2d")
+    let c = document.createElement("canvas")
+    let ctx = c.getContext("2d")
     c.width = 800;
     c.height = 1860;
-    if(dark == true){
+    if(dark){
         ctx.fillStyle = "#333"
     } else {
         ctx.fillStyle = "#EEE"
@@ -211,7 +225,7 @@ let makeUserCanvas = function (spos_input: string, alle_input: string, expr_inpu
 
     //Drawing bar background
     ctx.fillStyle = "#222222"
-    for (let i: number = 0, len : number = 15; i < len; i++){
+    for (let i: number = 0; i < 15; i++){
         ctx.lineJoin = "round"
         ctx.lineWidth = 75;
         ctx.strokeRect(165, 220 + 120 * i, 470, 0)
@@ -220,176 +234,26 @@ let makeUserCanvas = function (spos_input: string, alle_input: string, expr_inpu
     //Drawing bars
     ctx.lineJoin = "round"
     ctx.lineWidth = 65;
-    //Seriousposting axis
-    if(spos >= 50){
-        ctx.strokeStyle = "#00F"
-        ctx.strokeRect(636 - 4.72 * (100 - spos), 220, 4.72 * (100 - spos) - 2, 0)
-        ctx.strokeStyle = "#B22222"
-        ctx.strokeRect(166, 220, 4.72 * spos - 2, 0)
-    } else {
-        ctx.strokeStyle = "#B22222"
-        ctx.strokeRect(166, 220, 4.72 * spos - 2, 0)
-        ctx.strokeStyle = "#00F"
-        ctx.strokeRect(636 - 4.72 * (100 - spos), 220, 4.72 * (100 - spos) - 2, 0)
-    }
-    //Allegiance axis
-    if(alle >= 50){
-        ctx.strokeStyle = "#333"
-        ctx.strokeRect(636 - 4.72 * (100 - alle), 340, 4.72 * (100 - alle) - 2, 0)
-        ctx.strokeStyle = "#EDB509"
-        ctx.strokeRect(166, 340, 4.72 * alle - 2, 0)
-    } else {
-        ctx.strokeStyle = "#EDB509"
-        ctx.strokeRect(166, 340, 4.72 * alle - 2, 0)
-        ctx.strokeStyle = "#333"
-        ctx.strokeRect(636 - 4.72 * (100 - alle), 340, 4.72 * (100 - alle) - 2, 0)
-    }
-    //Experience axis
-    if(expr >= 50){
-        ctx.strokeStyle = "#FF0000"
-        ctx.strokeRect(636 - 4.72 * (100 - expr), 460, 4.72 * (100 - expr) - 2, 0)
-        ctx.strokeStyle = "#00F"
-        ctx.strokeRect(166, 460, 4.72 * expr - 2, 0)
-    } else {
-        ctx.strokeStyle = "#00F"
-        ctx.strokeRect(166, 460, 4.72 * expr - 2, 0)
-        ctx.strokeStyle = "#FF0000"
-        ctx.strokeRect(636 - 4.72 * (100 - expr), 460, 4.72 * (100 - expr) - 2, 0)
-    }
-    //Personality axis
-    if(pers >= 50){
-        ctx.strokeStyle = "#EE2436"
-        ctx.strokeRect(636 - 4.72 * (100 - pers), 580, 4.72 * (100 - pers) - 2, 0)
-        ctx.strokeStyle = "#C000FF"
-        ctx.strokeRect(166, 580, 4.72 * pers - 2, 0)
-    } else {
-        ctx.strokeStyle = "#C000FF"
-        ctx.strokeRect(166, 580, 4.72 * pers - 2, 0)
-        ctx.strokeStyle = "#EE2436"
-        ctx.strokeRect(636 - 4.72 * (100 - pers), 580, 4.72 * (100 - pers) - 2, 0)
-    }
-    //Hornyposting axis
-    if(horn >= 50){
-        ctx.strokeStyle = "#FEC62B"
-        ctx.strokeRect(636 - 4.72 * (100 - horn), 700, 4.72 * (100 - horn) - 2, 0)
-        ctx.strokeStyle = "#880015"
-        ctx.strokeRect(166, 700, 4.72 * horn - 2, 0)
-    } else {
-        ctx.strokeStyle = "#880015"
-        ctx.strokeRect(166, 700, 4.72 * horn - 2, 0)
-        ctx.strokeStyle = "#FEC62B"
-        ctx.strokeRect(636 - 4.72 * (100 - horn), 700, 4.72 * (100 - horn) - 2, 0)
-    }
-    //Fame axis
-    if(fame >= 50){
-        ctx.strokeStyle = "#FFFFFF"
-        ctx.strokeRect(636 - 4.72 * (100 - fame), 820, 4.72 * (100 - fame) - 2, 0)
-        ctx.strokeStyle = "#FF0000"
-        ctx.strokeRect(166, 820, 4.72 * fame - 2, 0)
-    } else {
-        ctx.strokeStyle = "#FF0000"
-        ctx.strokeRect(166, 820, 4.72 * fame - 2, 0)
-        ctx.strokeStyle = "#FFFFFF"
-        ctx.strokeRect(636 - 4.72 * (100 - fame), 820, 4.72 * (100 - fame) - 2, 0)
-    }
-    //Shower axis
-    if(shwr >= 50){
-        ctx.strokeStyle = "#89001C"
-        ctx.strokeRect(636 - 4.72 * (100 - shwr), 940, 4.72 * (100 - shwr) - 2, 0)
-        ctx.strokeStyle = "#8B5320"
-        ctx.strokeRect(166, 940, 4.72 * shwr - 2, 0)
-    } else {
-        ctx.strokeStyle = "#8B5320"
-        ctx.strokeRect(166, 940, 4.72 * shwr - 2, 0)
-        ctx.strokeStyle = "#89001C"
-        ctx.strokeRect(636 - 4.72 * (100 - shwr), 940, 4.72 * (100 - shwr) - 2, 0)
-    }
-    //Sanity axis
-    if(sani >= 50){
-        ctx.strokeStyle = "#7F3980"
-        ctx.strokeRect(636 - 4.72 * (100 - sani), 1060, 4.72 * (100 - sani) - 2, 0)
-        ctx.strokeStyle = "#F5DD00"
-        ctx.strokeRect(166, 1060, 4.72 * sani - 2, 0)
-    } else {
-        ctx.strokeStyle = "#F5DD00"
-        ctx.strokeRect(166, 1060, 4.72 * sani - 2, 0)
-        ctx.strokeStyle = "#7F3980"
-        ctx.strokeRect(636 - 4.72 * (100 - sani), 1060, 4.72 * (100 - sani) - 2, 0)
-    }
-    //Relationship axis
-    if(rela >= 50){
-        ctx.strokeStyle = "#F5A9B8"
-        ctx.strokeRect(636 - 4.72 * (100 - rela), 1180, 4.72 * (100 - rela) - 2, 0)
-        ctx.strokeStyle = "#52CE3C"
-        ctx.strokeRect(166, 1180, 4.72 * rela - 2, 0)
-    } else {
-        ctx.strokeStyle = "#52CE3C"
-        ctx.strokeRect(166, 1180, 4.72 * rela - 2, 0)
-        ctx.strokeStyle = "#F5A9B8"
-        ctx.strokeRect(636 - 4.72 * (100 - rela), 1180, 4.72 * (100 - rela) - 2, 0)
-    }
-    //Fedposting axis
-    if(fedp >= 50){
-        ctx.strokeStyle = "#EB0DEA"
-        ctx.strokeRect(636 - 4.72 * (100 - fedp), 1300, 4.72 * (100 - fedp) - 2, 0)
-        ctx.strokeStyle = "#32B5D4"
-        ctx.strokeRect(166, 1300, 4.72 * fedp - 2, 0)
-    } else {
-        ctx.strokeStyle = "#32B5D4"
-        ctx.strokeRect(166, 1300, 4.72 * fedp - 2, 0)
-        ctx.strokeStyle = "#EB0DEA"
-        ctx.strokeRect(636 - 4.72 * (100 - fedp), 1300, 4.72 * (100 - fedp) - 2, 0)
-    }
-    //Actions axis
-    if(actn >= 50){
-        ctx.strokeStyle = "#429B7D"
-        ctx.strokeRect(636 - 4.72 * (100 - actn), 1420, 4.72 * (100 - actn) - 2, 0)
-        ctx.strokeStyle = "#7F00FF"
-        ctx.strokeRect(166, 1420, 4.72 * actn - 2, 0)
-    } else {
-        ctx.strokeStyle = "#7F00FF"
-        ctx.strokeRect(166, 1420, 4.72 * actn - 2, 0)
-        ctx.strokeStyle = "#429B7D"
-        ctx.strokeRect(636 - 4.72 * (100 - actn), 1420, 4.72 * (100 - actn) - 2, 0)
-    }
-    //Purpose axis
-    if(purp >= 50){
-        ctx.strokeStyle = "#01411C"
-        ctx.strokeRect(636 - 4.72 * (100 - purp), 1540, 4.72 * (100 - purp) - 2, 0)
-        ctx.strokeStyle = "#003AAD"
-        ctx.strokeRect(166, 1540, 4.72 * purp - 2, 0)
-    } else {
-        ctx.strokeStyle = "#003AAD"
-        ctx.strokeRect(166, 1540, 4.72 * purp - 2, 0)
-        ctx.strokeStyle = "#01411C"
-        ctx.strokeRect(636 - 4.72 * (100 - purp), 1540, 4.72 * (100 - purp) - 2, 0)
-    }
-    //Perception axis
-    if(perc >= 50){
-        ctx.strokeStyle = "#1A193A"
-        ctx.strokeRect(636 - 4.72 * (100 - perc), 1660, 4.72 * (100 - perc) - 2, 0)
-        ctx.strokeStyle = "#E88401"
-        ctx.strokeRect(166, 1660, 4.72 * perc - 2, 0)
-    } else {
-        ctx.strokeStyle = "#E88401"
-        ctx.strokeRect(166, 1660, 4.72 * perc - 2, 0)
-        ctx.strokeStyle = "#1A193A"
-        ctx.strokeRect(636 - 4.72 * (100 - perc), 1660, 4.72 * (100 - perc) - 2, 0)
-    }
-    //Comedy axis
-    if(cmdy >= 50){
-        ctx.strokeStyle = "#7F66DE"
-        ctx.strokeRect(636 - 4.72 * (100 - cmdy), 1780, 4.72 * (100 - cmdy) - 2, 0)
-        ctx.strokeStyle = "#05D243"
-        ctx.strokeRect(166, 1780, 4.72 * cmdy - 2, 0)
-    } else {
-        ctx.strokeStyle = "#05D243"
-        ctx.strokeRect(166, 1780, 4.72 * cmdy - 2, 0)
-        ctx.strokeStyle = "#7F66DE"
-        ctx.strokeRect(636 - 4.72 * (100 - cmdy), 1780, 4.72 * (100 - cmdy) - 2, 0)
-    }
+
+    //Drawing axes
+    axisDraw(ctx, spos, 220, "#B22222", "#00F")
+    axisDraw(ctx, alle, 340, "#EDB509", "#333")
+    axisDraw(ctx, expr, 460, "#00F", "#FF0000")
+    axisDraw(ctx, pers, 580, "#C000FF", "#EE2436")
+    axisDraw(ctx, horn, 700, "#880015", "#FEC62B")
+    axisDraw(ctx, fame, 820, "#FF0000", "#FFF")
+    axisDraw(ctx, shwr, 940, "#8B5320", "#89001C")
+    axisDraw(ctx, sani, 1060, "#F5DD00", "#7F3980")
+    axisDraw(ctx, rela, 1180, "#52CE3C", "#F5A9B8")
+    axisDraw(ctx, fedp, 1300, "#32B5D4", "#EB0DEA")
+    axisDraw(ctx, actn, 1420, "#7F00FF", "#429B7D")
+    axisDraw(ctx, purp, 1540, "#003AAD", "#01411C")
+    axisDraw(ctx, purp, 1540, "#003AAD", "#01411C")
+    axisDraw(ctx, perc, 1660, "#E88401", "#1A193A")
+    axisDraw(ctx, cmdy, 1780, "#05D243", "#7F66DE")
+
     //Top info
-    if(dark == true){
+    if(dark){
         ctx.fillStyle = "#DDDDDD"
     } else{
         ctx.fillStyle = "#222222"
@@ -399,7 +263,7 @@ let makeUserCanvas = function (spos_input: string, alle_input: string, expr_inpu
     ctx.fillText("PolcompballValues", 20, 90)
     ctx.font = "30px Source Sans Pro"
     //Gallery set
-    if(gallery == false){
+    if(gallery){
         user = "Closest Match: " + user
     }
     ctx.fillText(user, 20, 130)
@@ -444,7 +308,7 @@ let makeUserCanvas = function (spos_input: string, alle_input: string, expr_inpu
     if (perc < 70) {ctx.fillText(annoying       + "%", 650, 1677.5)}
 
     //Adds more text on the top
-    if (dark == true){
+    if (dark){
         ctx.fillStyle = "#DDDDDD"
     } else {
         ctx.fillStyle = "#222222"
@@ -452,10 +316,11 @@ let makeUserCanvas = function (spos_input: string, alle_input: string, expr_inpu
     ctx.font = "300 25px Source Sans Pro"
     ctx.fillText("polcompballvalues.github.io", 780, 40)
     ctx.fillText(version, 780, 70)
-    if(gallery == true){
+    let edition: string
+    if(gallery){
         edition = "User gallery"
     } else {
-        if(short == true){
+        if(short){
             edition = "Short test"
         } else {
             edition = "Full test"
@@ -482,4 +347,4 @@ let makeUserCanvas = function (spos_input: string, alle_input: string, expr_inpu
     //Output Banner to Image
     let banner = <HTMLImageElement> document.getElementById("banner")
     banner.src = c.toDataURL();
-    }
+}

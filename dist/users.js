@@ -689,20 +689,20 @@ users = [
   {
     "name": "IncendiaryBullet",
     "stats": {
-      "spos": 35.0,
-      "alle": 79.5,
-      "expr": 100.0,
-      "pers": 28.6,
-      "horn": 15.0,
-      "fame": 72.6,
-      "shwr": 53.8,
-      "sani": 70.8,
-      "rela": 42.9,
+      "spos": 25.0,
+      "alle": 86.4,
+      "expr": 97.9,
+      "pers": 35.7,
+      "horn": 25.0,
+      "fame": 67.9,
+      "shwr": 44.2,
+      "sani": 66.7,
+      "rela": 55.4,
       "fedp": 95.2,
-      "actn": 19.2,
-      "purp": 52.1,
+      "actn": 26.9,
+      "purp": 54.2,
       "perc": 29.5,
-      "cmdy": 82.5
+      "cmdy": 87.5
     }
   },
   {
@@ -2033,6 +2033,99 @@ users = [
       "purp": 45.8,
       "perc": 65.9,
       "cmdy": 55.0
+    },
+    "name": "DrMorth",
+    "stats": {
+      "spos": 55.0,
+      "alle": 93.2,
+      "expr": 14.6,
+      "pers": 12.5,
+      "horn": 42.5,
+      "fame": 17.9,
+      "shwr": 34.6,
+      "sani": 50.0,
+      "rela": 57.1,
+      "fedp": 91.9,
+      "actn": 21.2,
+      "purp": 18.8,
+      "perc": 50.0,
+      "cmdy": 50.0
+    }
+  },
+  {
+    "name": "Ninjack-Aus",
+    "stats": {
+      "spos": 80.0,
+      "alle": 47.7,
+      "expr": 39.6,
+      "pers": 75.0,
+      "horn": 72.5,
+      "fame": 45.2,
+      "shwr": 46.2,
+      "sani": 75.0,
+      "rela": 85.7,
+      "fedp": 17.7,
+      "actn": 63.5,
+      "purp": 70.8,
+      "perc": 77.3,
+      "cmdy": 67.5
+    }
+  },
+  {
+    "name": "Fabius",
+    "stats": {
+      "spos": 81.3,
+      "alle": 18.8,
+      "expr": 25.0,
+      "pers": 100.0,
+      "horn": 6.3,
+      "fame": 31.3,
+      "shwr": 37.5,
+      "sani": 81.3,
+      "rela": 75.0,
+      "fedp": 37.5,
+      "actn": 90.0,
+      "purp": 25.0,
+      "perc": 56.3,
+      "cmdy": 75.0
+    }
+  },
+  {
+    "name": "Squide",
+    "stats": {
+      "spos": 32.5,
+      "alle": 97.7,
+      "expr": 97.9,
+      "pers": 44.6,
+      "horn": 10.0,
+      "fame": 40.5,
+      "shwr": 75.0,
+      "sani": 35.4,
+      "rela": 37.5,
+      "fedp": 58.9,
+      "actn": 36.5,
+      "purp": 16.7,
+      "perc": 22.7,
+      "cmdy": 25.0
+    }
+  },
+  {
+    "name": "firebender1234",
+    "stats": {
+      "spos": 56.3,
+      "alle": 75.0,
+      "expr": 58.3,
+      "pers": 75.0,
+      "horn": 6.3,
+      "fame": 50.0,
+      "shwr": 25.0,
+      "sani": 62.5,
+      "rela": 45.0,
+      "fedp": 87.5,
+      "actn": 75.0,
+      "purp": 31.3,
+      "perc": 62.5,
+      "cmdy": 100.0
     }
   }
 ];
