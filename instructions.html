@@ -25,16 +25,20 @@
         <button class="button" onclick="location.href='quiz.html?s';"" id="shortq-button"></button>
         <button class="button" onclick="location.href='quiz.html';" id="longq-button"></button>
         <button class="button" onclick="location.href='index.html';" id="nevermind-button">Wait, nevermind!</button>
-        <script type="application/javascript" src="dist/questions.js"></script>
         <script>
-            var shortquestions = []
-            for (i = 0, len = fullquestions.length; i < len; i++) {
-                if (fullquestions[i].short === true) {
-                    shortquestions.push(fullquestions[i]);
+            function parseQ(fullquestions){
+                let shortquestions = []
+                for (i = 0, len = fullquestions.length; i < len; i++) {
+                    if (fullquestions[i].short) {
+                        shortquestions.push(fullquestions[i]);
+                    }
                 }
+                document.getElementById("shortq-button").innerHTML = "Short version: (" + shortquestions.length + " questions)"
+                document.getElementById("longq-button").innerHTML = "Full version: (" + fullquestions.length + " questions)"
             }
-            document.getElementById("shortq-button").innerHTML = "Short version: (" + shortquestions.length + " questions)"
-            document.getElementById("longq-button").innerHTML = "Full version: (" + fullquestions.length + " questions)"
+            fetch("dist/questions.json")
+                .then(response => response.json())
+                .then(data => parseQ(data))
         </script>
     </body>
 </html>

@@ -26,9 +26,26 @@
         <img src="" id="banner">
         <button class="button" onclick="window.history.back()" id="back-button">Back</button>
         <button class="button" onclick="location.href='credits.html'" id="credits-button">Credits</button>
-        <script type="application/javascript" src="dist/users.js"></script>
         <script type="application/javascript" src="dist/canvas.js"></script>
         <script>
+            var users
+            const keycode = [
+                {val: "spos" , name: "a" },
+                {val: "alle" , name: "b" },  
+                {val: "expr" , name: "c" },  
+                {val: "pers" , name: "d" },  
+                {val: "horn" , name: "e" },  
+                {val: "fame" , name: "f" },  
+                {val: "shwr" , name: "g" },  
+                {val: "sani" , name: "h" },  
+                {val: "rela" , name: "i" },  
+                {val: "fedp" , name: "j" },    
+                {val: "actn" , name: "k" },
+                {val: "purp" , name: "l" },    
+                {val: "perc" , name: "m" },    
+                {val: "cmdy" , name: "n" },    
+
+            ]
             function userdropdownChanged() {
                 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                     var darkmode = true
@@ -36,9 +53,18 @@
                     var darkmode = false
                 }
                 var i = document.getElementById("userdropdown").selectedIndex
-                makeUserCanvas(users[i].stats.spos, users[i].stats.alle, users[i].stats.expr, users[i].stats.pers, users[i].stats.horn, users[i].stats.fame, users[i].stats.shwr, users[i].stats.sani, users[i].stats.rela, users[i].stats.fedp, users[i].stats.actn, users[i].stats.purp, users[i].stats.perc, users[i].stats.cmdy, true, false, darkmode, users[i].name)
+                let score = {}
+                for (const element of keycode){
+                    let val = element.val
+                    let name = element.name
+                    score[name] = users[i].stats[val]
+                }
+                makeUserCanvas(score, true, false, darkmode, users[i].name)
             }
-            window.onload = function() {
+            window.onload = async function() {
+                await fetch("dist/users.json")
+                    .then(response => response.json())
+                    .then(data => users = data)
                 for(var i = 0;i < users.length;i++) {
                     userdropdown.innerHTML += "<option value=\"" + i + "\">" + users[i].name + "</option>"
                 }

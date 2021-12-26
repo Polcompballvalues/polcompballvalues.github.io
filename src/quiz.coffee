@@ -98,31 +98,36 @@ answers = []
 shortquestions = []
 questions = []
 #Fetches short questions if url substring is s
-if window.location.search.substring(1) is "s"
-    for question in fullquestions
-        if question.short is true
-            shortquestions.push(question)
-    questions = shortquestions;
-    length = "s";
-else
-    questions = fullquestions;
-    length = "f";
+parseQ = (fullquestions) ->
+    if window.location.search.substring(1) is "s"
+        for question in fullquestions
+            if question.short is true
+                shortquestions.push(question)
+        questions = shortquestions;
+        length = "s";
+    else
+        questions = fullquestions;
+        length = "f";
 
-#Calculates max score for each axis
-for question in questions
-    max_spos += Math.abs(question.effect.spos)
-    max_alle += Math.abs(question.effect.alle)
-    max_expr += Math.abs(question.effect.expr)
-    max_pers += Math.abs(question.effect.pers)
-    max_horn += Math.abs(question.effect.horn)
-    max_fame += Math.abs(question.effect.fame)
-    max_shwr += Math.abs(question.effect.shwr)
-    max_sani += Math.abs(question.effect.sani)
-    max_rela += Math.abs(question.effect.rela)
-    max_fedp += Math.abs(question.effect.fedp)
-    max_actn += Math.abs(question.effect.actn)
-    max_purp += Math.abs(question.effect.purp)
-    max_perc += Math.abs(question.effect.perc)
-    max_cmdy += Math.abs(question.effect.cmdy)
-#starts the question initializer
-do init_question
+    #Calculates max score for each axis
+    for question in questions
+        max_spos += Math.abs(question.effect.spos)
+        max_alle += Math.abs(question.effect.alle)
+        max_expr += Math.abs(question.effect.expr)
+        max_pers += Math.abs(question.effect.pers)
+        max_horn += Math.abs(question.effect.horn)
+        max_fame += Math.abs(question.effect.fame)
+        max_shwr += Math.abs(question.effect.shwr)
+        max_sani += Math.abs(question.effect.sani)
+        max_rela += Math.abs(question.effect.rela)
+        max_fedp += Math.abs(question.effect.fedp)
+        max_actn += Math.abs(question.effect.actn)
+        max_purp += Math.abs(question.effect.purp)
+        max_perc += Math.abs(question.effect.perc)
+        max_cmdy += Math.abs(question.effect.cmdy)
+    #starts the question initializer
+    do init_question
+
+fetch("dist/questions.json")
+    .then((response) -> do response.json)
+    .then((data) -> parseQ(data))

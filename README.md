@@ -17,7 +17,7 @@ You can be added by taking the test and selecting the "Submit Your Scores" optio
 ## Who worked on this test?
 You can see the full list of involved members in the [credits](https://polcompballvalues.github.io/credits.html) page.
 
-## What are the .sass/.SCSS, .coffee and .ts in this repository?
+## What are the .sass/.SCSS, .coffee/.cson and .ts in this repository?
 [![Sass](https://img.shields.io/badge/Sass-%23CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://github.com/sass/sass)
 [![CoffeeScript](https://img.shields.io/badge/CoffeeScript%20-%232F2625?style=for-the-badge&logo=coffeescript)](https://github.com/jashkenas/coffeescript)
 [![TypeScript](https://img.shields.io/badge/TypeScript%20-%233178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://github.com/microsoft/TypeScript)
@@ -31,12 +31,4 @@ As you might be aware the web has been standardized on 3 main technologies, HTML
 >Typescript is a superset of javascript that provides a way to assign types to variables and make sure these do not get changed, which comes in helpful in guaranteeing the desired outcomes if  your javascript code is doing some less-than-orthodox things with variables.
 
 ### How do I compile the .sass/.SCSS, .coffee and .ts files in the repo?
-To compile these files into regular css and javascript you'll need to install node.js and the following packages (sass, coffeescript and typescript) and then run the compile commands of each, if your development environment is Visual Studio Code, the included tasks.json already is prepared to compile all the necessary files(ctrl+shit+p Tasks: Run Task), otherwise below there's a set of commands for the default versions of each environment:
-```powershell
-#installing the packages
-npm i -g sass coffeescript typescript
-#compiling the files
-sass src:dist
-coffee -c -b -m -o /dist /src
-tsc
-```
+To compile these files into regular css, javascript and JSON you'll need to install node.js and run `npm install` to install all needed packages followed by `npm run build` to build all files on the dist folder.

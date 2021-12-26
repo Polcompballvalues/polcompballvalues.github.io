@@ -1,5 +1,6 @@
+type score = {a:number, b:number, c:number, d:number, e:number, f:number, g:number, h:number, i:number, j:number, k:number, l:number, m:number, n:number }
 //Version type
-const version: string = "V2 1.2.9";
+const version: string = "V2 1.3.0";
 //Arrays
 //Seriousposting axis (Sincerity vs Irony)
 const spos_array: Array<string> = ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"]
@@ -134,54 +135,31 @@ function axisDraw(ctx, val:number, height:number, l_color:string, r_color:string
     }
 }
 
+function drawText(ctx, val:number, height:number, lwhite: boolean, rwhite: boolean){
+    if (val > 30) {
+        if (lwhite){
+            ctx.fillStyle = "#FFF"
+        } else {
+            ctx.fillStyle = "#000"
+        }
+        ctx.textAlign = "left"
+        ctx.fillText(val.toFixed(1) + "%", 150, height)
+    }
+    if (val < 70) {
+        if (rwhite){
+            ctx.fillStyle = "#FFF"
+        } else {
+            ctx.fillStyle = "#000"
+        }
+        ctx.textAlign = "right"
+        ctx.fillText((100 - val).toFixed(1) + "%", 650, height)
+    }
+}
+
+
+
 //Creates canvas
-function makeUserCanvas(spos_input: string, alle_input: string, expr_input: string, pers_input: string, horn_input: string, fame_input: string, shwr_input: string, sani_input: string, rela_input: string, fedp_input: string, actn_input: string, purp_input: string, perc_input: string, cmdy_input: string, gallery: boolean, short: boolean, dark: boolean, user: string){
-    //Parsing input values into numbers
-    let spos: number = parseFloat(spos_input)
-    let alle: number = parseFloat(alle_input)
-    let expr: number = parseFloat(expr_input)
-    let pers: number = parseFloat(pers_input)
-    let horn: number = parseFloat(horn_input)
-    let fame: number = parseFloat(fame_input)
-    let shwr: number = parseFloat(shwr_input)
-    let sani: number = parseFloat(sani_input)
-    let rela: number = parseFloat(rela_input)
-    let fedp: number = parseFloat(fedp_input)
-    let actn: number = parseFloat(actn_input)
-    let purp: number = parseFloat(purp_input)
-    let perc: number = parseFloat(perc_input)
-    let cmdy: number = parseFloat(cmdy_input)
-
-    //toFixed(1) of all values (converts to string with 1 decimal)
-    let sincerity:      string = spos.toFixed(1)
-    let jannyphobe:     string = alle.toFixed(1)
-    let veteran:        string = expr.toFixed(1)
-    let wholesome:      string = pers.toFixed(1)
-    let horny:          string = horn.toFixed(1)
-    let active:         string = fame.toFixed(1)
-    let standard:       string = shwr.toFixed(1)
-    let boring:         string = sani.toFixed(1)
-    let liked:          string = rela.toFixed(1)
-    let discriminatory: string = fedp.toFixed(1)
-    let behaving:       string = actn.toFixed(1)
-    let artist:         string = purp.toFixed(1)
-    let pleasant:       string = perc.toFixed(1)
-    let funny:          string = cmdy.toFixed(1)
-    let irony:          string = (100 - spos).toFixed(1)
-    let jannyphile:     string = (100 - alle).toFixed(1)
-    let newbie:         string = (100 - expr).toFixed(1)
-    let edgy:           string = (100 - pers).toFixed(1)
-    let antihorny:      string = (100 - horn).toFixed(1)
-    let lurker:         string = (100 - fame).toFixed(1)
-    let wacky:          string = (100 - shwr).toFixed(1)
-    let schizo:         string = (100 - sani).toFixed(1)
-    let disliked:       string = (100 - rela).toFixed(1)
-    let inclusive:      string = (100 - fedp).toFixed(1)
-    let misbehaving:    string = (100 - actn).toFixed(1)
-    let community:      string = (100 - purp).toFixed(1)
-    let annoying:       string = (100 - perc).toFixed(1)
-    let unfunny:        string = (100 - cmdy).toFixed(1)
-
+function makeUserCanvas(score: score, gallery: boolean, short: boolean, dark: boolean, user: string){
     //Canvas drawing
     let c = document.createElement("canvas")
     let ctx = c.getContext("2d")
@@ -236,21 +214,20 @@ function makeUserCanvas(spos_input: string, alle_input: string, expr_input: stri
     ctx.lineWidth = 65;
 
     //Drawing axes
-    axisDraw(ctx, spos, 220, "#B22222", "#00F")
-    axisDraw(ctx, alle, 340, "#EDB509", "#333")
-    axisDraw(ctx, expr, 460, "#00F", "#FF0000")
-    axisDraw(ctx, pers, 580, "#C000FF", "#EE2436")
-    axisDraw(ctx, horn, 700, "#880015", "#FEC62B")
-    axisDraw(ctx, fame, 820, "#FF0000", "#FFF")
-    axisDraw(ctx, shwr, 940, "#8B5320", "#89001C")
-    axisDraw(ctx, sani, 1060, "#F5DD00", "#7F3980")
-    axisDraw(ctx, rela, 1180, "#52CE3C", "#F5A9B8")
-    axisDraw(ctx, fedp, 1300, "#32B5D4", "#EB0DEA")
-    axisDraw(ctx, actn, 1420, "#7F00FF", "#429B7D")
-    axisDraw(ctx, purp, 1540, "#003AAD", "#01411C")
-    axisDraw(ctx, purp, 1540, "#003AAD", "#01411C")
-    axisDraw(ctx, perc, 1660, "#E88401", "#1A193A")
-    axisDraw(ctx, cmdy, 1780, "#05D243", "#7F66DE")
+    axisDraw(ctx, score.a, 220, "#B22222", "#00F")
+    axisDraw(ctx, score.b, 340, "#EDB509", "#333")
+    axisDraw(ctx, score.c, 460, "#00F", "#FF0000")
+    axisDraw(ctx, score.d, 580, "#C000FF", "#EE2436")
+    axisDraw(ctx, score.e, 700, "#880015", "#FEC62B")
+    axisDraw(ctx, score.f, 820, "#FF0000", "#FFF")
+    axisDraw(ctx, score.g, 940, "#8B5320", "#89001C")
+    axisDraw(ctx, score.h, 1060, "#F5DD00", "#7F3980")
+    axisDraw(ctx, score.i, 1180, "#52CE3C", "#F5A9B8")
+    axisDraw(ctx, score.j, 1300, "#32B5D4", "#EB0DEA")
+    axisDraw(ctx, score.k, 1420, "#7F00FF", "#429B7D")
+    axisDraw(ctx, score.l, 1540, "#003AAD", "#01411C")
+    axisDraw(ctx, score.m, 1660, "#E88401", "#1A193A")
+    axisDraw(ctx, score.n, 1780, "#05D243", "#7F66DE")
 
     //Top info
     if(dark){
@@ -269,43 +246,20 @@ function makeUserCanvas(spos_input: string, alle_input: string, expr_input: stri
     ctx.fillText(user, 20, 130)
     //Left column percentages
     ctx.font = "50px Source Sans Pro"
-    ctx.textAlign = "left"
-    ctx.fillStyle = "#000"
-    if (spos > 30) {ctx.fillText(sincerity      + "%", 150, 237.5)}
-    if (alle > 30) {ctx.fillText(jannyphobe     + "%", 150, 357.5)}
-    if (expr > 30) {ctx.fillText(veteran        + "%", 150, 477.5)}
-    if (pers > 30) {ctx.fillText(wholesome      + "%", 150, 597.5)}
-    if (fame > 30) {ctx.fillText(active         + "%", 150, 837.5)}
-    if (shwr > 30) {ctx.fillText(standard       + "%", 150, 957.5)}
-    if (sani > 30) {ctx.fillText(boring         + "%", 150, 1077.5)}
-    if (rela > 30) {ctx.fillText(liked          + "%", 150, 1197.5)}
-    if (fedp > 30) {ctx.fillText(discriminatory + "%", 150, 1317.5)}
-    if (actn > 30) {ctx.fillText(behaving       + "%", 150, 1437.5)}
-    if (purp > 30) {ctx.fillText(artist         + "%", 150, 1557.5)}
-    if (perc > 30) {ctx.fillText(pleasant       + "%", 150, 1677.5)}
-    if (cmdy > 30) {ctx.fillText(funny          + "%", 150, 1797.5)}
-    //White text
-    ctx.fillStyle = "#DDD"
-    if (horn > 30) {ctx.fillText(horny          + "%", 150, 717.5)}
-    //Right column percentages
-    ctx.textAlign ="right"
-    ctx.fillStyle = "#000"
-    if (spos < 70) {ctx.fillText(irony          + "%", 650, 237.5)}
-    if (expr < 70) {ctx.fillText(newbie         + "%", 650, 477.5)}
-    if (pers < 70) {ctx.fillText(edgy           + "%", 650, 597.5)}
-    if (horn < 70) {ctx.fillText(antihorny      + "%", 650, 717.5)}
-    if (fame < 70) {ctx.fillText(lurker         + "%", 650, 837.5)}
-    if (sani < 70) {ctx.fillText(schizo         + "%", 650, 1077.5)}
-    if (rela < 70) {ctx.fillText(disliked       + "%", 650, 1197.5)}
-    if (fedp < 70) {ctx.fillText(inclusive      + "%", 650, 1317.5)}
-    if (actn < 70) {ctx.fillText(misbehaving    + "%", 650, 1437.5)}
-    if (cmdy < 70) {ctx.fillText(unfunny        + "%", 650, 1797.5)}
-    //White text
-    ctx.fillStyle = "#DDD"
-    if (alle < 70) {ctx.fillText(jannyphile     + "%", 650, 357.5)}
-    if (shwr < 70) {ctx.fillText(wacky          + "%", 650, 957.5)}
-    if (purp < 70) {ctx.fillText(community      + "%", 650, 1557.5)}
-    if (perc < 70) {ctx.fillText(annoying       + "%", 650, 1677.5)}
+    drawText(ctx, score.a, 237.5, false, false)
+    drawText(ctx, score.b, 357.5, false, true)
+    drawText(ctx, score.c, 477.5, false, false)
+    drawText(ctx, score.d, 597.5, false, false)
+    drawText(ctx, score.e, 717.5, true, false)
+    drawText(ctx, score.f, 837.5, false, false)
+    drawText(ctx, score.g, 957.5, false, true)
+    drawText(ctx, score.h, 1077.5, false, false)
+    drawText(ctx, score.i, 1197.5, false, false)
+    drawText(ctx, score.j, 1317.5, false, false)
+    drawText(ctx, score.k, 1437.5, false, false)
+    drawText(ctx, score.l, 1557.5, false, true)
+    drawText(ctx, score.m, 1677.5, false, true)
+    drawText(ctx, score.n, 1797.5, false, false)
 
     //Adds more text on the top
     if (dark){
@@ -313,6 +267,7 @@ function makeUserCanvas(spos_input: string, alle_input: string, expr_input: stri
     } else {
         ctx.fillStyle = "#222222"
     }
+    ctx.textAlign ="right"
     ctx.font = "300 25px Source Sans Pro"
     ctx.fillText("polcompballvalues.github.io", 780, 40)
     ctx.fillText(version, 780, 70)
@@ -330,20 +285,20 @@ function makeUserCanvas(spos_input: string, alle_input: string, expr_input: stri
     //Draw array matches
     ctx.textAlign = "center"
     ctx.font="bold 30px Source Sans Pro"
-    ctx.fillText("Seriousposting Axis: " + setLabel(spos, spos_array), 400, 170)
-    ctx.fillText("Allegiance Axis: "     + setLabel(alle, alle_array), 400, 290)
-    ctx.fillText("Experience Axis: "     + setLabel(expr, expr_array), 400, 410)
-    ctx.fillText("Personality Axis: "    + setLabel(pers, pers_array), 400, 530)
-    ctx.fillText("Hornyposting Axis: "   + setLabel(horn, horn_array), 400, 650)
-    ctx.fillText("Fame Axis: "           + setLabel(fame, fame_array), 400, 770)
-    ctx.fillText("Shower Axis: "         + setLabel(shwr, shwr_array), 400, 890)
-    ctx.fillText("Sanity Axis: "         + setLabel(sani, sani_array), 400, 1010)
-    ctx.fillText("Relationship Axis: "   + setLabel(rela, rela_array), 400, 1130)
-    ctx.fillText("Fedposting Axis: "     + setLabel(fedp, fedp_array), 400, 1250)
-    ctx.fillText("Actions Axis: "        + setLabel(actn, actn_array), 400, 1370)
-    ctx.fillText("Purpose Axis: "        + setLabel(purp, purp_array), 400, 1490)
-    ctx.fillText("Perception Axis: "     + setLabel(perc, perc_array), 400, 1610)
-    ctx.fillText("Comedy Axis: "         + setLabel(cmdy, cmdy_array), 400, 1730)
+    ctx.fillText("Seriousposting Axis: " + setLabel(score.a, spos_array), 400, 170)
+    ctx.fillText("Allegiance Axis: "     + setLabel(score.b, alle_array), 400, 290)
+    ctx.fillText("Experience Axis: "     + setLabel(score.c, expr_array), 400, 410)
+    ctx.fillText("Personality Axis: "    + setLabel(score.d, pers_array), 400, 530)
+    ctx.fillText("Hornyposting Axis: "   + setLabel(score.e, horn_array), 400, 650)
+    ctx.fillText("Fame Axis: "           + setLabel(score.f, fame_array), 400, 770)
+    ctx.fillText("Shower Axis: "         + setLabel(score.g, shwr_array), 400, 890)
+    ctx.fillText("Sanity Axis: "         + setLabel(score.h, sani_array), 400, 1010)
+    ctx.fillText("Relationship Axis: "   + setLabel(score.i, rela_array), 400, 1130)
+    ctx.fillText("Fedposting Axis: "     + setLabel(score.j, fedp_array), 400, 1250)
+    ctx.fillText("Actions Axis: "        + setLabel(score.k, actn_array), 400, 1370)
+    ctx.fillText("Purpose Axis: "        + setLabel(score.l, purp_array), 400, 1490)
+    ctx.fillText("Perception Axis: "     + setLabel(score.m, perc_array), 400, 1610)
+    ctx.fillText("Comedy Axis: "         + setLabel(score.n, cmdy_array), 400, 1730)
     //Output Banner to Image
     let banner = <HTMLImageElement> document.getElementById("banner")
     banner.src = c.toDataURL();
