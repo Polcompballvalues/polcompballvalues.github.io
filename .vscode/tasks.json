@@ -1,58 +1,16 @@
 {
-    "version": "2.0.0",
-    "tasks": [
+	"version": "2.0.0",
+	"tasks": [
 		{
-            "type": "typescript",
-            "tsconfig": "tsconfig.json",
-            "problemMatcher": [
-                "$tsc"
-            ],
-            "group": "build",
-            "label": "tsc: build - tsconfig.json"
-        },
-        {				
-            "label": "Coffeescript compile",
-            "type": "shell",
-            "command": "coffee",
-            "args": [
-                "-c",
-                "-b",
-                "-m",
-                "-o",
-                "dist/",
-                "src/"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {				
-            "label": "Coffeescript compile & watch",
-            "type": "shell",
-            "command": "coffee",
-            "args": [
-                "-c",
-                "-b",
-                "-w",
-                "-m",
-                "-o",
-                "/dist",
-                "/src"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "label": "Sass compiler",
-            "type": "shell",
-            "command": "sass",
-            "args": [
-                "src:dist"
-            ],
-            "group": "build",
-        }       
-    ]
+			"type": "npm",
+			"script": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: build",
+			"detail": "coffee -c -b -m -o ./dist ./src && tsc && sass src:dist && coffee csoncompile.coffee"
+		}
+	]
 }

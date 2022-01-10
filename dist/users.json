@@ -2202,5 +2202,138 @@
       "perc": 56.8,
       "cmdy": 37.5
     }
+  },
+  {
+    "name": "Lawrence",
+    "stats": {
+      "spos": 56.3,
+      "alle": 25,
+      "expr": 50,
+      "pers": 81.3,
+      "horn": 0,
+      "fame": 0,
+      "shwr": 25,
+      "sani": 87.5,
+      "rela": 90,
+      "fedp": 43.8,
+      "actn": 95,
+      "purp": 56.3,
+      "perc": 87.5,
+      "cmdy": 37.5
+    }
+  },
+  {
+    "name": "The Iced",
+    "stats": {
+      "spos": 56.3,
+      "alle": 12.5,
+      "expr": 41.7,
+      "pers": 68.8,
+      "horn": 12.5,
+      "fame": 37.5,
+      "shwr": 62.5,
+      "sani": 62.5,
+      "rela": 75,
+      "fedp": 0,
+      "actn": 90,
+      "purp": 18.8,
+      "perc": 75,
+      "cmdy": 62.5
+    }
+  },
+  {
+    "name": "Affiliated",
+    "stats": {
+      "spos": 50,
+      "alle": 100,
+      "expr": 8.3,
+      "pers": 37.5,
+      "horn": 100,
+      "fame": 43.8,
+      "shwr": 0,
+      "sani": 25,
+      "rela": 100,
+      "fedp": 18.8,
+      "actn": 60,
+      "purp": 0,
+      "perc": 75,
+      "cmdy": 50
+    }
+  },
+  {
+    "name": "Councilguy",
+    "stats": {
+      "spos": 68.8,
+      "alle": 43.8,
+      "expr": 58.3,
+      "pers": 68.8,
+      "horn": 81.3,
+      "fame": 62.5,
+      "shwr": 0,
+      "sani": 56.3,
+      "rela": 70,
+      "fedp": 43.8,
+      "actn": 75,
+      "purp": 37.5,
+      "perc": 62.5,
+      "cmdy": 62.5
+    }
+  },
+  {
+    "name": "ThisIsMyUsernameAAA",
+    "stats": {
+      "spos": 37.5,
+      "alle": 100,
+      "expr": 83.3,
+      "pers": 100,
+      "horn": 56.3,
+      "fame": 100,
+      "shwr": 12.5,
+      "sani": 43.8,
+      "rela": 65,
+      "fedp": 18.8,
+      "actn": 10,
+      "purp": 0,
+      "perc": 12.5,
+      "cmdy": 37.5
+    }
+  },
+  {
+    "name": "Sr Deyvid",
+    "stats": {
+      "spos": 80,
+      "alle": 27.3,
+      "expr": 62.5,
+      "pers": 89.3,
+      "horn": 7.5,
+      "fame": 75,
+      "shwr": 38.5,
+      "sani": 85.4,
+      "rela": 96.4,
+      "fedp": 51.6,
+      "actn": 80.8,
+      "purp": 56.3,
+      "perc": 72.7,
+      "cmdy": 62.5
+    }
+  },
+  {
+    "name": "AmericanFascist",
+    "stats": {
+      "spos": 81.3,
+      "alle": 43.8,
+      "expr": 58.3,
+      "pers": 56.3,
+      "horn": 12.5,
+      "fame": 62.5,
+      "shwr": 25,
+      "sani": 81.3,
+      "rela": 65,
+      "fedp": 62.5,
+      "actn": 80,
+      "purp": 18.8,
+      "perc": 56.3,
+      "cmdy": 81.3
+    }
   }
 ]
