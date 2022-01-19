@@ -18,20 +18,20 @@
 ,
   "name" : "nguyenreich"
   "stats":
-    "spos": 65.0
-    "alle": 33.2
-    "expr": 56.9
-    "pers": 77.4
-    "horn": 71.7
-    "fame": 83.5
-    "shwr": 43.6
-    "sani": 65.3
-    "rela": 73.8
-    "fedp": 6.0
-    "actn": 69.3
-    "purp": 71.2
-    "perc": 76.7
-    "cmdy": 61.2
+    "spos": 70.0
+    "alle": 25.0
+    "expr": 81.3
+    "pers": 73.2
+    "horn": 62.5
+    "fame": 83.3
+    "shwr": 44.2
+    "sani": 60.4
+    "rela": 76.8
+    "fedp": 1.6
+    "actn": 69.2
+    "purp": 83.3
+    "perc": 72.7
+    "cmdy": 85.0
 ,
   "name" : "Kaiser"
   "stats":
@@ -2106,4 +2106,72 @@
     "purp": 18.8
     "perc": 56.3
     "cmdy": 81.3
+,
+  "name" : "daydreamy"
+  "stats":
+    "spos": 57.5
+    "alle": 45.5
+    "expr": 16.7
+    "pers": 75.0
+    "horn": 55.0
+    "fame": 34.5
+    "shwr": 19.2
+    "sani": 26.4
+    "rela": 53.6
+    "fedp": 3.2
+    "actn": 61.5
+    "purp": 54.2
+    "perc": 81.8
+    "cmdy": 65.0
+,
+  "name" : "Leto"
+  "stats":
+    "spos": 50.0
+    "alle": 38.6
+    "expr": 18.8
+    "pers": 66.1
+    "horn": 60.0
+    "fame": 27.4
+    "shwr": 44.2
+    "sani": 60.4
+    "rela": 62.5
+    "fedp": 47.6
+    "actn": 61.5
+    "purp": 52.1
+    "perc": 50.0
+    "cmdy": 62.5
+,
+  "name" : "Tutuyi"
+  "stats":
+    "spos": 50.0
+    "alle": 62.5
+    "expr": 58.3
+    "pers": 62.5
+    "horn": 56.3
+    "fame": 50.0
+    "shwr": 6.3
+    "sani": 31.3
+    "rela": 80.0
+    "fedp": 31.3
+    "actn": 70.0
+    "purp": 31.3
+    "perc": 75.0
+    "cmdy": 75.0
+,
+  "name" : "Kozar"
+  "stats":
+    "spos": 31.3
+    "alle": 62.5
+    "expr": 100.0
+    "pers": 31.3
+    "horn": 31.3
+    "fame": 62.5
+    "shwr": 37.5
+    "sani": 81.3
+    "rela": 80.0
+    "fedp": 12.5
+    "actn": 80.0
+    "purp": 37.5
+    "perc": 62.5
+    "cmdy": 75.0
 ]

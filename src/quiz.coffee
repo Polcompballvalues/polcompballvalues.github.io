@@ -1,3 +1,8 @@
+testType = exports ? this
+questions = exports ? this
+answers = []
+max_spos = max_alle = max_expr = max_pers = max_horn = max_fame = max_shwr = max_sani = max_rela = max_fedp = max_actn = max_purp = max_perc = max_cmdy =\
+spos = alle = expr = pers = horn = fame = shwr = sani = rela = fedp = actn = purp = perc = cmdy = qn = 0
 #Initializes questions text
 init_question = ->
     document.getElementById("question-text").innerHTML = questions[qn].question #Sets question text
@@ -88,26 +93,20 @@ results = ->
         + "&l=" + calc_score(purp,max_purp) \
         + "&m=" + calc_score(perc,max_perc) \
         + "&n=" + calc_score(cmdy,max_cmdy) \
-        + "&z=" + length
+        + "&z=" + testType
 
-#Defines each variable as 0
-max_spos = max_alle = max_expr = max_pers = max_horn = max_fame = max_shwr = max_sani = max_rela = max_fedp = max_actn = max_purp = max_perc = max_cmdy =\
-spos = alle = expr = pers = horn = fame = shwr = sani = rela = fedp = actn = purp = perc = cmdy = qn = 0
-#Defines arrrays as empty
-answers = []
-shortquestions = []
-questions = []
 #Fetches short questions if url substring is s
 parseQ = (fullquestions) ->
     if window.location.search.substring(1) is "s"
+        shortquestions = []
         for question in fullquestions
             if question.short is true
                 shortquestions.push(question)
         questions = shortquestions;
-        length = "s";
+        testType = "s";
     else
         questions = fullquestions;
-        length = "f";
+        testType = "f";
 
     #Calculates max score for each axis
     for question in questions
