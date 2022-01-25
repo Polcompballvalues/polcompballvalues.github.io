@@ -2174,4 +2174,72 @@
     "purp": 37.5
     "perc": 62.5
     "cmdy": 75.0
+,
+  "name" : "BeryAb"
+  "stats":
+    "spos": 37.5
+    "alle": 87.5
+    "expr": 66.7
+    "pers": 93.8
+    "horn": 75.0
+    "fame": 62.5
+    "shwr": 75.0
+    "sani": 81.3
+    "rela": 90.0
+    "fedp": 25.0
+    "actn": 80.0
+    "purp": 62.5
+    "perc": 50.0
+    "cmdy": 87.5
+,
+  "name" : "Zayan"
+  "stats":
+    "spos": 50.0
+    "alle": 62.5
+    "expr": 33.3
+    "pers": 37.5
+    "horn": 18.8
+    "fame": 25.0
+    "shwr": 50.0
+    "sani": 50.0
+    "rela": 65.0
+    "fedp": 68.8
+    "actn": 65.0
+    "purp": 18.8
+    "perc": 68.8
+    "cmdy": 62.5
+,
+  "name" : "Vendian Machine"
+  "stats":
+    "spos": 60.0
+    "alle": 59.1
+    "expr": 12.5
+    "pers": 64.3
+    "horn": 85.0
+    "fame": 33.3
+    "shwr": 5.8
+    "sani": 45.8
+    "rela": 28.6
+    "fedp": 24.2
+    "actn": 44.2
+    "purp": 47.9
+    "perc": 50.0
+    "cmdy": 47.5
+,
+  "name" : "Nobodyhere"
+  "stats":
+    "spos": 43.8
+    "alle": 81.3
+    "expr": 41.7
+    "pers": 37.5
+    "horn": 31.3
+    "fame": 12.5
+    "shwr": 50.0
+    "sani": 56.3
+    "rela": 50.0
+    "fedp": 43.8
+    "actn": 65.0
+    "purp": 56.3
+    "perc": 56.3
+    "cmdy": 37.5
 ]
