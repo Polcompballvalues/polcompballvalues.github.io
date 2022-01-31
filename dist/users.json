@@ -1444,6 +1444,44 @@
     }
   },
   {
+    "name": "Matteel",
+    "stats": {
+      "spos": 65,
+      "alle": 61.4,
+      "expr": 35.4,
+      "pers": 71.4,
+      "horn": 87.5,
+      "fame": 34.5,
+      "shwr": 50,
+      "sani": 33.3,
+      "rela": 66.1,
+      "fedp": 23.4,
+      "actn": 55.8,
+      "purp": 58.3,
+      "perc": 56.8,
+      "cmdy": 30
+    }
+  },
+  {
+    "name": "Mr.J",
+    "stats": {
+      "spos": 31.3,
+      "alle": 25,
+      "expr": 16.7,
+      "pers": 37.5,
+      "horn": 50,
+      "fame": 12.5,
+      "shwr": 81.3,
+      "sani": 87.5,
+      "rela": 80,
+      "fedp": 12.5,
+      "actn": 85,
+      "purp": 37.5,
+      "perc": 68.8,
+      "cmdy": 43.8
+    }
+  },
+  {
     "name": "nguyenreich",
     "stats": {
       "spos": 70,
@@ -2296,6 +2334,25 @@
       "purp": 31.3,
       "perc": 75,
       "cmdy": 75
+    }
+  },
+  {
+    "name": "umoon",
+    "stats": {
+      "spos": 50,
+      "alle": 56.3,
+      "expr": 50,
+      "pers": 75,
+      "horn": 56.3,
+      "fame": 0,
+      "shwr": 25,
+      "sani": 25,
+      "rela": 75,
+      "fedp": 56.3,
+      "actn": 65,
+      "purp": 31.3,
+      "perc": 62.5,
+      "cmdy": 62.5
     }
   },
   {
