@@ -1,5 +1,5 @@
 //Version type
-const version = "V2 1.3.5";
+const version = "V2 1.3.6";
 //Arrays
 //Seriousposting axis (Sincerity vs Irony)
 const spos_array = ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"];

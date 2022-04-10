@@ -1634,6 +1634,25 @@
     }
   },
   {
+    "name": "MedicsChaotics",
+    "stats": {
+      "spos": 57.5,
+      "alle": 25,
+      "expr": 12.5,
+      "pers": 75,
+      "horn": 80,
+      "fame": 7.1,
+      "shwr": 36.5,
+      "sani": 43.8,
+      "rela": 60.7,
+      "fedp": 48.4,
+      "actn": 84.6,
+      "purp": 50,
+      "perc": 86.4,
+      "cmdy": 50
+    }
+  },
+  {
     "name": "Mr.J",
     "stats": {
       "spos": 31.3,
@@ -2106,6 +2125,25 @@
       "purp": 33.3,
       "perc": 22.7,
       "cmdy": 30
+    }
+  },
+  {
+    "name": "ScalierLotus11",
+    "stats": {
+      "spos": 25,
+      "alle": 75,
+      "expr": 58.3,
+      "pers": 50,
+      "horn": 31.3,
+      "fame": 25,
+      "shwr": 0,
+      "sani": 75,
+      "rela": 100,
+      "fedp": 100,
+      "actn": 45,
+      "purp": 12.5,
+      "perc": 50,
+      "cmdy": 100
     }
   },
   {
