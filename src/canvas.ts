@@ -1,6 +1,6 @@
 type score = {a:number, b:number, c:number, d:number, e:number, f:number, g:number, h:number, i:number, j:number, k:number, l:number, m:number, n:number }
 //Version type
-const version: string = "V2 1.3.6";
+const version: string = "V2 1.3.7";
 //Arrays
 //Seriousposting axis (Sincerity vs Irony)
 const spos_array: Array<string> = ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"]

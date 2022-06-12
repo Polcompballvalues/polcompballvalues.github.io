@@ -35,37 +35,20 @@
 ,
   "name" : "Kaiser"
   "stats":
-    "spos": 42.5
-    "alle": 79.5
-    "expr": 91.7
-    "pers": 1.8
-    "horn": 10.0
-    "fame": 73.8
-    "shwr": 48.1
-    "sani": 27.1
-    "rela": 80.4
-    "fedp": 100.0
-    "actn": 17.3
-    "purp": 22.9
-    "perc": 38.6
-    "cmdy": 97.5
-,
-  "name" : "Erstanden"
-  "stats":
-    "spos": 56.8
-    "alle": 91.7
-    "expr": 34.8
-    "pers": 42.9
-    "horn": 33.3
-    "fame": 27.2
-    "shwr": 30.7
-    "sani": 48.7
-    "rela": 44.1
-    "fedp": 81.0
-    "actn": 40.9
-    "purp": 34.9
-    "perc": 51.8
-    "cmdy": 40.8
+    "spos": 55
+    "alle": 25
+    "expr": 83.3
+    "pers": 25
+    "horn": 7.5
+    "fame": 76.2
+    "shwr": 36.5
+    "sani": 35.4
+    "rela": 82.1
+    "fedp": 91.9
+    "actn": 57.7
+    "purp": 16.7
+    "perc": 68.2
+    "cmdy": 80
 ,
   "name" : "ItsDanny101"
   "stats":
@@ -237,22 +220,22 @@
     "perc": 65.6
     "cmdy": 50.1
 ,
-  "name" : "Voizen"
+  "name" : "xVoizen"
   "stats":
-    "spos": 50.0
-    "alle": 38.6
-    "expr": 37.5
-    "pers": 76.8
-    "horn": 30.0
-    "fame": 64.3
-    "shwr": 50.0
-    "sani": 72.9
-    "rela": 78.6
-    "fedp": 14.5
-    "actn": 71.2
-    "purp": 18.8
-    "perc": 88.6
-    "cmdy": 57.5
+    "spos": 70
+    "alle": 40.9
+    "expr": 29.2
+    "pers": 83.9
+    "horn": 15
+    "fame": 70.2
+    "shwr": 61.5
+    "sani": 89.6
+    "rela": 85.7
+    "fedp": 16.1
+    "actn": 69.2
+    "purp": 16.7
+    "perc": 90.9
+    "cmdy": 65
 ,
   "name" : "chicken piccata"
   "stats":
@@ -1308,23 +1291,6 @@
     "perc": 81.3
     "cmdy": 81.3
 ,
-  "name" : "astro200"
-  "stats":
-    "spos": 31.3
-    "alle": 56.3
-    "expr": 58.3
-    "pers": 68.8
-    "horn": 62.5
-    "fame": 50.0
-    "shwr": 62.5
-    "sani": 56.3
-    "rela": 65.0
-    "fedp": 37.5
-    "actn": 65.0
-    "purp": 18.8
-    "perc": 68.8
-    "cmdy": 31.3
-,
   "name" : "Duck"
   "stats":
     "spos": 57.5
@@ -1514,20 +1480,20 @@
 ,
   "name" : "Pope Pius XV"
   "stats":
-    "spos": 37.5
-    "alle": 79.5
-    "expr": 39.6
-    "pers": 75.0
-    "horn": 47.5
-    "fame": 32.1
-    "shwr": 40.4
-    "sani": 47.9
-    "rela": 48.2
-    "fedp": 38.7
-    "actn": 38.5
-    "purp": 35.4
-    "perc": 56.8
-    "cmdy": 77.5
+    "spos": 40
+    "alle": 29.5
+    "expr": 25
+    "pers": 83.9
+    "horn": 20
+    "fame": 71.4
+    "shwr": 42.3
+    "sani": 56.3
+    "rela": 78.6
+    "fedp": 65.3
+    "actn": 51.9
+    "purp": 14.6
+    "perc": 75
+    "cmdy": 50
 ,
   "name" : "Duckles"
   "stats":
@@ -1718,20 +1684,20 @@
 ,
   "name" : "nyteulo"
   "stats":
-    "spos": 22.5
-    "alle": 25.0
-    "expr": 22.9
-    "pers": 67.9
-    "horn": 32.5
-    "fame": 40.5
-    "shwr": 34.6
-    "sani": 77.1
-    "rela": 64.3
-    "fedp": 29.8
-    "actn": 67.3
-    "purp": 31.3
-    "perc": 72.7
-    "cmdy": 67.5
+    "spos": 55
+    "alle": 45.5
+    "expr": 20.8
+    "pers": 60.7
+    "horn": 55
+    "fame": 58.3
+    "shwr": 38.5
+    "sani": 70.8
+    "rela": 87.5
+    "fedp": 8.1
+    "actn": 61.5
+    "purp": 12.5
+    "perc": 47.7
+    "cmdy": 82.5
 ,
   "name" : "AquaHeart"
   "stats":
@@ -2667,4 +2633,447 @@
     "purp": 50
     "perc": 86.4
     "cmdy": 50
+,
+  "name" : "Euan0411"
+  "stats":
+    "spos": 35
+    "alle": 84.1
+    "expr": 27.1
+    "pers": 41.1
+    "horn": 87.5
+    "fame": 28.6
+    "shwr": 50
+    "sani": 47.9
+    "rela": 17.9
+    "fedp": 62.9
+    "actn": 34.6
+    "purp": 39.6
+    "perc": 45.5
+    "cmdy": 62.5
+,
+  "name" : "chum"
+  "stats":
+    "spos": 30
+    "alle": 97.7
+    "expr": 79.2
+    "pers": 16.1
+    "horn": 15
+    "fame": 76.2
+    "shwr": 57.7
+    "sani": 60.4
+    "rela": 80.4
+    "fedp": 87.1
+    "actn": 13.5
+    "purp": 18.8
+    "perc": 68.2
+    "cmdy": 97.5
+,
+  "name" : "Cornopoly"
+  "stats":
+    "spos": 42.5
+    "alle": 45.5
+    "expr": 29.2
+    "pers": 69.6
+    "horn": 20
+    "fame": 22.6
+    "shwr": 46.2
+    "sani": 66.7
+    "rela": 66.1
+    "fedp": 50
+    "actn": 69.2
+    "purp": 16.7
+    "perc": 68.2
+    "cmdy": 40
+,
+  "name" : "Preache"
+  "stats":
+    "spos": 50
+    "alle": 75
+    "expr": 75
+    "pers": 50
+    "horn": 62.5
+    "fame": 87.5
+    "shwr": 62.5
+    "sani": 43.8
+    "rela": 90
+    "fedp": 43.8
+    "actn": 30
+    "purp": 0
+    "perc": 75
+    "cmdy": 100
+,
+  "name" : "Gobble"
+  "stats":
+    "spos": 56.3
+    "alle": 87.5
+    "expr": 66.7
+    "pers": 31.3
+    "horn": 25
+    "fame": 18.8
+    "shwr": 62.5
+    "sani": 62.5
+    "rela": 55
+    "fedp": 37.5
+    "actn": 70
+    "purp": 31.3
+    "perc": 68.8
+    "cmdy": 56.3
+,
+  "name" : "PaleoFabius"
+  "stats":
+    "spos": 75
+    "alle": 93.8
+    "expr": 75
+    "pers": 6.3
+    "horn": 0
+    "fame": 62.5
+    "shwr": 18.8
+    "sani": 20.5
+    "rela": 50
+    "fedp": 100
+    "actn": 15
+    "purp": 18.8
+    "perc": 18.8
+    "cmdy": 93.8
+,
+  "name" : "jodasi"
+  "stats":
+    "spos": 37.5
+    "alle": 75
+    "expr": 58.3
+    "pers": 87.5
+    "horn": 0
+    "fame": 50
+    "shwr": 37.5
+    "sani": 56.3
+    "rela": 60
+    "fedp": 50
+    "actn": 50
+    "purp": 31.3
+    "perc": 56.3
+    "cmdy": 68.8
+,
+  "name" : "Magonoid_MidPo"
+  "stats":
+    "spos": 43.8
+    "alle": 87.5
+    "expr": 50
+    "pers": 56.3
+    "horn": 81.3
+    "fame": 37.5
+    "shwr": 37.5
+    "sani": 18.8
+    "rela": 50
+    "fedp": 37.5
+    "actn": 50
+    "purp": 31.3
+    "perc": 37.5
+    "cmdy": 62.5
+,
+  "name" : "AstroTime"
+  "stats":
+    "spos": 75
+    "alle": 65.9
+    "expr": 12.5
+    "pers": 58.9
+    "horn": 72.5
+    "fame": 33.3
+    "shwr": 23.1
+    "sani": 41.7
+    "rela": 73.2
+    "fedp": 30.6
+    "actn": 59.6
+    "purp": 52.1
+    "perc": 63.6
+    "cmdy": 17.5
+,
+  "name" : "Fluffy"
+  "stats":
+    "spos": 68.8
+    "alle": 12.5
+    "expr": 16.7
+    "pers": 87.5
+    "horn": 75
+    "fame": 31.3
+    "shwr": 75
+    "sani": 50
+    "rela": 80
+    "fedp": 0
+    "actn": 95
+    "purp": 50
+    "perc": 68.8
+    "cmdy": 75
+,
+  "name" : "Bsaheed527"
+  "stats":
+    "spos": 43.8
+    "alle": 68.8
+    "expr": 91.7
+    "pers": 68.8
+    "horn": 50
+    "fame": 43.8
+    "shwr": 18.8
+    "sani": 62.5
+    "rela": 60
+    "fedp": 31.3
+    "actn": 80
+    "purp": 56.3
+    "perc": 68.8
+    "cmdy": 56.3
+,
+  "name" : "Authority_Enjoyer"
+  "stats":
+    "spos": 62.5
+    "alle": 95.5
+    "expr": 75
+    "pers": 14.3
+    "horn": 15
+    "fame": 64.3
+    "shwr": 19.2
+    "sani": 45.8
+    "rela": 53.6
+    "fedp": 85.5
+    "actn": 17.3
+    "purp": 33.3
+    "perc": 29.5
+    "cmdy": 67.5
+,
+  "name" : "Svokxz"
+  "stats":
+    "spos": 57.5
+    "alle": 95.5
+    "expr": 18.8
+    "pers": 80.4
+    "horn": 65
+    "fame": 21.4
+    "shwr": 21.2
+    "sani": 64.6
+    "rela": 75
+    "fedp": 19.4
+    "actn": 67.3
+    "purp": 64.6
+    "perc": 84.1
+    "cmdy": 47.5
+,
+  "name" : "Freesia"
+  "stats":
+    "spos": 81.3
+    "alle": 75
+    "expr": 75
+    "pers": 75
+    "horn": 62.5
+    "fame": 37.5
+    "shwr": 0
+    "sani": 75
+    "rela": 65
+    "fedp": 43.8
+    "actn": 20
+    "purp": 25
+    "perc": 18.8
+    "cmdy": 75
+,
+  "name" : "Mike_Hawk"
+  "stats":
+    "spos": 43.8
+    "alle": 50
+    "expr": 50
+    "pers": 62.5
+    "horn": 18.8
+    "fame": 25
+    "shwr": 75
+    "sani": 62.5
+    "rela": 80
+    "fedp": 31.3
+    "actn": 65
+    "purp": 50
+    "perc": 62.5
+    "cmdy": 50
+,
+  "name" : "BrazilianSyndicalist"
+  "stats":
+    "spos": 37.5
+    "alle": 25
+    "expr": 66.7
+    "pers": 100
+    "horn": 6.3
+    "fame": 18.8
+    "shwr": 43.8
+    "sani": 68.8
+    "rela": 55
+    "fedp": 18.8
+    "actn": 50
+    "purp": 25
+    "perc": 56.3
+    "cmdy": 75
+,
+  "name" : "Dis"
+  "stats":
+    "spos": 43.8
+    "alle": 87.5
+    "expr": 33.3
+    "pers": 31.3
+    "horn": 37.5
+    "fame": 18.8
+    "shwr": 62.5
+    "sani": 25
+    "rela": 20
+    "fedp": 6.3
+    "actn": 80
+    "purp": 50
+    "perc": 43.8
+    "cmdy": 62.5
+,
+  "name" : "Americastronk"
+  "stats":
+    "spos": 56.3
+    "alle": 37.5
+    "expr": 41.7
+    "pers": 18.8
+    "horn": 50
+    "fame": 37.5
+    "shwr": 6.3
+    "sani": 43.8
+    "rela": 15
+    "fedp": 56.3
+    "actn": 40
+    "purp": 31.3
+    "perc": 18.8
+    "cmdy": 43.8
+,
+  "name" : "Anarcho_Nicholas"
+  "stats":
+    "spos": 60
+    "alle": 100
+    "expr": 16.7
+    "pers": 57.1
+    "horn": 90
+    "fame": 9.5
+    "shwr": 19.2
+    "sani": 58.3
+    "rela": 71.4
+    "fedp": 25.8
+    "actn": 46.2
+    "purp": 50
+    "perc": 100
+    "cmdy": 50
+,
+  "name" : "ColComCCat"
+  "stats":
+    "spos": 65
+    "alle": 27.3
+    "expr": 33.3
+    "pers": 92.9
+    "horn": 47.5
+    "fame": 48.8
+    "shwr": 36.5
+    "sani": 50
+    "rela": 67.9
+    "fedp": 8.9
+    "actn": 78.8
+    "purp": 60.4
+    "perc": 61.4
+    "cmdy": 55
+,
+  "name" : "bobux"
+  "stats":
+    "spos": 57.5
+    "alle": 61.4
+    "expr": 20.8
+    "pers": 42.9
+    "horn": 7.5
+    "fame": 2.4
+    "shwr": 46.2
+    "sani": 39.6
+    "rela": 67.9
+    "fedp": 54.8
+    "actn": 63.5
+    "purp": 41.7
+    "perc": 59.1
+    "cmdy": 65
+,
+  "name" : "berber ball"
+  "stats":
+    "spos": 62.5
+    "alle": 31.3
+    "expr": 83.3
+    "pers": 37.5
+    "horn": 50
+    "fame": 87.5
+    "shwr": 68.8
+    "sani": 62.5
+    "rela": 90
+    "fedp": 50
+    "actn": 90
+    "purp": 75
+    "perc": 68.8
+    "cmdy": 75
+,
+  "name" : "Marsvner"
+  "stats":
+    "spos": 43.8
+    "alle": 50
+    "expr": 33.3
+    "pers": 87.5
+    "horn": 56.3
+    "fame": 62.5
+    "shwr": 6.3
+    "sani": 68.8
+    "rela": 95
+    "fedp": 18.8
+    "actn": 85
+    "purp": 62.5
+    "perc": 75
+    "cmdy": 75
+,
+  "name" : "irad"
+  "stats":
+    "spos": 12.5
+    "alle": 100
+    "expr": 75
+    "pers": 18.8
+    "horn": 0
+    "fame": 18.8
+    "shwr": 6.3
+    "sani": 62.5
+    "rela": 45
+    "fedp": 87.5
+    "actn": 10
+    "purp": 43.8
+    "perc": 37.5
+    "cmdy": 75
+,
+  "name" : "Io"
+  "stats":
+    "spos": 50
+    "alle": 38.6
+    "expr": 16.7
+    "pers": 62.5
+    "horn": 65
+    "fame": 38.1
+    "shwr": 19.2
+    "sani": 77.1
+    "rela": 42.9
+    "fedp": 1.6
+    "actn": 71.2
+    "purp": 41.7
+    "perc": 56.8
+    "cmdy": 52.5
+,
+  "name" : "Ronzipot"
+  "stats":
+    "spos": 50
+    "alle": 72.7
+    "expr": 31.3
+    "pers": 58.9
+    "horn": 45
+    "fame": 46.4
+    "shwr": 34.6
+    "sani": 68.8
+    "rela": 66.1
+    "fedp": 49.2
+    "actn": 51.9
+    "purp": 43.8
+    "perc": 56.8
+    "cmdy": 65
+
 ]
