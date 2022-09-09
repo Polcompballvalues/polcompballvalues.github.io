@@ -3330,4 +3330,140 @@
     "purp": 31.3
     "perc": 50
     "cmdy": 50
+,
+  "name" : "PatheticRUS"
+  "stats":
+    "spos": 47.5
+    "alle": 100
+    "expr": 43.8
+    "pers": 33.9
+    "horn": 90
+    "fame": 28.6
+    "shwr": 26.9
+    "sani": 18.8
+    "rela": 46.4
+    "fedp": 83.9
+    "actn": 34.6
+    "purp": 50
+    "perc": 34.1
+    "cmdy": 40
+,
+  "name" : "Destroyerbirb"
+  "stats":
+    "spos": 75
+    "alle": 25
+    "expr": 22.9
+    "pers": 48.2
+    "horn": 42.5
+    "fame": 33.3
+    "shwr": 25
+    "sani": 54.2
+    "rela": 50
+    "fedp": 16.1
+    "actn": 61.5
+    "purp": 64.6
+    "perc": 43.2
+    "cmdy": 50
+,
+  "name" : "BaldPika"
+  "stats":
+    "spos": 56.3
+    "alle": 75
+    "expr": 58.3
+    "pers": 25
+    "horn": 56.3
+    "fame": 50
+    "shwr": 37.5
+    "sani": 37.5
+    "rela": 10
+    "fedp": 56.3
+    "actn": 20
+    "purp": 56.3
+    "perc": 37.5
+    "cmdy": 50
+,
+  "name" : "Sílas Carrasco"
+  "stats":
+    "spos": 40
+    "alle": 20.5
+    "expr": 29.2
+    "pers": 98.2
+    "horn": 17.5
+    "fame": 22.6
+    "shwr": 48.1
+    "sani": 79.2
+    "rela": 78.6
+    "fedp": 40.3
+    "actn": 84.6
+    "purp": 27.1
+    "perc": 90.9
+    "cmdy": 55
+,
+  "name" : "Gigachad"
+  "stats":
+    "spos": 70
+    "alle": 93.2
+    "expr": 29.2
+    "pers": 69.6
+    "horn": 32.5
+    "fame": 41.7
+    "shwr": 23.1
+    "sani": 54.2
+    "rela": 73.2
+    "fedp": 39.5
+    "actn": 57.7
+    "purp": 54.2
+    "perc": 59.1
+    "cmdy": 75
+,
+  "name" : "nintendofan2008"
+  "stats":
+    "spos": 70
+    "alle": 52.3
+    "expr": 16.7
+    "pers": 73.2
+    "horn": 35
+    "fame": 45.2
+    "shwr": 51.9
+    "sani": 31.3
+    "rela": 53.6
+    "fedp": 25
+    "actn": 59.6
+    "purp": 39.6
+    "perc": 45.5
+    "cmdy": 30
+,
+  "name" : "Kamkov"
+  "stats":
+    "spos": 60
+    "alle": 52.3
+    "expr": 22.9
+    "pers": 67.9
+    "horn": 37.5
+    "fame": 34.5
+    "shwr": 48.1
+    "sani": 50
+    "rela": 57.1
+    "fedp": 65.3
+    "actn": 63.5
+    "purp": 50
+    "perc": 70.5
+    "cmdy": 47.5
+,
+  "name" : "Aro Commie"
+  "stats":
+    "spos": 82.5
+    "alle": 54.5
+    "expr": 14.6
+    "pers": 87.5
+    "horn": 82.5
+    "fame": 38.1
+    "shwr": 15.4
+    "sani": 39.6
+    "rela": 64.3
+    "fedp": 3.2
+    "actn": 61.5
+    "purp": 47.9
+    "perc": 63.6
+    "cmdy": 42.5
 ]
