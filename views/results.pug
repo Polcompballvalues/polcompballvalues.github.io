@@ -1,0 +1,54 @@
+doctype html
+html
+    include includes/head
+    body
+        h1 PolcompballValues
+        h2 Results
+        div(class="results")
+            each val in values
+                - var axname = val.name.charAt(0).toUpperCase() + val.name.slice(1)
+                h2()
+                    | #{axname} Axis: 
+                    span(
+                        class="axis-labels"
+                        id=val.name + "-label"
+                    )
+                div(class="axis")
+                    img(
+                        class="value"
+                        id="img-" + val.labels[0]
+                        src="./assets/values/" + val.icons[0]
+                    )
+                    div(
+                        class="bar " + val.labels[0]
+                        id="bar-" + val.labels[0]
+                    )
+                        if val.white_label[0]
+                            div(class="text-wrapper-white" id="span-" + val.labels[0])
+                        else
+                            div(class="text-wrapper" id="span-" + val.labels[0])
+                    div(
+                        class="bar " + val.labels[1]
+                        id="bar-" + val.labels[1]
+                    )
+                        if val.white_label[1]
+                            div(class="text-wrapper-white" id="span-" + val.labels[1])
+                        else
+                            div(class="text-wrapper" id="span-" + val.labels[1])
+                    img(
+                        class="value"
+                        id="img-" + val.labels[1]
+                        src="./assets/values/" + val.icons[1]
+                    )
+        h2()
+            |Closest Match: 
+            span(id="cmatch")
+        div(id="other-matches") Next matches:
+        canvas(id="banner")
+        button(class="button" id="submit-button") Submit Your Scores
+        button(class="button" id="gallery-button" onclick="location.href='gallery.html'") User Gallery
+        button(class="button" id="credits-button" onclick="location.href='credits.html'") Credits
+        button(class="button" id="back-button" onclick="location.href='index.html'") Return To Index
+        script(type="application/javascript") window.VERSION = "#{version}"
+        script(type="module" src="./dist/results.js")
+        

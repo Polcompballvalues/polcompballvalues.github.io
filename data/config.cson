@@ -1,0 +1,251 @@
+"values": [
+        "name": "seriousposting"
+        "desc": [
+            "This value represents people who prefer an adherence to intelligible, coherent, and productive conversations. They are particularly opposed to spam, monkey business, and memes that serve as obstacles to usual talking."
+        ,
+            "This value represents people who prefer the server be spiced up with jokes, that things be done ironically, necessitating that people don't need to express actual opinions, they can just larp! (Pretend to be someone or something they aren't or pretend to have an opinion that they don't). They are also usually in favor of allowing memes in conversation channels."
+        ]
+        "labels": ["sincerity","irony"]
+        "icons": ["sincerity.svg","irony.svg"]
+        "color" : ["#B22222", "#00F"]
+        "white_label" : [false,false]
+        "tiers" : ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"]
+    ,
+        "name": "allegiance"
+        "desc": [
+            "This value represents people who are dissatisfied with the Staff team that moderates/ administrates Polcompball, or they may not like moderation/ administration in general. They usually favor common folk not being bossed around by higher-ups, or want the Staff to be replaced/ abolished/ elected."
+        ,
+            "This value represents people who admire moderation/ administration in general, they may believe rule enforcement benefits a community or simply support those in power, wanting to cater to them. They usually get along with Staff members, moderators, and administrators."
+        ]
+        "labels": ["jannyphobe","jannyphile"]
+        "icons": ["jannyphobe.svg","jannyphile.svg"]
+        "color" : ["#EDB509", "#333"]
+        "white_label" : [false,true]
+        "tiers" : ["Revolutionary", "Rebellious", "Opposed", "Unrested", "Populist",  "Neutral", "Establishment", "Elitist", "Loyal", "Aristocratic", "Enslaved"]
+    ,
+        "name": "experience"
+        "desc": [
+            "This value represents people who have been in the community for a long time and might know and have experienced things that newer members may not have."
+        ,
+            "This value represents people who are relatively new in the community."
+        ]
+        "labels": ["veteran","newbie"]
+        "icons": ["veteran.svg","newbie.svg"]
+        "color" : ["#00F", "#FF0000"]
+        "white_label" : [false,false]
+        "tiers" : ["Primordial", "Ancient", "Historical", "Former", "Time-honored", "Reminiscent", "Apprentice", "Contemporary", "Missed Out", "Uninformed", "Novice"]
+    ,
+        "name": "personality"
+        "desc": [
+            "This value represents people who often try to be nice, or are known as well-meaning/good-hearted."
+        ,
+            "This value represents people who are seen as unfriendly and are dark in their personality, and may come off as cold."
+        ]
+        "labels": ["wholesome","edgy"]
+        "icons": ["wholesome.svg","edgy.svg"]
+        "color" : ["#C000FF", "#EE2436"]
+        "white_label" : [false,false]
+        "tiers" : ["Angelic", "Benevolent", "Empathic", "Goodwilling", "Respectful", "Polite", "Rude", "Harsh", "Cruel", "Heartless", "Inhumane"]
+    ,
+        "name": "hornyposting"
+        "desc": [
+            "This value represents people who are fine with the discussion of NSFW topics such as fetishes, attractions, self-stimulation, and intercourse. They often see value in adult content."
+        ,
+            "This value represents people who oppose the expression of the aforementioned NSFW topics and may be repulsed by it, even seeing horniness, which describes arousal that leads to behavior that may be considered inappropriate, as a problem."
+        ]
+        "labels": ["horny","antihorny"]
+        "icons": ["horny.svg","antihorny.svg"]
+        "color" : ["#880015", "#FEC62B"]
+        "white_label" : [true,false]
+        "tiers" : ["Nymphomaniac", "Decadent", "Down Bad", "Lustful", "Libertine", "Moderated", "Composed", "Pure", "Prudish", "Restrained", "Overprotective"]
+    ,
+        "name": "fame"
+        "desc": [
+            "This value represents people who use related Discord servers often, especially those known well because of it."
+        ,
+            "This value represents people who don't appear on the Discord scene very much, and thus usually have faded into obscurity."
+        ]
+        "labels": ["active","lurker"]
+        "icons": ["active.svg","lurker.svg"]
+        "color" : ["#FF0000", "#FFF"]
+        "white_label" : [false,false]
+        "tiers" : ["Protagonist", "Celebrity", "Important", "Famed", "Recognizable", "NPC", "Integrated", "Sometimes", "Stranger", "Nobody", "Incognito"]
+    ,
+        "name": "shower"
+        "desc": [
+            "This value represents people who have political beliefs that do not deviate from that of a usual person who is not involved deeply in online politics or has real political implications where their ideology may be already in implementation and thus as normal/nothing special/centrist/moderate/apolitical."
+        ,
+            "This value represents people who have a political ideology that is uncharacteristic of those common in the political sphere of the outside world. They may be called out on developing their political philosophies so much and devote so much time to online politics to envision strange unorthodox ideologies to the point where they neglect showering, a commonly held stereotype."
+        ]
+        "labels": ["standard","wacky"]
+        "icons": ["standard.svg","wacky.svg"]
+        "color" : ["#8B5320", "#89001C"]
+        "white_label" : [true,false]
+        "tiers" : ["Apolitical", "Uncaring", "Ordinary", "Moderate", "Opinionated", "Political", "Ideological", "Radical", "Extremist", "Convoluted", "Otherworldly"]
+    ,
+        "name": "sanity"
+        "desc": [
+            "This value represents people who are closer to typically what you expect of a human to be in terms of state of mind. People who have healthy life usually have a good home-life, had a good childhood, and may have been sheltered and even not willing to go outside their comfort zone in extreme cases."
+        ,
+            "This value represents people, quirky people, who are not like others in some ways, they may have mental differences such as schizophrenia, autism, depression, anxiety, just to name a few. Especially those who are off their meds, and thus don't quite conform to society's expectations."
+        ]
+        "labels": ["boring","schizo"]
+        "icons": ["boring.svg","schizo.svg"]
+        "color" : ["#F5DD00", "#7F3980"]
+        "white_label" : [false,false]
+        "tiers" : ["Too Normal", "Bland", "Healthy", "Sound Minded", "Tame", "Interesting", "Different", "Neurotic", "Out There", "Deranged", "a̵̒̆a̶̋͗a̶͂͠a̴͂̅a̵̔̕a̴̔͒"]
+    ,
+        "name": "relationships"
+        "desc": [
+            "This value represents people who have a positive reputation among the community and are generally well-liked."
+        ,
+            "This value represents people who have a negative reputation among the community and are generally disliked."
+        ]
+        "labels": ["liked","disliked"]
+        "icons": ["liked.svg","disliked.svg"]
+        "color" : ["#52CE3C", "#F5A9B8"]
+        "white_label" : [false,false]
+        "tiers" : ["Venerated", "Loved", "Admired", "Appreciated", "Respected", "No Opinion", "Mixed Feelings", "Unwanted", "Disliked", "Hated", "Abhorred"]
+    ,
+        "name": "fedposting"
+        "desc": [
+            "This value represents people who may be in favor of hate speech towards certain groups, or exclusion of minorities, generally believing in the supremacy of certain and the inferiority of others. Often using slurs or other actions to dehumanize and discriminate. Such people engage in 'fedposting' and may be referred to as 'glowies' (see below)."
+        ,
+            "This value represents people who stand against the aforementioned actions in the name of equality of people groups, egalitarianism, inclusion of everyone. Such people usually stand against a practice called 'fedposting' whereby a person sends messages about actions regarded by progressive regular people as really bad seeming like they're a federal agent baiting people or trying to attract the attention of federal agents."
+        ]
+        "labels": ["discriminatory","inclusive"]
+        "icons": ["discriminatory.svg","inclusive.svg"]
+        "color" : ["#32B5D4", "#EB0DEA"]
+        "white_label" : [false,false]
+        "tiers" : ["Glowie", "Bigoted", "Prejudicial", "Exclusive", "Biased", "Varying", "Open-minded", "Tolerant", "Accepting", "Cosmopolitan", "SJW"]
+    ,
+        "name": "actions"
+        "desc": [
+            "This value represents people who obey the rules often and comply with the system, this value differs from jannyphile mostly in the aspect that it includes people who oppose moderation abuses."
+        ,
+            "This value represents people who break the rules often and usually get punished often for doing so, this value differs from jannyphobe in the sense that it includes misbehaving moderators."
+        ]
+        "labels": ["behaving","misbehaving"]
+        "icons": ["behaving.svg","misbehaving.svg"]
+        "color" : ["#7F00FF", "#429B7D"]
+        "white_label" : [false,false]
+        "tiers" : ["Robotic", "Lawful", "Obedient", "Compliant", "Behaved", "Occasional",  "Tripping-up", "Unruly", "Disobedient", "Chaotic", "Criminal"]
+    ,
+        "name": "purpose"
+        "desc": [
+            "This value represents people who are primarily focused on the art side of the community, drawing polcompballs, making comics for the subreddit, or making art for the wiki. As such, they usually have their main presence on the wikis or subreddits where art is made as opposed to discords where talking is done."
+        ,
+            "This value represents people who care little about drawing, polcompball as a concept, comics, etc. and may even be opposed to it, as they primarily exist in the community to talk to people, usually their friends, and do not contribute art to projects revolving around Polcompball."
+        ]
+        "labels": ["artist","community"]
+        "icons": ["artist.svg","community.svg"]
+        "color" : ["#003AAD", "#01411C"]
+        "white_label" : [false,true]
+        "tiers" : ["Maestro", "Art Hero", "Aesthetic", "Artistic Focused", "Wikiredditor", "Undecided", "Member", "Conversational", "Chatty", "Talkative", "Talentless"]
+    ,
+        "name": "perception"
+        "desc": [
+            "This value represents people who are perceived by the community as not being annoying, perhaps even nice to interact with."
+        ,
+            "This value represents people who are annoying."
+        ]
+        "labels": ["pleasant","annoying"]
+        "icons": ["pleasant.svg","annoying.svg"]
+        "color" : ["#E88401", "#1A193A"]
+        "white_label" : [false,true]
+        "tiers" : ["Therapeutic", "Comforting", "Calming", "Chill", "Tolerable", "Ambivalent", "Uncomforting", "Pestering", "Obnoxious", "Infuriating", "Proof that God is testing us"]
+    ,
+        "name": "comedy"
+        "desc": [
+            "This value represents people who bring joy to the community because of how funny they are, whether intentionally or not."
+        ,
+            "This value represents people who usually don't impress or amuse the community and are seen as not entertaining, not funny, whether they try or not."
+        ]
+        "labels": ["funny","unfunny"]
+        "icons": ["funny.svg","unfunny.svg"]
+        "color" : ["#05D243", "#7F66DE"]
+        "white_label" : [false,false]
+        "tiers" : ["Hysterical", "Hilarious", "Humorous", "Comical", "Amusing", "Undifferentiated", "Superficial", "Unironic", "Lackluster", "Crickets", "Epitome of Boredom"]
+]
+
+"discord_url": "https://discord.gg/RWVrPNZPgA"
+
+"credits": [
+    {
+        "title" : "Coding:"
+        "elms" : [
+            {"name": "TheGhostOfInky"},
+            {"name": "Miko (Assistance)"},
+            {"name": "Based on the code of) TristanBomb"}
+        ]
+    },
+    {
+        "title" : "Art assets and vectorization:"
+        "elms" : [
+            {"name": "Based and Jedpilled"},
+            {"name": "Spade"},
+            {"name": "TheLegend2T"},
+            {"name": "Jao"},
+            {"name": "TheGhostOfInky"},
+            {"name": "Vizdun"},
+            {"name": "Denatidum"}
+        ]
+    },
+    {
+        "title" : "Axis labels:"
+        "elms" : [
+            {"name": "Spade"},
+            {"name": "Xerunox"},
+            {"name": "Denatidum"},
+            {"name": "SophiaK"},
+            {"name": "TheGhostOfInky"},
+            {"name": "Rayz9989"}
+        ]
+    },
+    {
+        "title" : "Value representatives:"
+        "elms" : [
+            {"name": "TechnoSynd (Sincerity)", "color": "B22222"},
+            {"name": "TheLegend2T (Irony)", "color": "00F"},
+            {"name": "byonn (Jannyphobe)", "color": "EDB509"},
+            {"name": "StormTigrex (Jannyphile)", "color": "000"},
+            {"name": "KEVIN (Veteran)", "color": "00F"},
+            {"name": "gaming.org (Newbie)", "color": "F00"},
+            {"name": "Rayz9989 (Wholesome)", "color": "C000FF"},
+            {"name": "SomeDude™ (Edgy)", "color": "EE2436"},
+            {"name": "Swoosho (Horny)", "color": "880015"},
+            {"name": "Based and Jedpilled (Antihorny)", "color": "DBA100"},
+            {"name": "TheGhostOfInky (Active)", "color": "F00"},
+            {"name": "Undefined lurker (Lurker)"},
+            {"name": "Atzyn (Standard)", "color": "8B5320"},
+            {"name": "Plenderplar (Wacky)", "color": "89001C"},
+            {"name": "Jokie1024 (Boring)", "color": "CFBB00"},
+            {"name": "Bogg (Schizo)", "color": "7F3980"},
+            {"name": "Founding Froggers (Liked)", "color": "52CE3C"},
+            {"name": "Miko (Disliked)", "color": "DB94A3"},
+            {"name": "Bullet (Discriminatory)", "color": "32B5D4"},
+            {"name": "nguyenreich (Inclusive)", "color": "FB0000"},
+            {"name": "Knightshade (Behaving)", "color": "7F00FF"},
+            {"name": "Bavyera (Misbehaving)", "color": "429B7D"},
+            {"name": "OzymandiasFR (Artist)", "color": "003AAD"},
+            {"name": "ItsDanny101 (Community)", "color": "01632A"},
+            {"name": "Voizen (Pleasant)", "color": "E88401"},
+            {"name": "lexarate (Annoying)", "color": "02002E"},
+            {"name": "Basque (Funny)", "color": "05D243"},
+            {"name": "Libby (Unfunny)", "color": "7F66DE"}
+        ]
+    },
+    {
+        "title" : "Questions:"
+        "elms" : [
+            {"name": "The polcompball discord community"},
+            {"name": "Rayz9989"}
+        ]
+    },
+    {
+        "title" : "Index descriptions:"
+        "elms" : [
+            {"name": "Rayz9989"}
+        ]
+    }
+]

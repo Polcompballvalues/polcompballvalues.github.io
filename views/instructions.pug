@@ -1,0 +1,24 @@
+doctype html
+html
+    include includes/head
+    body
+        h1 PolcompballValues
+        h2(style="text-align:center;") Instructions
+        p(class="question")
+            | You will be presented with a series of statements. For each one, click the button with your opinion on it.
+        button(
+            class="button"
+            id="shortq-button"
+            onclick="location.href='quiz.html?s';"
+        )="Short version: (" + shortq + " questions)"
+        button(
+            class="button"
+            id="longq-button"
+            onclick="location.href='quiz.html';"
+        )="Full version: (" + longq + " questions)"
+        button(
+            class="button"
+            onclick="location.href='index.html';"
+            id="nevermind-button"
+        )="Wait, nevermind!"
+    

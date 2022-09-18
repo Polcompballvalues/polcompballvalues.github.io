@@ -1,0 +1,18 @@
+doctype html
+html
+    include includes/head
+    body
+    h1 PolcompballValues
+    h2 Credits
+    div(id="credits")
+        each value, index in credits
+            p 
+                b(class="credit-label")=value.title 
+                each v,i in value.elms
+                    if v.color 
+                        li(style=`color:#${v.color};`)=v.name
+                    else 
+                        li=v.name
+
+    button(class="button" onclick="window.history.back()" id="back-button") Back
+    button(class="button" onclick="location.href='gallery.html'" id="gallery-button") User Gallery

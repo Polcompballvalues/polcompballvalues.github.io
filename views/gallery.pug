@@ -1,0 +1,13 @@
+doctype html
+html
+    include includes/head
+    body
+    h1 PolcompballValues
+    h2 User Gallery
+    select(name="user" id="userdropdown")
+    br 
+    canvas(id="banner")
+    button(class="button" onclick="window.history.back()" id="back-button") Back
+    button(class="button" onclick="location.href='credits.html'" id="credits-button") Credits
+    script(type="application/javascript") window.VERSION = "#{version}"
+    script(src="./dist/gallery.js" type="module")

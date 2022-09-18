@@ -1,11 +1,18 @@
 {
-  "dependencies": {
-    "coffeescript": "^2.6.1",
+  "name": "polcompballvalues",
+  "version": "2.2.0",
+  "devDependencies": {
+    "coffeescript": "^2.7.0",
     "cson": "^7.20.0",
-    "sass": "^1.45.1",
-    "typescript": "^4.5.4"
+    "pug": "^3.0.2",
+    "sass": "^1.54.3",
+    "terser": "^5.15.0"
   },
   "scripts": {
-    "build": "coffee -c -b -m -o ./dist ./src && tsc && sass src:dist && coffee csoncompile.coffee"
+    "build": "coffee ./scripts/build.coffee && coffee -c -b -m -o ./dist ./src && sass ./src/style.sass ./dist/style.css",
+    "coffeescript_watch": "coffee -c -b -m -w -o ./dist ./src",
+    "sass_watch" : "sass ./src/style.sass ./dist/style.css -w",
+    "minify": "coffee ./scripts/minify.coffee",
+    "release" : "coffee ./scripts/build.coffee && coffee -c -b -m -o ./dist ./src && sass ./src/style.sass ./dist/style.css --style compressed && coffee ./scripts/minify.coffee"
   }
 }

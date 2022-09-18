@@ -1,0 +1,15 @@
+doctype html
+html
+    include includes/head
+    body
+        h1 PolcompballValues
+        h2(style="text-align:center;" id="question-number") Loading...
+        p(class="question" id="question-text") 
+        button(class="button" id="button-stag") &nbsp
+        button(class="button" id="button-ag") Agree
+        button(class="button" id="button-neut") Neutral/Ambivalent/Skip
+        button(class="button" id="button-disag") Disagree
+        button(class="button" id="button-stdisag") &nbsp
+        div
+            button(class="small_button" id="back_button") Back
+        script(type="module" src="./dist/quiz.js")

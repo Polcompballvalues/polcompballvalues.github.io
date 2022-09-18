@@ -1,0 +1,58 @@
+doctype html
+html
+    include includes/head
+    body
+        a(
+            href="https://github.com/Polcompballvalues/polcompballvalues.github.io"
+            class="github-corner"
+            aria-label="View source on Github"
+            )
+            include includes/github.svg
+        h1 PolcompballValues
+        div(class="center")
+            each val, index in values
+                div(class="block")
+                    div(class="axis_label")=val.name.toUpperCase()
+                    a(href="#anchor" + (index+1))
+                        img(class=collumn src="./assets/values/" + val.icons[0])
+                    a(href="#anchor" + (index+1))
+                        img(class=collumn src="./assets/values/" + val.icons[1])
+        button(
+            class="button"
+            onclick="location.href='instructions.html';"
+            id="start-button"
+            )="Start the Test!"
+        h2="What represent the 28 values?"
+        div(class="expl-block")
+            each val, index in values
+                div(class="spacer")
+                    div(class="expl-left")
+                        p(class="value")
+                            b(id=val.labels[0])=val.labels[0].toUpperCase()
+                        p(class="expl-text-left")=val.desc[0]
+                    div(class="expl-axis")
+                        a(id="#anchor" + (index+1))
+                        p(class="axis")=val.name.toUpperCase()
+                        include includes/arrow.svg
+                    div(class="expl-right")
+                        p(class="value")
+                            b(id=val.labels[1])=val.labels[1].toUpperCase()
+                        p(class="expl-text-right")=val.desc[1]
+        h2="What is Polcompball and which is the discord server this is about?"
+        p(class="extras")
+            | Polcompball is a community centered around presenting political ideologies personified as balls and you can join our official server 
+            a(href=discord_url)= "by clicking this link"
+        h2="Looking for the old version of PolcompballValues?"
+        p(class="extras")
+            | You can take the original version   
+            a(href="/legacy/index.html")= "by clicking this link"
+        h2="What users can I be matched with?"
+        p(class="extras")
+            | You can see the user scores gallery 
+            a(href="./gallery.html")= "by clicking this link"
+        h2="Who was involved in the making of this test?"
+        p(class="extras")
+            | You can visit the credits page 
+            a(href="./credits.html")= "by clicking this link"
+
+            
