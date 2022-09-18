@@ -15,10 +15,6 @@ minify = ->
                 dir_name + file + ".map",
                 { encoding : "utf8"}
             )
-            parsed_map = JSON.parse map
-            parsed_map.sourceRoot = parsed_map.sourceRoot.replace(/\\/g,"/")
-            parsed_map.sources[0] = parsed_map.sources[0].replace(/\\/g,"/")
-
             params = {
                 compress: {
                     ecma: 2022
@@ -27,7 +23,7 @@ minify = ->
                     unsafe_arrows: true
                 },
                 sourceMap: {
-                    content: JSON.stringify parsed_map,
+                    content: map,
                     url: split[0] + ".js.map"
                 },
                 module: true,
