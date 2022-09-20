@@ -12,7 +12,7 @@ The old version is available on [this link](https://polcompballvalues.github.io/
 You can see the current available user scores in the [user gallery](https://polcompballvalues.github.io/gallery.html).
 
 ## How do I get added to the user gallery?
-You can be added by taking the test and selecting the "Submit Your Scores" option at the bottom of the page, this will take you to a page with a text box and a "Send" button, simply enter the name you want to be added as to the test and click the senf button.
+You can be added by taking the test and selecting the "Submit Your Scores" option at the bottom of the page, this will take you to a page with a text box and a "Send" button, simply enter the name you want to be added as to the test and click the send button.
 
 Alternatively you can send an HTTP POST request to the address [https://pcbval.theghostofinky.repl.co/api/](https://pcbval.theghostofinky.repl.co/api/) with a JSON payload similar to the shown below:
 ```json
