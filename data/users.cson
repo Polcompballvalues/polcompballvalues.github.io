@@ -3483,4 +3483,21 @@
     "purp": 54.2
     "perc": 43.2
     "cmdy": 62.5
+,
+  "name" : "Juicy_Peanut"
+  "stats":
+    "spos": 31.3
+    "alle": 31.3
+    "expr": 66.7
+    "pers": 62.5
+    "horn": 43.8
+    "fame": 18.8
+    "shwr": 0
+    "sani": 43.8
+    "rela": 65
+    "fedp": 68.8
+    "actn": 80
+    "purp": 50
+    "perc": 68.8
+    "cmdy": 87.5
 ]

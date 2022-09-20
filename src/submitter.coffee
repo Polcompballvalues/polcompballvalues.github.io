@@ -19,7 +19,8 @@ play_error = ->
 parse_scores = ->
     url_pars = new URLSearchParams document.location.search
 
-    scores = url_pars.get("score").split(",").map((x) -> parseFloat(x))
+    raw_scores = url_pars.get("score") or ""
+    scores = raw_scores.split(",").map((x) -> parseFloat(x))
     
     if scores.length is not 14
         throw new Error "Invalid scores"
@@ -38,10 +39,16 @@ check_username = (user_name) ->
         return user_name
 
 send_scores = (user_name) ->
-    post_body = {
-        name: user_name
-        vals: do parse_scores
-    }
+    try
+        post_body = {
+            name: user_name
+            vals: do parse_scores
+        }
+
+    catch e
+        console.error e
+        alert e
+        return
 
     controller = new AbortController()
     timeout = setTimeout (-> do controller.abort), 10000
