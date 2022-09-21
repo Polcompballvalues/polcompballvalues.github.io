@@ -2,9 +2,10 @@ $dark: #000
 $light: #fff
 
 .github-corner
-    fill: $dark
-    .octo-arm, .octo-body
-        fill: $light
+    svg
+        fill: $dark
+        .octo-arm, .octo-body
+            fill: $light
 
 .github-corner:hover 
     .octo-arm
@@ -28,6 +29,7 @@ $light: #fff
 
 @media (prefers-color-scheme: dark)
     .github-corner
-        fill:$light
-        .octo-arm, .octo-body
-            fill: $dark
+        svg
+            fill:$light
+            .octo-arm, .octo-body
+                fill: $dark

@@ -1,5 +1,7 @@
 import {getJson, Canvas} from "./common.js"
 
+valid_scores = true
+
 set_bar_value = (name, value) ->
     innerel = document.getElementById("span-" + name)
     outerel = document.getElementById("bar-" + name)
@@ -24,11 +26,24 @@ order_scores = (scores, weights, users) ->
     finalscore.sort (a,b) -> 
         a.score - b.score
 
+is_valid = (scores) ->
+    if not (Object.keys(scores).length is val_names.length)
+        return false
+
+    if Object.values(scores).some (x) -> x is undefined
+        return false
+
+    if not Object.values(scores).every (x) -> x >= 0 and x <= 100
+        return false
+
+    true
+
+
 val_names = ["spos","alle","expr","pers","horn","fame","shwr","sani","rela","fedp","actn","purp","perc","cmdy"]
 
 url_pars = new URLSearchParams document.location.search
 
-scores_raw = url_pars.get "score"
+scores_raw = url_pars.get "score" or ""
 edition_raw = url_pars.get "edition"
 
 scores = scores_raw.split(",").reduce( 
@@ -36,11 +51,18 @@ scores = scores_raw.split(",").reduce(
         { ...obj, [val_names[ind]] : parseFloat(val)}
     ),{})
 
-if Object.keys(scores).length is not val_names.length
-    throw new Error "Invalid scores"
+document.getElementById("submit-button").addEventListener "click", ->
+    if valid_scores
+        location.href = "submitter.html?score=" + Object.values(scores).map((x)->x.toFixed 1).join ","
+    else
+        alert err
 
-if not Object.values(scores).every (x) -> x >= 0 and x <= 100
-    throw new Error "Invalid scores"
+if not is_valid scores
+    valid_scores = false
+    err = "Invalid scores"
+    alert err
+    throw new Error err
+
 
 weights = new Array(14).fill(2)
 values = await getJson "values"
@@ -81,14 +103,13 @@ for val,ind in values
 for scr,ind in Object.keys scores
     canvas.drawScoreRect scores,values,scr,ind
 
-document.getElementById("submit-button").addEventListener "click", ->
-    location.href = "submitter.html?score=" + Object.values(scores).map((x)->x.toFixed 1).join ","
 
-onload_render = -> 
-    for scr,ind in Object.keys scores
-        canvas.drawScoreLabel scores[scr],values,ind
+onload_render = ->
+    if valid_scores
+        for scr,ind in Object.keys scores
+            canvas.drawScoreLabel scores[scr],values,ind
 
-    canvas.drawHeader params
+        canvas.drawHeader params
 
 
 setTimeout (->
