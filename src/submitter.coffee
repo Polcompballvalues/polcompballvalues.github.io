@@ -31,7 +31,7 @@ parse_scores = ->
     raw_scores = url_pars.get("score") or ""
     scores = raw_scores.split(",").map((x) -> parseFloat(x))
     
-    if scores.length is not 14
+    if scores.length isnt 14
         throw new Error "Invalid scores"
 
     if not scores.every (x) -> x >= 0 and x <= 100

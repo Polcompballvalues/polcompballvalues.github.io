@@ -27,7 +27,7 @@ order_scores = (scores, weights, users) ->
         a.score - b.score
 
 is_valid = (scores) ->
-    if not (Object.keys(scores).length is val_names.length)
+    if Object.keys(scores).length isnt val_names.length
         return false
 
     if Object.values(scores).some (x) -> x is undefined
