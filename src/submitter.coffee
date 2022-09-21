@@ -2,6 +2,14 @@ submissions = 0
 
 player = document.querySelector "lottie-player"
 
+download_scores = (scores) ->
+    if confirm "Automatic submission of your scores failed, do you wish to download a copy of the scores to submit manually to the developers?"
+        link = document.createElement "a"
+        link.href = "data:text/json;charset=utf-8," + \
+        encodeURIComponent(JSON.stringify(scores))
+        link.download = "scores.json"
+        do link.click
+
 play_success = ->
     player.load "./assets/85185-checkmark.json"
     player.style.display = "block"
@@ -9,12 +17,13 @@ play_success = ->
     player.addEventListener "complete", ->
         player.style.display = "none"
 
-play_error = ->
+play_error = (scores) ->
     player.load "./assets/94303-failed.json"
     player.style.display = "block"
     do player.play
     player.addEventListener "complete", ->
         player.style.display = "none"
+        download_scores scores
 
 parse_scores = ->
     url_pars = new URLSearchParams document.location.search
@@ -70,11 +79,11 @@ send_scores = (user_name) ->
                 submissions++
                 do play_success
             else 
-                do play_error
+                play_error post_body
         
         .catch (err) ->
             console.error err
-            do play_error
+            play_error post_body
 
 send_message = ->
     user_name = document.getElementById("name").value.trim()
