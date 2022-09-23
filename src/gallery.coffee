@@ -41,8 +41,7 @@ for val,ind in values
     canvas.drawValues val,ind
 
 setTimeout (->
-    event = document.createEvent "Event"
-    event.initEvent "load", false, false
+    event = new Event "load"
     window.dispatchEvent event
     drawScores users[0]
     ), 300

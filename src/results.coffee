@@ -113,8 +113,7 @@ onload_render = ->
 
 
 setTimeout (->
-    event = document.createEvent "Event"
-    event.initEvent "load", false, false
+    event = new Event "load"
     window.dispatchEvent event
     onload_render()
     ), 300
