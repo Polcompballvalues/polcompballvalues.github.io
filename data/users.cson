@@ -3517,4 +3517,140 @@
     "purp": 45.8
     "perc": 45.5
     "cmdy": 60
+,
+  "name" : "P100D"
+  "stats":
+    "spos": 68.8
+    "alle": 37.5
+    "expr": 50
+    "pers": 43.8
+    "horn": 50
+    "fame": 50
+    "shwr": 75
+    "sani": 68.8
+    "rela": 65
+    "fedp": 6.3
+    "actn": 75
+    "purp": 31.3
+    "perc": 62.5
+    "cmdy": 75
+,
+  "name" : "zeropointfusion"
+  "stats":
+    "spos": 25
+    "alle": 43.8
+    "expr": 58.3
+    "pers": 81.3
+    "horn": 81.3
+    "fame": 68.8
+    "shwr": 43.8
+    "sani": 25
+    "rela": 55
+    "fedp": 12.5
+    "actn": 55
+    "purp": 43.8
+    "perc": 12.5
+    "cmdy": 56.3
+,
+  "name" : "ElgranLasag2"
+  "stats":
+    "spos": 18.8
+    "alle": 56.3
+    "expr": 25
+    "pers": 50
+    "horn": 81.3
+    "fame": 37.5
+    "shwr": 62.5
+    "sani": 56.3
+    "rela": 40
+    "fedp": 56.3
+    "actn": 15
+    "purp": 62.5
+    "perc": 31.3
+    "cmdy": 68.8
+,
+  "name" : "Lasag"
+  "stats":
+    "spos": 17.5
+    "alle": 79.5
+    "expr": 8.3
+    "pers": 42.9
+    "horn": 87.5
+    "fame": 31
+    "shwr": 48.1
+    "sani": 37.5
+    "rela": 21.4
+    "fedp": 54
+    "actn": 19.2
+    "purp": 45.8
+    "perc": 25
+    "cmdy": 52.5
+,
+  "name" : "Shadow Phoenix"
+  "stats":
+    "spos": 62.5
+    "alle": 56.3
+    "expr": 50
+    "pers": 87.5
+    "horn": 31.3
+    "fame": 0
+    "shwr": 18.8
+    "sani": 31.3
+    "rela": 50
+    "fedp": 0
+    "actn": 65
+    "purp": 50
+    "perc": 37.5
+    "cmdy": 43.8
+,
+  "name" : "Balkan"
+  "stats":
+    "spos": 57.5
+    "alle": 40.9
+    "expr": 14.6
+    "pers": 76.8
+    "horn": 42.5
+    "fame": 6
+    "shwr": 46.2
+    "sani": 52.1
+    "rela": 33.9
+    "fedp": 16.9
+    "actn": 78.8
+    "purp": 39.6
+    "perc": 63.6
+    "cmdy": 25
+,
+  "name" : "Awesome Ari"
+  "stats":
+    "spos": 62.5
+    "alle": 45.5
+    "expr": 16.7
+    "pers": 83.9
+    "horn": 77.5
+    "fame": 10.7
+    "shwr": 25
+    "sani": 60.4
+    "rela": 67.9
+    "fedp": 16.9
+    "actn": 76.9
+    "purp": 56.3
+    "perc": 86.4
+    "cmdy": 47.5
+,
+  "name" : "demoboy"
+  "stats":
+    "spos": 62.5
+    "alle": 31.3
+    "expr": 66.7
+    "pers": 68.8
+    "horn": 62.5
+    "fame": 56.3
+    "shwr": 68.8
+    "sani": 68.8
+    "rela": 75
+    "fedp": 0
+    "actn": 90
+    "purp": 62.5
+    "perc": 68.8
+    "cmdy": 87.5
 ]

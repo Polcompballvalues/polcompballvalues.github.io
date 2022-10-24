@@ -13,6 +13,7 @@ download_scores = (scores) ->
 play_success = ->
     player.load "./assets/85185-checkmark.json"
     player.style.display = "block"
+    player.loop = false
     do player.play
     player.addEventListener "complete", ->
         player.style.display = "none"
@@ -20,6 +21,7 @@ play_success = ->
 play_error = (scores) ->
     player.load "./assets/94303-failed.json"
     player.style.display = "block"
+    player.loop = false
     do player.play
     player.addEventListener "complete", ->
         player.style.display = "none"
@@ -68,6 +70,11 @@ send_scores = (user_name) ->
         signal : controller.signal
         body : JSON.stringify post_body
     }
+
+    player.load "./assets/124239-loading-bouncy.json"
+    player.style.display = "block"
+    player.loop = true
+    do player.play
 
     fetch("https://pcbval.theghostofinky.repl.co/api/", params)
         .then (resp) ->

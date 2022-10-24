@@ -31,7 +31,8 @@ calc_scores = ->
         final_scores.push (100*(maxscores[v]+scores[v])/(2*maxscores[v])).toFixed(1)
 
     window.location.href = "results.html?" + "score=" + \
-    final_scores.join(",") + if short then "&edition=s" else "edition=f"
+    final_scores.join(",") + "&edition=" + \
+    if short then "s" else "f"
 
 next_question = (val) ->
     answers[q_n] = val
