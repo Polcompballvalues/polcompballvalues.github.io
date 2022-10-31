@@ -2,14 +2,14 @@ doctype html
 html
     include includes/head
     body
-    h1 PolcompballValues
-    h2 Result submitter
-    lottie-player(mode="normal" style="display: none;width: 320px;margin: 0 auto")
-    form
-        label(for="name") Insert the name you want displayed below:
-        br(style="margin-bottom: 1.5vw")
-        input(for="text" id="name" name="name")
-    button(class="button" id="send-button") Send
-    button(class="button" onclick="window.history.back()" id="back-button") Back
-    script(src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js")
-    script(src="./dist/submitter.js" type="module")
+        h1 PolcompballValues
+        h2 Result submitter
+        lottie-player(mode="normal" style="display: none;width: 320px;margin: 0 auto")
+        form
+            label(for="name") Insert the name you want displayed below:
+            br(style="margin-bottom: 1.5vw")
+            input(for="text" id="name" name="name")
+        button(class="button" id="send-button") Send
+        button(class="button" onclick="window.history.back()" id="back-button") Back
+        script(src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js")
+        script(src="./dist/submitter.js" type="module")
