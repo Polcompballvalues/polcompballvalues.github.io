@@ -1,3 +1,4 @@
+lock = false
 submissions = 0
 
 player = document.querySelector "lottie-player"
@@ -82,6 +83,7 @@ send_scores = (user_name) ->
             do resp.json
         
         .then (data) ->
+            lock = false
             if data.success
                 submissions++
                 do play_success
@@ -89,10 +91,14 @@ send_scores = (user_name) ->
                 play_error post_body
         
         .catch (err) ->
+            lock = false
             console.error err
             play_error post_body
 
 send_message = ->
+    if lock
+        return
+    lock = true
     user_name = document.getElementById("name").value.trim()
     if submissions > 0
         if confirm "You already submitted your scores, do you wish to submit a new time?"
