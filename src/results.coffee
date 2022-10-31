@@ -103,6 +103,11 @@ for val,ind in values
 for scr,ind in Object.keys scores
     canvas.drawScoreRect scores,values,scr,ind
 
+document.getElementById("download-button").addEventListener "click", ->
+    link = document.createElement "a"
+    link.download = "polcompballvalues.png"
+    link.href = canvas.element.toDataURL "image/png"
+    do link.click
 
 onload_render = ->
     if valid_scores

@@ -2498,22 +2498,22 @@
     "perc": 31.8
     "cmdy": 82.5
 ,
-  "name" : "Buni"
+  "name" : "Buni_Egoist"
   "stats":
-    "spos": 77.5
-    "alle": 93.2
-    "expr": 43.8
-    "pers": 67.9
-    "horn": 62.5
-    "fame": 75
+    "spos": 87.5
+    "alle": 65.9
+    "expr": 62.5
+    "pers": 73.2
+    "horn": 75
+    "fame": 86.9
     "shwr": 11.5
-    "sani": 43.8
-    "rela": 80.4
-    "fedp": 27.4
-    "actn": 53.8
-    "purp": 68.8
-    "perc": 88.6
-    "cmdy": 62.5
+    "sani": 25
+    "rela": 92.9
+    "fedp": 25.8
+    "actn": 65.4
+    "purp": 89.6
+    "perc": 100
+    "cmdy": 92.5
 ,
   "name" : "EpicGamer12 "
   "stats":
