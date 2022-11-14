@@ -80,10 +80,10 @@ send_scores = (user_name) ->
     fetch("https://pcbval.theghostofinky.repl.co/api/", params)
         .then (resp) ->
             clearTimeout timeout
+            lock = false
             do resp.json
         
         .then (data) ->
-            lock = false
             if data.success
                 submissions++
                 do play_success
@@ -91,6 +91,7 @@ send_scores = (user_name) ->
                 play_error post_body
         
         .catch (err) ->
+            clearTimeout timeout
             lock = false
             console.error err
             play_error post_body

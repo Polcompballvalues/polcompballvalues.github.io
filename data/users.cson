@@ -3670,4 +3670,38 @@
     "purp": 50
     "perc": 47.7
     "cmdy": 30
+,
+  "name" : "Comrade Rowemon"
+  "stats":
+    "spos": 75
+    "alle": 68.2
+    "expr": 27.1
+    "pers": 48.2
+    "horn": 37.5
+    "fame": 51.2
+    "shwr": 36.5
+    "sani": 58.3
+    "rela": 41.1
+    "fedp": 40.3
+    "actn": 50
+    "purp": 60.4
+    "perc": 22.7
+    "cmdy": 35
+,
+  "name" : "PatrickH2"
+  "stats":
+    "spos": 50
+    "alle": 37.5
+    "expr": 66.7
+    "pers": 75
+    "horn": 0
+    "fame": 37.5
+    "shwr": 56.3
+    "sani": 56.3
+    "rela": 65
+    "fedp": 56.3
+    "actn": 85
+    "purp": 37.5
+    "perc": 75
+    "cmdy": 50
 ]
