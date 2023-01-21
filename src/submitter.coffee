@@ -7,7 +7,7 @@ download_scores = (scores) ->
     if confirm "Automatic submission of your scores failed, do you wish to download a copy of the scores to submit manually to the developers?"
         link = document.createElement "a"
         link.href = "data:text/json;charset=utf-8," + \
-        encodeURIComponent(JSON.stringify(scores))
+            encodeURIComponent JSON.stringify scores
         link.download = "scores.json"
         do link.click
 
@@ -32,7 +32,7 @@ parse_scores = ->
     url_pars = new URLSearchParams document.location.search
 
     raw_scores = url_pars.get("score") or ""
-    scores = raw_scores.split(",").map((x) -> parseFloat(x))
+    scores = raw_scores.split(",").map (x) -> parseFloat x
     
     if scores.length isnt 14
         throw new Error "Invalid scores"
@@ -46,7 +46,7 @@ check_username = (user_name) ->
     trimmed_name = do user_name.trim
     if trimmed_name is null or trimmed_name is undefined or trimmed_name is ""
         user = prompt "You did not enter a username, please enter one and submit."
-        return check_username(user)
+        return check_username user
     else
         return user_name
 
@@ -62,7 +62,7 @@ send_scores = (user_name) ->
         alert e
         return
 
-    controller = new AbortController()
+    controller = new AbortController
     timeout = setTimeout (-> do controller.abort), 10000
 
     params = {
@@ -100,7 +100,7 @@ send_message = ->
     if lock
         return
     lock = true
-    user_name = document.getElementById("name").value.trim()
+    user_name = do document.getElementById("name").value.trim
     if submissions > 0
         if confirm "You already submitted your scores, do you wish to submit a new time?"
             user = check_username user_name 

@@ -27,8 +27,8 @@ render_question = ->
 calc_scores = ->
     final_scores = []
 
-    for v,i in Object.keys(scores)
-        final_scores.push (100*(maxscores[v]+scores[v])/(2*maxscores[v])).toFixed(1)
+    for v,i in Object.keys scores
+        final_scores.push (100*(maxscores[v]+scores[v])/(2*maxscores[v])).toFixed 1
 
     window.location.href = "results.html?" + "score=" + \
     final_scores.join(",") + "&edition=" + \
@@ -75,9 +75,9 @@ buttons =
 for k,v of buttons
     do(k,v) ->
         obj = document.getElementById "button-" + k
-        obj.addEventListener "click", () -> next_question v
+        obj.addEventListener "click", -> next_question v
 
-document.getElementById("back_button").addEventListener "click", () ->
+document.getElementById("back_button").addEventListener "click", ->
     if q_n is 0
         do window.history.back
     else

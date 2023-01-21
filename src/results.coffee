@@ -3,8 +3,8 @@ import {getJson, Canvas} from "./common.js"
 valid_scores = true
 
 set_bar_value = (name, value) ->
-    innerel = document.getElementById("span-" + name)
-    outerel = document.getElementById("bar-" + name)
+    innerel = document.getElementById "span-" + name
+    outerel = document.getElementById "bar-" + name
     outerel.style.width = value.toFixed(1) + "%"
     innerel.innerHTML = value.toFixed(1) + "%"
     if value < 20
@@ -48,7 +48,7 @@ edition_raw = url_pars.get "edition"
 
 scores = scores_raw.split(",").reduce( 
     ((obj,val,ind) -> 
-        { ...obj, [val_names[ind]] : parseFloat(val)}
+        { ...obj, [val_names[ind]] : parseFloat val}
     ),{})
 
 document.getElementById("submit-button").addEventListener "click", ->
@@ -64,7 +64,7 @@ if not is_valid scores
     throw new Error err
 
 
-weights = new Array(14).fill(2)
+weights = new Array(14).fill 2
 values = await getJson "values"
 users = order_scores scores,weights,await getJson "users"
 
@@ -120,6 +120,6 @@ onload_render = ->
 setTimeout (->
     event = new Event "load"
     window.dispatchEvent event
-    onload_render()
+    do onload_render
     ), 300
 
