@@ -2,7 +2,7 @@ pug = require "pug"
 cson = require "cson"
 fs = require "fs"
 
-renderTemplates = (cjson) ->   
+renderTemplates = (cjson) ->  
     views_dir_name = "./views/"
     views_dir = fs.readdirSync views_dir_name
 
@@ -29,9 +29,10 @@ if Object.keys(parsed_jsons.config).length is 0
     throw new Error "Missing config json"
 
 parsed_jsons.config = {
-    ...parsed_jsons.config,
-    shortq: calcShort parsed_jsons.questions,
+    ...parsed_jsons.config
     version: process.env.npm_package_version
+    longq: parsed_jsons.questions.length
+    shortq: calcShort parsed_jsons.questions
 }
 
 renderTemplates parsed_jsons.config
