@@ -43,7 +43,7 @@ val_names = ["spos","alle","expr","pers","horn","fame","shwr","sani","rela","fed
 
 url_pars = new URLSearchParams document.location.search
 
-scores_raw = url_pars.get "score" or ""
+scores_raw = url_pars.get("score") or ""
 edition_raw = url_pars.get "edition"
 
 scores = scores_raw.split(",").reduce( 
