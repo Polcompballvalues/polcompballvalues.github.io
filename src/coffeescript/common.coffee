@@ -57,7 +57,7 @@ class Canvas
 
 
     drawScoreLabel: (val, values, index) ->
-        @ctx.font = "50px Source Sans Pro"
+        @ctx.font = "50px 'Source Sans Pro', sans-serif"
         height = index*120 + 237.5
         if val is null or val > 100 or val < 0
             throw new Error "Invalid score: " + val
@@ -74,24 +74,24 @@ class Canvas
 
         @ctx.fillStyle = @fg
         @ctx.textAlign = "center"
-        @ctx.font="bold 30px Source Sans Pro"
+        @ctx.font="bold 30px 'Source Sans Pro', sans-serif"
         name =  do values[index].name.charAt(0).toUpperCase + values[index].name.slice 1
         @ctx.fillText name + " Axis: " + values[index].tiers[ Canvas.findTier(val)], 400, 170+index*120, 550
 
 
     drawHeader: (params) ->
         @ctx.fillStyle = @fg
-        @ctx.font = "700 50px Source Sans Pro"
+        @ctx.font = "700 50px 'Source Sans Pro', sans-serif"
         @ctx.textAlign = "left"
         @ctx.fillText "PolcompballValues", 20, 90
 
-        @ctx.font = "30px Source Sans Pro"
+        @ctx.font = "30px 'Source Sans Pro', sans-serif"
         user = if not params.gallery then \ 
         "Closest match: " + params.user else params.user
         @ctx.fillText user, 20, 130, 700
 
         @ctx.textAlign = "right"
-        @ctx.font = "300 25px Source Sans Pro"
+        @ctx.font = "300 25px 'Source Sans Pro', sans-serif"
         @ctx.fillText "polcompballvalues.github.io", 780, 40
         @ctx.fillText params.version, 780, 70
         @ctx.fillText params.edition, 780, 100
