@@ -1,18 +1,18 @@
 {
   "name": "polcompballvalues",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "devDependencies": {
     "coffeescript": "^2.7.0",
     "cson": "^7.20.0",
     "pug": "^3.0.2",
-    "sass": "^1.54.3",
-    "terser": "^5.15.0"
+    "sass": "^1.58.1",
+    "terser": "^5.16.3"
   },
   "scripts": {
-    "build": "coffee ./scripts/build.coffee && coffee -c -b -m -o ./dist ./src && sass ./src/style.sass ./dist/style.css",
-    "coffeescript_watch": "coffee -c -b -m -w -o ./dist ./src",
-    "sass_watch" : "sass ./src/style.sass ./dist/style.css -w",
+    "build": "coffee ./scripts/build.coffee && coffee -c -b -m -o ./dist ./src/coffeescript && sass ./src/sass/style.sass ./dist/style.css",
+    "coffeescript_watch": "coffee -c -b -m -w -o ./dist ./src/coffeescript",
+    "sass_watch": "sass ./src/sass/style.sass ./dist/style.css -w",
     "minify": "coffee ./scripts/minify.coffee",
-    "release" : "coffee ./scripts/build.coffee && coffee -c -b -m -o ./dist ./src && sass ./src/style.sass ./dist/style.css --style compressed && coffee ./scripts/minify.coffee"
+    "release": "coffee ./scripts/build.coffee && coffee -c -b -m -o ./dist ./src/coffeescript && sass ./src/sass/style.sass ./dist/style.css --style compressed && coffee ./scripts/minify.coffee"
   }
 }

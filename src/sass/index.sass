@@ -1,0 +1,256 @@
+.arrows
+    display: none
+
+div.center
+    border-radius: 8pt
+    padding: 8pt
+    color: white
+    width: 768pt
+    display: block
+    margin: auto
+    align-items: center
+    text-align: center
+
+div.block img
+    width: 45%
+    transition: transform .3s
+    padding: 1%
+
+.block a img:hover
+    transform: scale(1.05)
+
+div.axis_label
+    font-size: 16pt
+    color: #000
+
+div.block
+    display: inline-block
+    width: 22.5%
+    background-color: #CCC
+    border-radius: 24pt
+    margin: 6pt
+
+div.expl-block
+    width: 70%
+    display: block
+    text-align: center
+    align-items: center
+    margin: auto
+    background-color: #CCC
+    border-radius: 32px
+
+div.expl-left, div.expl-right
+    display: inline-block
+    text-align: center
+    margin-top: 10px
+    vertical-align: top
+    width: 37%
+    margin-left: auto
+    margin-right: auto
+
+div.expl-axis
+    display: inline-block
+    width: 20.9%
+    vertical-align: top
+    font-size: 20pt
+    letter-spacing: 0.1em
+    margin: 4pt
+    margin-top: 50px
+    svg 
+        width: 60%
+        height: auto
+    path
+        fill: #EEE
+
+p.expl-text-left, p.expl-text-right
+    display: block
+    font-size: 16pt
+    width: 90%
+    margin-left: auto
+    margin-right: auto
+
+div.spacer
+    display: flex
+
+img.arrows
+    width: 60%
+    height: auto
+
+p.axis
+    display: block
+
+p.expl-text
+    font-size: 18pt
+
+p.value
+    font-size: 28pt
+    text-indent: -16pt
+    line-height: 2px
+    letter-spacing: 0.1em
+
+p.extras 
+    text-align: center
+    max-width: 800px
+    margin-left: auto
+    margin-right: auto
+
+//Seriousposting axis
+#sincerity
+    color: #B22222
+#irony
+    color: #00F
+
+//Allegiance axis
+#jannyphobe
+    color: #EDB509
+#jannyphile
+    color: #333
+
+//Experience axis
+#veteran
+    color: #00F
+#newbie
+    color: #FF0000
+
+//Personality axis
+#wholesome
+    color: #C000FF
+#edgy
+    color: #EE2436
+
+//Hornyposting axis
+#horny
+    color: #880015
+#antihorny
+    color: #daa514
+
+//Fame axis
+#active
+    color: #FF0000
+#lurker
+    color: #333
+
+//Shower axis
+#standard
+    color: #8B5320
+#wacky
+    color: #89001C
+
+//Sanity axis
+#boring
+    color: #af9e01
+#schizo
+    color: #7F3980
+
+//Relationship axis
+#liked
+    color: #52CE3C
+#disliked
+    color: #bb7381
+
+//Fedposting axis
+#discriminatory
+    color: #32B5D4
+#inclusive
+    color: #EB0DEA
+
+//Actions axis
+#behaving
+    color: #7F00FF
+#misbehaving
+    color: #429B7D
+
+//Purpose axis
+#artist
+    color: #003AAD
+#community
+    color: #01411C
+
+//Perception axis
+#pleasant
+    color: #E88401
+#annoying
+    color: #1A193A
+
+//Comedy axis
+#funny
+    color: #05D243
+#unfunny
+    color: #7F66DE
+
+@media (prefers-color-scheme: dark)
+    div.axis_label
+        color: #FFF
+    div.block
+        background-color: #111
+    div.expl-block
+        background-color: #333
+    #sincerity
+        color: #d42c2c
+    #jannyphile
+        color: #CCC
+    #horny
+        color: #bd2c42
+    #antihorny
+        color: #FEC62B
+    #lurker
+        color: #FFFFFF
+    #wacky
+        color: #bd445c
+    #boring
+        color: #F5DD00
+    #schizo
+        color: #a45fa5
+    #disliked
+        color: #F5A9B8
+    #community
+        color: #0f803e
+    #annoying
+        color: #3b37b3
+
+@media screen and (max-width: 1000px)
+    div.center
+        width: 80%
+    div.block
+        width: 42.5%
+    div.axis_label
+        font-size: 4vw
+    div.expl-block
+        width: 95%
+    p.axis
+        font-size: 3vw
+    p.value
+        font-size: 3.5vw
+        text-indent: 0px
+        letter-spacing: normal
+    p.extras
+        font-size: 4vw
+        display: block
+        width: 80%
+        text-align: center
+        margin: auto
+    div.spacer
+        display: flex
+        justify-content: flex
+        margin-left: auto
+        margin-right: auto
+    div.expl-axis
+        width: 25%
+        font-size: 3vw
+        letter-spacing: normal
+        margin: 1vw
+        margin-top: 10%
+    div.expl-right, div.expl-right
+        width: 35%
+    p.expl-text-left
+        float: right
+        font-size: 3vw
+        margin-left: 2%
+        margin-right: 0%
+        margin-top: 0%
+    p.expl-text-right
+        float: left
+        font-size: 3vw
+        margin-left: 0%
+        margin-right: 2%
+        margin-top: 0%

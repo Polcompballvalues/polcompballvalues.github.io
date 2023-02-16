@@ -20,18 +20,17 @@ class Canvas
         @ctx.strokeRect 165, 50+height, 470, 0
 
     drawValues: (value, index) ->
-        _this = this
         height = 170 + index*120
 
         left_image = new Image 
         left_image.src = "./assets/values/" + value.icons[0]
-        left_image.addEventListener "load", ->
-            _this.ctx.drawImage left_image, 20, height, 100, 100
+        left_image.addEventListener "load", =>
+            @ctx.drawImage left_image, 20, height, 100, 100
 
         right_image = new Image 
         right_image.src = "./assets/values/" + value.icons[1]
-        right_image.addEventListener "load", ->
-            _this.ctx.drawImage right_image, 680, height, 100, 100
+        right_image.addEventListener "load", =>
+            @ctx.drawImage right_image, 680, height, 100, 100
 
     drawScoreRect: (scores, values, score, index) ->
         @ctx.lineWidth = 65

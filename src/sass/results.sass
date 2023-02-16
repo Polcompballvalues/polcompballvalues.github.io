@@ -1,0 +1,182 @@
+button#download-button
+    background-color: #05d243
+    
+div.axis
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    .value
+        height: 128px
+
+div.bar
+    height: 36pt
+    line-height: 36pt
+    padding: 10pt
+    margin-top: 4pt
+    margin-bottom: 4pt
+    border-top-style: solid
+    border-bottom-style: solid
+    border-width: 6px
+    border-color: #000
+    background-color: #fff
+    width: 50%
+
+div.text-wrapper, div.text-wrapper-white
+    font-size: 36pt
+    line-height: 36pt
+    color: #222222
+    
+
+div.text-wrapper-white
+    color: #DDDDDD
+
+div.results
+    width: 80%
+    max-width: 1000px
+    display: block
+    margin-left: auto
+    margin-right: auto
+
+div#other-matches
+    font-size: 28pt
+
+%leftaxis
+    text-align: left
+    border-left-style: solid
+    border-top-left-radius: 28pt
+    border-bottom-left-radius: 28pt
+    margin-left: 4px
+
+%rightaxis
+    text-align: right
+    border-right-style: solid
+    border-top-right-radius: 28pt
+    border-bottom-right-radius: 28pt
+    margin-right: 4px
+
+//Seriousposting axis
+div.sincerity
+    @extend %leftaxis
+    background-color: #B22222
+
+div.irony
+    @extend %rightaxis
+    background-color: #00F
+
+//Allegiance axis
+div.jannyphobe
+    @extend %leftaxis
+    background-color: #EDB509
+div.jannyphile
+    @extend %rightaxis
+    background-color: #333
+
+//Experience axis
+div.veteran
+    @extend %leftaxis
+    background-color: #00F
+div.newbie
+    @extend %rightaxis
+    background-color: #FF0000
+
+//Personality axis
+div.wholesome
+    @extend %leftaxis
+    background-color: #C000FF
+div.edgy
+    @extend %rightaxis
+    background-color: #EE2436
+
+//Hornyposting axis
+div.horny
+    @extend %leftaxis
+    background-color: #880015
+div.antihorny
+    @extend %rightaxis
+    background-color: #FEC62B
+
+//Fame axis
+div.active
+    @extend %leftaxis
+    background-color: #FF0000
+div.lurker
+    @extend %rightaxis
+    background-color: #FFFFFF
+
+//Shower axis
+div.standard
+    @extend %leftaxis
+    background-color: #8B5320
+div.wacky
+    @extend %rightaxis
+    background-color: #89001C
+
+//Sanity axis
+div.boring
+    @extend %leftaxis
+    background-color: #F5DD00
+div.schizo
+    @extend %rightaxis
+    background-color: #7F3980
+
+//Relationship axis
+div.liked
+    @extend %leftaxis
+    background-color: #52CE3C
+div.disliked
+    @extend %rightaxis
+    background-color: #F5A9B8
+
+//Fedposting axis
+div.discriminatory
+    @extend %leftaxis
+    background-color: #32B5D4
+div.inclusive
+    @extend %rightaxis
+    background-color: #EB0DEA
+
+//Actions axis
+div.behaving
+    @extend %leftaxis
+    background-color: #7F00FF
+div.misbehaving
+    @extend %rightaxis
+    background-color: #429B7D
+
+//Purpose axis
+div.artist
+    @extend %leftaxis
+    background-color: #003AAD
+div.community
+    @extend %rightaxis
+    background-color: #01411C
+
+//Perception axis
+div.pleasant
+    @extend %leftaxis
+    background-color: #E88401
+div.annoying
+    @extend %rightaxis
+    background-color: #1A193A
+
+//Comedy axis
+div.funny
+    @extend %leftaxis
+    background-color: #05D243
+div.unfunny
+    @extend %rightaxis
+    background-color: #7F66DE
+
+@media screen and (max-width: 800px)
+    div.results 
+        width: 80vw
+    div.bar 
+        height: 4vw
+        width: 25vw
+    img.value
+        height: 20vw
+        width: 20vw
+    div.text-wrapper, div.text-wrapper-white
+        font-size: 4vw
+        line-height: 4vw

@@ -3,7 +3,7 @@ cson = require "cson"
 fs = require "fs"
 
 renderTemplates = (cjson) ->  
-    views_dir_name = "./views/"
+    views_dir_name = "./src/pug/"
     views_dir = fs.readdirSync views_dir_name
 
     for file in views_dir
@@ -15,7 +15,7 @@ renderTemplates = (cjson) ->
 calcShort = (questions) ->
     questions.filter((x) -> x.short).length
 
-data_dir_name = "./data/"
+data_dir_name = "./src/cson/"
 data_dir = fs.readdirSync data_dir_name
 parsed_jsons = {}
 

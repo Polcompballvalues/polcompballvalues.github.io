@@ -1310,20 +1310,20 @@
 ,
   "name" : "BERNHE0504"
   "stats":
-    "spos": 62.5
-    "alle": 81.3
+    "spos": 68.8
+    "alle": 62.5
     "expr": 91.7
-    "pers": 25
-    "horn": 12.5
-    "fame": 56.3
-    "shwr": 12.5
-    "sani": 62.5
-    "rela": 65
-    "fedp": 93.8
-    "actn": 20
-    "purp": 18.8
-    "perc": 43.8
-    "cmdy": 81.3
+    "pers": 6.3
+    "horn": 6.3
+    "fame": 62.5
+    "shwr": 37.5
+    "sani": 75
+    "rela": 75
+    "fedp": 68.8
+    "actn": 25
+    "purp": 12.5
+    "perc": 25
+    "cmdy": 93.8
 ,
   "name" : "Nikia Paige"
   "stats":
