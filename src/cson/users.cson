@@ -3840,4 +3840,38 @@
     "purp": 47.9
     "perc": 31.8
     "cmdy": 15
+,
+  "name" : "Officernasty"
+  "stats":
+    "spos": 62.5
+    "alle": 72.7
+    "expr": 39.6
+    "pers": 55.4
+    "horn": 20
+    "fame": 67.9
+    "shwr": 11.5
+    "sani": 83.3
+    "rela": 76.8
+    "fedp": 87.1
+    "actn": 73.1
+    "purp": 45.8
+    "perc": 52.3
+    "cmdy": 70
+,
+  "name" : "k."
+  "stats":
+    "spos": 50
+    "alle": 56.8
+    "expr": 20.8
+    "pers": 42.9
+    "horn": 72.5
+    "fame": 45.2
+    "shwr": 48.1
+    "sani": 33.3
+    "rela": 37.5
+    "fedp": 40.3
+    "actn": 46.2
+    "purp": 52.1
+    "perc": 52.3
+    "cmdy": 65
 ]

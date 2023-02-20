@@ -6,7 +6,7 @@ users = await getJson "users"
 params =
     gallery : true
     edition : "User gallery"
-    version : window.VERSION
+    version : globalThis.VERSION
 
 canvas_elm = document.getElementById "banner"
 

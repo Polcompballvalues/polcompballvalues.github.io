@@ -1,6 +1,6 @@
 {
   "name": "polcompballvalues",
-  "version": "2.2.7",
+  "version": "2.2.8",
   "devDependencies": {
     "coffeescript": "^2.7.0",
     "cson": "^7.20.0",

@@ -82,7 +82,7 @@ for i in [1..5]
 params =
     edition: if edition_raw is "s" then "Short test" else "Full test"
     user: users[0].name
-    version: window.VERSION
+    version: globalThis.VERSION
 
 canvas_elm = document.getElementById "banner"
 [bg,fg] = if window.matchMedia("(prefers-color-scheme: dark)").matches \

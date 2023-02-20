@@ -9,5 +9,5 @@ html
         canvas(id="banner")
         button(class="button" onclick="window.history.back()" id="back-button") Back
         button(class="button" onclick="location.href='credits.html'" id="credits-button") Credits
-        script(type="application/javascript") window.VERSION = "#{version}"
+        script(type="application/javascript") globalThis.VERSION = "#{version}"
         script(src="./dist/gallery.js" type="module")

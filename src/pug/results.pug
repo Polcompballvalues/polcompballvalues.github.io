@@ -50,6 +50,6 @@ html
         button(class="button" id="gallery-button" onclick="location.href='gallery.html'") User Gallery
         button(class="button" id="credits-button" onclick="location.href='credits.html'") Credits
         button(class="button" id="back-button" onclick="location.href='index.html'") Return To Index
-        script(type="application/javascript") window.VERSION = "#{version}"
+        script(type="application/javascript") globalThis.VERSION = "#{version}"
         script(type="module" src="./dist/results.js")
         
