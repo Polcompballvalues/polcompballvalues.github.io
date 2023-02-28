@@ -16,17 +16,27 @@ play_success = ->
     player.style.display = "block"
     player.loop = false
     do player.play
-    player.addEventListener "complete", ->
+
+    listener = ->
         player.style.display = "none"
+        player.removeEventListener "complete", listener
+
+    player.addEventListener "complete", listener
 
 play_error = (scores) ->
     player.load "./assets/94303-failed.json"
     player.style.display = "block"
     player.loop = false
     do player.play
-    player.addEventListener "complete", ->
+    
+    listener = ->
         player.style.display = "none"
         download_scores scores
+        player.removeEventListener "complete", listener
+    
+    player.addEventListener "complete", listener
+
+        
 
 parse_scores = ->
     url_pars = new URLSearchParams document.location.search
