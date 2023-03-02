@@ -28,28 +28,28 @@ play_error = (scores) ->
     player.style.display = "block"
     player.loop = false
     do player.play
-    
+
     listener = ->
         player.style.display = "none"
         download_scores scores
         player.removeEventListener "complete", listener
-    
+
     player.addEventListener "complete", listener
 
-        
+
 
 parse_scores = ->
     url_pars = new URLSearchParams document.location.search
 
     raw_scores = url_pars.get("score") or ""
     scores = raw_scores.split(",").map (x) -> parseFloat x
-    
+
     if scores.length isnt 14
         throw new Error "Invalid scores"
 
     if not scores.every (x) -> x >= 0 and x <= 100
         throw new Error "Invalid scores"
-    
+
     return scores
 
 check_username = (user_name) ->
@@ -92,14 +92,14 @@ send_scores = (user_name) ->
             clearTimeout timeout
             lock = false
             do resp.json
-        
+
         .then (data) ->
             if data.success
                 submissions++
                 do play_success
             else 
                 play_error post_body
-        
+
         .catch (err) ->
             clearTimeout timeout
             lock = false
@@ -125,6 +125,6 @@ document.getElementById("name").addEventListener "keydown", (key) ->
     if key.keyCode is 13
         do key.preventDefault
         do send_message
-    
+
 document.getElementById("send-button").addEventListener "click", ->
     do send_message

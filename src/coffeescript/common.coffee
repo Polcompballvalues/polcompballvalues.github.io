@@ -66,7 +66,7 @@ class Canvas
             @ctx.fillStyle = if values[index].white_label[0] then "#FFF" else "#000"
             @ctx.textAlign = "left"
             @ctx.fillText val.toFixed(1) + "%", 150, height
-        
+
         if val < 70
             @ctx.fillStyle = if values[index].white_label[1] then "#FFF" else "#000"
             @ctx.textAlign = "right"
@@ -75,7 +75,7 @@ class Canvas
         @ctx.fillStyle = @fg
         @ctx.textAlign = "center"
         @ctx.font="bold 30px 'Source Sans Pro', sans-serif"
-        name =  do values[index].name.charAt(0).toUpperCase + values[index].name.slice 1
+        name = do values[index].name.charAt(0).toUpperCase + values[index].name.slice 1
         @ctx.fillText name + " Axis: " + values[index].tiers[ Canvas.findTier(val)], 400, 170+index*120, 550
 
 
@@ -95,7 +95,7 @@ class Canvas
         @ctx.fillText "polcompballvalues.github.io", 780, 40
         @ctx.fillText params.version, 780, 70
         @ctx.fillText params.edition, 780, 100
-    
+
     clearFields: ->
         @ctx.fillStyle = @bg
         @ctx.fillRect 126,130,550,1730

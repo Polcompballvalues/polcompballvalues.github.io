@@ -51,5 +51,8 @@ html
         button(class="button" id="credits-button" onclick="location.href='credits.html'") Credits
         button(class="button" id="back-button" onclick="location.href='index.html'") Return To Index
         script(type="application/javascript") globalThis.VERSION = "#{version}"
-        script(type="module" src="./dist/results.js")
+        if inlineJS
+            script(type="module") !{js["results"]}
+        else
+            script(type="module" src="./dist/results.js")
         

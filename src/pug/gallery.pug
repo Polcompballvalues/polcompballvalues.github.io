@@ -10,4 +10,7 @@ html
         button(class="button" onclick="window.history.back()" id="back-button") Back
         button(class="button" onclick="location.href='credits.html'" id="credits-button") Credits
         script(type="application/javascript") globalThis.VERSION = "#{version}"
-        script(src="./dist/gallery.js" type="module")
+        if inlineJS
+            script(type="module") !{js["gallery"]}
+        else 
+            script(src="./dist/gallery.js" type="module")

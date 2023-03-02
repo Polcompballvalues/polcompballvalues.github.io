@@ -12,4 +12,7 @@ html
         button(class="button" id="send-button") Send
         button(class="button" onclick="window.history.back()" id="back-button") Back
         script(src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js")
-        script(src="./dist/submitter.js" type="module")
+        if inlineJS
+            script(type="module") !{js["submitter"]}
+        else
+            script(src="./dist/submitter.js" type="module")

@@ -12,4 +12,7 @@ html
         button(class="button" id="button-stdisag") &nbsp
         div
             button(class="small_button" id="back_button") Back
-        script(type="module" src="./dist/quiz.js")
+        if inlineJS
+            script(type="module") !{js["quiz"]}
+        else
+            script(type="module" src="./dist/quiz.js")

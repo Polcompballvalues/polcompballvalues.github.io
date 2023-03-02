@@ -1,15 +1,15 @@
 "values": [
-        "name": "seriousposting"
-        "desc": [
-            "This value represents people who prefer an adherence to intelligible, coherent, and productive conversations. They are particularly opposed to spam, monkey business, and memes that serve as obstacles to usual talking."
-        ,
-            "This value represents people who prefer the server be spiced up with jokes, that things be done ironically, necessitating that people don't need to express actual opinions, they can just larp! (Pretend to be someone or something they aren't or pretend to have an opinion that they don't). They are also usually in favor of allowing memes in conversation channels."
-        ]
-        "labels": ["sincerity","irony"]
-        "icons": ["sincerity.svg","irony.svg"]
-        "color" : ["#B22222", "#00F"]
-        "white_label" : [false,false]
-        "tiers" : ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"]
+    "name": "seriousposting"
+    "desc": [
+        "This value represents people who prefer an adherence to intelligible, coherent, and productive conversations. They are particularly opposed to spam, monkey business, and memes that serve as obstacles to usual talking."
+    ,
+        "This value represents people who prefer the server be spiced up with jokes, that things be done ironically, necessitating that people don't need to express actual opinions, they can just larp! (Pretend to be someone or something they aren't or pretend to have an opinion that they don't). They are also usually in favor of allowing memes in conversation channels."
+    ]
+    "labels": ["sincerity","irony"]
+    "icons": ["sincerity.svg","irony.svg"]
+    "color" : ["#B22222", "#00F"]
+    "white_label" : [false,false]
+    "tiers" : ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"]
     ,
         "name": "allegiance"
         "desc": [
@@ -21,7 +21,7 @@
         "icons": ["jannyphobe.svg","jannyphile.svg"]
         "color" : ["#EDB509", "#333"]
         "white_label" : [false,true]
-        "tiers" : ["Revolutionary", "Rebellious", "Opposed", "Unrested", "Populist",  "Neutral", "Establishment", "Elitist", "Loyal", "Aristocratic", "Enslaved"]
+        "tiers" : ["Revolutionary", "Rebellious", "Opposed", "Unrested", "Populist", "Neutral", "Establishment", "Elitist", "Loyal", "Aristocratic", "Enslaved"]
     ,
         "name": "experience"
         "desc": [
@@ -129,7 +129,7 @@
         "icons": ["behaving.svg","misbehaving.svg"]
         "color" : ["#7F00FF", "#429B7D"]
         "white_label" : [false,false]
-        "tiers" : ["Robotic", "Lawful", "Obedient", "Compliant", "Behaved", "Occasional",  "Tripping-up", "Unruly", "Disobedient", "Chaotic", "Criminal"]
+        "tiers" : ["Robotic", "Lawful", "Obedient", "Compliant", "Behaved", "Occasional", "Tripping-up", "Unruly", "Disobedient", "Chaotic", "Criminal"]
     ,
         "name": "purpose"
         "desc": [
@@ -176,7 +176,7 @@
         "elms" : [
             {"name": "TheGhostOfInky"},
             {"name": "Miko (Assistance)"},
-            {"name": "Based on the code of) TristanBomb"}
+            {"name": "(Based on the code of) TristanBomb"}
         ]
     },
     {
