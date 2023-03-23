@@ -18,6 +18,8 @@ Alternatively you can send an HTTP POST request to the address [https://pcbval.t
 ```json
 {
     "name" : "Your name",
+    "edition" : "s or f",
+    "version" : "The version of the test you took",
     "vals" : [
         50,
         50,

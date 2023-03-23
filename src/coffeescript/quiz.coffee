@@ -25,13 +25,21 @@ render_question = ->
                     button.style.display = "block"
 
 calc_scores = ->
+    encoder = new TextEncoder
+    decoder = new TextDecoder
+
     final_scores = []
 
     for v,i in Object.keys scores
         final_scores.push (100*(maxscores[v]+scores[v])/(2*maxscores[v])).toFixed 1
 
+    score_str = final_scores.join ","
+    score_bytes = encoder.encode score_str
+    score_digest = await crypto.subtle.digest "SHA-512", score_bytes
+    digest_bytestr = String.fromCharCode(...new Uint8Array(score_digest))
+
     window.location.href = "results.html?" + "score=" + \
-    final_scores.join(",") + "&edition=" + \
+    score_str + "&digest=" + btoa(digest_bytestr) + "&edition=" + \
     if short then "s" else "f"
 
 next_question = (val) ->

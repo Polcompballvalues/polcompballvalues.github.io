@@ -38,10 +38,8 @@ play_error = (scores) ->
 
 
 
-parse_scores = ->
-    url_pars = new URLSearchParams document.location.search
-
-    raw_scores = url_pars.get("score") or ""
+parse_scores = (params)->
+    raw_scores = params.get("score") or ""
     scores = raw_scores.split(",").map (x) -> parseFloat x
 
     if scores.length isnt 14
@@ -61,11 +59,14 @@ check_username = (user_name) ->
         return user_name
 
 send_scores = (user_name) ->
+    url_pars = new URLSearchParams document.location.search
     try
-        post_body = {
+        post_body =
             name: user_name
-            vals: do parse_scores
-        }
+            vals: parse_scores(url_pars)
+            edition: url_pars.get("edition") || "missing"
+            digest: (url_pars.get("digest") || "missing").replaceAll(" ", "+")
+            version: globalThis.VERSION
 
     catch e
         console.error e
@@ -75,12 +76,11 @@ send_scores = (user_name) ->
     controller = new AbortController
     timeout = setTimeout (-> do controller.abort), 10000
 
-    params = {
+    params = 
         method : "POST"
         headers : { "Content-Type": "application/json; charset=utf-8" }
         signal : controller.signal
         body : JSON.stringify post_body
-    }
 
     player.load "./assets/124239-loading-bouncy.json"
     player.style.display = "block"

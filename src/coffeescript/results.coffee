@@ -53,7 +53,10 @@ scores = scores_raw.split(",").reduce(
 
 document.getElementById("submit-button").addEventListener "click", ->
     if valid_scores
-        location.href = "submitter.html?score=" + Object.values(scores).map((x)->x.toFixed 1).join ","
+        location.href = "submitter.html?score=" + \
+        Object.values(scores).map((x)->x.toFixed 1).join(",") + \
+        "&digest=" + (url_pars.get("digest")|| "missing").replaceAll(" ", "+")  + \
+        "&edition=" + edition_raw
     else
         alert err
 

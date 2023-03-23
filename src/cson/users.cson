@@ -3908,4 +3908,72 @@
         "purp": 37.5
         "perc": 68.8
         "cmdy": 50
+,
+    "name" : "aqualeafy"
+    "stats":
+        "spos": 57.5
+        "alle": 43.2
+        "expr": 18.8
+        "pers": 71.4
+        "horn": 67.5
+        "fame": 28.6
+        "shwr": 36.5
+        "sani": 60.4
+        "rela": 57.1
+        "fedp": 27.4
+        "actn": 48.1
+        "purp": 58.3
+        "perc": 63.6
+        "cmdy": 50
+,
+    "name" : "Austro"
+    "stats":
+        "spos": 56.3
+        "alle": 18.8
+        "expr": 58.3
+        "pers": 50
+        "horn": 87.5
+        "fame": 18.8
+        "shwr": 18.8
+        "sani": 50
+        "rela": 55
+        "fedp": 87.5
+        "actn": 95
+        "purp": 43.8
+        "perc": 56.3
+        "cmdy": 56.3
+,
+    "name" : "2x2Master"
+    "stats":
+        "spos": 35
+        "alle": 50
+        "expr": 22.9
+        "pers": 39.3
+        "horn": 77.5
+        "fame": 33.3
+        "shwr": 53.8
+        "sani": 77.1
+        "rela": 57.1
+        "fedp": 45.2
+        "actn": 50
+        "purp": 64.6
+        "perc": 36.4
+        "cmdy": 70
+,
+    "name" : "Markkr"
+    "stats":
+        "spos": 55
+        "alle": 40.9
+        "expr": 33.3
+        "pers": 55.4
+        "horn": 52.5
+        "fame": 42.9
+        "shwr": 53.8
+        "sani": 39.6
+        "rela": 58.9
+        "fedp": 46
+        "actn": 61.5
+        "purp": 47.9
+        "perc": 56.8
+        "cmdy": 45
 ]
