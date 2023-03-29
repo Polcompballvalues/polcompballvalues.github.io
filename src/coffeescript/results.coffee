@@ -17,7 +17,7 @@ order_scores = (scores, weights, users) ->
     for user,ind in users
         sum = 0
         for scr,ind in Object.keys scores
-            raw_delta = Math.abs scores[scr] - user.stats[scr]
+            raw_delta = Math.abs scores[scr] - user.stats[ind]
             sum += weights[ind] * Math.pow(raw_delta/100, 3)
         finalscore.push {
             name : user.name

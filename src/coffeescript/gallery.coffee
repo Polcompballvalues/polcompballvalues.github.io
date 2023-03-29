@@ -21,11 +21,10 @@ drawScores = (user_obj) ->
         ...params
         user : user_obj.name
     }
-    scores = Object.values user_obj.stats
-    for scr,ind in Object.keys scores
+    for scr,ind in user_obj.stats
         canvas.drawValueBg ind
-        canvas.drawScoreRect scores,values,scr,ind
-        canvas.drawScoreLabel scores[scr],values,ind
+        canvas.drawScoreRect user_obj.stats,values,ind,ind
+        canvas.drawScoreLabel scr,values,ind
 
     canvas.drawHeader full_pars
 
@@ -34,8 +33,9 @@ user_dropdown = document.getElementById("userdropdown")
 user_dropdown.addEventListener "change", ->
     drawScores users[user_dropdown.selectedIndex]
 
-for user,i in users
-    user_dropdown.innerHTML += "<option value=#{i}>#{user.name}</option>"
+user_dropdown.innerHTML += users
+    .map((user,i) -> "<option value=#{i}>#{user.name}</option>")
+    .join("")
 
 for val,ind in values
     canvas.drawValues val,ind

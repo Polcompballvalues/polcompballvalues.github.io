@@ -1,11 +1,13 @@
 {
   "name": "polcompballvalues",
-  "version": "2.2.11",
+  "version": "2.2.12",
   "devDependencies": {
     "coffeescript": "^2.7.0",
     "cson": "^7.20.0",
     "pug": "^3.0.2",
     "sass": "^1.59.3",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.6",
     "terser": "^5.16.6"
   },
   "scripts": {
@@ -13,6 +15,10 @@
     "coffeescript_watch": "coffee -c -b -m -w -o ./dist ./src/coffeescript",
     "sass_watch": "sass ./src/sass/style.sass ./dist/style.css -w",
     "minify": "coffee ./scripts/minify.coffee",
-    "release": "coffee -c -b -m -o ./dist ./src/coffeescript && sass ./src/sass/style.sass ./dist/style.css --style compressed --no-source-map && coffee ./scripts/build.coffee --minify && coffee ./scripts/clean.coffee"
+    "release": "coffee -c -b -m -o ./dist ./src/coffeescript && sass ./src/sass/style.sass ./dist/style.css --style compressed --no-source-map && coffee ./scripts/build.coffee --minify && coffee ./scripts/clean.coffee",
+    "create-db": "sqlite3 ./database/scores.db \".read ./database/create-table.sql\"",
+    "migrate-db": "node ./scripts/migrate-db.js",
+    "check-db": "sqlite3 ./database/scores.db \".read ./database/check-table.sql\"",
+    "add-to-db": "wish ./database/database-updater.tcl"
   }
 }

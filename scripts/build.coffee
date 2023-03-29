@@ -3,6 +3,8 @@ cson = require "cson"
 terser = require "terser"
 fs = require "fs"
 path = require "path"
+sqlite3 = require "sqlite3"
+sqlite = require "sqlite"
 
 minify = process.argv.some((x) -> x.toLowerCase() is "--minify")
 
@@ -104,6 +106,40 @@ parsed_jsons.config = {
     js: minJs
     inlineJS: minify
 }
+
+
+parseScores = (scores) ->
+    return {
+        name: scores.name,
+        stats: [
+            scores.spos, 
+            scores.alle,
+            scores.expr,
+            scores.pers,
+            scores.horn,
+            scores.fame,
+            scores.shwr,
+            scores.sani,
+            scores.real,
+            scores.fedp,
+            scores.actn,
+            scores.purp,
+            scores.perc,
+            scores.cmdy
+        ]
+    }
+
+
+db = await sqlite.open({
+    filename: "./database/scores.db",
+    driver: sqlite3.Database
+})
+
+parsed_jsons.users = []
+
+await db.each("SELECT * FROM scores", (err, row) -> 
+    parsed_jsons.users.push(parseScores(row))
+)
 
 renderTemplates parsed_jsons.config
 parsed_jsons.users.sort((a, b) -> a.name.localeCompare b.name)
