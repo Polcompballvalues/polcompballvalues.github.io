@@ -1,6 +1,6 @@
 {
   "name": "polcompballvalues",
-  "version": "2.2.12",
+  "version": "2.2.13",
   "devDependencies": {
     "coffeescript": "^2.7.0",
     "cson": "^7.20.0",
@@ -14,8 +14,7 @@
     "build": "coffee ./scripts/build.coffee && coffee -c -b -m -o ./dist ./src/coffeescript && sass ./src/sass/style.sass ./dist/style.css",
     "coffeescript_watch": "coffee -c -b -m -w -o ./dist ./src/coffeescript",
     "sass_watch": "sass ./src/sass/style.sass ./dist/style.css -w",
-    "minify": "coffee ./scripts/minify.coffee",
-    "release": "coffee -c -b -m -o ./dist ./src/coffeescript && sass ./src/sass/style.sass ./dist/style.css --style compressed --no-source-map && coffee ./scripts/build.coffee --minify && coffee ./scripts/clean.coffee",
+    "release": "coffee -c -b -o ./dist ./src/coffeescript && sass ./src/sass/style.sass ./dist/style.css --style compressed --no-source-map && coffee ./scripts/build.coffee --minify && coffee ./scripts/clean.coffee",
     "check-db": "sqlite3 ./database/scores.db \".read ./database/check-table.sql\"",
     "add-to-db": "wish ./database/database-updater.tcl"
   }
