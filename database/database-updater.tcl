@@ -66,7 +66,7 @@ proc updatescores {} {
     }
     sqlite3 opendb "./database/scores.db"
     if {[opendb exists {SELECT * FROM scores WHERE name=$name }]} {
-        opendb eval {Update scores SET spos=(
+        opendb eval {UPDATE scores SET spos=(
             $valuearray(0)), alle=(
             $valuearray(1)), expr=(
             $valuearray(2)), pers=(

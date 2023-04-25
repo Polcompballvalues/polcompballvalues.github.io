@@ -1,14 +1,14 @@
 {
   "name": "polcompballvalues",
-  "version": "2.2.13",
+  "version": "2.2.14",
   "devDependencies": {
     "coffeescript": "^2.7.0",
     "cson": "^7.20.0",
     "pug": "^3.0.2",
-    "sass": "^1.59.3",
+    "sass": "^1.62.0",
     "sqlite": "^4.1.2",
     "sqlite3": "^5.1.6",
-    "terser": "^5.16.6"
+    "terser": "^5.17.1"
   },
   "scripts": {
     "build": "coffee ./scripts/build.coffee && coffee -c -b -m -o ./dist ./src/coffeescript && sass ./src/sass/style.sass ./dist/style.css",
