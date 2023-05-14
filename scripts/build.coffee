@@ -77,7 +77,7 @@ renderTemplates = (cjson) ->
         split = file.split "."
         if split.at(-1) is "pug"
             html = pug.renderFile views_dir_name + file, cjson
-            fs.writeFileSync "./#{split[0]}.html", html
+            fs.writeFileSync "./#{split[0]}.html", html.replaceAll(/\n/gm,"")
 
 calcShort = (questions) ->
     questions.filter((x) -> x.short).length
@@ -101,6 +101,7 @@ minJs = if minify then await minifyAll jsFiles else {}
 parsed_jsons.config = {
     ...parsed_jsons.config
     version: process.env.npm_package_version
+    size: parsed_jsons.config.values.length
     longq: parsed_jsons.questions.length
     shortq: calcShort parsed_jsons.questions
     js: minJs

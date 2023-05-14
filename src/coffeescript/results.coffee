@@ -27,7 +27,7 @@ order_scores = (scores, weights, users) ->
         a.score - b.score
 
 is_valid = (scores) ->
-    if Object.keys(scores).length isnt val_names.length
+    if Object.keys(scores).length isnt values.length
         return false
 
     if Object.values(scores).some (x) -> x is undefined
@@ -39,16 +39,18 @@ is_valid = (scores) ->
     true
 
 
-val_names = ["spos","alle","expr","pers","horn","fame","shwr","sani","rela","fedp","actn","purp","perc","cmdy"]
+
 
 url_pars = new URLSearchParams document.location.search
 
 scores_raw = url_pars.get("score") or ""
 edition_raw = url_pars.get "edition"
+values = await getJson "values"
+weights = new Array(values.length).fill 2
 
 scores = scores_raw.split(",").reduce( 
     ((obj,val,ind) -> 
-        { ...obj, [val_names[ind]] : parseFloat val}
+        { ...obj, [values[ind].key] : parseFloat val}
     ),{})
 
 document.getElementById("submit-button").addEventListener "click", ->
@@ -67,8 +69,7 @@ if not is_valid scores
     throw new Error err
 
 
-weights = new Array(14).fill 2
-values = await getJson "values"
+
 users = order_scores scores,weights,await getJson "users"
 
 document.getElementById("cmatch").textContent = users[0].name + \
@@ -97,8 +98,7 @@ for val,ind in values
     canvas.drawValues val,ind
     canvas.drawValueBg ind
     elm = document.getElementById val.name + "-label"
-    scr_key = Object.keys(scores)[ind]
-    score = scores[scr_key]
+    score = scores[val.key]
     elm.textContent = val.tiers[Canvas.findTier score]
     for lab,ind in val.labels
         set_bar_value lab, (if ind then 100 - score else score)

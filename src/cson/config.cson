@@ -1,17 +1,19 @@
 "values": [
-    "name": "seriousposting"
-    "desc": [
-        "This value represents people who prefer an adherence to intelligible, coherent, and productive conversations. They are particularly opposed to spam, monkey business, and memes that serve as obstacles to usual talking."
-    ,
-        "This value represents people who prefer the server be spiced up with jokes, that things be done ironically, necessitating that people don't need to express actual opinions, they can just larp! (Pretend to be someone or something they aren't or pretend to have an opinion that they don't). They are also usually in favor of allowing memes in conversation channels."
-    ]
-    "labels": ["sincerity","irony"]
-    "icons": ["sincerity.svg","irony.svg"]
-    "color" : ["#B22222", "#00F"]
-    "white_label" : [false,false]
-    "tiers" : ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"]
+        "name": "seriousposting"
+        "key": "spos"
+        "desc": [
+            "This value represents people who prefer an adherence to intelligible, coherent, and productive conversations. They are particularly opposed to spam, monkey business, and memes that serve as obstacles to usual talking."
+        ,
+            "This value represents people who prefer the server be spiced up with jokes, that things be done ironically, necessitating that people don't need to express actual opinions, they can just larp! (Pretend to be someone or something they aren't or pretend to have an opinion that they don't). They are also usually in favor of allowing memes in conversation channels."
+        ]
+        "labels": ["sincerity","irony"]
+        "icons": ["sincerity.svg","irony.svg"]
+        "color" : ["#B22222", "#00F"]
+        "white_label" : [false,false]
+        "tiers" : ["Austere", "Ascetic", "Sombre", "Genuine", "Rational", "Sober", "Lighthearted", "Memey", "Playful", "Silly", "Incoherent"]
     ,
         "name": "allegiance"
+        "key": "alle"
         "desc": [
             "This value represents people who are dissatisfied with the Staff team that moderates/ administrates Polcompball, or they may not like moderation/ administration in general. They usually favor common folk not being bossed around by higher-ups, or want the Staff to be replaced/ abolished/ elected."
         ,
@@ -24,6 +26,7 @@
         "tiers" : ["Revolutionary", "Rebellious", "Opposed", "Unrested", "Populist", "Neutral", "Establishment", "Elitist", "Loyal", "Aristocratic", "Enslaved"]
     ,
         "name": "experience"
+        "key": "expr"
         "desc": [
             "This value represents people who have been in the community for a long time and might know and have experienced things that newer members may not have."
         ,
@@ -36,6 +39,7 @@
         "tiers" : ["Primordial", "Ancient", "Historical", "Former", "Time-honored", "Reminiscent", "Apprentice", "Contemporary", "Missed Out", "Uninformed", "Novice"]
     ,
         "name": "personality"
+        "key": "pers"
         "desc": [
             "This value represents people who often try to be nice, or are known as well-meaning/good-hearted."
         ,
@@ -48,6 +52,7 @@
         "tiers" : ["Angelic", "Benevolent", "Empathic", "Goodwilling", "Respectful", "Polite", "Rude", "Harsh", "Cruel", "Heartless", "Inhumane"]
     ,
         "name": "hornyposting"
+        "key": "horn"
         "desc": [
             "This value represents people who are fine with the discussion of NSFW topics such as fetishes, attractions, self-stimulation, and intercourse. They often see value in adult content."
         ,
@@ -60,6 +65,7 @@
         "tiers" : ["Nymphomaniac", "Decadent", "Down Bad", "Lustful", "Libertine", "Moderated", "Composed", "Pure", "Prudish", "Restrained", "Overprotective"]
     ,
         "name": "fame"
+        "key": "fame"
         "desc": [
             "This value represents people who use related Discord servers often, especially those known well because of it."
         ,
@@ -72,6 +78,7 @@
         "tiers" : ["Protagonist", "Celebrity", "Important", "Famed", "Recognizable", "NPC", "Integrated", "Sometimes", "Stranger", "Nobody", "Incognito"]
     ,
         "name": "shower"
+        "key": "shwr"
         "desc": [
             "This value represents people who have political beliefs that do not deviate from that of a usual person who is not involved deeply in online politics or has real political implications where their ideology may be already in implementation and thus as normal/nothing special/centrist/moderate/apolitical."
         ,
@@ -84,6 +91,7 @@
         "tiers" : ["Apolitical", "Uncaring", "Ordinary", "Moderate", "Opinionated", "Political", "Ideological", "Radical", "Extremist", "Convoluted", "Otherworldly"]
     ,
         "name": "sanity"
+        "key": "sani"
         "desc": [
             "This value represents people who are closer to typically what you expect of a human to be in terms of state of mind. People who have healthy life usually have a good home-life, had a good childhood, and may have been sheltered and even not willing to go outside their comfort zone in extreme cases."
         ,
@@ -96,6 +104,7 @@
         "tiers" : ["Too Normal", "Bland", "Healthy", "Sound Minded", "Tame", "Interesting", "Different", "Neurotic", "Out There", "Deranged", "a̵̒̆a̶̋͗a̶͂͠a̴͂̅a̵̔̕a̴̔͒"]
     ,
         "name": "relationships"
+        "key": "rela"
         "desc": [
             "This value represents people who have a positive reputation among the community and are generally well-liked."
         ,
@@ -108,6 +117,7 @@
         "tiers" : ["Venerated", "Loved", "Admired", "Appreciated", "Respected", "No Opinion", "Mixed Feelings", "Unwanted", "Disliked", "Hated", "Abhorred"]
     ,
         "name": "fedposting"
+        "key": "fedp"
         "desc": [
             "This value represents people who may be in favor of hate speech towards certain groups, or exclusion of minorities, generally believing in the supremacy of certain and the inferiority of others. Often using slurs or other actions to dehumanize and discriminate. Such people engage in 'fedposting' and may be referred to as 'glowies' (see below)."
         ,
@@ -120,6 +130,7 @@
         "tiers" : ["Glowie", "Bigoted", "Prejudicial", "Exclusive", "Biased", "Varying", "Open-minded", "Tolerant", "Accepting", "Cosmopolitan", "SJW"]
     ,
         "name": "actions"
+        "key": "actn"
         "desc": [
             "This value represents people who obey the rules often and comply with the system, this value differs from jannyphile mostly in the aspect that it includes people who oppose moderation abuses."
         ,
@@ -132,6 +143,7 @@
         "tiers" : ["Robotic", "Lawful", "Obedient", "Compliant", "Behaved", "Occasional", "Tripping-up", "Unruly", "Disobedient", "Chaotic", "Criminal"]
     ,
         "name": "purpose"
+        "key": "purp"
         "desc": [
             "This value represents people who are primarily focused on the art side of the community, drawing polcompballs, making comics for the subreddit, or making art for the wiki. As such, they usually have their main presence on the wikis or subreddits where art is made as opposed to discords where talking is done."
         ,
@@ -144,6 +156,7 @@
         "tiers" : ["Maestro", "Art Hero", "Aesthetic", "Artistic Focused", "Wikiredditor", "Undecided", "Member", "Conversational", "Chatty", "Talkative", "Talentless"]
     ,
         "name": "perception"
+        "key": "perc"
         "desc": [
             "This value represents people who are perceived by the community as not being annoying, perhaps even nice to interact with."
         ,
@@ -156,6 +169,7 @@
         "tiers" : ["Therapeutic", "Comforting", "Calming", "Chill", "Tolerable", "Ambivalent", "Uncomforting", "Pestering", "Obnoxious", "Infuriating", "Proof that God is testing us"]
     ,
         "name": "comedy"
+        "key": "cmdy"
         "desc": [
             "This value represents people who bring joy to the community because of how funny they are, whether intentionally or not."
         ,
@@ -169,6 +183,8 @@
 ]
 
 "discord_url": "https://discord.gg/RWVrPNZPgA"
+
+"api_url": "https://pcbval.theghostofinky.repl.co/api/"
 
 "credits": [
     {

@@ -11,7 +11,10 @@ html
             input(for="text" id="name" name="name")
         button(class="button" id="send-button") Send
         button(class="button" onclick="window.history.back()" id="back-button") Back
-        script(type="application/javascript") globalThis.VERSION = "#{version}"
+        script(type="application/javascript").
+            globalThis.VERSION = "#{version}";
+            globalThis.SIZE = #{size};
+            globalThis.API_URL = "#{api_url}";
         script(src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js")
         if inlineJS
             script(type="module") !{js["submitter"]}

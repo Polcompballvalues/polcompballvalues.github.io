@@ -42,7 +42,7 @@ parse_scores = (params)->
     raw_scores = params.get("score") or ""
     scores = raw_scores.split(",").map (x) -> parseFloat x
 
-    if scores.length isnt 14
+    if scores.length isnt globalThis.SIZE
         throw new Error "Invalid scores"
 
     if not scores.every (x) -> x >= 0 and x <= 100
@@ -87,7 +87,7 @@ send_scores = (user_name) ->
     player.loop = true
     do player.play
 
-    fetch("https://pcbval.theghostofinky.repl.co/api/", params)
+    fetch(globalThis.API_URL, params)
         .then (resp) ->
             clearTimeout timeout
             lock = false
