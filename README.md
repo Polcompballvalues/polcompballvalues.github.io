@@ -1,4 +1,9 @@
-# What is Polcompballvalues?
+# Polcompballvalues
+## **⚠️This test is now deprecated⚠️**
+## **Take [PCBvalues 3](https://github.com/pcbvalues/pcbvalues.github.io) instead if you want an up to date version**
+
+
+## What is Polcompballvalues?
 [![Discord](https://img.shields.io/badge/Polcompball-Discord-%235865F2?style=flat&logo=discord)](https://discord.gg/RWVrPNZPgA)
 [![Reddit](https://img.shields.io/badge/r%2FPolcompball-Reddit-%23FF4500?style=flat&logo=reddit)](https://www.reddit.com/r/Polcompball/)
 [![Miraheze](https://img.shields.io/badge/Polcompball%20Wiki-Miraheze-%23FFC200?style=flat&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzUiIGhlaWdodD0iMTM1Ij48cGF0aCBkPSJtNTYuNzIyIDQ4LjU0MiAyMS4xOS4wNjJMODguODggNjcuNTUgNzguMDM2IDg2LjI0N0g1Ni42NTlsLTEwLjkwNi0xOC43NnoiIHN0eWxlPSJmaWxsOiM4ZTc2NTA7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjFweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2Utb3BhY2l0eToxIi8+PHBhdGggZD0ibTU2LjcyMi4wMTYgMjEuMTkuMDYyTDg4Ljg4IDE5LjAyNCA3OC4wMzYgMzcuNzIxSDU2LjY2TDQ1Ljc1MyAxOC45NnptMCA5Ny4yNzkgMjEuMTkuMDYyIDEwLjk2OCAxOC45NDZMNzguMDM2IDEzNUg1Ni42NmwtMTAuOTA3LTE4Ljc1OVptNDEuOTQ0LTI0LjYwMSAyMS4xOS4wNjMgMTAuOTY4IDE4Ljk0Ni0xMC44NDQgMTguNjk2SDk4LjYwNEw4Ny42OTcgOTEuNjR6bTAtNDguMzY0IDIxLjE5LjA2MSAxMC45NjkgMTguOTQ2LTEwLjg0NCAxOC42OTdIOTguNjA0TDg3LjY5OCA0My4yNzV6bS04My43MTkgMCAyMS4xNDYuMDYxIDEwLjk0NiAxOC45NDYtMTAuODIyIDE4LjY5N0gxNC44ODRMNCA0My4yNzV6bS4wMjIgNDguMzY0IDIxLjE5LjA2MyAxMC45NjggMTguOTQ2LTEwLjg0NCAxOC42OTZIMTQuOTA2TDQgOTEuNjRaIiBzdHlsZT0iZmlsbDojZmZjMjAwO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDoxcHg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW9wYWNpdHk6MSIvPjwvc3ZnPg==)](https://polcompball.miraheze.org/wiki/Polcompball_Wiki)

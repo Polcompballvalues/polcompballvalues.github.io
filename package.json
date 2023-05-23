@@ -1,6 +1,6 @@
 {
   "name": "polcompballvalues",
-  "version": "2.2.15",
+  "version": "2.2.16",
   "devDependencies": {
     "coffeescript": "^2.7.0",
     "cson": "^7.20.0",
@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "coffee ./scripts/build.coffee && coffee -c -b -m -o ./dist ./src/coffeescript && sass ./src/sass/style.sass ./dist/style.css",
+    "test": "node ./scripts/decode.js",
     "coffeescript_watch": "coffee -c -b -m -w -o ./dist ./src/coffeescript",
     "sass_watch": "sass ./src/sass/style.sass ./dist/style.css -w",
     "release": "coffee -c -b -o ./dist ./src/coffeescript && sass ./src/sass/style.sass ./dist/style.css --style compressed --no-source-map && coffee ./scripts/build.coffee --minify && coffee ./scripts/clean.coffee",

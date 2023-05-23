@@ -8,6 +8,21 @@ html
             aria-label="View source on Github"
             )
             include includes/github.svg
+        div(id="heads-up")
+            div(id="close") X
+            div(class="inner")
+                a(href="pcbvalues.github.io") PCBValues 3
+                |  has just launched and as a result this
+                |  test will stop getting score updates past
+                |  the 30th of June, 2023.
+                br
+                | After this date the submission page will be removed and 
+                |  the endpoint in the server closed.
+                br
+                | This test and PolcompballValues 1 will remain
+                |  online indefintetly in their archival form but
+                |  only PCBValues 3 will be getting active development from
+                |  here onward.
         h1 PolcompballValues
         div(class="center")
             each val, index in values
@@ -54,5 +69,8 @@ html
         p(class="extras")
             | You can visit the credits page 
             a(href="./credits.html")= "by clicking this link"
-
+        if inlineJS
+            script(type="module") !{js["index"]}
+        else
+            script(type="module" src="./dist/index.js")
             

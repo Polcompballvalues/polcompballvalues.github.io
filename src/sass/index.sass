@@ -72,6 +72,29 @@ p.expl-text-left, p.expl-text-right
 div.spacer
     display: flex
 
+div#heads-up
+    display: block
+    width: fit-content
+    max-width: 50%
+    text-align: justify
+    justify-content: center
+    background-color: #CCC
+    margin: auto
+    padding: 18px 24px
+    border-radius: 16px
+    .inner
+        max-width: 75%
+        margin: auto
+
+div#close
+    display: block
+    cursor: pointer
+    margin-left: 0
+    margin-top: 0
+    width: fit-content
+    &:hover
+        color: red
+
 img.arrows
     width: 60%
     height: auto
@@ -183,7 +206,8 @@ p.extras
         color: #FFF
     div.block
         background-color: #111
-    div.expl-block
+    div.expl-block,
+    div#heads-up
         background-color: #333
     #sincerity
         color: #d42c2c
@@ -253,3 +277,9 @@ p.extras
         margin-left: 0%
         margin-right: 2%
         margin-top: 0%
+    div#heads-up
+        width: 80vw
+        max-width: 100%
+        .inner
+            width: 70vw
+            max-width: 100%
