@@ -182,9 +182,9 @@
         "tiers" : ["Hysterical", "Hilarious", "Humorous", "Comical", "Amusing", "Undifferentiated", "Superficial", "Unironic", "Lackluster", "Crickets", "Epitome of Boredom"]
 ]
 
-"discord_url": "https://discord.gg/RWVrPNZPgA"
+"discord_url": null
 
-"api_url": "https://pcbval.theghostofinky.repl.co/api/"
+"api_url": null
 
 "credits": [
     {
