@@ -5,7 +5,9 @@
 
 ## What is Polcompballvalues?
 [![Reddit](https://img.shields.io/badge/r%2FPolcompball-Reddit-%23FF4500?style=flat&logo=reddit)](https://www.reddit.com/r/Polcompball/)
-[![Wiki](https://img.shields.io/badge/Polcompball-Wiki-%23d11f3c?style=flat&logo=wikipedia)](https://polcompballwiki.cf/wiki/index.php/Main_Page)
+[![Wiki](https://img.shields.io/badge/Polcompball-Wiki-%230000?style=flat&logo=wikipedia)](https://polcompball.wiki/)
+[![Discord](https://img.shields.io/badge/Polcompball-Server-%235865F2?style=flat&logo=discord)
+](https://discord.gg/pyEZttNQYu)
 
 PolcompballValues is a quiz aimed at members of the Polcompball community, in particular the discord server, that attempts to assign percentages for 28 different values based on common differentating factors of the community's population.
 
